@@ -1,13 +1,1092 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
-    <title>My Simple Webpage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuminaWall — Super Advanced Wallpaper Studio & Downloader</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        cyber: {
+                            900: '#090b10',
+                            800: '#0f1420',
+                            700: '#171e30',
+                            600: '#232d48',
+                            accent: '#6366f1',
+                            neon: '#06b6d4',
+                            pink: '#ec4899',
+                            emerald: '#10b981'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- GSAP for Smooth Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    
+    <!-- JSZip for Batch Downloader -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #090b10;
+            color: #f3f4f6;
+            overflow-x: hidden;
+        }
+
+        /* Ambient Glassmorphism */
+        .glass-panel {
+            background: rgba(15, 20, 32, 0.7);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .glass-card {
+            background: rgba(23, 30, 48, 0.5);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .glass-card:hover {
+            border-color: rgba(99, 102, 241, 0.4);
+            box-shadow: 0 12px 32px -8px rgba(99, 102, 241, 0.25);
+        }
+
+        /* 3D Card Perspective */
+        .card-perspective {
+            perspective: 1000px;
+        }
+
+        .tilt-card {
+            transform-style: preserve-3d;
+            transition: transform 0.2s ease-out;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #090b10;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #232d48;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #6366f1;
+        }
+
+        /* Animated Glowing Mesh Canvas */
+        #bgCanvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            pointer-events: none;
+            z-index: 0;
+            opacity: 0.6;
+        }
+
+        /* Shimmer Loading Skeleton */
+        @keyframes shimmer {
+            0% { background-position: -200% 0; }
+            100% { background-position: 200% 0; }
+        }
+        .skeleton {
+            background: linear-gradient(90deg, #171e30 25%, #232d48 50%, #171e30 75%);
+            background-size: 200% 100%;
+            animation: shimmer 1.5s infinite;
+        }
+
+        /* Phone Frame UI */
+        .phone-notch {
+            width: 90px;
+            height: 24px;
+            background: #000;
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 12px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 30;
+        }
+
+        /* Masonry Grid column layout */
+        .masonry-grid {
+            column-count: 1;
+            column-gap: 1.25rem;
+        }
+        @media (min-width: 640px) { .masonry-grid { column-count: 2; } }
+        @media (min-width: 1024px) { .masonry-grid { column-count: 3; } }
+        @media (min-width: 1280px) { .masonry-grid { column-count: 4; } }
+        @media (min-width: 1536px) { .masonry-grid { column-count: 5; } }
+
+        .masonry-item {
+            break-inside: avoid;
+            margin-bottom: 1.25rem;
+        }
+    </style>
 </head>
-<body>
+<body class="relative min-h-screen text-slate-100 flex flex-col selection:bg-indigo-500 selection:text-white">
 
-    <h1>Welcome to My Website</h1>
-    <p>This is a super simple HTML page built from scratch.</p>
+    <!-- Interactive Ambient Canvas Background -->
+    <canvas id="bgCanvas"></canvas>
 
+    <!-- Main Container -->
+    <div class="relative z-10 flex flex-col min-h-screen">
+
+        <!-- Top Navigation Bar -->
+        <header class="sticky top-0 z-40 w-full glass-panel border-b border-slate-800/80 px-4 lg:px-8 py-3.5 transition-all">
+            <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
+                
+                <!-- Brand Logo -->
+                <div class="flex items-center gap-3 cursor-pointer" onclick="resetFilters()">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-600 via-cyan-500 to-pink-500 p-0.5 flex items-center justify-center shadow-lg shadow-indigo-500/30">
+                        <div class="w-full h-full bg-cyber-900 rounded-[10px] flex items-center justify-center">
+                            <i data-lucide="sparkles" class="w-5 h-5 text-cyan-400 animate-pulse"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-2">
+                            <span class="font-extrabold text-xl tracking-tight bg-gradient-to-r from-white via-slate-200 to-indigo-300 bg-clip-text text-transparent">LuminaWall</span>
+                            <span class="text-[10px] uppercase font-bold tracking-widest px-2 py-0.5 rounded-full bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">PRO</span>
+                        </div>
+                        <p class="text-xs text-slate-400 font-medium">Wallpaper Studio & Downloader</p>
+                    </div>
+                </div>
+
+                <!-- Global Search Bar -->
+                <div class="flex-1 max-w-md hidden md:block relative">
+                    <div class="relative flex items-center">
+                        <i data-lucide="search" class="w-4 h-4 absolute left-3.5 text-slate-400 pointer-events-none"></i>
+                        <input type="text" id="searchInput" placeholder="Search 221 wallpapers by title, tags (#krishna, #4k, anime)..." 
+                            class="w-full pl-10 pr-10 py-2 rounded-xl bg-cyber-800/80 border border-slate-700/60 text-sm text-slate-200 placeholder-slate-400 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all"
+                            oninput="onSearchChange(this.value)">
+                        <button id="clearSearchBtn" onclick="clearSearch()" class="hidden absolute right-3 text-slate-400 hover:text-white">
+                            <i data-lucide="x" class="w-4 h-4"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="flex items-center gap-3">
+                    <!-- Favorites Button -->
+                    <button onclick="switchCategory('favorites')" class="relative flex items-center gap-2 px-3.5 py-2 rounded-xl glass-card text-sm font-semibold text-pink-400 hover:bg-pink-500/10 hover:border-pink-500/40 transition-all">
+                        <i data-lucide="heart" class="w-4 h-4 fill-pink-500/20 text-pink-400"></i>
+                        <span class="hidden sm:inline">Favorites</span>
+                        <span id="favoriteBadgeCount" class="px-1.5 py-0.5 text-xs font-bold rounded-full bg-pink-500/20 text-pink-300">0</span>
+                    </button>
+
+                    <!-- Layout Switcher Button -->
+                    <button onclick="toggleGridStyle()" class="p-2 rounded-xl glass-card text-slate-300 hover:text-white transition-all" title="Toggle Masonry / Bento Grid">
+                        <i data-lucide="grid" class="w-5 h-5"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Search Input -->
+            <div class="mt-3 md:hidden">
+                <div class="relative flex items-center">
+                    <i data-lucide="search" class="w-4 h-4 absolute left-3.5 text-slate-400 pointer-events-none"></i>
+                    <input type="text" id="mobileSearchInput" placeholder="Search wallpapers..." 
+                        class="w-full pl-10 pr-4 py-2 rounded-xl bg-cyber-800/80 border border-slate-700/60 text-sm text-slate-200 placeholder-slate-400 focus:outline-none focus:border-indigo-500"
+                        oninput="onSearchChange(this.value)">
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content Area -->
+        <main class="flex-1 max-w-7xl w-full mx-auto px-4 lg:px-8 py-8 flex flex-col gap-8">
+
+            <!-- Hero Section -->
+            <section class="relative rounded-3xl overflow-hidden glass-panel p-6 sm:p-10 border border-slate-800/80">
+                <div class="absolute -right-20 -top-20 w-80 h-80 bg-indigo-600/20 rounded-full blur-3xl pointer-events-none"></div>
+                <div class="absolute -left-20 -bottom-20 w-80 h-80 bg-cyan-600/20 rounded-full blur-3xl pointer-events-none"></div>
+
+                <div class="relative z-10 max-w-2xl flex flex-col gap-4">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 text-xs font-semibold">
+                        <i data-lucide="layers" class="w-3.5 h-3.5"></i>
+                        <span>High-Resolution Wallpaper Repository</span>
+                    </div>
+
+                    <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-white leading-tight">
+                        Transform Your Screen with <span class="bg-gradient-to-r from-indigo-400 via-cyan-300 to-pink-400 bg-clip-text text-transparent">LuminaWall</span>
+                    </h1>
+                    
+                    <p class="text-slate-300 text-base sm:text-lg font-normal leading-relaxed">
+                        Discover 221 ultra-quality wallpapers tailored specifically for Mobile Phones, Desktop Displays, or Universal screens with instant live mockups & direct batch downloading.
+                    </p>
+
+                    <!-- Stats Counter Pills -->
+                    <div class="flex flex-wrap items-center gap-3 pt-2">
+                        <div class="flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-cyber-800/80 border border-slate-700/60 text-xs font-semibold text-slate-200">
+                            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                            <span id="statTotal">221</span> Total Wallpapers
+                        </div>
+                        <div class="flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-cyber-800/80 border border-slate-700/60 text-xs font-semibold text-cyan-300">
+                            <i data-lucide="smartphone" class="w-3.5 h-3.5"></i>
+                            <span id="statPhone">179</span> Phone Wallpapers
+                        </div>
+                        <div class="flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-cyber-800/80 border border-slate-700/60 text-xs font-semibold text-indigo-300">
+                            <i data-lucide="monitor" class="w-3.5 h-3.5"></i>
+                            <span id="statDesktop">42</span> Desktop Wallpapers
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Category Tabs & Filters Bar -->
+            <section class="flex flex-col gap-4">
+                <div class="flex flex-wrap items-center justify-between gap-4 glass-panel p-3 rounded-2xl border border-slate-800/80">
+                    
+                    <!-- Main Category Tabs -->
+                    <div class="flex items-center gap-1.5 overflow-x-auto pb-1 sm:pb-0 w-full lg:w-auto">
+                        <button onclick="switchCategory('all')" id="tab-all" 
+                            class="category-tab active px-4 py-2 rounded-xl text-sm font-bold flex items-center gap-2 bg-indigo-600 text-white shadow-lg shadow-indigo-600/30 transition-all whitespace-nowrap">
+                            <i data-lucide="layers" class="w-4 h-4"></i>
+                            <span>All Wallpapers</span>
+                            <span class="px-2 py-0.5 rounded-full text-xs bg-indigo-700/60 font-mono" id="count-all">221</span>
+                        </button>
+                        <button onclick="switchCategory('phone')" id="tab-phone" 
+                            class="category-tab px-4 py-2 rounded-xl text-sm font-semibold flex items-center gap-2 text-slate-300 hover:text-white hover:bg-cyber-700/60 transition-all whitespace-nowrap">
+                            <i data-lucide="smartphone" class="w-4 h-4 text-cyan-400"></i>
+                            <span>Phone</span>
+                            <span class="px-2 py-0.5 rounded-full text-xs bg-cyber-800 text-slate-400 font-mono" id="count-phone">179</span>
+                        </button>
+                        <button onclick="switchCategory('desktop')" id="tab-desktop" 
+                            class="category-tab px-4 py-2 rounded-xl text-sm font-semibold flex items-center gap-2 text-slate-300 hover:text-white hover:bg-cyber-700/60 transition-all whitespace-nowrap">
+                            <i data-lucide="monitor" class="w-4 h-4 text-indigo-400"></i>
+                            <span>Desktop</span>
+                            <span class="px-2 py-0.5 rounded-full text-xs bg-cyber-800 text-slate-400 font-mono" id="count-desktop">42</span>
+                        </button>
+                        <button onclick="switchCategory('both')" id="tab-both" 
+                            class="category-tab px-4 py-2 rounded-xl text-sm font-semibold flex items-center gap-2 text-slate-300 hover:text-white hover:bg-cyber-700/60 transition-all whitespace-nowrap">
+                            <i data-lucide="sparkles" class="w-4 h-4 text-pink-400"></i>
+                            <span>Universal</span>
+                            <span class="px-2 py-0.5 rounded-full text-xs bg-cyber-800 text-slate-400 font-mono" id="count-both">0</span>
+                        </button>
+                    </div>
+
+                    <!-- Dropdown Sort & Filter Options -->
+                    <div class="flex items-center gap-3 w-full lg:w-auto justify-between lg:justify-end">
+                        <div class="flex items-center gap-2">
+                            <i data-lucide="sliders" class="w-4 h-4 text-slate-400"></i>
+                            <select id="sortSelect" onchange="onSortChange(this.value)" 
+                                class="bg-cyber-800 border border-slate-700/60 text-xs font-semibold text-slate-200 rounded-xl px-3 py-2 focus:outline-none focus:border-indigo-500">
+                                <option value="id-asc">Default Order</option>
+                                <option value="title-asc">Title (A - Z)</option>
+                                <option value="res-desc">Highest Resolution</option>
+                                <option value="size-desc">Largest File Size</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Popular Tag Pills Carousel -->
+                <div class="flex items-center gap-2 overflow-x-auto py-1 text-xs no-scrollbar">
+                    <span class="text-slate-400 font-semibold flex items-center gap-1 shrink-0">
+                        <i data-lucide="tag" class="w-3.5 h-3.5"></i> Quick Tags:
+                    </span>
+                    <button onclick="filterByTag('krishna')" class="px-3 py-1 rounded-full bg-cyber-800/80 border border-slate-700/60 text-slate-300 hover:border-indigo-500 hover:text-indigo-300 transition-all shrink-0">#krishna</button>
+                    <button onclick="filterByTag('radheradhe')" class="px-3 py-1 rounded-full bg-cyber-800/80 border border-slate-700/60 text-slate-300 hover:border-indigo-500 hover:text-indigo-300 transition-all shrink-0">#radheradhe</button>
+                    <button onclick="filterByTag('pink')" class="px-3 py-1 rounded-full bg-cyber-800/80 border border-slate-700/60 text-slate-300 hover:border-pink-500 hover:text-pink-300 transition-all shrink-0">#pink</button>
+                    <button onclick="filterByTag('pinterest')" class="px-3 py-1 rounded-full bg-cyber-800/80 border border-slate-700/60 text-slate-300 hover:border-cyan-500 hover:text-cyan-300 transition-all shrink-0">#pinterest</button>
+                    <button onclick="filterByTag('img')" class="px-3 py-1 rounded-full bg-cyber-800/80 border border-slate-700/60 text-slate-300 hover:border-indigo-500 hover:text-indigo-300 transition-all shrink-0">#photos</button>
+                    <button onclick="resetFilters()" class="px-3 py-1 rounded-full bg-slate-800/80 text-slate-400 hover:text-white transition-all shrink-0">Clear Tags</button>
+                </div>
+            </section>
+
+            <!-- Wallpaper Gallery Display -->
+            <section id="gallerySection" class="w-full">
+                <!-- Gallery Grid -->
+                <div id="wallpaperGrid" class="masonry-grid">
+                    <!-- Dynamic Wallpaper Cards rendered via JavaScript -->
+                </div>
+
+                <!-- Empty State -->
+                <div id="emptyState" class="hidden flex-col items-center justify-center py-20 text-center glass-panel rounded-3xl border border-slate-800">
+                    <div class="w-16 h-16 rounded-full bg-slate-800/80 flex items-center justify-center text-slate-400 mb-4">
+                        <i data-lucide="image-off" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-1">No Wallpapers Found</h3>
+                    <p class="text-slate-400 text-sm max-w-sm mb-4">Try clearing your search query or switching category filters.</p>
+                    <button onclick="resetFilters()" class="px-4 py-2 rounded-xl bg-indigo-600 text-white font-semibold text-sm hover:bg-indigo-500 transition-all">Reset All Filters</button>
+                </div>
+            </section>
+        </main>
+
+        <!-- Batch Selection Toolbar (Floating at Bottom) -->
+        <div id="batchToolbar" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 hidden max-w-xl w-[90%] glass-panel rounded-2xl p-4 border border-indigo-500/40 shadow-2xl shadow-indigo-600/30 flex items-center justify-between gap-4 transition-all">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-indigo-600 flex items-center justify-center text-white font-bold text-xs" id="batchCountBadge">0</div>
+                <div>
+                    <h4 class="text-xs font-bold text-white">Wallpapers Selected</h4>
+                    <p class="text-[11px] text-slate-400">Ready for batch zip export</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-2">
+                <button onclick="selectAllVisible()" class="px-3 py-1.5 rounded-lg bg-cyber-800 text-xs font-semibold text-slate-300 hover:text-white transition-all">Select All</button>
+                <button onclick="clearBatchSelection()" class="px-3 py-1.5 rounded-lg bg-cyber-800 text-xs font-semibold text-slate-300 hover:text-white transition-all">Deselect</button>
+                <button onclick="downloadBatchZip()" id="batchZipBtn" class="px-4 py-1.5 rounded-lg bg-gradient-to-r from-indigo-600 to-cyan-500 text-white text-xs font-bold flex items-center gap-2 hover:brightness-110 shadow-md transition-all">
+                    <i data-lucide="archive" class="w-3.5 h-3.5"></i>
+                    <span>Download ZIP</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Interactive Live Device Preview Modal -->
+        <div id="devicePreviewModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 sm:p-6 bg-black/80 backdrop-blur-xl">
+            <div class="relative w-full max-w-4xl glass-panel rounded-3xl border border-slate-700/80 overflow-hidden flex flex-col max-h-[90vh]">
+                
+                <!-- Modal Header -->
+                <div class="px-6 py-4 border-b border-slate-800 flex items-center justify-between bg-cyber-900/80">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-lg bg-indigo-600/20 text-indigo-400 flex items-center justify-center">
+                            <i data-lucide="eye" class="w-4 h-4"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-base font-bold text-white" id="modalWallpaperTitle">Wallpaper Preview Studio</h3>
+                            <p class="text-xs text-slate-400" id="modalWallpaperMeta">Live screen simulator</p>
+                        </div>
+                    </div>
+
+                    <!-- Device Switcher Tabs -->
+                    <div class="flex items-center gap-1 bg-cyber-800 p-1 rounded-xl border border-slate-700/60">
+                        <button onclick="switchPreviewDevice('phone')" id="previewTabPhone" class="px-3 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-1.5 bg-indigo-600 text-white transition-all">
+                            <i data-lucide="smartphone" class="w-3.5 h-3.5"></i> Mobile
+                        </button>
+                        <button onclick="switchPreviewDevice('desktop')" id="previewTabDesktop" class="px-3 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-1.5 text-slate-400 hover:text-white transition-all">
+                            <i data-lucide="monitor" class="w-3.5 h-3.5"></i> Desktop
+                        </button>
+                    </div>
+
+                    <button onclick="closeDevicePreview()" class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:text-white transition-all">
+                        <i data-lucide="x" class="w-5 h-5"></i>
+                    </button>
+                </div>
+
+                <!-- Modal Body: Interactive Device Stage -->
+                <div class="flex-1 overflow-y-auto p-6 flex items-center justify-center bg-cyber-900/50 min-h-[450px]">
+                    
+                    <!-- Mobile Smartphone Screen Frame -->
+                    <div id="phoneDeviceFrame" class="relative w-[280px] h-[560px] bg-slate-950 rounded-[44px] p-3 shadow-2xl border-[6px] border-slate-800 flex flex-col overflow-hidden transition-all">
+                        <!-- Dynamic Island / Notch -->
+                        <div class="phone-notch flex items-center justify-center gap-2">
+                            <div class="w-3 h-3 rounded-full bg-slate-900"></div>
+                            <div class="w-2 h-2 rounded-full bg-indigo-950"></div>
+                        </div>
+
+                        <!-- Phone Screen Display Container -->
+                        <div class="relative flex-1 rounded-[34px] overflow-hidden bg-black flex flex-col">
+                            <!-- Background Image -->
+                            <img id="phoneWallpaperImg" src="" alt="Phone Preview" class="absolute inset-0 w-full h-full object-cover">
+                            
+                            <!-- Lock Screen Overlay UI -->
+                            <div class="relative z-20 flex-1 flex flex-col justify-between p-5 pt-8 bg-gradient-to-b from-black/40 via-transparent to-black/60 text-white">
+                                <!-- Status Bar -->
+                                <div class="flex items-center justify-between text-[11px] font-semibold text-slate-200 px-1">
+                                    <span id="phoneClockStatus">09:41</span>
+                                    <div class="flex items-center gap-1.5">
+                                        <i data-lucide="wifi" class="w-3 h-3"></i>
+                                        <i data-lucide="battery" class="w-3.5 h-3.5"></i>
+                                    </div>
+                                </div>
+
+                                <!-- Lock Screen Clock Widget -->
+                                <div class="flex flex-col items-center mt-6 text-center">
+                                    <p class="text-xs font-semibold uppercase tracking-widest text-slate-300 drop-shadow">Friday, September 18</p>
+                                    <h2 id="phoneLockClock" class="text-5xl font-extrabold tracking-tight drop-shadow-md my-1 font-mono">15:55</h2>
+                                    <div class="mt-3 px-3 py-1 rounded-full bg-black/30 backdrop-blur-md border border-white/10 text-[10px] text-slate-200 flex items-center gap-1">
+                                        <i data-lucide="sparkles" class="w-3 h-3 text-cyan-400"></i> LuminaWall HD
+                                    </div>
+                                </div>
+
+                                <!-- Bottom Quick Actions -->
+                                <div class="flex items-center justify-between px-2 pb-2">
+                                    <div class="w-10 h-10 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white">
+                                        <i data-lucide="flashlight" class="w-4 h-4"></i>
+                                    </div>
+                                    <div class="w-10 h-10 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white">
+                                        <i data-lucide="camera" class="w-4 h-4"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Desktop Monitor Screen Frame -->
+                    <div id="desktopDeviceFrame" class="hidden flex-col items-center w-full max-w-2xl transition-all">
+                        <!-- Monitor Bezel -->
+                        <div class="relative w-full aspect-video bg-slate-950 rounded-2xl p-2.5 shadow-2xl border-[4px] border-slate-800 flex flex-col overflow-hidden">
+                            <!-- Desktop Screen Display -->
+                            <div class="relative flex-1 rounded-lg overflow-hidden bg-slate-900 flex flex-col">
+                                <!-- Background Image -->
+                                <img id="desktopWallpaperImg" src="" alt="Desktop Preview" class="absolute inset-0 w-full h-full object-cover">
+                                
+                                <!-- Desktop Taskbar & Widgets Simulation -->
+                                <div class="relative z-20 flex-1 flex flex-col justify-between p-4 bg-gradient-to-t from-black/60 via-transparent to-black/20">
+                                    <!-- Window Header Simulation -->
+                                    <div class="flex items-center gap-2">
+                                        <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                                        <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                                        <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                                    </div>
+
+                                    <!-- Bottom macOS / Windows Dock -->
+                                    <div class="self-center flex items-center gap-3 px-4 py-2 rounded-2xl bg-white/10 backdrop-blur-xl border border-white/20 shadow-xl">
+                                        <div class="w-8 h-8 rounded-xl bg-blue-500 flex items-center justify-center text-white shadow"><i data-lucide="globe" class="w-4 h-4"></i></div>
+                                        <div class="w-8 h-8 rounded-xl bg-emerald-500 flex items-center justify-center text-white shadow"><i data-lucide="folder" class="w-4 h-4"></i></div>
+                                        <div class="w-8 h-8 rounded-xl bg-indigo-600 flex items-center justify-center text-white shadow"><i data-lucide="terminal" class="w-4 h-4"></i></div>
+                                        <div class="w-8 h-8 rounded-xl bg-pink-500 flex items-center justify-center text-white shadow"><i data-lucide="music" class="w-4 h-4"></i></div>
+                                        <div class="w-8 h-8 rounded-xl bg-cyan-500 flex items-center justify-center text-white shadow"><i data-lucide="settings" class="w-4 h-4"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Monitor Metallic Stand -->
+                        <div class="w-32 h-6 bg-gradient-to-b from-slate-700 to-slate-800 rounded-b-lg"></div>
+                        <div class="w-48 h-2 bg-slate-700 rounded-full shadow-lg"></div>
+                    </div>
+                </div>
+
+                <!-- Modal Footer Toolbar -->
+                <div class="px-6 py-4 border-t border-slate-800 bg-cyber-900 flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <button onclick="toggleFavoriteCurrentModal()" id="modalFavBtn" class="px-3.5 py-2 rounded-xl bg-cyber-800 text-xs font-semibold text-pink-400 flex items-center gap-2 hover:bg-pink-500/10 transition-all">
+                            <i data-lucide="heart" class="w-4 h-4"></i> Favorite
+                        </button>
+                    </div>
+
+                    <a id="modalDownloadLink" href="#" download="" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-indigo-600 to-cyan-500 text-white font-bold text-sm flex items-center gap-2 hover:brightness-110 shadow-lg shadow-indigo-600/30 transition-all">
+                        <i data-lucide="download" class="w-4 h-4"></i> Direct Download HD
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Full-Screen Lightbox Modal -->
+        <div id="lightboxModal" class="fixed inset-0 z-50 hidden bg-black/95 backdrop-blur-2xl flex flex-col justify-between p-4 sm:p-8 transition-all">
+            <!-- Top Controls -->
+            <div class="flex items-center justify-between relative z-10">
+                <div class="flex items-center gap-3">
+                    <span id="lightboxCounter" class="px-3 py-1 rounded-full bg-slate-800 text-xs font-mono text-slate-300">1 / 221</span>
+                    <h3 id="lightboxTitle" class="text-sm font-bold text-white truncate max-w-xs sm:max-w-md">Wallpaper</h3>
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <button onclick="downloadCurrentLightbox()" class="p-2.5 rounded-full bg-slate-800 text-slate-200 hover:text-white hover:bg-indigo-600 transition-all" title="Download">
+                        <i data-lucide="download" class="w-5 h-5"></i>
+                    </button>
+                    <button onclick="closeLightbox()" class="p-2.5 rounded-full bg-slate-800 text-slate-200 hover:text-white hover:bg-red-600 transition-all" title="Close (Esc)">
+                        <i data-lucide="x" class="w-5 h-5"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lightbox Main Image Stage -->
+            <div class="relative flex-1 flex items-center justify-center my-4 overflow-hidden">
+                <button onclick="prevLightbox()" class="absolute left-2 sm:left-6 z-20 p-3 rounded-full bg-black/50 text-white hover:bg-indigo-600 transition-all">
+                    <i data-lucide="chevron-left" class="w-6 h-6"></i>
+                </button>
+                
+                <img id="lightboxImg" src="" alt="Fullscreen wallpaper" class="max-h-full max-w-full object-contain rounded-2xl shadow-2xl transition-all duration-300">
+
+                <button onclick="nextLightbox()" class="absolute right-2 sm:right-6 z-20 p-3 rounded-full bg-black/50 text-white hover:bg-indigo-600 transition-all">
+                    <i data-lucide="chevron-right" class="w-6 h-6"></i>
+                </button>
+            </div>
+
+            <!-- Bottom Detail Footer -->
+            <div class="flex flex-wrap items-center justify-between gap-4 relative z-10 bg-slate-900/60 p-4 rounded-2xl border border-slate-800 max-w-4xl mx-auto w-full">
+                <div class="flex items-center gap-4 text-xs text-slate-300">
+                    <div><span class="text-slate-500">Resolution:</span> <strong id="lightboxRes" class="text-white">1080 x 1920</strong></div>
+                    <div><span class="text-slate-500">Size:</span> <strong id="lightboxSize" class="text-white">1.2 MB</strong></div>
+                    <div><span class="text-slate-500">Target:</span> <strong id="lightboxCategory" class="text-indigo-400 capitalize">Phone</strong></div>
+                </div>
+
+                <div id="lightboxTags" class="flex flex-wrap gap-1.5">
+                    <!-- Dynamic tag badges -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Toast Notifications -->
+        <div id="toastContainer" class="fixed top-20 right-6 z-50 flex flex-col gap-2 pointer-events-none"></div>
+
+        <!-- Footer -->
+        <footer class="mt-auto border-t border-slate-800/80 glass-panel py-8 px-4 text-center text-xs text-slate-400">
+            <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div class="flex items-center gap-2">
+                    <i data-lucide="sparkles" class="w-4 h-4 text-indigo-400"></i>
+                    <span class="font-bold text-slate-200">LuminaWall Studio</span> — Powered by Antigravity
+                </div>
+                <p>Curated Collection of 221 HD & 4K Wallpapers</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Application Script -->
+    <script>
+        // Global Application State
+        let allWallpapers = [];
+        let filteredWallpapers = [];
+        let favorites = new Set(JSON.parse(localStorage.getItem('lumina_favs') || '[]'));
+        let selectedBatch = new Set();
+        let currentCategory = 'all';
+        let searchQuery = '';
+        let currentSort = 'id-asc';
+        let currentLightboxIndex = 0;
+        let activePreviewWallpaper = null;
+
+        // Initialize Lucide Icons & App
+        document.addEventListener('DOMContentLoaded', () => {
+            lucide.createIcons();
+            initAmbientCanvas();
+            loadWallpapers();
+            startLockClock();
+
+            // Keyboard shortcut listeners
+            document.addEventListener('keydown', (e) => {
+                if (!document.getElementById('lightboxModal').classList.contains('hidden')) {
+                    if (e.key === 'ArrowRight') nextLightbox();
+                    if (e.key === 'ArrowLeft') prevLightbox();
+                    if (e.key === 'Escape') closeLightbox();
+                }
+                if (!document.getElementById('devicePreviewModal').classList.contains('hidden')) {
+                    if (e.key === 'Escape') closeDevicePreview();
+                }
+            });
+        });
+
+        // Load wallpaper index JSON
+        async function loadWallpapers() {
+            try {
+                const response = await fetch('wallpapers.json');
+                allWallpapers = await response.json();
+                
+                updateStats();
+                applyFilters();
+            } catch (err) {
+                console.error('Failed to load wallpapers.json', err);
+                showToast('Failed to load wallpapers index', 'error');
+            }
+        }
+
+        // Update statistics badges
+        function updateStats() {
+            const phoneCount = allWallpapers.filter(w => w.category === 'phone').length;
+            const desktopCount = allWallpapers.filter(w => w.category === 'desktop').length;
+            const bothCount = allWallpapers.filter(w => w.category === 'both').length;
+
+            document.getElementById('statTotal').innerText = allWallpapers.length;
+            document.getElementById('statPhone').innerText = phoneCount;
+            document.getElementById('statDesktop').innerText = desktopCount;
+
+            document.getElementById('count-all').innerText = allWallpapers.length;
+            document.getElementById('count-phone').innerText = phoneCount;
+            document.getElementById('count-desktop').innerText = desktopCount;
+            document.getElementById('count-both').innerText = bothCount;
+
+            document.getElementById('favoriteBadgeCount').innerText = favorites.size;
+        }
+
+        // Filter & Sort Logic
+        function applyFilters() {
+            filteredWallpapers = allWallpapers.filter(w => {
+                // Category filter
+                if (currentCategory === 'phone' && w.category !== 'phone') return false;
+                if (currentCategory === 'desktop' && w.category !== 'desktop') return false;
+                if (currentCategory === 'both' && w.category !== 'both') return false;
+                if (currentCategory === 'favorites' && !favorites.has(w.id)) return false;
+
+                // Search query
+                if (searchQuery) {
+                    const q = searchQuery.toLowerCase();
+                    const matchTitle = w.title.toLowerCase().includes(q);
+                    const matchFilename = w.filename.toLowerCase().includes(q);
+                    const matchTags = w.tags.some(t => t.toLowerCase().includes(q));
+                    if (!matchTitle && !matchFilename && !matchTags) return false;
+                }
+
+                return true;
+            });
+
+            // Sort
+            if (currentSort === 'title-asc') {
+                filteredWallpapers.sort((a, b) => a.title.localeCompare(b.title));
+            } else if (currentSort === 'res-desc') {
+                filteredWallpapers.sort((a, b) => (b.width * b.height) - (a.width * a.height));
+            } else if (currentSort === 'size-desc') {
+                filteredWallpapers.sort((a, b) => b.sizeBytes - a.sizeBytes);
+            } else {
+                filteredWallpapers.sort((a, b) => a.id - b.id);
+            }
+
+            renderGallery();
+        }
+
+        // Render Gallery Grid
+        function renderGallery() {
+            const grid = document.getElementById('wallpaperGrid');
+            const emptyState = document.getElementById('emptyState');
+
+            grid.innerHTML = '';
+
+            if (filteredWallpapers.length === 0) {
+                emptyState.classList.remove('hidden');
+                emptyState.classList.add('flex');
+                return;
+            } else {
+                emptyState.classList.add('hidden');
+                emptyState.classList.remove('flex');
+            }
+
+            filteredWallpapers.forEach(w => {
+                const isFav = favorites.has(w.id);
+                const isChecked = selectedBatch.has(w.id);
+
+                const card = document.createElement('div');
+                card.className = 'masonry-item card-perspective';
+                card.innerHTML = `
+                    <div class="glass-card tilt-card rounded-2xl overflow-hidden relative group">
+                        <!-- Image & Shimmer Skeleton -->
+                        <div class="relative bg-cyber-800 overflow-hidden cursor-pointer" onclick="openLightbox(${w.id})">
+                            <img src="${w.encodedPath}" alt="${w.title}" loading="lazy" 
+                                class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500 ease-out">
+                            
+                            <!-- Badges -->
+                            <div class="absolute top-3 left-3 flex items-center gap-1.5 z-10">
+                                <span class="px-2 py-1 rounded-lg text-[10px] font-bold tracking-wider uppercase backdrop-blur-md border ${
+                                    w.category === 'phone' ? 'bg-cyan-950/70 text-cyan-300 border-cyan-500/40' : 
+                                    w.category === 'desktop' ? 'bg-indigo-950/70 text-indigo-300 border-indigo-500/40' : 
+                                    'bg-pink-950/70 text-pink-300 border-pink-500/40'
+                                }">
+                                    ${w.category === 'phone' ? '📱 Mobile' : w.category === 'desktop' ? '💻 Desktop' : '✨ Both'}
+                                </span>
+                            </div>
+
+                            <!-- Batch Checkbox -->
+                            <div class="absolute top-3 right-3 z-20" onclick="event.stopPropagation()">
+                                <input type="checkbox" onchange="toggleBatchItem(${w.id})" ${isChecked ? 'checked' : ''} 
+                                    class="w-5 h-5 rounded-md border-slate-600 text-indigo-600 focus:ring-indigo-500 bg-cyber-900/80 cursor-pointer">
+                            </div>
+
+                            <!-- Resolution Badge -->
+                            <div class="absolute bottom-3 left-3 z-10">
+                                <span class="px-2 py-0.5 rounded-md text-[10px] font-mono bg-black/60 text-slate-300 backdrop-blur-sm">
+                                    ${w.width}x${w.height}
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Hover Overlay Actions Toolbar -->
+                        <div class="p-3 bg-cyber-800/90 border-t border-slate-700/50 flex items-center justify-between gap-2">
+                            <div class="truncate">
+                                <h4 class="text-xs font-bold text-slate-200 truncate">${w.title}</h4>
+                                <p class="text-[10px] text-slate-400 font-mono">${w.size}</p>
+                            </div>
+
+                            <div class="flex items-center gap-1">
+                                <!-- Favorite Button -->
+                                <button onclick="toggleFavorite(${w.id})" class="p-1.5 rounded-lg text-slate-400 hover:text-pink-400 hover:bg-pink-500/10 transition-all" title="Favorite">
+                                    <i data-lucide="heart" class="w-4 h-4 ${isFav ? 'fill-pink-500 text-pink-500' : ''}"></i>
+                                </button>
+                                
+                                <!-- Live Preview Button -->
+                                <button onclick="openDevicePreview(${w.id})" class="p-1.5 rounded-lg text-slate-400 hover:text-cyan-400 hover:bg-cyan-500/10 transition-all" title="Live Device Preview">
+                                    <i data-lucide="eye" class="w-4 h-4"></i>
+                                </button>
+
+                                <!-- Direct Download Button -->
+                                <a href="${w.encodedPath}" download="${w.filename}" onclick="showToast('Downloading ${w.title}...', 'success')" 
+                                    class="p-1.5 rounded-lg text-slate-400 hover:text-indigo-400 hover:bg-indigo-500/10 transition-all" title="Download HD">
+                                    <i data-lucide="download" class="w-4 h-4"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+
+            lucide.createIcons();
+            gsap.from('#wallpaperGrid > div', {
+                opacity: 0,
+                y: 20,
+                stagger: 0.03,
+                duration: 0.4,
+                ease: 'power2.out'
+            });
+        }
+
+        // Category Switcher
+        function switchCategory(cat) {
+            currentCategory = cat;
+            document.querySelectorAll('.category-tab').forEach(t => {
+                t.classList.remove('bg-indigo-600', 'text-white', 'shadow-lg', 'shadow-indigo-600/30', 'font-bold');
+                t.classList.add('text-slate-300', 'font-semibold');
+            });
+
+            const activeBtn = document.getElementById(`tab-${cat}`);
+            if (activeBtn) {
+                activeBtn.classList.add('bg-indigo-600', 'text-white', 'shadow-lg', 'shadow-indigo-600/30', 'font-bold');
+                activeBtn.classList.remove('text-slate-300');
+            }
+
+            applyFilters();
+        }
+
+        // Search Handlers
+        function onSearchChange(val) {
+            searchQuery = val;
+            document.getElementById('searchInput').value = val;
+            document.getElementById('mobileSearchInput').value = val;
+            
+            const clearBtn = document.getElementById('clearSearchBtn');
+            if (val) clearBtn.classList.remove('hidden');
+            else clearBtn.classList.add('hidden');
+
+            applyFilters();
+        }
+
+        function clearSearch() {
+            onSearchChange('');
+        }
+
+        function filterByTag(tag) {
+            onSearchChange(tag);
+        }
+
+        function resetFilters() {
+            searchQuery = '';
+            document.getElementById('searchInput').value = '';
+            document.getElementById('mobileSearchInput').value = '';
+            document.getElementById('clearSearchBtn').classList.add('hidden');
+            document.getElementById('sortSelect').value = 'id-asc';
+            currentSort = 'id-asc';
+            switchCategory('all');
+        }
+
+        function onSortChange(sortVal) {
+            currentSort = sortVal;
+            applyFilters();
+        }
+
+        // Favorites Persist
+        function toggleFavorite(id) {
+            if (favorites.has(id)) {
+                favorites.delete(id);
+                showToast('Removed from favorites', 'info');
+            } else {
+                favorites.add(id);
+                showToast('Added to favorites ❤️', 'success');
+            }
+            localStorage.setItem('lumina_favs', JSON.stringify(Array.from(favorites)));
+            updateStats();
+            applyFilters();
+        }
+
+        // Batch Items Selection
+        function toggleBatchItem(id) {
+            if (selectedBatch.has(id)) selectedBatch.delete(id);
+            else selectedBatch.add(id);
+            updateBatchToolbar();
+        }
+
+        function updateBatchToolbar() {
+            const bar = document.getElementById('batchToolbar');
+            const badge = document.getElementById('batchCountBadge');
+
+            if (selectedBatch.size > 0) {
+                badge.innerText = selectedBatch.size;
+                bar.classList.remove('hidden');
+            } else {
+                bar.classList.add('hidden');
+            }
+        }
+
+        function selectAllVisible() {
+            filteredWallpapers.forEach(w => selectedBatch.add(w.id));
+            updateBatchToolbar();
+            renderGallery();
+        }
+
+        function clearBatchSelection() {
+            selectedBatch.clear();
+            updateBatchToolbar();
+            renderGallery();
+        }
+
+        // Download ZIP Archive via JSZip
+        async function downloadBatchZip() {
+            if (selectedBatch.size === 0) return;
+
+            const btn = document.getElementById('batchZipBtn');
+            btn.disabled = true;
+            btn.innerHTML = `<i data-lucide="loader" class="w-3.5 h-3.5 animate-spin"></i> Preparing ZIP...`;
+
+            showToast(`Generating ZIP for ${selectedBatch.size} wallpapers...`, 'info');
+
+            const zip = new JSZip();
+            const folder = zip.folder("LuminaWallpapers");
+
+            const selectedList = allWallpapers.filter(w => selectedBatch.has(w.id));
+            
+            for (let i = 0; i < selectedList.length; i++) {
+                const item = selectedList[i];
+                try {
+                    const blob = await fetch(item.encodedPath).then(res => res.blob());
+                    folder.file(item.filename, blob);
+                } catch (e) {
+                    console.error("Failed to add to zip:", item.filename, e);
+                }
+            }
+
+            const content = await zip.generateAsync({ type: "blob" });
+            const url = URL.createObjectURL(content);
+            const a = document.createElement("a");
+            a.href = url;
+            a.download = `LuminaWallpapers_${new Date().getTime()}.zip`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+
+            btn.disabled = false;
+            btn.innerHTML = `<i data-lucide="archive" class="w-3.5 h-3.5"></i> Download ZIP`;
+            lucide.createIcons();
+
+            showToast('ZIP Download complete!', 'success');
+            clearBatchSelection();
+        }
+
+        // Interactive Live Device Preview Modal
+        function openDevicePreview(id) {
+            activePreviewWallpaper = allWallpapers.find(w => w.id === id);
+            if (!activePreviewWallpaper) return;
+
+            document.getElementById('modalWallpaperTitle').innerText = activePreviewWallpaper.title;
+            document.getElementById('modalWallpaperMeta').innerText = `${activePreviewWallpaper.width}x${activePreviewWallpaper.height} • ${activePreviewWallpaper.size}`;
+            
+            document.getElementById('phoneWallpaperImg').src = activePreviewWallpaper.encodedPath;
+            document.getElementById('desktopWallpaperImg').src = activePreviewWallpaper.encodedPath;
+            
+            const dlLink = document.getElementById('modalDownloadLink');
+            dlLink.href = activePreviewWallpaper.encodedPath;
+            dlLink.download = activePreviewWallpaper.filename;
+
+            // Auto-select initial preview mode based on image aspect ratio
+            if (activePreviewWallpaper.category === 'desktop') {
+                switchPreviewDevice('desktop');
+            } else {
+                switchPreviewDevice('phone');
+            }
+
+            const modal = document.getElementById('devicePreviewModal');
+            modal.classList.remove('hidden');
+            gsap.fromTo('#devicePreviewModal > div', { scale: 0.9, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.3 });
+        }
+
+        function closeDevicePreview() {
+            document.getElementById('devicePreviewModal').classList.add('hidden');
+        }
+
+        function switchPreviewDevice(device) {
+            const phoneTab = document.getElementById('previewTabPhone');
+            const desktopTab = document.getElementById('previewTabDesktop');
+            const phoneFrame = document.getElementById('phoneDeviceFrame');
+            const desktopFrame = document.getElementById('desktopDeviceFrame');
+
+            if (device === 'phone') {
+                phoneTab.className = "px-3 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-1.5 bg-indigo-600 text-white transition-all";
+                desktopTab.className = "px-3 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-1.5 text-slate-400 hover:text-white transition-all";
+                phoneFrame.classList.remove('hidden');
+                desktopFrame.classList.add('hidden');
+            } else {
+                desktopTab.className = "px-3 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-1.5 bg-indigo-600 text-white transition-all";
+                phoneTab.className = "px-3 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-1.5 text-slate-400 hover:text-white transition-all";
+                desktopFrame.classList.remove('hidden');
+                desktopFrame.classList.add('flex');
+                phoneFrame.classList.add('hidden');
+            }
+        }
+
+        function toggleFavoriteCurrentModal() {
+            if (activePreviewWallpaper) {
+                toggleFavorite(activePreviewWallpaper.id);
+            }
+        }
+
+        // Lightbox Modal
+        function openLightbox(id) {
+            currentLightboxIndex = filteredWallpapers.findIndex(w => w.id === id);
+            if (currentLightboxIndex === -1) return;
+            renderLightboxItem();
+            document.getElementById('lightboxModal').classList.remove('hidden');
+        }
+
+        function renderLightboxItem() {
+            const item = filteredWallpapers[currentLightboxIndex];
+            if (!item) return;
+
+            document.getElementById('lightboxCounter').innerText = `${currentLightboxIndex + 1} / ${filteredWallpapers.length}`;
+            document.getElementById('lightboxTitle').innerText = item.title;
+            document.getElementById('lightboxImg').src = item.encodedPath;
+            document.getElementById('lightboxRes').innerText = `${item.width} x ${item.height}`;
+            document.getElementById('lightboxSize').innerText = item.size;
+            document.getElementById('lightboxCategory').innerText = item.category;
+
+            const tagsContainer = document.getElementById('lightboxTags');
+            tagsContainer.innerHTML = item.tags.map(t => `<span class="px-2 py-0.5 rounded-md bg-slate-800 text-[10px] text-slate-300">#${t}</span>`).join('');
+        }
+
+        function prevLightbox() {
+            if (currentLightboxIndex > 0) {
+                currentLightboxIndex--;
+            } else {
+                currentLightboxIndex = filteredWallpapers.length - 1;
+            }
+            renderLightboxItem();
+        }
+
+        function nextLightbox() {
+            if (currentLightboxIndex < filteredWallpapers.length - 1) {
+                currentLightboxIndex++;
+            } else {
+                currentLightboxIndex = 0;
+            }
+            renderLightboxItem();
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightboxModal').classList.add('hidden');
+        }
+
+        function downloadCurrentLightbox() {
+            const item = filteredWallpapers[currentLightboxIndex];
+            if (item) {
+                const a = document.createElement('a');
+                a.href = item.encodedPath;
+                a.download = item.filename;
+                a.click();
+                showToast(`Downloading ${item.title}...`, 'success');
+            }
+        }
+
+        // Live Lock Clock
+        function startLockClock() {
+            function update() {
+                const now = new Date();
+                const hrs = String(now.getHours()).padStart(2, '0');
+                const mins = String(now.getMinutes()).padStart(2, '0');
+                document.getElementById('phoneLockClock').innerText = `${hrs}:${mins}`;
+                document.getElementById('phoneClockStatus').innerText = `${hrs}:${mins}`;
+            }
+            update();
+            setInterval(update, 1000);
+        }
+
+        // Toast Helper
+        function showToast(msg, type = 'info') {
+            const container = document.getElementById('toastContainer');
+            const toast = document.createElement('div');
+            toast.className = `px-4 py-2.5 rounded-xl glass-panel text-xs font-semibold text-white shadow-xl border flex items-center gap-2 transition-all transform translate-x-10 opacity-0 pointer-events-auto ${
+                type === 'success' ? 'border-emerald-500/50 bg-emerald-950/80 text-emerald-200' : 'border-indigo-500/50 bg-cyber-800'
+            }`;
+            toast.innerHTML = `<i data-lucide="${type === 'success' ? 'check-circle' : 'info'}" class="w-4 h-4"></i> <span>${msg}</span>`;
+            
+            container.appendChild(toast);
+            lucide.createIcons();
+
+            setTimeout(() => {
+                toast.classList.remove('translate-x-10', 'opacity-0');
+            }, 10);
+
+            setTimeout(() => {
+                toast.classList.add('translate-x-10', 'opacity-0');
+                setTimeout(() => toast.remove(), 300);
+            }, 3000);
+        }
+
+        // Grid Toggle View
+        function toggleGridStyle() {
+            const grid = document.getElementById('wallpaperGrid');
+            if (grid.classList.contains('masonry-grid')) {
+                grid.className = "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5";
+            } else {
+                grid.className = "masonry-grid";
+            }
+        }
+
+        // Interactive Ambient Particle Canvas (Aceternity FX)
+        function initAmbientCanvas() {
+            const canvas = document.getElementById('bgCanvas');
+            const ctx = canvas.getContext('2d');
+
+            function resize() {
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+            }
+            resize();
+            window.addEventListener('resize', resize);
+
+            const particles = Array.from({ length: 35 }, () => ({
+                x: Math.random() * canvas.width,
+                y: Math.random() * canvas.height,
+                r: Math.random() * 3 + 1,
+                dx: (Math.random() - 0.5) * 0.4,
+                dy: (Math.random() - 0.5) * 0.4,
+                alpha: Math.random() * 0.4 + 0.1
+            }));
+
+            function animate() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                particles.forEach(p => {
+                    p.x += p.dx;
+                    p.y += p.dy;
+
+                    if (p.x < 0 || p.x > canvas.width) p.dx *= -1;
+                    if (p.y < 0 || p.y > canvas.height) p.dy *= -1;
+
+                    ctx.beginPath();
+                    ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+                    ctx.fillStyle = `rgba(99, 102, 241, ${p.alpha})`;
+                    ctx.shadowBlur = 10;
+                    ctx.shadowColor = '#6366f1';
+                    ctx.fill();
+                });
+                requestAnimationFrame(animate);
+            }
+            animate();
+        }
+    </script>
 </body>
 </html>
