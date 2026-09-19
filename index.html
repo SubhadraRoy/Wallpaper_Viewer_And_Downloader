@@ -2,28 +2,33 @@
 <html lang="en" class="dark scroll-smooth">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
     
-    <!-- Primary Web Quality & Technical SEO Metadata -->
-    <title>LuminaWall 2.0 — Next-Gen Wallpaper Viewer, Studio & Downloader</title>
-    <meta name="description" content="Discover, preview, edit, and download high-resolution 4K & HD Mobile, Desktop, and Matching Combo Wallpapers with real-time image filter studio.">
+    <!-- Mobile Web App & PWA Metadata -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="theme-color" content="#030508">
 
+    <!-- Technical SEO Metadata -->
+    <title>LuminaWall 2.0 — Next-Gen Wallpaper Studio & Downloader</title>
+    <meta name="description" content="Explore, edit, and download high-resolution 4K & HD Wallpapers for Mobile (Phone) & Desktop (PC) with matching combo pairs and real-time image filter studio.">
+
     <!-- Open Graph Social Sharing Metadata -->
-    <meta property="og:title" content="LuminaWall 2.0 — Next-Gen Wallpaper Viewer & Downloader Studio">
-    <meta property="og:description" content="High-resolution wallpaper gallery with live device previews, real-time image filter studio, and matching Mobile + Desktop combo pairs.">
+    <meta property="og:title" content="LuminaWall 2.0 — Next-Gen Wallpaper Studio & Downloader">
+    <meta property="og:description" content="Super-compatible Mobile & PC Wallpaper Studio featuring live device simulators, image filter studio, and matching Phone + PC combo sets.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="background.jpg">
 
-    <!-- JSON-LD Structured Data Schema (Web Quality & SEO) -->
+    <!-- JSON-LD Structured Data Schema -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebApplication",
       "name": "LuminaWall Studio",
       "applicationCategory": "MultimediaApplication",
-      "operatingSystem": "All",
-      "description": "High-Resolution Wallpaper Viewer, Live Filter Studio, and Dual-Device Combo Pair Downloader",
+      "operatingSystem": "iOS, Android, Windows, macOS, Linux",
+      "description": "High-Resolution Wallpaper Viewer, Live Filter Studio, and Dual-Device Combo Pair Downloader for Mobile & Desktop",
       "offers": {
         "@type": "Offer",
         "price": "0",
@@ -71,7 +76,7 @@
         }
     </script>
     
-    <!-- Google Fonts Preload & Style -->
+    <!-- Google Fonts Preload -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -95,6 +100,7 @@
             color: #f1f5f9;
             overflow-x: hidden;
             min-height: 100vh;
+            -webkit-tap-highlight-color: transparent;
         }
 
         /* Ambient Glassmorphism Design System */
@@ -116,7 +122,7 @@
         .glass-card:hover {
             border-color: rgba(99, 102, 241, 0.5);
             box-shadow: 0 20px 40px -15px rgba(99, 102, 241, 0.35), 0 0 20px 0 rgba(6, 182, 212, 0.15);
-            transform: translateY(-5px);
+            transform: translateY(-4px);
         }
 
         /* WebGL Canvas Particle Mesh Background */
@@ -128,32 +134,40 @@
             height: 100vh;
             pointer-events: none;
             z-index: 0;
-            opacity: 0.75;
+            opacity: 0.7;
         }
 
-        /* Custom Magnetic Cursor Follower */
-        .cursor-dot {
-            width: 8px;
-            height: 8px;
-            background-color: #06b6d4;
-            border-radius: 50%;
-            position: fixed;
-            pointer-events: none;
-            z-index: 9999;
-            transition: transform 0.08s ease-out;
-            transform: translate(-50%, -50%);
+        /* Custom Magnetic Cursor Follower - Desktop PC Pointer Only */
+        @media (hover: hover) and (pointer: fine) {
+            .cursor-dot {
+                width: 8px;
+                height: 8px;
+                background-color: #06b6d4;
+                border-radius: 50%;
+                position: fixed;
+                pointer-events: none;
+                z-index: 9999;
+                transition: transform 0.08s ease-out;
+                transform: translate(-50%, -50%);
+            }
+
+            .cursor-ring {
+                width: 36px;
+                height: 36px;
+                border: 1.5px solid rgba(99, 102, 241, 0.5);
+                border-radius: 50%;
+                position: fixed;
+                pointer-events: none;
+                z-index: 9998;
+                transition: transform 0.16s cubic-bezier(0.16, 1, 0.3, 1), width 0.2s, height 0.2s;
+                transform: translate(-50%, -50%);
+            }
         }
 
-        .cursor-ring {
-            width: 36px;
-            height: 36px;
-            border: 1.5px solid rgba(99, 102, 241, 0.5);
-            border-radius: 50%;
-            position: fixed;
-            pointer-events: none;
-            z-index: 9998;
-            transition: transform 0.16s cubic-bezier(0.16, 1, 0.3, 1), width 0.2s, height 0.2s;
-            transform: translate(-50%, -50%);
+        @media (hover: none) or (pointer: coarse) {
+            .cursor-dot, .cursor-ring {
+                display: none !important;
+            }
         }
 
         /* Phone Frame Notch */
@@ -170,7 +184,22 @@
             z-index: 30;
         }
 
-        /* Masonry Grid */
+        /* Responsive Simulator Phone Frame */
+        .phone-simulator-frame {
+            width: 270px;
+            height: 540px;
+            max-width: 85vw;
+            max-height: 70vh;
+        }
+
+        @media (max-width: 480px) {
+            .phone-simulator-frame {
+                width: 230px;
+                height: 460px;
+            }
+        }
+
+        /* Responsive Masonry Grid */
         .masonry-grid {
             column-count: 1;
             column-gap: 1.25rem;
@@ -197,7 +226,7 @@
 </head>
 <body class="relative min-h-screen text-slate-100 flex flex-col selection:bg-indigo-500 selection:text-white">
 
-    <!-- Interactive Magnetic Cursor Follower -->
+    <!-- Interactive Magnetic Cursor Follower (Desktop PC Only) -->
     <div id="cursorDot" class="cursor-dot hidden md:block" aria-hidden="true"></div>
     <div id="cursorRing" class="cursor-ring hidden md:block" aria-hidden="true"></div>
 
@@ -207,18 +236,17 @@
     <!-- Main Application Container -->
     <div class="relative z-10 flex flex-col min-h-screen">
 
-        <!-- Top Announcement Marquee Loop Bar (Magic UI) -->
+        <!-- Announcement Marquee Loop Bar -->
         <div class="bg-gradient-to-r from-indigo-950 via-cyber-900 to-indigo-950 border-b border-indigo-500/20 py-1.5 px-4 overflow-hidden text-xs text-slate-300">
             <div class="flex whitespace-nowrap animate-marquee gap-8">
-                <span class="flex items-center gap-2"><i data-lucide="sparkles" class="w-3.5 h-3.5 text-cyan-400"></i> LuminaWall 2.0 Studio Released</span>
-                <span class="flex items-center gap-2"><i data-lucide="monitor" class="w-3.5 h-3.5 text-indigo-400"></i> 4K & UltraWide Desktop Collection</span>
+                <span class="flex items-center gap-2"><i data-lucide="sparkles" class="w-3.5 h-3.5 text-cyan-400"></i> LuminaWall 2.0 Phone & PC Studio</span>
+                <span class="flex items-center gap-2"><i data-lucide="monitor" class="w-3.5 h-3.5 text-indigo-400"></i> 4K Desktop Wallpapers</span>
                 <span class="flex items-center gap-2"><i data-lucide="smartphone" class="w-3.5 h-3.5 text-pink-400"></i> Mobile AMOLED Wallpapers</span>
                 <span class="flex items-center gap-2"><i data-lucide="link" class="w-3.5 h-3.5 text-amber-400"></i> 📱💻 Matching Combo Pair Linker</span>
                 <span class="flex items-center gap-2"><i data-lucide="sliders" class="w-3.5 h-3.5 text-emerald-400"></i> Live Image Filter Studio</span>
-                <span class="flex items-center gap-2" aria-hidden="true"><i data-lucide="sparkles" class="w-3.5 h-3.5 text-cyan-400"></i> LuminaWall 2.0 Studio Released</span>
-                <span class="flex items-center gap-2" aria-hidden="true"><i data-lucide="monitor" class="w-3.5 h-3.5 text-indigo-400"></i> 4K & UltraWide Desktop Collection</span>
+                <span class="flex items-center gap-2" aria-hidden="true"><i data-lucide="sparkles" class="w-3.5 h-3.5 text-cyan-400"></i> LuminaWall 2.0 Phone & PC Studio</span>
+                <span class="flex items-center gap-2" aria-hidden="true"><i data-lucide="monitor" class="w-3.5 h-3.5 text-indigo-400"></i> 4K Desktop Wallpapers</span>
                 <span class="flex items-center gap-2" aria-hidden="true"><i data-lucide="smartphone" class="w-3.5 h-3.5 text-pink-400"></i> Mobile AMOLED Wallpapers</span>
-                <span class="flex items-center gap-2" aria-hidden="true"><i data-lucide="link" class="w-3.5 h-3.5 text-amber-400"></i> 📱💻 Matching Combo Pair Linker</span>
             </div>
         </div>
 
@@ -226,7 +254,7 @@
         <header class="sticky top-0 z-40 w-full glass-panel border-b border-slate-800/80 px-4 lg:px-8 py-3 transition-all">
             <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
                 
-                <!-- Brand Logo & Home Reset -->
+                <!-- Brand Logo & Reset -->
                 <div class="flex items-center gap-3 cursor-pointer group" onclick="resetFilters()">
                     <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-600 via-cyan-500 to-pink-500 p-0.5 flex items-center justify-center shadow-lg shadow-indigo-500/30 group-hover:scale-105 transition-transform duration-300">
                         <div class="w-full h-full bg-cyber-950 rounded-[10px] flex items-center justify-center">
@@ -235,11 +263,11 @@
                     </div>
                     <div>
                         <span class="font-extrabold text-xl tracking-tight bg-gradient-to-r from-white via-slate-200 to-indigo-300 bg-clip-text text-transparent">LuminaWall</span>
-                        <p class="text-[11px] text-slate-400 font-medium">Next-Gen Wallpaper Studio</p>
+                        <p class="text-[11px] text-slate-400 font-medium">Phone & PC Wallpaper Studio</p>
                     </div>
                 </div>
 
-                <!-- Global Search Bar with Keyboard Shortcuts -->
+                <!-- Desktop Search Bar -->
                 <div class="flex-1 max-w-md hidden md:block relative">
                     <div class="relative flex items-center">
                         <i data-lucide="search" class="w-4 h-4 absolute left-3.5 text-slate-400 pointer-events-none"></i>
@@ -259,7 +287,7 @@
                 <!-- Header Actions Toolbar -->
                 <div class="flex items-center gap-2">
                     <!-- Keyboard Shortcuts Legend Modal Trigger -->
-                    <button onclick="openShortcutsModal()" class="p-2.5 rounded-xl glass-card text-slate-300 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 transition-all" title="Keyboard Shortcuts (?)" aria-label="View keyboard shortcuts">
+                    <button onclick="openShortcutsModal()" class="p-2.5 rounded-xl glass-card text-slate-300 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 transition-all" title="Shortcuts (?)" aria-label="View shortcuts">
                         <i data-lucide="help-circle" class="w-4.5 h-4.5"></i>
                     </button>
 
@@ -296,10 +324,10 @@
         <!-- Main Workspace Section -->
         <main class="flex-1 max-w-7xl w-full mx-auto px-4 lg:px-8 py-6 flex flex-col gap-6">
 
-            <!-- Category Tabs & Genre Filter Control Hub (Bento Component) -->
+            <!-- Target Device & Genre Controls Hub -->
             <section class="glass-panel p-4 rounded-3xl border border-slate-800/80 flex flex-col gap-3.5 shadow-xl">
                 
-                <!-- Target Device & Combos Tabs -->
+                <!-- Target Device Tabs -->
                 <div class="flex items-center gap-2 overflow-x-auto no-scrollbar pb-1 border-b border-slate-800/80">
                     <button onclick="switchCategory('all')" id="tab-all" class="category-tab active px-4 py-2 rounded-xl text-xs font-bold flex items-center gap-2 bg-indigo-600 text-white shadow-lg shadow-indigo-600/30 transition-all whitespace-nowrap">
                         <i data-lucide="layers" class="w-4 h-4"></i> All Wallpapers <span id="count-all" class="px-2 py-0.5 text-[10px] rounded-full bg-white/20 font-mono">0</span>
@@ -315,7 +343,7 @@
                     </button>
                 </div>
 
-                <!-- Genre & Theme Filter Pills -->
+                <!-- Genre Filter Pills Bar -->
                 <div class="flex items-center gap-1.5 overflow-x-auto no-scrollbar pt-0.5">
                     <button onclick="switchGenre('all')" id="genre-all" class="genre-pill active px-3 py-1.5 rounded-lg text-[11px] font-bold bg-slate-800 text-white border border-slate-700 transition-all whitespace-nowrap">
                         ✨ All Genres
@@ -362,8 +390,8 @@
             </section>
         </main>
 
-        <!-- Batch Selection Floating Toolbar -->
-        <div id="batchToolbar" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 hidden max-w-md w-[92%] glass-panel rounded-2xl p-4 border border-indigo-500/50 shadow-2xl flex items-center justify-between gap-4 transition-all">
+        <!-- Batch Selection Toolbar (Mobile Safe Area Inset) -->
+        <div id="batchToolbar" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 hidden max-w-md w-[92%] glass-panel rounded-2xl p-4 border border-indigo-500/50 shadow-2xl flex items-center justify-between gap-4 transition-all pb-[calc(1rem+env(safe-area-inset-bottom,0px))]">
             <div class="flex items-center gap-3">
                 <div class="w-8 h-8 rounded-lg bg-indigo-600 flex items-center justify-center text-white font-bold text-xs shadow-md" id="batchCountBadge">0</div>
                 <div>
@@ -440,8 +468,9 @@
                 </div>
 
                 <div class="flex-1 overflow-y-auto p-6 grid grid-cols-1 lg:grid-cols-12 gap-6 bg-cyber-900/50">
-                    <div class="lg:col-span-7 flex items-center justify-center min-h-[420px]">
-                        <div id="phoneDeviceFrame" class="relative w-[270px] h-[540px] bg-slate-950 rounded-[44px] p-3 shadow-2xl border-[6px] border-slate-800 flex flex-col overflow-hidden transition-all">
+                    <div class="lg:col-span-7 flex items-center justify-center min-h-[360px] sm:min-h-[420px]">
+                        <!-- Responsive Simulator Phone Frame -->
+                        <div id="phoneDeviceFrame" class="phone-simulator-frame relative bg-slate-950 rounded-[44px] p-3 shadow-2xl border-[6px] border-slate-800 flex flex-col overflow-hidden transition-all">
                             <div class="phone-notch flex items-center justify-center gap-2">
                                 <div class="w-3 h-3 rounded-full bg-slate-900"></div>
                             </div>
@@ -455,7 +484,7 @@
                                     </div>
 
                                     <div class="flex flex-col items-center mt-6 text-center">
-                                        <h2 id="phoneLockClock" class="text-5xl font-extrabold tracking-tight font-mono">15:55</h2>
+                                        <h2 id="phoneLockClock" class="text-4xl sm:text-5xl font-extrabold tracking-tight font-mono">15:55</h2>
                                     </div>
 
                                     <div class="flex items-center justify-between px-2 pb-2">
@@ -466,6 +495,7 @@
                             </div>
                         </div>
 
+                        <!-- Responsive Simulator Desktop Frame -->
                         <div id="desktopDeviceFrame" class="hidden flex-col items-center w-full max-w-xl transition-all">
                             <div class="relative w-full aspect-video bg-slate-950 rounded-2xl p-2.5 shadow-2xl border-[4px] border-slate-800 flex flex-col overflow-hidden">
                                 <div class="relative flex-1 rounded-lg overflow-hidden bg-slate-900 flex flex-col">
@@ -541,7 +571,7 @@
             </div>
         </div>
 
-        <!-- Full-Screen Lightbox Modal -->
+        <!-- Full-Screen Lightbox Modal (With Phone Touch Swipe Support) -->
         <div id="lightboxModal" class="fixed inset-0 z-50 hidden bg-black/95 backdrop-blur-2xl flex flex-col justify-between p-4 sm:p-8 transition-all">
             <div class="flex items-center justify-between relative z-10">
                 <div class="flex items-center gap-3">
@@ -603,8 +633,8 @@
                         <kbd class="px-2 py-0.5 font-mono text-[10px] bg-slate-800 text-indigo-300 rounded border border-slate-700">R</kbd>
                     </div>
                     <div class="flex justify-between items-center bg-cyber-900/60 p-2 rounded-xl border border-slate-800">
-                        <span>Lightbox Navigation</span>
-                        <kbd class="px-2 py-0.5 font-mono text-[10px] bg-slate-800 text-indigo-300 rounded border border-slate-700">← / →</kbd>
+                        <span>Lightbox Swipe & Nav</span>
+                        <kbd class="px-2 py-0.5 font-mono text-[10px] bg-slate-800 text-indigo-300 rounded border border-slate-700">← / → or Touch Swipe</kbd>
                     </div>
                     <div class="flex justify-between items-center bg-cyber-900/60 p-2 rounded-xl border border-slate-800">
                         <span>Close Active Modal</span>
@@ -622,7 +652,7 @@
             <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
                 <div class="flex items-center gap-2">
                     <i data-lucide="sparkles" class="w-4 h-4 text-indigo-400"></i>
-                    <span class="font-bold text-slate-200">LuminaWall 2.0 Studio</span> — High-Resolution Wallpaper Gallery
+                    <span class="font-bold text-slate-200">LuminaWall 2.0 Studio</span> — Phone & PC Wallpaper Gallery
                 </div>
                 <p id="footerTotalCount">Wallpapers Collection</p>
             </div>
@@ -653,10 +683,15 @@
         let activePreviewWallpaper = null;
         let activeComboLinkSource = null;
 
+        // Mobile Touch Swipe Gesture Tracking
+        let touchStartX = 0;
+        let touchStartY = 0;
+
         document.addEventListener('DOMContentLoaded', () => {
             lucide.createIcons();
             initCyberCanvas();
             initCursorFollower();
+            initTouchSwipeGestures();
             loadWallpapers();
             startLockClock();
 
@@ -687,6 +722,34 @@
                 }
             });
         });
+
+        // Touch Swipe Gesture Listener for Mobile Lightbox Navigation
+        function initTouchSwipeGestures() {
+            const lightbox = document.getElementById('lightboxModal');
+            if (!lightbox) return;
+
+            lightbox.addEventListener('touchstart', (e) => {
+                if (e.touches.length === 1) {
+                    touchStartX = e.touches[0].screenX;
+                    touchStartY = e.touches[0].screenY;
+                }
+            }, { passive: true });
+
+            lightbox.addEventListener('touchend', (e) => {
+                if (e.changedTouches.length === 1) {
+                    const touchEndX = e.changedTouches[0].screenX;
+                    const touchEndY = e.changedTouches[0].screenY;
+                    const dx = touchEndX - touchStartX;
+                    const dy = touchEndY - touchStartY;
+
+                    // Require 45px horizontal swipe and under 100px vertical deviation
+                    if (Math.abs(dx) > 45 && Math.abs(dy) < 100) {
+                        if (dx < 0) nextLightbox();
+                        else prevLightbox();
+                    }
+                }
+            }, { passive: true });
+        }
 
         async function loadWallpapers() {
             if (window.WALLPAPERS_DATA && window.WALLPAPERS_DATA.length > 0) {
@@ -1499,7 +1562,11 @@
                 mouse.y = e.clientY;
             });
 
-            const particles = Array.from({ length: 55 }, () => ({
+            // Battery-friendly particle count on mobile phones
+            const isMobile = window.innerWidth < 768 || ('ontouchstart' in window);
+            const particleCount = isMobile ? 24 : 55;
+
+            const particles = Array.from({ length: particleCount }, () => ({
                 x: Math.random() * canvas.width,
                 y: Math.random() * canvas.height,
                 r: Math.random() * 2.5 + 1,
@@ -1525,15 +1592,17 @@
                         }
                     }
 
-                    // Mouse gravity attraction
-                    const mDist = Math.hypot(p1.x - mouse.x, p1.y - mouse.y);
-                    if (mDist < 160) {
-                        ctx.beginPath();
-                        ctx.moveTo(p1.x, p1.y);
-                        ctx.lineTo(mouse.x, mouse.y);
-                        ctx.strokeStyle = `rgba(6, 182, 212, ${0.25 * (1 - mDist / 160)})`;
-                        ctx.lineWidth = 1;
-                        ctx.stroke();
+                    // Mouse gravity attraction (desktop)
+                    if (!isMobile) {
+                        const mDist = Math.hypot(p1.x - mouse.x, p1.y - mouse.y);
+                        if (mDist < 160) {
+                            ctx.beginPath();
+                            ctx.moveTo(p1.x, p1.y);
+                            ctx.lineTo(mouse.x, mouse.y);
+                            ctx.strokeStyle = `rgba(6, 182, 212, ${0.25 * (1 - mDist / 160)})`;
+                            ctx.lineWidth = 1;
+                            ctx.stroke();
+                        }
                     }
                 }
 
