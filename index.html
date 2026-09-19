@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LuminaWall — Super Advanced Wallpaper Studio & Downloader</title>
+    <title>LuminaWall — Modern Wallpaper Gallery & Downloader</title>
     
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -48,7 +48,7 @@
     <!-- JSZip for Batch Downloader -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
 
-    <!-- Embedded Wallpapers Data for Zero-CORS file:// Protocol Compatibility -->
+    <!-- Embedded Data for 100% Zero-CORS file:// compatibility -->
     <script src="wallpapers.js"></script>
 
     <style>
@@ -59,7 +59,7 @@
             overflow-x: hidden;
         }
 
-        /* Glassmorphism Styling */
+        /* Glassmorphism */
         .glass-panel {
             background: rgba(15, 20, 32, 0.75);
             backdrop-filter: blur(20px);
@@ -81,7 +81,7 @@
             transform: translateY(-4px);
         }
 
-        /* Animated Background Canvas */
+        /* Background Canvas */
         #cyberCanvas {
             position: fixed;
             top: 0;
@@ -93,7 +93,7 @@
             opacity: 0.65;
         }
 
-        /* Phone Frame UI */
+        /* Phone Frame Notch */
         .phone-notch {
             width: 90px;
             height: 24px;
@@ -107,7 +107,7 @@
             z-index: 30;
         }
 
-        /* Masonry Grid Column Layout */
+        /* Masonry Grid */
         .masonry-grid {
             column-count: 1;
             column-gap: 1.25rem;
@@ -122,7 +122,6 @@
             margin-bottom: 1.25rem;
         }
 
-        /* Custom Scrollbar */
         ::-webkit-scrollbar { width: 7px; height: 7px; }
         ::-webkit-scrollbar-track { background: #05070a; }
         ::-webkit-scrollbar-thumb { background: #232d48; border-radius: 4px; }
@@ -131,13 +130,13 @@
 </head>
 <body class="relative min-h-screen text-slate-100 flex flex-col selection:bg-indigo-500 selection:text-white">
 
-    <!-- Interactive WebGL / Canvas Cyber Particle Background -->
+    <!-- Ambient WebGL Canvas Background -->
     <canvas id="cyberCanvas"></canvas>
 
-    <!-- Main Container -->
+    <!-- Main App Container -->
     <div class="relative z-10 flex flex-col min-h-screen">
 
-        <!-- Top Navigation Header -->
+        <!-- Header -->
         <header class="sticky top-0 z-40 w-full glass-panel border-b border-slate-800/80 px-4 lg:px-8 py-3.5 transition-all">
             <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
                 
@@ -149,11 +148,8 @@
                         </div>
                     </div>
                     <div>
-                        <div class="flex items-center gap-2">
-                            <span class="font-extrabold text-xl tracking-tight bg-gradient-to-r from-white via-slate-200 to-indigo-300 bg-clip-text text-transparent">LuminaWall</span>
-                            <span class="text-[10px] uppercase font-bold tracking-widest px-2 py-0.5 rounded-full bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">PRO</span>
-                        </div>
-                        <p class="text-xs text-slate-400 font-medium">Super Advanced Wallpaper Studio</p>
+                        <span class="font-extrabold text-xl tracking-tight bg-gradient-to-r from-white via-slate-200 to-indigo-300 bg-clip-text text-transparent">LuminaWall</span>
+                        <p class="text-xs text-slate-400 font-medium">Wallpaper Viewer & Downloader</p>
                     </div>
                 </div>
 
@@ -161,7 +157,7 @@
                 <div class="flex-1 max-w-md hidden md:block relative">
                     <div class="relative flex items-center">
                         <i data-lucide="search" class="w-4 h-4 absolute left-3.5 text-slate-400 pointer-events-none"></i>
-                        <input type="text" id="searchInput" placeholder="Search 221 wallpapers (movies, got, mentalist, nature, dark)..." 
+                        <input type="text" id="searchInput" placeholder="Search 221 wallpapers..." 
                             class="w-full pl-10 pr-10 py-2.5 rounded-xl bg-cyber-800/80 border border-slate-700/60 text-sm text-slate-200 placeholder-slate-400 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all"
                             oninput="onSearchChange(this.value)">
                         <button id="clearSearchBtn" onclick="clearSearch()" class="hidden absolute right-3 text-slate-400 hover:text-white">
@@ -178,7 +174,7 @@
                         <span id="favoriteBadgeCount" class="px-1.5 py-0.5 text-xs font-bold rounded-full bg-pink-500/20 text-pink-300">0</span>
                     </button>
 
-                    <button onclick="toggleGridStyle()" class="p-2 rounded-xl glass-card text-slate-300 hover:text-white transition-all" title="Toggle Grid Layout">
+                    <button onclick="toggleGridStyle()" class="p-2 rounded-xl glass-card text-slate-300 hover:text-white transition-all" title="Toggle Layout Grid">
                         <i data-lucide="grid" class="w-5 h-5"></i>
                     </button>
                 </div>
@@ -195,14 +191,12 @@
             </div>
         </header>
 
-        <!-- Main Content Area -->
+        <!-- Main Content -->
         <main class="flex-1 max-w-7xl w-full mx-auto px-4 lg:px-8 py-6 flex flex-col gap-6">
 
-            <!-- Streamlined Single Control Toolbar -->
-            <section class="glass-panel p-3.5 rounded-2xl border border-slate-800/80 flex flex-wrap items-center justify-between gap-3">
-                
-                <!-- Display Size Tabs -->
-                <div class="flex items-center gap-1.5 overflow-x-auto pb-1 sm:pb-0">
+            <!-- Ultra-Clean Target Screen Tabs (Order, Color & Genre selectors removed as requested) -->
+            <section class="glass-panel p-3.5 rounded-2xl border border-slate-800/80 flex items-center justify-between gap-3">
+                <div class="flex items-center gap-1.5 overflow-x-auto">
                     <button onclick="switchCategory('all')" id="tab-all" class="category-tab active px-4 py-2 rounded-xl text-xs font-bold flex items-center gap-1.5 bg-indigo-600 text-white shadow-lg shadow-indigo-600/30 transition-all whitespace-nowrap">
                         <i data-lucide="layers" class="w-3.5 h-3.5"></i> All Wallpapers (<span id="count-all">221</span>)
                     </button>
@@ -213,45 +207,12 @@
                         <i data-lucide="monitor" class="w-3.5 h-3.5 text-indigo-400"></i> 💻 Desktop (<span id="count-desktop">42</span>)
                     </button>
                 </div>
-
-                <!-- Unified Dropdown Selectors -->
-                <div class="flex flex-wrap items-center gap-2">
-                    <!-- Genre Category Selector -->
-                    <select id="genreSelect" onchange="filterByGenre(this.value)" class="bg-cyber-800 border border-slate-700/60 text-xs font-semibold text-slate-200 rounded-xl px-3.5 py-2 focus:outline-none focus:border-indigo-500">
-                        <option value="all">🎬 All Genres</option>
-                        <option value="movies_series">🎬 Movies & Web Series</option>
-                        <option value="animated_graphical">🎨 Animated & Graphical</option>
-                        <option value="reality_photo">📸 Reality Photography</option>
-                        <option value="nature_landscape">🌿 Nature & Landscapes</option>
-                        <option value="dark_amoled">🌙 Dark & AMOLED</option>
-                        <option value="spiritual_divine">🕉️ Spiritual & Divine</option>
-                    </select>
-
-                    <!-- Color Swatch Selector -->
-                    <select id="colorSelect" onchange="filterByColor(this.value)" class="bg-cyber-800 border border-slate-700/60 text-xs font-semibold text-slate-200 rounded-xl px-3.5 py-2 focus:outline-none focus:border-indigo-500">
-                        <option value="all">🎨 All Colors</option>
-                        <option value="dark">⬛ AMOLED Dark</option>
-                        <option value="pink">💖 Pink</option>
-                        <option value="purple">🟣 Purple</option>
-                        <option value="blue">🔵 Blue</option>
-                        <option value="green">🟢 Emerald</option>
-                        <option value="gold">🟡 Gold</option>
-                    </select>
-
-                    <!-- Sort Engine Selector -->
-                    <select id="sortSelect" onchange="onSortChange(this.value)" class="bg-cyber-800 border border-slate-700/60 text-xs font-semibold text-slate-200 rounded-xl px-3.5 py-2 focus:outline-none focus:border-indigo-500">
-                        <option value="id-asc">Default Order</option>
-                        <option value="title-asc">Title (A - Z)</option>
-                        <option value="res-desc">Highest Resolution</option>
-                        <option value="size-desc">File Size</option>
-                    </select>
-                </div>
             </section>
 
-            <!-- Wallpaper Gallery Container -->
+            <!-- Wallpaper Gallery Grid -->
             <section id="gallerySection" class="w-full">
                 <div id="wallpaperGrid" class="masonry-grid">
-                    <!-- Cards dynamically rendered via JavaScript -->
+                    <!-- Rendered Cards -->
                 </div>
 
                 <!-- Empty State -->
@@ -260,13 +221,13 @@
                         <i data-lucide="image-off" class="w-8 h-8"></i>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-1">No Wallpapers Matched</h3>
-                    <p class="text-slate-400 text-sm max-w-sm mb-4">Try clearing active category filters or search query.</p>
-                    <button onclick="resetFilters()" class="px-4 py-2 rounded-xl bg-indigo-600 text-white font-semibold text-xs hover:bg-indigo-500 transition-all">Reset All Filters</button>
+                    <p class="text-slate-400 text-sm max-w-sm mb-4">Try resetting your search query.</p>
+                    <button onclick="resetFilters()" class="px-4 py-2 rounded-xl bg-indigo-600 text-white font-semibold text-xs hover:bg-indigo-500 transition-all">Reset Search</button>
                 </div>
             </section>
         </main>
 
-        <!-- Batch Selection Toolbar (Floating at Bottom) -->
+        <!-- Batch Selection Toolbar -->
         <div id="batchToolbar" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 hidden max-w-md w-[90%] glass-panel rounded-2xl p-4 border border-indigo-500/40 shadow-2xl flex items-center justify-between gap-4 transition-all">
             <div class="flex items-center gap-3">
                 <div class="w-8 h-8 rounded-lg bg-indigo-600 flex items-center justify-center text-white font-bold text-xs" id="batchCountBadge">0</div>
@@ -283,7 +244,7 @@
             </div>
         </div>
 
-        <!-- Interactive Live Device Preview & Real Image Studio Filter Modal -->
+        <!-- Live Device Preview Modal -->
         <div id="devicePreviewModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 sm:p-6 bg-black/85 backdrop-blur-2xl">
             <div class="relative w-full max-w-5xl glass-panel rounded-3xl border border-slate-700/80 overflow-hidden flex flex-col max-h-[92vh]">
                 
@@ -294,12 +255,11 @@
                             <i data-lucide="sliders" class="w-4 h-4"></i>
                         </div>
                         <div>
-                            <h3 class="text-base font-bold text-white" id="modalWallpaperTitle">Wallpaper Studio Studio</h3>
+                            <h3 class="text-base font-bold text-white" id="modalWallpaperTitle">Wallpaper Studio</h3>
                             <p class="text-xs text-slate-400" id="modalWallpaperMeta">Device Simulator & Real Image Filter Studio</p>
                         </div>
                     </div>
 
-                    <!-- Device Tabs -->
                     <div class="flex items-center gap-1 bg-cyber-800 p-1 rounded-xl border border-slate-700/60">
                         <button onclick="switchPreviewDevice('phone')" id="previewTabPhone" class="px-3 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-1.5 bg-indigo-600 text-white transition-all">
                             <i data-lucide="smartphone" class="w-3.5 h-3.5"></i> Mobile
@@ -317,71 +277,50 @@
                 <!-- Modal Body Stage -->
                 <div class="flex-1 overflow-y-auto p-6 grid grid-cols-1 lg:grid-cols-12 gap-6 bg-cyber-900/50">
                     
-                    <!-- Left Stage: Device Mockup Frames -->
                     <div class="lg:col-span-7 flex items-center justify-center min-h-[420px]">
-                        <!-- Mobile Smartphone Frame -->
                         <div id="phoneDeviceFrame" class="relative w-[270px] h-[540px] bg-slate-950 rounded-[44px] p-3 shadow-2xl border-[6px] border-slate-800 flex flex-col overflow-hidden transition-all">
                             <div class="phone-notch flex items-center justify-center gap-2">
                                 <div class="w-3 h-3 rounded-full bg-slate-900"></div>
-                                <div class="w-2 h-2 rounded-full bg-indigo-950"></div>
                             </div>
 
                             <div class="relative flex-1 rounded-[34px] overflow-hidden bg-black flex flex-col">
                                 <img id="phoneWallpaperImg" src="" alt="Phone Preview" class="absolute inset-0 w-full h-full object-cover transition-all">
-                                
                                 <div class="relative z-20 flex-1 flex flex-col justify-between p-5 pt-8 bg-gradient-to-b from-black/40 via-transparent to-black/60 text-white">
                                     <div class="flex items-center justify-between text-[11px] font-semibold text-slate-200 px-1">
                                         <span id="phoneClockStatus">09:41</span>
-                                        <div class="flex items-center gap-1.5">
-                                            <i data-lucide="wifi" class="w-3 h-3"></i>
-                                            <i data-lucide="battery" class="w-3.5 h-3.5"></i>
-                                        </div>
+                                        <i data-lucide="wifi" class="w-3.5 h-3.5"></i>
                                     </div>
 
                                     <div class="flex flex-col items-center mt-6 text-center">
-                                        <p class="text-xs font-semibold uppercase tracking-widest text-slate-300 drop-shadow">Friday, September 18</p>
-                                        <h2 id="phoneLockClock" class="text-5xl font-extrabold tracking-tight drop-shadow-md my-1 font-mono">15:55</h2>
+                                        <h2 id="phoneLockClock" class="text-5xl font-extrabold tracking-tight font-mono">15:55</h2>
                                     </div>
 
                                     <div class="flex items-center justify-between px-2 pb-2">
-                                        <div class="w-9 h-9 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white">
-                                            <i data-lucide="flashlight" class="w-4 h-4"></i>
-                                        </div>
-                                        <div class="w-9 h-9 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white">
-                                            <i data-lucide="camera" class="w-4 h-4"></i>
-                                        </div>
+                                        <i data-lucide="flashlight" class="w-4 h-4"></i>
+                                        <i data-lucide="camera" class="w-4 h-4"></i>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Desktop Monitor Frame -->
                         <div id="desktopDeviceFrame" class="hidden flex-col items-center w-full max-w-xl transition-all">
                             <div class="relative w-full aspect-video bg-slate-950 rounded-2xl p-2.5 shadow-2xl border-[4px] border-slate-800 flex flex-col overflow-hidden">
                                 <div class="relative flex-1 rounded-lg overflow-hidden bg-slate-900 flex flex-col">
                                     <img id="desktopWallpaperImg" src="" alt="Desktop Preview" class="absolute inset-0 w-full h-full object-cover transition-all">
-                                    <div class="relative z-20 flex-1 flex flex-col justify-between p-4 bg-gradient-to-t from-black/60 via-transparent to-black/20">
-                                        <div class="flex items-center gap-2">
-                                            <div class="w-3 h-3 rounded-full bg-red-500"></div>
-                                            <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
-                                            <div class="w-3 h-3 rounded-full bg-green-500"></div>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                             <div class="w-28 h-5 bg-gradient-to-b from-slate-700 to-slate-800 rounded-b-lg"></div>
-                            <div class="w-40 h-2 bg-slate-700 rounded-full shadow-lg"></div>
                         </div>
                     </div>
 
-                    <!-- Right Sidebar: Real Image Filter Studio Controls -->
+                    <!-- Right Sidebar Filter Studio Controls -->
                     <div class="lg:col-span-5 flex flex-col justify-between glass-panel p-5 rounded-2xl border border-slate-800/80 gap-4">
                         <div>
                             <div class="flex items-center justify-between mb-4 border-b border-slate-800 pb-3">
                                 <h4 class="text-sm font-bold text-white flex items-center gap-2">
                                     <i data-lucide="sliders-horizontal" class="w-4 h-4 text-cyan-400"></i> Real Image Filter Studio
                                 </h4>
-                                <button onclick="resetImageStudioFilters()" class="text-[11px] font-semibold text-slate-400 hover:text-indigo-400 transition-all">Reset All</button>
+                                <button onclick="resetImageStudioFilters()" class="text-[11px] font-semibold text-slate-400 hover:text-indigo-400">Reset All</button>
                             </div>
 
                             <div class="flex flex-col gap-3 text-xs">
@@ -463,9 +402,7 @@
                 <button onclick="prevLightbox()" class="absolute left-2 sm:left-6 z-20 p-3 rounded-full bg-black/50 text-white hover:bg-indigo-600 transition-all">
                     <i data-lucide="chevron-left" class="w-6 h-6"></i>
                 </button>
-                
                 <img id="lightboxImg" src="" alt="Fullscreen wallpaper" class="max-h-full max-w-full object-contain rounded-2xl shadow-2xl transition-all duration-300">
-
                 <button onclick="nextLightbox()" class="absolute right-2 sm:right-6 z-20 p-3 rounded-full bg-black/50 text-white hover:bg-indigo-600 transition-all">
                     <i data-lucide="chevron-right" class="w-6 h-6"></i>
                 </button>
@@ -474,12 +411,11 @@
             <div class="flex flex-wrap items-center justify-between gap-4 relative z-10 bg-slate-900/60 p-4 rounded-2xl border border-slate-800 max-w-4xl mx-auto w-full">
                 <div class="flex items-center gap-4 text-xs text-slate-300">
                     <div><span class="text-slate-500">Res:</span> <strong id="lightboxRes" class="text-white">1080 x 1920</strong></div>
-                    <div><span class="text-slate-500">Genre:</span> <strong id="lightboxGenre" class="text-cyan-400 capitalize">Movies</strong></div>
                     <div><span class="text-slate-500">Size:</span> <strong id="lightboxSize" class="text-slate-200">1.2 MB</strong></div>
                 </div>
 
                 <div id="lightboxTags" class="flex flex-wrap gap-1.5">
-                    <!-- Dynamic tags -->
+                    <!-- Tags -->
                 </div>
             </div>
         </div>
@@ -492,24 +428,21 @@
             <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
                 <div class="flex items-center gap-2">
                     <i data-lucide="sparkles" class="w-4 h-4 text-indigo-400"></i>
-                    <span class="font-bold text-slate-200">LuminaWall Studio</span> — Powered by Antigravity
+                    <span class="font-bold text-slate-200">LuminaWall</span> — High-Resolution Wallpaper Gallery
                 </div>
-                <p>Curated Collection of 221 HD & 4K Wallpapers</p>
+                <p>221 Wallpapers HD & 4K</p>
             </div>
         </footer>
     </div>
 
-    <!-- Application Script Engine -->
+    <!-- Application Script -->
     <script>
         let allWallpapers = [];
         let filteredWallpapers = [];
         let favorites = new Set(JSON.parse(localStorage.getItem('lumina_favs') || '[]'));
         let selectedBatch = new Set();
         let currentCategory = 'all';
-        let currentGenre = 'all';
-        let currentColorFilter = 'all';
         let searchQuery = '';
-        let currentSort = 'id-asc';
         let currentLightboxIndex = 0;
         let activePreviewWallpaper = null;
 
@@ -531,7 +464,6 @@
             });
         });
 
-        // Dual Engine Data Loader: Embedded Data (Zero CORS) + Fetch API Fallback
         async function loadWallpapers() {
             if (window.WALLPAPERS_DATA && window.WALLPAPERS_DATA.length > 0) {
                 allWallpapers = window.WALLPAPERS_DATA;
@@ -547,7 +479,6 @@
                 applyFilters();
             } catch (err) {
                 console.error('Failed to load wallpapers index', err);
-                showToast('Error loading wallpapers', 'error');
             }
         }
 
@@ -568,10 +499,6 @@
                 if (currentCategory === 'desktop' && w.category !== 'desktop') return false;
                 if (currentCategory === 'favorites' && !favorites.has(w.id)) return false;
 
-                if (currentGenre !== 'all' && (!w.genres || !w.genres.includes(currentGenre))) return false;
-
-                if (currentColorFilter !== 'all' && w.colorFamily !== currentColorFilter) return false;
-
                 if (searchQuery) {
                     const q = searchQuery.toLowerCase();
                     const matchTitle = w.title.toLowerCase().includes(q);
@@ -583,16 +510,7 @@
                 return true;
             });
 
-            if (currentSort === 'title-asc') {
-                filteredWallpapers.sort((a, b) => a.title.localeCompare(b.title));
-            } else if (currentSort === 'res-desc') {
-                filteredWallpapers.sort((a, b) => (b.width * b.height) - (a.width * a.height));
-            } else if (currentSort === 'size-desc') {
-                filteredWallpapers.sort((a, b) => b.sizeBytes - a.sizeBytes);
-            } else {
-                filteredWallpapers.sort((a, b) => a.id - b.id);
-            }
-
+            filteredWallpapers.sort((a, b) => a.id - b.id);
             renderGallery();
         }
 
@@ -645,7 +563,7 @@
                         <div class="p-3 bg-cyber-800/90 border-t border-slate-700/50 flex items-center justify-between gap-2">
                             <div class="truncate">
                                 <h4 class="text-xs font-bold text-slate-200 truncate">${w.title}</h4>
-                                <p class="text-[10px] text-slate-400 font-mono">${w.size} • <span style="color:${w.hexColor}">●</span> ${w.colorFamily}</p>
+                                <p class="text-[10px] text-slate-400 font-mono">${w.size}</p>
                             </div>
 
                             <div class="flex items-center gap-1">
@@ -693,16 +611,6 @@
             applyFilters();
         }
 
-        function filterByGenre(genre) {
-            currentGenre = genre;
-            applyFilters();
-        }
-
-        function filterByColor(color) {
-            currentColorFilter = color;
-            applyFilters();
-        }
-
         function onSearchChange(val) {
             searchQuery = val;
             document.getElementById('searchInput').value = val;
@@ -722,18 +630,7 @@
             document.getElementById('searchInput').value = '';
             document.getElementById('mobileSearchInput').value = '';
             document.getElementById('clearSearchBtn').classList.add('hidden');
-            document.getElementById('sortSelect').value = 'id-asc';
-            document.getElementById('genreSelect').value = 'all';
-            document.getElementById('colorSelect').value = 'all';
-            currentSort = 'id-asc';
-            currentGenre = 'all';
-            currentColorFilter = 'all';
             switchCategory('all');
-        }
-
-        function onSortChange(sortVal) {
-            currentSort = sortVal;
-            applyFilters();
         }
 
         function toggleFavorite(id) {
@@ -944,7 +841,6 @@
             document.getElementById('lightboxTitle').innerText = item.title;
             document.getElementById('lightboxImg').src = item.encodedPath;
             document.getElementById('lightboxRes').innerText = `${item.width} x ${item.height}`;
-            document.getElementById('lightboxGenre').innerText = (item.primaryGenre || 'Graphical').replace('_', ' ');
             document.getElementById('lightboxSize').innerText = item.size;
 
             const tagsContainer = document.getElementById('lightboxTags');
