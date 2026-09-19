@@ -207,7 +207,7 @@
                         <i data-lucide="monitor" class="w-3.5 h-3.5 text-indigo-400"></i> 💻 Desktop (<span id="count-desktop">0</span>)
                     </button>
 
-                    <!-- New Matching Phone + Desktop Combos Tab -->
+                    <!-- Matching Phone + Desktop Combos Tab -->
                     <button onclick="switchCategory('combos')" id="tab-combos" class="category-tab px-4 py-2 rounded-xl text-xs font-semibold flex items-center gap-1.5 text-slate-300 hover:bg-cyber-800 transition-all whitespace-nowrap">
                         <i data-lucide="sparkles" class="w-3.5 h-3.5 text-amber-400"></i> 📱💻 Matching Combos (<span id="count-combos">0</span>)
                     </button>
@@ -257,7 +257,7 @@
                         <i data-lucide="link" class="w-5 h-5 text-amber-400"></i>
                         <div>
                             <h3 class="text-base font-bold text-white" id="linkComboModalTitle">Link Matching Combo Pair</h3>
-                            <p class="text-xs text-slate-400" id="linkComboModalMeta">Select matching Phone or PC counterpart</p>
+                            <p class="text-xs text-slate-400" id="linkComboModalMeta">Select matching Phone or PC counterpart (Unpaired only)</p>
                         </div>
                     </div>
                     <button onclick="closeLinkComboModal()" class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:text-white">
@@ -266,14 +266,14 @@
                 </div>
 
                 <div class="p-4 bg-cyber-900/40 border-b border-slate-800/80">
-                    <input type="text" id="comboSearchInput" placeholder="Filter candidate wallpapers by name..." 
+                    <input type="text" id="comboSearchInput" placeholder="Filter available unpaired wallpapers by name..." 
                         class="w-full px-4 py-2 rounded-xl bg-cyber-800 border border-slate-700 text-xs text-white focus:outline-none focus:border-indigo-500"
                         oninput="renderComboCandidates(this.value)">
                 </div>
 
                 <div class="flex-1 overflow-y-auto p-6">
                     <div id="comboCandidatesGrid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-                        <!-- Candidate wallpapers -->
+                        <!-- Unpaired candidate wallpapers -->
                     </div>
                 </div>
             </div>
@@ -282,8 +282,6 @@
         <!-- Live Device Preview Modal -->
         <div id="devicePreviewModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 sm:p-6 bg-black/85 backdrop-blur-2xl">
             <div class="relative w-full max-w-5xl glass-panel rounded-3xl border border-slate-700/80 overflow-hidden flex flex-col max-h-[92vh]">
-                
-                <!-- Modal Header -->
                 <div class="px-6 py-4 border-b border-slate-800 flex items-center justify-between bg-cyber-900/80">
                     <div class="flex items-center gap-3">
                         <div class="w-8 h-8 rounded-lg bg-indigo-600/20 text-indigo-400 flex items-center justify-center">
@@ -309,9 +307,7 @@
                     </button>
                 </div>
 
-                <!-- Modal Body Stage -->
                 <div class="flex-1 overflow-y-auto p-6 grid grid-cols-1 lg:grid-cols-12 gap-6 bg-cyber-900/50">
-                    
                     <div class="lg:col-span-7 flex items-center justify-center min-h-[420px]">
                         <div id="phoneDeviceFrame" class="relative w-[270px] h-[540px] bg-slate-950 rounded-[44px] p-3 shadow-2xl border-[6px] border-slate-800 flex flex-col overflow-hidden transition-all">
                             <div class="phone-notch flex items-center justify-center gap-2">
@@ -348,7 +344,6 @@
                         </div>
                     </div>
 
-                    <!-- Right Sidebar Filter Studio Controls -->
                     <div class="lg:col-span-5 flex flex-col justify-between glass-panel p-5 rounded-2xl border border-slate-800/80 gap-4">
                         <div>
                             <div class="flex items-center justify-between mb-4 border-b border-slate-800 pb-3">
@@ -402,7 +397,6 @@
                     </div>
                 </div>
 
-                <!-- Modal Footer -->
                 <div class="px-6 py-3.5 border-t border-slate-800 bg-cyber-900 flex items-center justify-between">
                     <button onclick="toggleFavoriteCurrentModal()" id="modalFavBtn" class="px-3.5 py-2 rounded-xl bg-cyber-800 text-xs font-semibold text-pink-400 flex items-center gap-2 hover:bg-pink-500/10 transition-all">
                         <i data-lucide="heart" class="w-4 h-4"></i> Favorite
@@ -535,6 +529,16 @@
             document.getElementById('searchInput').placeholder = `Search ${allWallpapers.length} wallpapers...`;
         }
 
+        // Get set of all wallpaper IDs that are already in a linked combo pair
+        function getPairedWallpaperIds() {
+            const paired = new Set();
+            combos.forEach(c => {
+                if (c.phoneId) paired.add(c.phoneId);
+                if (c.desktopId) paired.add(c.desktopId);
+            });
+            return paired;
+        }
+
         function applyFilters() {
             if (currentCategory === 'combos') {
                 renderCombosGrid();
@@ -564,6 +568,7 @@
         function renderGallery() {
             const grid = document.getElementById('wallpaperGrid');
             const emptyState = document.getElementById('emptyState');
+            const pairedSet = getPairedWallpaperIds();
 
             grid.innerHTML = '';
 
@@ -581,17 +586,24 @@
             filteredWallpapers.forEach(w => {
                 const isFav = favorites.has(w.id);
                 const isChecked = selectedBatch.has(w.id);
+                const isPaired = pairedSet.has(w.id);
 
                 const card = document.createElement('div');
                 card.className = 'masonry-item';
                 card.innerHTML = `
-                    <div class="glass-card rounded-2xl overflow-hidden relative group">
+                    <div class="glass-card rounded-2xl overflow-hidden relative group ${isPaired ? 'border-amber-500/40' : ''}">
                         <div class="relative bg-cyber-900 overflow-hidden cursor-pointer" onclick="openLightbox(${w.id})">
                             <img src="${w.encodedPath}" alt="${w.title}" loading="lazy" 
                                 onerror="handleImgError(this)"
                                 class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500 ease-out">
                             
-                            <div class="absolute top-2.5 left-2.5 z-10">
+                            <!-- Badges -->
+                            <div class="absolute top-2.5 left-2.5 z-10 flex flex-col gap-1 items-start">
+                                ${isPaired ? `
+                                    <span class="px-2 py-0.5 rounded-md text-[9px] font-bold uppercase backdrop-blur-md bg-amber-500/90 text-amber-950 border border-amber-300/60 shadow-md flex items-center gap-1">
+                                        <i data-lucide="link" class="w-3 h-3"></i> Paired Combo
+                                    </span>
+                                ` : ''}
                                 <span class="px-2 py-0.5 rounded-md text-[9px] font-bold uppercase backdrop-blur-md bg-black/60 text-slate-200">
                                     ${w.category === 'phone' ? '📱 Mobile' : '💻 Desktop'}
                                 </span>
@@ -617,9 +629,15 @@
 
                             <div class="flex items-center gap-1">
                                 <!-- Link Combo Button -->
-                                <button onclick="openLinkComboModal(${w.id})" class="p-1.5 rounded-lg text-slate-400 hover:text-amber-400 hover:bg-amber-500/10 transition-all" title="Pair as Matching Combo">
-                                    <i data-lucide="link" class="w-3.5 h-3.5"></i>
-                                </button>
+                                ${!isPaired ? `
+                                    <button onclick="openLinkComboModal(${w.id})" class="p-1.5 rounded-lg text-slate-400 hover:text-amber-400 hover:bg-amber-500/10 transition-all" title="Pair as Matching Combo">
+                                        <i data-lucide="link" class="w-3.5 h-3.5"></i>
+                                    </button>
+                                ` : `
+                                    <button onclick="switchCategory('combos')" class="p-1.5 rounded-lg text-amber-400 hover:bg-amber-500/10 transition-all" title="View Linked Combo">
+                                        <i data-lucide="link-2" class="w-3.5 h-3.5"></i>
+                                    </button>
+                                `}
 
                                 <button onclick="toggleFavorite(${w.id})" class="p-1.5 rounded-lg text-slate-400 hover:text-pink-400 hover:bg-pink-500/10 transition-all">
                                     <i data-lucide="heart" class="w-3.5 h-3.5 ${isFav ? 'fill-pink-500 text-pink-500' : ''}"></i>
@@ -644,7 +662,6 @@
             gsap.from('#wallpaperGrid > div', { opacity: 0, y: 15, stagger: 0.02, duration: 0.3 });
         }
 
-        // Render Matching Combos Tab Grid
         function renderCombosGrid() {
             const grid = document.getElementById('wallpaperGrid');
             const emptyState = document.getElementById('emptyState');
@@ -654,7 +671,7 @@
 
             if (combos.length === 0) {
                 document.getElementById('emptyStateTitle').innerText = "No Matching Combos Linked";
-                document.getElementById('emptyStateSubtitle').innerText = "Click the 🔗 Link Pair button on any wallpaper card to manually create a matching Phone + Desktop combo pair!";
+                document.getElementById('emptyStateSubtitle').innerText = "Click the 🔗 Link button on any unpaired wallpaper to manually create a matching Mobile + PC combo pair!";
                 emptyState.classList.remove('hidden');
                 emptyState.classList.add('flex');
                 return;
@@ -670,12 +687,12 @@
                 if (!phoneW || !desktopW) return;
 
                 const card = document.createElement('div');
-                card.className = "glass-card rounded-2xl overflow-hidden p-4 flex flex-col gap-3 border border-amber-500/30";
+                card.className = "glass-card rounded-2xl overflow-hidden p-4 flex flex-col gap-3 border border-amber-500/40 shadow-lg shadow-amber-500/10";
                 card.innerHTML = `
                     <div class="flex items-center justify-between border-b border-slate-800 pb-2">
                         <div class="flex items-center gap-2">
-                            <span class="px-2 py-0.5 rounded-md text-[10px] font-bold uppercase bg-amber-500/20 text-amber-300 border border-amber-500/40">
-                                📱💻 Combo Set #${idx + 1}
+                            <span class="px-2.5 py-0.5 rounded-md text-[10px] font-extrabold uppercase bg-amber-500/20 text-amber-300 border border-amber-500/40 flex items-center gap-1">
+                                <i data-lucide="link" class="w-3 h-3"></i> Combo Pair #${idx + 1}
                             </span>
                             <h4 class="text-xs font-bold text-white truncate">${combo.title}</h4>
                         </div>
@@ -684,28 +701,24 @@
                         </button>
                     </div>
 
-                    <!-- Dual Side-by-Side Preview -->
                     <div class="grid grid-cols-12 gap-3 bg-cyber-900/80 p-3 rounded-xl border border-slate-800">
-                        <!-- Left Phone Preview -->
-                        <div class="col-span-5 relative aspect-[9/16] bg-black rounded-lg overflow-hidden cursor-pointer" onclick="openLightbox(${phoneW.id})">
-                            <img src="${phoneW.encodedPath}" alt="Mobile Pair" class="w-full h-full object-cover">
-                            <span class="absolute bottom-1.5 left-1.5 px-1.5 py-0.5 rounded text-[9px] font-mono bg-black/70 text-slate-200">Mobile</span>
+                        <div class="col-span-5 relative aspect-[9/16] bg-black rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(${phoneW.id})">
+                            <img src="${phoneW.encodedPath}" alt="Mobile Pair" class="w-full h-full object-cover group-hover:scale-105 transition-all">
+                            <span class="absolute bottom-1.5 left-1.5 px-1.5 py-0.5 rounded text-[9px] font-mono bg-black/80 text-cyan-300 border border-cyan-500/30">📱 Mobile</span>
                         </div>
 
-                        <!-- Right PC Desktop Preview -->
-                        <div class="col-span-7 relative aspect-video bg-black rounded-lg overflow-hidden cursor-pointer self-center" onclick="openLightbox(${desktopW.id})">
-                            <img src="${desktopW.encodedPath}" alt="Desktop Pair" class="w-full h-full object-cover">
-                            <span class="absolute bottom-1.5 left-1.5 px-1.5 py-0.5 rounded text-[9px] font-mono bg-black/70 text-slate-200">Desktop</span>
+                        <div class="col-span-7 relative aspect-video bg-black rounded-lg overflow-hidden cursor-pointer self-center group" onclick="openLightbox(${desktopW.id})">
+                            <img src="${desktopW.encodedPath}" alt="Desktop Pair" class="w-full h-full object-cover group-hover:scale-105 transition-all">
+                            <span class="absolute bottom-1.5 left-1.5 px-1.5 py-0.5 rounded text-[9px] font-mono bg-black/80 text-indigo-300 border border-indigo-500/30">💻 Desktop</span>
                         </div>
                     </div>
 
-                    <!-- Actions -->
                     <div class="flex items-center justify-between pt-1">
                         <div class="text-[10px] text-slate-400 font-mono">
                             ${phoneW.size} + ${desktopW.size}
                         </div>
 
-                        <button onclick="downloadComboPair(${phoneW.id}, ${desktopW.id})" class="px-4 py-2 rounded-xl bg-gradient-to-r from-amber-500 to-indigo-600 text-white text-xs font-bold flex items-center gap-1.5 hover:brightness-110">
+                        <button onclick="downloadComboPair(${phoneW.id}, ${desktopW.id})" class="px-4 py-2 rounded-xl bg-gradient-to-r from-amber-500 to-indigo-600 text-white text-xs font-bold flex items-center gap-1.5 hover:brightness-110 shadow-md">
                             <i data-lucide="download" class="w-3.5 h-3.5"></i> Download Matching Pair
                         </button>
                     </div>
@@ -717,14 +730,14 @@
             gsap.from('#wallpaperGrid > div', { opacity: 0, y: 15, stagger: 0.05, duration: 0.3 });
         }
 
-        // Manual Combo Linker Studio Handlers
+        // Open Link Combo Modal & Filter out already-paired wallpapers
         function openLinkComboModal(id) {
             activeComboLinkSource = allWallpapers.find(w => w.id === id);
             if (!activeComboLinkSource) return;
 
             const targetCategory = activeComboLinkSource.category === 'phone' ? 'desktop' : 'phone';
             document.getElementById('linkComboModalTitle').innerText = `Pairing: ${activeComboLinkSource.title}`;
-            document.getElementById('linkComboModalMeta').innerText = `Select matching ${targetCategory === 'desktop' ? 'Desktop (PC)' : 'Mobile (Phone)'} counterpart`;
+            document.getElementById('linkComboModalMeta').innerText = `Select matching ${targetCategory === 'desktop' ? 'Desktop (PC)' : 'Mobile (Phone)'} counterpart (Already paired wallpapers excluded)`;
             
             document.getElementById('linkComboModal').classList.remove('hidden');
             renderComboCandidates('');
@@ -734,18 +747,32 @@
             document.getElementById('linkComboModal').classList.add('hidden');
         }
 
+        // Render Candidates Popup: Exclude ALREADY PAIRED wallpapers!
         function renderComboCandidates(query) {
             if (!activeComboLinkSource) return;
 
             const candidatesGrid = document.getElementById('comboCandidatesGrid');
             candidatesGrid.innerHTML = '';
 
+            const pairedSet = getPairedWallpaperIds();
             const targetCategory = activeComboLinkSource.category === 'phone' ? 'desktop' : 'phone';
+
+            // Filter out candidates that are ALREADY in a linked pair!
             const candidates = allWallpapers.filter(w => {
                 if (w.category !== targetCategory) return false;
+                if (pairedSet.has(w.id)) return false; // Rule 2: Exclude already-paired!
                 if (query && !w.title.toLowerCase().includes(query.toLowerCase()) && !w.filename.toLowerCase().includes(query.toLowerCase())) return false;
                 return true;
             });
+
+            if (candidates.length === 0) {
+                candidatesGrid.innerHTML = `
+                    <div class="col-span-full py-12 text-center text-slate-400 text-xs">
+                        No unpaired ${targetCategory === 'desktop' ? 'Desktop' : 'Mobile'} wallpapers available to link.
+                    </div>
+                `;
+                return;
+            }
 
             candidates.forEach(w => {
                 const card = document.createElement('div');
