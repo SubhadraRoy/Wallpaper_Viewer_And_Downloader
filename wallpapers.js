@@ -1,4 +1,4 @@
-[
+window.WALLPAPERS_DATA = [
   {
     "id": 1,
     "filename": "100_img_20260727_135637_712.jpg",
@@ -5739,4 +5739,4 @@
       "portrait"
     ]
   }
-]
+];
