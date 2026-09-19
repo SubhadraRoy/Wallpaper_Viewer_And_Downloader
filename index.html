@@ -3,7 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LuminaWall 2.0 — Next-Gen Wallpaper Viewer & Downloader Studio</title>
+    
+    <!-- Primary Web Quality & Technical SEO Metadata -->
+    <title>LuminaWall 2.0 — Next-Gen Wallpaper Viewer, Studio & Downloader</title>
+    <meta name="description" content="Discover, preview, edit, and download high-resolution 4K & HD Mobile, Desktop, and Matching Combo Wallpapers with real-time image filter studio.">
+    <meta name="theme-color" content="#030508">
+
+    <!-- Open Graph Social Sharing Metadata -->
+    <meta property="og:title" content="LuminaWall 2.0 — Next-Gen Wallpaper Viewer & Downloader Studio">
+    <meta property="og:description" content="High-resolution wallpaper gallery with live device previews, real-time image filter studio, and matching Mobile + Desktop combo pairs.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="background.jpg">
+
+    <!-- JSON-LD Structured Data Schema (Web Quality & SEO) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "LuminaWall Studio",
+      "applicationCategory": "MultimediaApplication",
+      "operatingSystem": "All",
+      "description": "High-Resolution Wallpaper Viewer, Live Filter Studio, and Dual-Device Combo Pair Downloader",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
     
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -29,13 +56,22 @@
                     fontFamily: {
                         sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
                         mono: ['JetBrains Mono', 'monospace']
+                    },
+                    keyframes: {
+                        marquee: {
+                            '0%': { transform: 'translateX(0%)' },
+                            '100%': { transform: 'translateX(-50%)' }
+                        }
+                    },
+                    animation: {
+                        marquee: 'marquee 35s linear infinite'
                     }
                 }
             }
         }
     </script>
     
-    <!-- Google Fonts -->
+    <!-- Google Fonts Preload & Style -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -61,7 +97,7 @@
             min-height: 100vh;
         }
 
-        /* Ambient Glassmorphism */
+        /* Ambient Glassmorphism Design System */
         .glass-panel {
             background: rgba(8, 12, 20, 0.75);
             backdrop-filter: blur(24px);
@@ -83,7 +119,7 @@
             transform: translateY(-5px);
         }
 
-        /* Canvas Particle Mesh */
+        /* WebGL Canvas Particle Mesh Background */
         #cyberCanvas {
             position: fixed;
             top: 0;
@@ -92,10 +128,10 @@
             height: 100vh;
             pointer-events: none;
             z-index: 0;
-            opacity: 0.7;
+            opacity: 0.75;
         }
 
-        /* Custom Cursor Follower */
+        /* Custom Magnetic Cursor Follower */
         .cursor-dot {
             width: 8px;
             height: 8px;
@@ -104,7 +140,7 @@
             position: fixed;
             pointer-events: none;
             z-index: 9999;
-            transition: transform 0.1s ease-out;
+            transition: transform 0.08s ease-out;
             transform: translate(-50%, -50%);
         }
 
@@ -116,7 +152,7 @@
             position: fixed;
             pointer-events: none;
             z-index: 9998;
-            transition: transform 0.18s cubic-bezier(0.16, 1, 0.3, 1), width 0.2s, height 0.2s, border-color 0.2s;
+            transition: transform 0.16s cubic-bezier(0.16, 1, 0.3, 1), width 0.2s, height 0.2s;
             transform: translate(-50%, -50%);
         }
 
@@ -161,21 +197,36 @@
 </head>
 <body class="relative min-h-screen text-slate-100 flex flex-col selection:bg-indigo-500 selection:text-white">
 
-    <!-- Interactive Cursor Follower -->
-    <div id="cursorDot" class="cursor-dot hidden md:block"></div>
-    <div id="cursorRing" class="cursor-ring hidden md:block"></div>
+    <!-- Interactive Magnetic Cursor Follower -->
+    <div id="cursorDot" class="cursor-dot hidden md:block" aria-hidden="true"></div>
+    <div id="cursorRing" class="cursor-ring hidden md:block" aria-hidden="true"></div>
 
-    <!-- WebGL Canvas Particle Background -->
-    <canvas id="cyberCanvas"></canvas>
+    <!-- WebGL Canvas Particle Mesh Background -->
+    <canvas id="cyberCanvas" aria-hidden="true"></canvas>
 
-    <!-- Main Application Frame -->
+    <!-- Main Application Container -->
     <div class="relative z-10 flex flex-col min-h-screen">
+
+        <!-- Top Announcement Marquee Loop Bar (Magic UI) -->
+        <div class="bg-gradient-to-r from-indigo-950 via-cyber-900 to-indigo-950 border-b border-indigo-500/20 py-1.5 px-4 overflow-hidden text-xs text-slate-300">
+            <div class="flex whitespace-nowrap animate-marquee gap-8">
+                <span class="flex items-center gap-2"><i data-lucide="sparkles" class="w-3.5 h-3.5 text-cyan-400"></i> LuminaWall 2.0 Studio Released</span>
+                <span class="flex items-center gap-2"><i data-lucide="monitor" class="w-3.5 h-3.5 text-indigo-400"></i> 4K & UltraWide Desktop Collection</span>
+                <span class="flex items-center gap-2"><i data-lucide="smartphone" class="w-3.5 h-3.5 text-pink-400"></i> Mobile AMOLED Wallpapers</span>
+                <span class="flex items-center gap-2"><i data-lucide="link" class="w-3.5 h-3.5 text-amber-400"></i> 📱💻 Matching Combo Pair Linker</span>
+                <span class="flex items-center gap-2"><i data-lucide="sliders" class="w-3.5 h-3.5 text-emerald-400"></i> Live Image Filter Studio</span>
+                <span class="flex items-center gap-2" aria-hidden="true"><i data-lucide="sparkles" class="w-3.5 h-3.5 text-cyan-400"></i> LuminaWall 2.0 Studio Released</span>
+                <span class="flex items-center gap-2" aria-hidden="true"><i data-lucide="monitor" class="w-3.5 h-3.5 text-indigo-400"></i> 4K & UltraWide Desktop Collection</span>
+                <span class="flex items-center gap-2" aria-hidden="true"><i data-lucide="smartphone" class="w-3.5 h-3.5 text-pink-400"></i> Mobile AMOLED Wallpapers</span>
+                <span class="flex items-center gap-2" aria-hidden="true"><i data-lucide="link" class="w-3.5 h-3.5 text-amber-400"></i> 📱💻 Matching Combo Pair Linker</span>
+            </div>
+        </div>
 
         <!-- Sticky Header Navbar -->
         <header class="sticky top-0 z-40 w-full glass-panel border-b border-slate-800/80 px-4 lg:px-8 py-3 transition-all">
             <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
                 
-                <!-- Brand Logo & Reset -->
+                <!-- Brand Logo & Home Reset -->
                 <div class="flex items-center gap-3 cursor-pointer group" onclick="resetFilters()">
                     <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-600 via-cyan-500 to-pink-500 p-0.5 flex items-center justify-center shadow-lg shadow-indigo-500/30 group-hover:scale-105 transition-transform duration-300">
                         <div class="w-full h-full bg-cyber-950 rounded-[10px] flex items-center justify-center">
@@ -188,7 +239,7 @@
                     </div>
                 </div>
 
-                <!-- Global Search Input Bar -->
+                <!-- Global Search Bar with Keyboard Shortcuts -->
                 <div class="flex-1 max-w-md hidden md:block relative">
                     <div class="relative flex items-center">
                         <i data-lucide="search" class="w-4 h-4 absolute left-3.5 text-slate-400 pointer-events-none"></i>
@@ -205,10 +256,15 @@
                     </div>
                 </div>
 
-                <!-- Toolbar Actions -->
-                <div class="flex items-center gap-2.5">
+                <!-- Header Actions Toolbar -->
+                <div class="flex items-center gap-2">
+                    <!-- Keyboard Shortcuts Legend Modal Trigger -->
+                    <button onclick="openShortcutsModal()" class="p-2.5 rounded-xl glass-card text-slate-300 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 transition-all" title="Keyboard Shortcuts (?)" aria-label="View keyboard shortcuts">
+                        <i data-lucide="help-circle" class="w-4.5 h-4.5"></i>
+                    </button>
+
                     <!-- Random Shuffle Discovery -->
-                    <button onclick="shuffleGallery()" class="p-2.5 rounded-xl glass-card text-slate-300 hover:text-cyan-400 hover:border-cyan-500/40 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500 transition-all" title="Shuffle Discovery" aria-label="Shuffle discovery wallpapers">
+                    <button onclick="shuffleGallery()" class="p-2.5 rounded-xl glass-card text-slate-300 hover:text-cyan-400 hover:border-cyan-500/40 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500 transition-all" title="Shuffle Discovery (R)" aria-label="Shuffle discovery wallpapers">
                         <i data-lucide="shuffle" class="w-4.5 h-4.5"></i>
                     </button>
 
@@ -240,7 +296,7 @@
         <!-- Main Workspace Section -->
         <main class="flex-1 max-w-7xl w-full mx-auto px-4 lg:px-8 py-6 flex flex-col gap-6">
 
-            <!-- Category Tabs & Genre Filter Control Hub -->
+            <!-- Category Tabs & Genre Filter Control Hub (Bento Component) -->
             <section class="glass-panel p-4 rounded-3xl border border-slate-800/80 flex flex-col gap-3.5 shadow-xl">
                 
                 <!-- Target Device & Combos Tabs -->
@@ -300,13 +356,13 @@
                         <i data-lucide="image-off" class="w-8 h-8 text-indigo-400"></i>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-1" id="emptyStateTitle">No Wallpapers Matched</h3>
-                    <p class="text-slate-400 text-sm max-w-sm mb-4" id="emptyStateSubtitle">Try resetting your search query or pair matching Phone & PC wallpapers.</p>
+                    <p class="text-slate-400 text-sm max-w-sm mb-4" id="emptyStateSubtitle">Try resetting your search query or genre filter.</p>
                     <button onclick="resetFilters()" class="px-5 py-2.5 rounded-xl bg-indigo-600 text-white font-bold text-xs hover:bg-indigo-500 shadow-lg shadow-indigo-600/30 transition-all">Reset All Filters</button>
                 </div>
             </section>
         </main>
 
-        <!-- Batch Selection Toolbar -->
+        <!-- Batch Selection Floating Toolbar -->
         <div id="batchToolbar" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 hidden max-w-md w-[92%] glass-panel rounded-2xl p-4 border border-indigo-500/50 shadow-2xl flex items-center justify-between gap-4 transition-all">
             <div class="flex items-center gap-3">
                 <div class="w-8 h-8 rounded-lg bg-indigo-600 flex items-center justify-center text-white font-bold text-xs shadow-md" id="batchCountBadge">0</div>
@@ -525,6 +581,39 @@
             </div>
         </div>
 
+        <!-- Keyboard Shortcuts Help Modal -->
+        <div id="shortcutsModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/85 backdrop-blur-2xl">
+            <div class="relative w-full max-w-md glass-panel rounded-3xl border border-slate-700/80 p-6 flex flex-col gap-4 shadow-2xl">
+                <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+                    <h3 class="text-sm font-bold text-white flex items-center gap-2">
+                        <i data-lucide="keyboard" class="w-4 h-4 text-cyan-400"></i> Keyboard Shortcuts Cheat Sheet
+                    </h3>
+                    <button onclick="closeShortcutsModal()" class="w-7 h-7 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:text-white" aria-label="Close shortcuts help">
+                        <i data-lucide="x" class="w-4 h-4"></i>
+                    </button>
+                </div>
+
+                <div class="flex flex-col gap-2.5 text-xs text-slate-300">
+                    <div class="flex justify-between items-center bg-cyber-900/60 p-2 rounded-xl border border-slate-800">
+                        <span>Focus Search Bar</span>
+                        <kbd class="px-2 py-0.5 font-mono text-[10px] bg-slate-800 text-indigo-300 rounded border border-slate-700">/</kbd>
+                    </div>
+                    <div class="flex justify-between items-center bg-cyber-900/60 p-2 rounded-xl border border-slate-800">
+                        <span>Shuffle Discovery</span>
+                        <kbd class="px-2 py-0.5 font-mono text-[10px] bg-slate-800 text-indigo-300 rounded border border-slate-700">R</kbd>
+                    </div>
+                    <div class="flex justify-between items-center bg-cyber-900/60 p-2 rounded-xl border border-slate-800">
+                        <span>Lightbox Navigation</span>
+                        <kbd class="px-2 py-0.5 font-mono text-[10px] bg-slate-800 text-indigo-300 rounded border border-slate-700">← / →</kbd>
+                    </div>
+                    <div class="flex justify-between items-center bg-cyber-900/60 p-2 rounded-xl border border-slate-800">
+                        <span>Close Active Modal</span>
+                        <kbd class="px-2 py-0.5 font-mono text-[10px] bg-slate-800 text-indigo-300 rounded border border-slate-700">Esc</kbd>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Toast Notifications -->
         <div id="toastContainer" class="fixed top-20 right-6 z-50 flex flex-col gap-2 pointer-events-none"></div>
 
@@ -533,7 +622,7 @@
             <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
                 <div class="flex items-center gap-2">
                     <i data-lucide="sparkles" class="w-4 h-4 text-indigo-400"></i>
-                    <span class="font-bold text-slate-200">LuminaWall 2.0</span> — High-Resolution Wallpaper Gallery
+                    <span class="font-bold text-slate-200">LuminaWall 2.0 Studio</span> — High-Resolution Wallpaper Gallery
                 </div>
                 <p id="footerTotalCount">Wallpapers Collection</p>
             </div>
@@ -572,6 +661,12 @@
             startLockClock();
 
             document.addEventListener('keydown', (e) => {
+                if (e.key === '?' && document.activeElement.tagName !== 'INPUT') {
+                    openShortcutsModal();
+                }
+                if (e.key === 'r' && document.activeElement.tagName !== 'INPUT') {
+                    shuffleGallery();
+                }
                 if (e.key === '/' && document.activeElement.tagName !== 'INPUT') {
                     e.preventDefault();
                     document.getElementById('searchInput').focus();
@@ -586,6 +681,9 @@
                 }
                 if (!document.getElementById('linkComboModal').classList.contains('hidden')) {
                     if (e.key === 'Escape') closeLinkComboModal();
+                }
+                if (!document.getElementById('shortcutsModal').classList.contains('hidden')) {
+                    if (e.key === 'Escape') closeShortcutsModal();
                 }
             });
         });
@@ -722,7 +820,7 @@
 
                             <div class="absolute top-2.5 right-2.5 z-20" onclick="event.stopPropagation()">
                                 <input type="checkbox" onchange="toggleBatchItem(${w.id})" ${isChecked ? 'checked' : ''} 
-                                    class="w-4 h-4 rounded border-slate-600 text-indigo-600 focus:ring-indigo-500 bg-black/60 cursor-pointer">
+                                    class="w-4 h-4 rounded border-slate-600 text-indigo-600 focus:ring-indigo-500 bg-black/60 cursor-pointer" aria-label="Select wallpaper for batch download">
                             </div>
 
                             <div class="absolute bottom-2.5 left-2.5 z-10">
@@ -740,25 +838,25 @@
 
                             <div class="flex items-center gap-1">
                                 ${!isPaired ? `
-                                    <button onclick="openLinkComboModal(${w.id})" class="p-1.5 rounded-lg text-slate-400 hover:text-amber-400 hover:bg-amber-500/10 transition-all" title="Pair as Matching Combo">
+                                    <button onclick="openLinkComboModal(${w.id})" class="p-1.5 rounded-lg text-slate-400 hover:text-amber-400 hover:bg-amber-500/10 transition-all" title="Pair as Matching Combo" aria-label="Pair wallpaper as combo">
                                         <i data-lucide="link" class="w-3.5 h-3.5"></i>
                                     </button>
                                 ` : `
-                                    <button onclick="switchCategory('combos')" class="p-1.5 rounded-lg text-amber-400 hover:bg-amber-500/10 transition-all" title="View Linked Combo">
+                                    <button onclick="switchCategory('combos')" class="p-1.5 rounded-lg text-amber-400 hover:bg-amber-500/10 transition-all" title="View Linked Combo" aria-label="View linked combo pair">
                                         <i data-lucide="link-2" class="w-3.5 h-3.5"></i>
                                     </button>
                                 `}
 
-                                <button onclick="toggleFavorite(${w.id})" class="p-1.5 rounded-lg text-slate-400 hover:text-pink-400 hover:bg-pink-500/10 transition-all">
+                                <button onclick="toggleFavorite(${w.id})" class="p-1.5 rounded-lg text-slate-400 hover:text-pink-400 hover:bg-pink-500/10 transition-all" aria-label="Toggle favorite">
                                     <i data-lucide="heart" class="w-3.5 h-3.5 ${isFav ? 'fill-pink-500 text-pink-500' : ''}"></i>
                                 </button>
                                 
-                                <button onclick="openDevicePreview(${w.id})" class="p-1.5 rounded-lg text-slate-400 hover:text-cyan-400 hover:bg-cyan-500/10 transition-all" title="Live Preview & Filters">
+                                <button onclick="openDevicePreview(${w.id})" class="p-1.5 rounded-lg text-slate-400 hover:text-cyan-400 hover:bg-cyan-500/10 transition-all" title="Live Preview & Filters" aria-label="Open device preview and filter studio">
                                     <i data-lucide="sliders" class="w-3.5 h-3.5"></i>
                                 </button>
 
                                 <a href="${w.encodedPath}" download="${w.filename}" onclick="showToast('Downloading...', 'success')" 
-                                    class="p-1.5 rounded-lg text-slate-400 hover:text-indigo-400 hover:bg-indigo-500/10 transition-all" title="Download HD">
+                                    class="p-1.5 rounded-lg text-slate-400 hover:text-indigo-400 hover:bg-indigo-500/10 transition-all" title="Download HD" aria-label="Download HD wallpaper">
                                     <i data-lucide="download" class="w-3.5 h-3.5"></i>
                                 </a>
                             </div>
@@ -816,7 +914,7 @@
                             </span>
                             <h4 class="text-xs font-bold text-white truncate" title="${displayTitle}">${displayTitle}</h4>
                         </div>
-                        <button onclick="unlinkCombo('${combo.id}')" class="p-1.5 rounded-lg text-slate-400 hover:text-red-400 hover:bg-red-500/10 shrink-0" title="Unlink Combo Pair">
+                        <button onclick="unlinkCombo('${combo.id}')" class="p-1.5 rounded-lg text-slate-400 hover:text-red-400 hover:bg-red-500/10 shrink-0" title="Unlink Combo Pair" aria-label="Unlink combo pair">
                             <i data-lucide="trash-2" class="w-4 h-4"></i>
                         </button>
                     </div>
@@ -1033,6 +1131,14 @@
             filteredWallpapers.sort(() => Math.random() - 0.5);
             renderGallery();
             showToast('Shuffled Discovery Mode ✨', 'info');
+        }
+
+        function openShortcutsModal() {
+            document.getElementById('shortcutsModal').classList.remove('hidden');
+        }
+
+        function closeShortcutsModal() {
+            document.getElementById('shortcutsModal').classList.add('hidden');
         }
 
         function toggleFavorite(id) {
