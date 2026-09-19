@@ -1,24 +1,22 @@
-# LuminaWall — Super Advanced Wallpaper Studio & Downloader
+# LuminaWall — Wallpaper Studio & Downloader
 
 ✨ **Live Demo**: [https://subhadraroy.github.io/website/](https://subhadraroy.github.io/website/)
 
-LuminaWall is a next-generation static web application for browsing, previewing, and downloading high-resolution wallpapers tailored for **Mobile Phones**, **Desktop Displays**, and **Universal Screens**.
+LuminaWall is a high-performance, responsive web application for browsing, pairing, previewing, and downloading high-resolution wallpapers for **Mobile Phones**, **Desktop Displays**, and **Matching Phone + PC Combos**.
 
 ---
 
 ## 🚀 Key Features
 
-- **📱 Smart Device Categorization**: Automatically indexes wallpaper dimensions into **Phone** (179 portrait), **Desktop** (42 landscape), and **Universal** categories.
+- **📱 Smart Screen Categorization**: Automatically indexes wallpaper dimensions into **Phone**, **Desktop**, and **Universal** categories.
+- **📱💻 Matching Phone & PC Combos Tab**: Pair and view matching Mobile and Desktop wallpapers side-by-side with instant 1-click dual downloads.
+- **🔗 Manual Combo Matcher Studio**: Click **"🔗 Link Pair"** on any wallpaper card to select its matching counterpart and save your custom pairs.
 - **👁️ Interactive Live Device Preview Studio**:
-  - **Phone Mockup**: Realistic iPhone frame simulation with live lockscreen clock, battery/status bar, and wallpaper scaling.
-  - **Desktop Mockup**: Monitor frame simulation with macOS/Windows dock, app windows, and desktop scaling.
-- **⚡ Single & Batch Downloader**:
-  - Direct 1-click high-resolution download with clean filename handling.
-  - Floating multi-select tray with **Batch ZIP Archiver** powered by JSZip.
-- **🔍 Advanced Search & Tag Filtering**: Instant search across titles, dimensions, tags (`#krishna`, `#radheradhe`, `#pink`, `#pinterest`, `#4k`), and categories.
-- **🎨 Modern Cyber-Glassmorphism UI**: Built with Tailwind CSS, Lucide Icons, GSAP animations, and an interactive WebGL/Canvas ambient particle backdrop.
-- **🔍 Full-Screen Lightbox**: Keyboard-controlled slide navigation (`←`, `→`, `Esc`) with detailed EXIF data swatches.
-- **❤️ Local Favorites System**: Bookmark favorite wallpapers persisted in browser `localStorage`.
+  - **Phone Mockup**: Realistic iPhone frame simulation with live lockscreen clock, status bar, and customizable filters.
+  - **Desktop Mockup**: Ultra-wide monitor frame simulation with scaling controls.
+- **🎛️ Real Image Filter Studio**: Live sliders for **Brightness**, **Contrast**, **Saturation**, **Hue Rotation**, and **Blur** with direct **Download Custom Edited HD** export.
+- **⚡ Single & Batch Downloader**: Direct 1-click downloads plus a floating multi-select **Batch ZIP Archiver** powered by JSZip.
+- **❤️ Local Favorites & Combos Persistence**: Bookmarks and manual combo pairings saved automatically in browser `localStorage`.
 
 ---
 
@@ -27,9 +25,10 @@ LuminaWall is a next-generation static web application for browsing, previewing,
 ```
 Wallpaper_Viewer_And_Downloader/
 ├── index.html           # Main LuminaWall Web Application
-├── wallpapers.json      # Auto-indexed wallpaper metadata database
-├── generate_index.py    # Python metadata indexing script
-├── Pictures/            # Directory containing 221 high-definition wallpapers
+├── wallpapers.js        # Embedded JavaScript wallpapers database (Zero-CORS)
+├── wallpapers.json      # JSON metadata database
+├── sanitize_and_tag.py  # Python metadata indexing & auto-tagging script
+├── Pictures/            # Directory containing high-definition wallpapers
 └── README.md            # Documentation
 ```
 
@@ -37,8 +36,9 @@ Wallpaper_Viewer_And_Downloader/
 
 ## ⚙️ Updating the Wallpaper Index
 
-If you add new images to the `Pictures/` folder, regenerate `wallpapers.json` by running:
+Whenever you add new wallpapers to the `Pictures/` folder, run:
 
 ```bash
-python generate_index.py
+python sanitize_and_tag.py
 ```
+This automatically cleans filenames, extracts color palettes, assigns tags, and updates `wallpapers.json` and `wallpapers.js`.

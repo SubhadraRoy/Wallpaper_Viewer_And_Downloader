@@ -153,11 +153,11 @@
                     </div>
                 </div>
 
-                <!-- Global Search Input Bar -->
+                <!-- Global Dynamic Search Input Bar -->
                 <div class="flex-1 max-w-md hidden md:block relative">
                     <div class="relative flex items-center">
                         <i data-lucide="search" class="w-4 h-4 absolute left-3.5 text-slate-400 pointer-events-none"></i>
-                        <input type="text" id="searchInput" placeholder="Search 221 wallpapers..." 
+                        <input type="text" id="searchInput" placeholder="Search wallpapers..." 
                             class="w-full pl-10 pr-10 py-2.5 rounded-xl bg-cyber-800/80 border border-slate-700/60 text-sm text-slate-200 placeholder-slate-400 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all"
                             oninput="onSearchChange(this.value)">
                         <button id="clearSearchBtn" onclick="clearSearch()" class="hidden absolute right-3 text-slate-400 hover:text-white">
@@ -194,17 +194,22 @@
         <!-- Main Content -->
         <main class="flex-1 max-w-7xl w-full mx-auto px-4 lg:px-8 py-6 flex flex-col gap-6">
 
-            <!-- Ultra-Clean Target Screen Tabs (Order, Color & Genre selectors removed as requested) -->
+            <!-- Target Screen Tabs & Matching Combos Tab -->
             <section class="glass-panel p-3.5 rounded-2xl border border-slate-800/80 flex items-center justify-between gap-3">
                 <div class="flex items-center gap-1.5 overflow-x-auto">
                     <button onclick="switchCategory('all')" id="tab-all" class="category-tab active px-4 py-2 rounded-xl text-xs font-bold flex items-center gap-1.5 bg-indigo-600 text-white shadow-lg shadow-indigo-600/30 transition-all whitespace-nowrap">
-                        <i data-lucide="layers" class="w-3.5 h-3.5"></i> All Wallpapers (<span id="count-all">221</span>)
+                        <i data-lucide="layers" class="w-3.5 h-3.5"></i> All Wallpapers (<span id="count-all">0</span>)
                     </button>
                     <button onclick="switchCategory('phone')" id="tab-phone" class="category-tab px-4 py-2 rounded-xl text-xs font-semibold flex items-center gap-1.5 text-slate-300 hover:bg-cyber-800 transition-all whitespace-nowrap">
-                        <i data-lucide="smartphone" class="w-3.5 h-3.5 text-cyan-400"></i> 📱 Mobile (<span id="count-phone">179</span>)
+                        <i data-lucide="smartphone" class="w-3.5 h-3.5 text-cyan-400"></i> 📱 Mobile (<span id="count-phone">0</span>)
                     </button>
                     <button onclick="switchCategory('desktop')" id="tab-desktop" class="category-tab px-4 py-2 rounded-xl text-xs font-semibold flex items-center gap-1.5 text-slate-300 hover:bg-cyber-800 transition-all whitespace-nowrap">
-                        <i data-lucide="monitor" class="w-3.5 h-3.5 text-indigo-400"></i> 💻 Desktop (<span id="count-desktop">42</span>)
+                        <i data-lucide="monitor" class="w-3.5 h-3.5 text-indigo-400"></i> 💻 Desktop (<span id="count-desktop">0</span>)
+                    </button>
+
+                    <!-- New Matching Phone + Desktop Combos Tab -->
+                    <button onclick="switchCategory('combos')" id="tab-combos" class="category-tab px-4 py-2 rounded-xl text-xs font-semibold flex items-center gap-1.5 text-slate-300 hover:bg-cyber-800 transition-all whitespace-nowrap">
+                        <i data-lucide="sparkles" class="w-3.5 h-3.5 text-amber-400"></i> 📱💻 Matching Combos (<span id="count-combos">0</span>)
                     </button>
                 </div>
             </section>
@@ -220,8 +225,8 @@
                     <div class="w-16 h-16 rounded-full bg-slate-800/80 flex items-center justify-center text-slate-400 mb-4">
                         <i data-lucide="image-off" class="w-8 h-8"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-1">No Wallpapers Matched</h3>
-                    <p class="text-slate-400 text-sm max-w-sm mb-4">Try resetting your search query.</p>
+                    <h3 class="text-xl font-bold text-white mb-1" id="emptyStateTitle">No Wallpapers Matched</h3>
+                    <p class="text-slate-400 text-sm max-w-sm mb-4" id="emptyStateSubtitle">Try resetting your search query or pair matching Phone & PC wallpapers.</p>
                     <button onclick="resetFilters()" class="px-4 py-2 rounded-xl bg-indigo-600 text-white font-semibold text-xs hover:bg-indigo-500 transition-all">Reset Search</button>
                 </div>
             </section>
@@ -241,6 +246,36 @@
                 <button onclick="downloadBatchZip()" id="batchZipBtn" class="px-4 py-1.5 rounded-lg bg-gradient-to-r from-indigo-600 to-cyan-500 text-white text-xs font-bold flex items-center gap-2 hover:brightness-110 transition-all">
                     <i data-lucide="archive" class="w-3.5 h-3.5"></i> Download ZIP
                 </button>
+            </div>
+        </div>
+
+        <!-- Manual Combo Linker Studio Modal -->
+        <div id="linkComboModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 sm:p-6 bg-black/85 backdrop-blur-2xl">
+            <div class="relative w-full max-w-3xl glass-panel rounded-3xl border border-slate-700/80 overflow-hidden flex flex-col max-h-[85vh]">
+                <div class="px-6 py-4 border-b border-slate-800 flex items-center justify-between bg-cyber-900/80">
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="link" class="w-5 h-5 text-amber-400"></i>
+                        <div>
+                            <h3 class="text-base font-bold text-white" id="linkComboModalTitle">Link Matching Combo Pair</h3>
+                            <p class="text-xs text-slate-400" id="linkComboModalMeta">Select matching Phone or PC counterpart</p>
+                        </div>
+                    </div>
+                    <button onclick="closeLinkComboModal()" class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:text-white">
+                        <i data-lucide="x" class="w-4 h-4"></i>
+                    </button>
+                </div>
+
+                <div class="p-4 bg-cyber-900/40 border-b border-slate-800/80">
+                    <input type="text" id="comboSearchInput" placeholder="Filter candidate wallpapers by name..." 
+                        class="w-full px-4 py-2 rounded-xl bg-cyber-800 border border-slate-700 text-xs text-white focus:outline-none focus:border-indigo-500"
+                        oninput="renderComboCandidates(this.value)">
+                </div>
+
+                <div class="flex-1 overflow-y-auto p-6">
+                    <div id="comboCandidatesGrid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                        <!-- Candidate wallpapers -->
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -384,7 +419,7 @@
         <div id="lightboxModal" class="fixed inset-0 z-50 hidden bg-black/95 backdrop-blur-2xl flex flex-col justify-between p-4 sm:p-8 transition-all">
             <div class="flex items-center justify-between relative z-10">
                 <div class="flex items-center gap-3">
-                    <span id="lightboxCounter" class="px-3 py-1 rounded-full bg-slate-800 text-xs font-mono text-slate-300">1 / 221</span>
+                    <span id="lightboxCounter" class="px-3 py-1 rounded-full bg-slate-800 text-xs font-mono text-slate-300">1</span>
                     <h3 id="lightboxTitle" class="text-sm font-bold text-white truncate max-w-xs sm:max-w-md">Wallpaper</h3>
                 </div>
 
@@ -430,7 +465,7 @@
                     <i data-lucide="sparkles" class="w-4 h-4 text-indigo-400"></i>
                     <span class="font-bold text-slate-200">LuminaWall</span> — High-Resolution Wallpaper Gallery
                 </div>
-                <p>221 Wallpapers HD & 4K</p>
+                <p id="footerTotalCount">Wallpapers Collection</p>
             </div>
         </footer>
     </div>
@@ -440,11 +475,13 @@
         let allWallpapers = [];
         let filteredWallpapers = [];
         let favorites = new Set(JSON.parse(localStorage.getItem('lumina_favs') || '[]'));
+        let combos = JSON.parse(localStorage.getItem('lumina_combos') || '[]');
         let selectedBatch = new Set();
         let currentCategory = 'all';
         let searchQuery = '';
         let currentLightboxIndex = 0;
         let activePreviewWallpaper = null;
+        let activeComboLinkSource = null;
 
         document.addEventListener('DOMContentLoaded', () => {
             lucide.createIcons();
@@ -460,6 +497,9 @@
                 }
                 if (!document.getElementById('devicePreviewModal').classList.contains('hidden')) {
                     if (e.key === 'Escape') closeDevicePreview();
+                }
+                if (!document.getElementById('linkComboModal').classList.contains('hidden')) {
+                    if (e.key === 'Escape') closeLinkComboModal();
                 }
             });
         });
@@ -489,11 +529,18 @@
             document.getElementById('count-all').innerText = allWallpapers.length;
             document.getElementById('count-phone').innerText = phoneCount;
             document.getElementById('count-desktop').innerText = desktopCount;
-
+            document.getElementById('count-combos').innerText = combos.length;
             document.getElementById('favoriteBadgeCount').innerText = favorites.size;
+            document.getElementById('footerTotalCount').innerText = `${allWallpapers.length} HD & 4K Wallpapers Collection`;
+            document.getElementById('searchInput').placeholder = `Search ${allWallpapers.length} wallpapers...`;
         }
 
         function applyFilters() {
+            if (currentCategory === 'combos') {
+                renderCombosGrid();
+                return;
+            }
+
             filteredWallpapers = allWallpapers.filter(w => {
                 if (currentCategory === 'phone' && w.category !== 'phone') return false;
                 if (currentCategory === 'desktop' && w.category !== 'desktop') return false;
@@ -521,6 +568,8 @@
             grid.innerHTML = '';
 
             if (filteredWallpapers.length === 0) {
+                document.getElementById('emptyStateTitle').innerText = "No Wallpapers Matched";
+                document.getElementById('emptyStateSubtitle').innerText = "Try resetting your search query.";
                 emptyState.classList.remove('hidden');
                 emptyState.classList.add('flex');
                 return;
@@ -567,6 +616,11 @@
                             </div>
 
                             <div class="flex items-center gap-1">
+                                <!-- Link Combo Button -->
+                                <button onclick="openLinkComboModal(${w.id})" class="p-1.5 rounded-lg text-slate-400 hover:text-amber-400 hover:bg-amber-500/10 transition-all" title="Pair as Matching Combo">
+                                    <i data-lucide="link" class="w-3.5 h-3.5"></i>
+                                </button>
+
                                 <button onclick="toggleFavorite(${w.id})" class="p-1.5 rounded-lg text-slate-400 hover:text-pink-400 hover:bg-pink-500/10 transition-all">
                                     <i data-lucide="heart" class="w-3.5 h-3.5 ${isFav ? 'fill-pink-500 text-pink-500' : ''}"></i>
                                 </button>
@@ -590,6 +644,176 @@
             gsap.from('#wallpaperGrid > div', { opacity: 0, y: 15, stagger: 0.02, duration: 0.3 });
         }
 
+        // Render Matching Combos Tab Grid
+        function renderCombosGrid() {
+            const grid = document.getElementById('wallpaperGrid');
+            const emptyState = document.getElementById('emptyState');
+
+            grid.innerHTML = '';
+            grid.className = "grid grid-cols-1 md:grid-cols-2 gap-6";
+
+            if (combos.length === 0) {
+                document.getElementById('emptyStateTitle').innerText = "No Matching Combos Linked";
+                document.getElementById('emptyStateSubtitle').innerText = "Click the 🔗 Link Pair button on any wallpaper card to manually create a matching Phone + Desktop combo pair!";
+                emptyState.classList.remove('hidden');
+                emptyState.classList.add('flex');
+                return;
+            } else {
+                emptyState.classList.add('hidden');
+                emptyState.classList.remove('flex');
+            }
+
+            combos.forEach((combo, idx) => {
+                const phoneW = allWallpapers.find(w => w.id === combo.phoneId);
+                const desktopW = allWallpapers.find(w => w.id === combo.desktopId);
+
+                if (!phoneW || !desktopW) return;
+
+                const card = document.createElement('div');
+                card.className = "glass-card rounded-2xl overflow-hidden p-4 flex flex-col gap-3 border border-amber-500/30";
+                card.innerHTML = `
+                    <div class="flex items-center justify-between border-b border-slate-800 pb-2">
+                        <div class="flex items-center gap-2">
+                            <span class="px-2 py-0.5 rounded-md text-[10px] font-bold uppercase bg-amber-500/20 text-amber-300 border border-amber-500/40">
+                                📱💻 Combo Set #${idx + 1}
+                            </span>
+                            <h4 class="text-xs font-bold text-white truncate">${combo.title}</h4>
+                        </div>
+                        <button onclick="unlinkCombo('${combo.id}')" class="p-1.5 rounded-lg text-slate-400 hover:text-red-400 hover:bg-red-500/10" title="Unlink Combo Pair">
+                            <i data-lucide="trash-2" class="w-4 h-4"></i>
+                        </button>
+                    </div>
+
+                    <!-- Dual Side-by-Side Preview -->
+                    <div class="grid grid-cols-12 gap-3 bg-cyber-900/80 p-3 rounded-xl border border-slate-800">
+                        <!-- Left Phone Preview -->
+                        <div class="col-span-5 relative aspect-[9/16] bg-black rounded-lg overflow-hidden cursor-pointer" onclick="openLightbox(${phoneW.id})">
+                            <img src="${phoneW.encodedPath}" alt="Mobile Pair" class="w-full h-full object-cover">
+                            <span class="absolute bottom-1.5 left-1.5 px-1.5 py-0.5 rounded text-[9px] font-mono bg-black/70 text-slate-200">Mobile</span>
+                        </div>
+
+                        <!-- Right PC Desktop Preview -->
+                        <div class="col-span-7 relative aspect-video bg-black rounded-lg overflow-hidden cursor-pointer self-center" onclick="openLightbox(${desktopW.id})">
+                            <img src="${desktopW.encodedPath}" alt="Desktop Pair" class="w-full h-full object-cover">
+                            <span class="absolute bottom-1.5 left-1.5 px-1.5 py-0.5 rounded text-[9px] font-mono bg-black/70 text-slate-200">Desktop</span>
+                        </div>
+                    </div>
+
+                    <!-- Actions -->
+                    <div class="flex items-center justify-between pt-1">
+                        <div class="text-[10px] text-slate-400 font-mono">
+                            ${phoneW.size} + ${desktopW.size}
+                        </div>
+
+                        <button onclick="downloadComboPair(${phoneW.id}, ${desktopW.id})" class="px-4 py-2 rounded-xl bg-gradient-to-r from-amber-500 to-indigo-600 text-white text-xs font-bold flex items-center gap-1.5 hover:brightness-110">
+                            <i data-lucide="download" class="w-3.5 h-3.5"></i> Download Matching Pair
+                        </button>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+
+            lucide.createIcons();
+            gsap.from('#wallpaperGrid > div', { opacity: 0, y: 15, stagger: 0.05, duration: 0.3 });
+        }
+
+        // Manual Combo Linker Studio Handlers
+        function openLinkComboModal(id) {
+            activeComboLinkSource = allWallpapers.find(w => w.id === id);
+            if (!activeComboLinkSource) return;
+
+            const targetCategory = activeComboLinkSource.category === 'phone' ? 'desktop' : 'phone';
+            document.getElementById('linkComboModalTitle').innerText = `Pairing: ${activeComboLinkSource.title}`;
+            document.getElementById('linkComboModalMeta').innerText = `Select matching ${targetCategory === 'desktop' ? 'Desktop (PC)' : 'Mobile (Phone)'} counterpart`;
+            
+            document.getElementById('linkComboModal').classList.remove('hidden');
+            renderComboCandidates('');
+        }
+
+        function closeLinkComboModal() {
+            document.getElementById('linkComboModal').classList.add('hidden');
+        }
+
+        function renderComboCandidates(query) {
+            if (!activeComboLinkSource) return;
+
+            const candidatesGrid = document.getElementById('comboCandidatesGrid');
+            candidatesGrid.innerHTML = '';
+
+            const targetCategory = activeComboLinkSource.category === 'phone' ? 'desktop' : 'phone';
+            const candidates = allWallpapers.filter(w => {
+                if (w.category !== targetCategory) return false;
+                if (query && !w.title.toLowerCase().includes(query.toLowerCase()) && !w.filename.toLowerCase().includes(query.toLowerCase())) return false;
+                return true;
+            });
+
+            candidates.forEach(w => {
+                const card = document.createElement('div');
+                card.className = "glass-card rounded-xl p-2 cursor-pointer hover:border-amber-400 transition-all flex flex-col gap-1.5";
+                card.onclick = () => saveComboPair(activeComboLinkSource.id, w.id);
+                card.innerHTML = `
+                    <div class="relative aspect-video rounded-lg overflow-hidden bg-black">
+                        <img src="${w.encodedPath}" alt="${w.title}" class="w-full h-full object-cover">
+                    </div>
+                    <p class="text-[11px] font-bold text-slate-200 truncate">${w.title}</p>
+                `;
+                candidatesGrid.appendChild(card);
+            });
+        }
+
+        function saveComboPair(id1, id2) {
+            const w1 = allWallpapers.find(w => w.id === id1);
+            const w2 = allWallpapers.find(w => w.id === id2);
+            if (!w1 || !w2) return;
+
+            const phoneW = w1.category === 'phone' ? w1 : w2;
+            const desktopW = w1.category === 'desktop' ? w1 : w2;
+
+            const newCombo = {
+                id: `combo_${Date.now()}`,
+                phoneId: phoneW.id,
+                desktopId: desktopW.id,
+                title: `${phoneW.title} & ${desktopW.title}`
+            };
+
+            combos.push(newCombo);
+            localStorage.setItem('lumina_combos', JSON.stringify(combos));
+            
+            closeLinkComboModal();
+            updateStats();
+            showToast('Matching Pair linked & saved! 📱💻', 'success');
+            
+            switchCategory('combos');
+        }
+
+        function unlinkCombo(comboId) {
+            combos = combos.filter(c => c.id !== comboId);
+            localStorage.setItem('lumina_combos', JSON.stringify(combos));
+            updateStats();
+            applyFilters();
+            showToast('Combo pair unlinked', 'info');
+        }
+
+        function downloadComboPair(phoneId, desktopId) {
+            const w1 = allWallpapers.find(w => w.id === phoneId);
+            const w2 = allWallpapers.find(w => w.id === desktopId);
+            if (w1) {
+                const a1 = document.createElement('a');
+                a1.href = w1.encodedPath;
+                a1.download = w1.filename;
+                a1.click();
+            }
+            if (w2) {
+                setTimeout(() => {
+                    const a2 = document.createElement('a');
+                    a2.href = w2.encodedPath;
+                    a2.download = w2.filename;
+                    a2.click();
+                }, 300);
+            }
+            showToast('Downloading matching pair...', 'success');
+        }
+
         function handleImgError(img) {
             img.onerror = null;
             img.src = 'background.jpg';
@@ -606,6 +830,13 @@
             if (activeBtn) {
                 activeBtn.classList.add('bg-indigo-600', 'text-white', 'shadow-lg', 'shadow-indigo-600/30', 'font-bold');
                 activeBtn.classList.remove('text-slate-300');
+            }
+
+            const grid = document.getElementById('wallpaperGrid');
+            if (cat === 'combos') {
+                grid.className = "grid grid-cols-1 md:grid-cols-2 gap-6";
+            } else {
+                grid.className = "masonry-grid";
             }
 
             applyFilters();
@@ -898,7 +1129,7 @@
             setTimeout(() => toast.classList.remove('translate-x-10', 'opacity-0'), 10);
             setTimeout(() => {
                 toast.classList.add('translate-x-10', 'opacity-0');
-                setTimeout(() => toast.remove(), 300);
+                setTimeout(() => toast.remove(), 2500);
             }, 2500);
         }
 
