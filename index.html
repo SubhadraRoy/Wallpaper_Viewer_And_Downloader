@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en" class="dark scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LuminaWall — Modern Wallpaper Gallery & Downloader</title>
+    <title>LuminaWall 2.0 — Next-Gen Wallpaper Viewer & Downloader Studio</title>
     
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -14,15 +14,16 @@
                 extend: {
                     colors: {
                         cyber: {
-                            950: '#05070a',
-                            900: '#090b10',
-                            800: '#0f1420',
-                            700: '#171e30',
-                            600: '#232d48',
+                            950: '#030508',
+                            900: '#080c14',
+                            800: '#0f172a',
+                            700: '#1e293b',
+                            600: '#334155',
                             accent: '#6366f1',
                             neon: '#06b6d4',
                             pink: '#ec4899',
-                            gold: '#f59e0b'
+                            gold: '#f59e0b',
+                            emerald: '#10b981'
                         }
                     },
                     fontFamily: {
@@ -42,7 +43,7 @@
     <!-- Lucide Icons CDN -->
     <script src="https://unpkg.com/lucide@latest"></script>
     
-    <!-- GSAP for Animations -->
+    <!-- GSAP for Web Animations -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     
     <!-- JSZip for Batch Downloader -->
@@ -54,34 +55,35 @@
     <style>
         body {
             font-family: 'Plus Jakarta Sans', sans-serif;
-            background-color: #05070a;
-            color: #f3f4f6;
+            background-color: #030508;
+            color: #f1f5f9;
             overflow-x: hidden;
+            min-height: 100vh;
         }
 
-        /* Glassmorphism */
+        /* Ambient Glassmorphism */
         .glass-panel {
-            background: rgba(15, 20, 32, 0.75);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
+            background: rgba(8, 12, 20, 0.75);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
             border: 1px solid rgba(255, 255, 255, 0.08);
         }
 
         .glass-card {
-            background: rgba(23, 30, 48, 0.55);
-            backdrop-filter: blur(14px);
-            -webkit-backdrop-filter: blur(14px);
+            background: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
             border: 1px solid rgba(255, 255, 255, 0.07);
             transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
         }
 
         .glass-card:hover {
             border-color: rgba(99, 102, 241, 0.5);
-            box-shadow: 0 16px 40px -10px rgba(99, 102, 241, 0.3);
-            transform: translateY(-4px);
+            box-shadow: 0 20px 40px -15px rgba(99, 102, 241, 0.35), 0 0 20px 0 rgba(6, 182, 212, 0.15);
+            transform: translateY(-5px);
         }
 
-        /* Background Canvas */
+        /* Canvas Particle Mesh */
         #cyberCanvas {
             position: fixed;
             top: 0;
@@ -90,7 +92,32 @@
             height: 100vh;
             pointer-events: none;
             z-index: 0;
-            opacity: 0.65;
+            opacity: 0.7;
+        }
+
+        /* Custom Cursor Follower */
+        .cursor-dot {
+            width: 8px;
+            height: 8px;
+            background-color: #06b6d4;
+            border-radius: 50%;
+            position: fixed;
+            pointer-events: none;
+            z-index: 9999;
+            transition: transform 0.1s ease-out;
+            transform: translate(-50%, -50%);
+        }
+
+        .cursor-ring {
+            width: 36px;
+            height: 36px;
+            border: 1.5px solid rgba(99, 102, 241, 0.5);
+            border-radius: 50%;
+            position: fixed;
+            pointer-events: none;
+            z-index: 9998;
+            transition: transform 0.18s cubic-bezier(0.16, 1, 0.3, 1), width 0.2s, height 0.2s, border-color 0.2s;
+            transform: translate(-50%, -50%);
         }
 
         /* Phone Frame Notch */
@@ -122,60 +149,79 @@
             margin-bottom: 1.25rem;
         }
 
+        /* Custom Scrollbars */
         ::-webkit-scrollbar { width: 7px; height: 7px; }
-        ::-webkit-scrollbar-track { background: #05070a; }
-        ::-webkit-scrollbar-thumb { background: #232d48; border-radius: 4px; }
+        ::-webkit-scrollbar-track { background: #030508; }
+        ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 4px; }
         ::-webkit-scrollbar-thumb:hover { background: #6366f1; }
+
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
     </style>
 </head>
 <body class="relative min-h-screen text-slate-100 flex flex-col selection:bg-indigo-500 selection:text-white">
 
-    <!-- Ambient WebGL Canvas Background -->
+    <!-- Interactive Cursor Follower -->
+    <div id="cursorDot" class="cursor-dot hidden md:block"></div>
+    <div id="cursorRing" class="cursor-ring hidden md:block"></div>
+
+    <!-- WebGL Canvas Particle Background -->
     <canvas id="cyberCanvas"></canvas>
 
-    <!-- Main App Container -->
+    <!-- Main Application Frame -->
     <div class="relative z-10 flex flex-col min-h-screen">
 
-        <!-- Header -->
-        <header class="sticky top-0 z-40 w-full glass-panel border-b border-slate-800/80 px-4 lg:px-8 py-3.5 transition-all">
+        <!-- Sticky Header Navbar -->
+        <header class="sticky top-0 z-40 w-full glass-panel border-b border-slate-800/80 px-4 lg:px-8 py-3 transition-all">
             <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
                 
-                <!-- Logo -->
-                <div class="flex items-center gap-3 cursor-pointer" onclick="resetFilters()">
-                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-600 via-cyan-500 to-pink-500 p-0.5 flex items-center justify-center shadow-lg shadow-indigo-500/30">
+                <!-- Brand Logo & Reset -->
+                <div class="flex items-center gap-3 cursor-pointer group" onclick="resetFilters()">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-600 via-cyan-500 to-pink-500 p-0.5 flex items-center justify-center shadow-lg shadow-indigo-500/30 group-hover:scale-105 transition-transform duration-300">
                         <div class="w-full h-full bg-cyber-950 rounded-[10px] flex items-center justify-center">
                             <i data-lucide="sparkles" class="w-5 h-5 text-cyan-400 animate-pulse"></i>
                         </div>
                     </div>
                     <div>
                         <span class="font-extrabold text-xl tracking-tight bg-gradient-to-r from-white via-slate-200 to-indigo-300 bg-clip-text text-transparent">LuminaWall</span>
-                        <p class="text-xs text-slate-400 font-medium">Wallpaper Viewer & Downloader</p>
+                        <p class="text-[11px] text-slate-400 font-medium">Next-Gen Wallpaper Studio</p>
                     </div>
                 </div>
 
-                <!-- Global Dynamic Search Input Bar -->
+                <!-- Global Search Input Bar -->
                 <div class="flex-1 max-w-md hidden md:block relative">
                     <div class="relative flex items-center">
                         <i data-lucide="search" class="w-4 h-4 absolute left-3.5 text-slate-400 pointer-events-none"></i>
                         <input type="text" id="searchInput" placeholder="Search wallpapers..." 
-                            class="w-full pl-10 pr-10 py-2.5 rounded-xl bg-cyber-800/80 border border-slate-700/60 text-sm text-slate-200 placeholder-slate-400 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 focus-visible:ring-2 focus-visible:ring-indigo-500 transition-all"
-                            oninput="onSearchChange(this.value)" aria-label="Search wallpapers by title or tag">
-                        <button id="clearSearchBtn" onclick="clearSearch()" class="hidden absolute right-3 text-slate-400 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 rounded" aria-label="Clear search input">
-                            <i data-lucide="x" class="w-4 h-4"></i>
-                        </button>
+                            class="w-full pl-10 pr-12 py-2.5 rounded-xl bg-cyber-800/80 border border-slate-700/60 text-sm text-slate-200 placeholder-slate-400 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 focus-visible:ring-2 focus-visible:ring-indigo-500 transition-all"
+                            oninput="onSearchChange(this.value)" aria-label="Search wallpapers by title, genre, or tag">
+                        
+                        <div class="absolute right-3 flex items-center gap-1">
+                            <button id="clearSearchBtn" onclick="clearSearch()" class="hidden text-slate-400 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 rounded p-0.5" aria-label="Clear search input">
+                                <i data-lucide="x" class="w-4 h-4"></i>
+                            </button>
+                            <kbd class="hidden sm:inline-block px-1.5 py-0.5 text-[10px] font-mono text-slate-400 bg-slate-800 border border-slate-700 rounded">/</kbd>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Action Toolbar -->
-                <div class="flex items-center gap-3">
-                    <button onclick="switchCategory('favorites')" class="relative flex items-center gap-2 px-3.5 py-2 rounded-xl glass-card text-sm font-semibold text-pink-400 hover:bg-pink-500/10 hover:border-pink-500/40 focus:outline-none focus-visible:ring-2 focus-visible:ring-pink-500 transition-all" aria-label="View favorite wallpapers">
-                        <i data-lucide="heart" class="w-4 h-4 fill-pink-500/20 text-pink-400"></i>
-                        <span class="hidden sm:inline">Favorites</span>
-                        <span id="favoriteBadgeCount" class="px-1.5 py-0.5 text-xs font-bold rounded-full bg-pink-500/20 text-pink-300">0</span>
+                <!-- Toolbar Actions -->
+                <div class="flex items-center gap-2.5">
+                    <!-- Random Shuffle Discovery -->
+                    <button onclick="shuffleGallery()" class="p-2.5 rounded-xl glass-card text-slate-300 hover:text-cyan-400 hover:border-cyan-500/40 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500 transition-all" title="Shuffle Discovery" aria-label="Shuffle discovery wallpapers">
+                        <i data-lucide="shuffle" class="w-4.5 h-4.5"></i>
                     </button>
 
-                    <button onclick="toggleGridStyle()" class="p-2 rounded-xl glass-card text-slate-300 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 transition-all" title="Toggle Layout Grid" aria-label="Toggle grid layout view">
-                        <i data-lucide="grid" class="w-5 h-5"></i>
+                    <!-- Favorites Counter Button -->
+                    <button onclick="switchCategory('favorites')" class="relative flex items-center gap-2 px-3.5 py-2 rounded-xl glass-card text-xs font-semibold text-pink-400 hover:bg-pink-500/10 hover:border-pink-500/40 focus:outline-none focus-visible:ring-2 focus-visible:ring-pink-500 transition-all" aria-label="View favorite wallpapers">
+                        <i data-lucide="heart" class="w-4 h-4 fill-pink-500/20 text-pink-400"></i>
+                        <span class="hidden sm:inline">Favorites</span>
+                        <span id="favoriteBadgeCount" class="px-1.5 py-0.5 text-[11px] font-bold rounded-full bg-pink-500/20 text-pink-300">0</span>
+                    </button>
+
+                    <!-- Grid Layout Toggle -->
+                    <button onclick="toggleGridStyle()" class="p-2.5 rounded-xl glass-card text-slate-300 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 transition-all" title="Toggle Grid Layout" aria-label="Toggle grid layout view">
+                        <i data-lucide="grid" class="w-4.5 h-4.5"></i>
                     </button>
                 </div>
             </div>
@@ -186,35 +232,63 @@
                     <i data-lucide="search" class="w-4 h-4 absolute left-3.5 text-slate-400 pointer-events-none"></i>
                     <input type="text" id="mobileSearchInput" placeholder="Search wallpapers..." 
                         class="w-full pl-10 pr-4 py-2 rounded-xl bg-cyber-800/80 border border-slate-700/60 text-sm text-slate-200 placeholder-slate-400 focus:outline-none focus:border-indigo-500"
-                        oninput="onSearchChange(this.value)">
+                        oninput="onSearchChange(this.value)" aria-label="Mobile search wallpapers">
                 </div>
             </div>
         </header>
 
-        <!-- Main Content -->
+        <!-- Main Workspace Section -->
         <main class="flex-1 max-w-7xl w-full mx-auto px-4 lg:px-8 py-6 flex flex-col gap-6">
 
-            <!-- Target Screen Tabs & Matching Combos Tab -->
-            <section class="glass-panel p-3.5 rounded-2xl border border-slate-800/80 flex items-center justify-between gap-3">
-                <div class="flex items-center gap-1.5 overflow-x-auto">
-                    <button onclick="switchCategory('all')" id="tab-all" class="category-tab active px-4 py-2 rounded-xl text-xs font-bold flex items-center gap-1.5 bg-indigo-600 text-white shadow-lg shadow-indigo-600/30 transition-all whitespace-nowrap">
-                        <i data-lucide="layers" class="w-3.5 h-3.5"></i> All Wallpapers (<span id="count-all">0</span>)
+            <!-- Category Tabs & Genre Filter Control Hub -->
+            <section class="glass-panel p-4 rounded-3xl border border-slate-800/80 flex flex-col gap-3.5 shadow-xl">
+                
+                <!-- Target Device & Combos Tabs -->
+                <div class="flex items-center gap-2 overflow-x-auto no-scrollbar pb-1 border-b border-slate-800/80">
+                    <button onclick="switchCategory('all')" id="tab-all" class="category-tab active px-4 py-2 rounded-xl text-xs font-bold flex items-center gap-2 bg-indigo-600 text-white shadow-lg shadow-indigo-600/30 transition-all whitespace-nowrap">
+                        <i data-lucide="layers" class="w-4 h-4"></i> All Wallpapers <span id="count-all" class="px-2 py-0.5 text-[10px] rounded-full bg-white/20 font-mono">0</span>
                     </button>
-                    <button onclick="switchCategory('phone')" id="tab-phone" class="category-tab px-4 py-2 rounded-xl text-xs font-semibold flex items-center gap-1.5 text-slate-300 hover:bg-cyber-800 transition-all whitespace-nowrap">
-                        <i data-lucide="smartphone" class="w-3.5 h-3.5 text-cyan-400"></i> 📱 Mobile (<span id="count-phone">0</span>)
+                    <button onclick="switchCategory('phone')" id="tab-phone" class="category-tab px-4 py-2 rounded-xl text-xs font-semibold flex items-center gap-2 text-slate-300 hover:bg-cyber-800 transition-all whitespace-nowrap">
+                        <i data-lucide="smartphone" class="w-4 h-4 text-cyan-400"></i> 📱 Mobile <span id="count-phone" class="px-2 py-0.5 text-[10px] rounded-full bg-slate-800 font-mono">0</span>
                     </button>
-                    <button onclick="switchCategory('desktop')" id="tab-desktop" class="category-tab px-4 py-2 rounded-xl text-xs font-semibold flex items-center gap-1.5 text-slate-300 hover:bg-cyber-800 transition-all whitespace-nowrap">
-                        <i data-lucide="monitor" class="w-3.5 h-3.5 text-indigo-400"></i> 💻 Desktop (<span id="count-desktop">0</span>)
+                    <button onclick="switchCategory('desktop')" id="tab-desktop" class="category-tab px-4 py-2 rounded-xl text-xs font-semibold flex items-center gap-2 text-slate-300 hover:bg-cyber-800 transition-all whitespace-nowrap">
+                        <i data-lucide="monitor" class="w-4 h-4 text-indigo-400"></i> 💻 Desktop <span id="count-desktop" class="px-2 py-0.5 text-[10px] rounded-full bg-slate-800 font-mono">0</span>
                     </button>
+                    <button onclick="switchCategory('combos')" id="tab-combos" class="category-tab px-4 py-2 rounded-xl text-xs font-semibold flex items-center gap-2 text-slate-300 hover:bg-cyber-800 transition-all whitespace-nowrap">
+                        <i data-lucide="sparkles" class="w-4 h-4 text-amber-400"></i> 📱💻 Matching Combos <span id="count-combos" class="px-2 py-0.5 text-[10px] rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30 font-mono">0</span>
+                    </button>
+                </div>
 
-                    <!-- Matching Phone + Desktop Combos Tab -->
-                    <button onclick="switchCategory('combos')" id="tab-combos" class="category-tab px-4 py-2 rounded-xl text-xs font-semibold flex items-center gap-1.5 text-slate-300 hover:bg-cyber-800 transition-all whitespace-nowrap">
-                        <i data-lucide="sparkles" class="w-3.5 h-3.5 text-amber-400"></i> 📱💻 Matching Combos (<span id="count-combos">0</span>)
+                <!-- Genre & Theme Filter Pills -->
+                <div class="flex items-center gap-1.5 overflow-x-auto no-scrollbar pt-0.5">
+                    <button onclick="switchGenre('all')" id="genre-all" class="genre-pill active px-3 py-1.5 rounded-lg text-[11px] font-bold bg-slate-800 text-white border border-slate-700 transition-all whitespace-nowrap">
+                        ✨ All Genres
+                    </button>
+                    <button onclick="switchGenre('movies_series')" id="genre-movies_series" class="genre-pill px-3 py-1.5 rounded-lg text-[11px] font-medium text-slate-400 hover:text-slate-200 hover:bg-slate-800/80 transition-all whitespace-nowrap">
+                        🎬 Movies & Web Series
+                    </button>
+                    <button onclick="switchGenre('spiritual_divine')" id="genre-spiritual_divine" class="genre-pill px-3 py-1.5 rounded-lg text-[11px] font-medium text-slate-400 hover:text-slate-200 hover:bg-slate-800/80 transition-all whitespace-nowrap">
+                        ✨ Spiritual & Divine
+                    </button>
+                    <button onclick="switchGenre('nature_landscape')" id="genre-nature_landscape" class="genre-pill px-3 py-1.5 rounded-lg text-[11px] font-medium text-slate-400 hover:text-slate-200 hover:bg-slate-800/80 transition-all whitespace-nowrap">
+                        🌿 Nature & Landscapes
+                    </button>
+                    <button onclick="switchGenre('animated_graphical')" id="genre-animated_graphical" class="genre-pill px-3 py-1.5 rounded-lg text-[11px] font-medium text-slate-400 hover:text-slate-200 hover:bg-slate-800/80 transition-all whitespace-nowrap">
+                        🎨 Animated & Graphical
+                    </button>
+                    <button onclick="switchGenre('reality_photo')" id="genre-reality_photo" class="genre-pill px-3 py-1.5 rounded-lg text-[11px] font-medium text-slate-400 hover:text-slate-200 hover:bg-slate-800/80 transition-all whitespace-nowrap">
+                        📸 Reality & Photos
+                    </button>
+                    <button onclick="switchGenre('dark_amoled')" id="genre-dark_amoled" class="genre-pill px-3 py-1.5 rounded-lg text-[11px] font-medium text-slate-400 hover:text-slate-200 hover:bg-slate-800/80 transition-all whitespace-nowrap">
+                        🌙 Dark & AMOLED
+                    </button>
+                    <button onclick="switchGenre('light_minimal')" id="genre-light_minimal" class="genre-pill px-3 py-1.5 rounded-lg text-[11px] font-medium text-slate-400 hover:text-slate-200 hover:bg-slate-800/80 transition-all whitespace-nowrap">
+                        ☀️ Light & Minimal
                     </button>
                 </div>
             </section>
 
-            <!-- Wallpaper Gallery Grid -->
+            <!-- Wallpaper Gallery Showcase Section -->
             <section id="gallerySection" class="w-full">
                 <div id="wallpaperGrid" class="masonry-grid">
                     <!-- Rendered Cards -->
@@ -222,20 +296,20 @@
 
                 <!-- Empty State -->
                 <div id="emptyState" class="hidden flex-col items-center justify-center py-20 text-center glass-panel rounded-3xl border border-slate-800">
-                    <div class="w-16 h-16 rounded-full bg-slate-800/80 flex items-center justify-center text-slate-400 mb-4">
-                        <i data-lucide="image-off" class="w-8 h-8"></i>
+                    <div class="w-16 h-16 rounded-2xl bg-slate-800/80 flex items-center justify-center text-slate-400 mb-4 border border-slate-700/60">
+                        <i data-lucide="image-off" class="w-8 h-8 text-indigo-400"></i>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-1" id="emptyStateTitle">No Wallpapers Matched</h3>
                     <p class="text-slate-400 text-sm max-w-sm mb-4" id="emptyStateSubtitle">Try resetting your search query or pair matching Phone & PC wallpapers.</p>
-                    <button onclick="resetFilters()" class="px-4 py-2 rounded-xl bg-indigo-600 text-white font-semibold text-xs hover:bg-indigo-500 transition-all">Reset Search</button>
+                    <button onclick="resetFilters()" class="px-5 py-2.5 rounded-xl bg-indigo-600 text-white font-bold text-xs hover:bg-indigo-500 shadow-lg shadow-indigo-600/30 transition-all">Reset All Filters</button>
                 </div>
             </section>
         </main>
 
         <!-- Batch Selection Toolbar -->
-        <div id="batchToolbar" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 hidden max-w-md w-[90%] glass-panel rounded-2xl p-4 border border-indigo-500/40 shadow-2xl flex items-center justify-between gap-4 transition-all">
+        <div id="batchToolbar" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 hidden max-w-md w-[92%] glass-panel rounded-2xl p-4 border border-indigo-500/50 shadow-2xl flex items-center justify-between gap-4 transition-all">
             <div class="flex items-center gap-3">
-                <div class="w-8 h-8 rounded-lg bg-indigo-600 flex items-center justify-center text-white font-bold text-xs" id="batchCountBadge">0</div>
+                <div class="w-8 h-8 rounded-lg bg-indigo-600 flex items-center justify-center text-white font-bold text-xs shadow-md" id="batchCountBadge">0</div>
                 <div>
                     <h4 class="text-xs font-bold text-white">Wallpapers Selected</h4>
                     <p class="text-[11px] text-slate-400">Ready for batch ZIP export</p>
@@ -243,7 +317,7 @@
             </div>
             <div class="flex items-center gap-2">
                 <button onclick="clearBatchSelection()" class="px-3 py-1.5 rounded-lg bg-cyber-800 text-xs font-semibold text-slate-300 hover:text-white transition-all">Deselect</button>
-                <button onclick="downloadBatchZip()" id="batchZipBtn" class="px-4 py-1.5 rounded-lg bg-gradient-to-r from-indigo-600 to-cyan-500 text-white text-xs font-bold flex items-center gap-2 hover:brightness-110 transition-all">
+                <button onclick="downloadBatchZip()" id="batchZipBtn" class="px-4 py-1.5 rounded-lg bg-gradient-to-r from-indigo-600 to-cyan-500 text-white text-xs font-bold flex items-center gap-2 hover:brightness-110 shadow-lg transition-all">
                     <i data-lucide="archive" class="w-3.5 h-3.5"></i> Download ZIP
                 </button>
             </div>
@@ -251,23 +325,25 @@
 
         <!-- Manual Combo Linker Studio Modal -->
         <div id="linkComboModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 sm:p-6 bg-black/85 backdrop-blur-2xl">
-            <div class="relative w-full max-w-3xl glass-panel rounded-3xl border border-slate-700/80 overflow-hidden flex flex-col max-h-[85vh]">
+            <div class="relative w-full max-w-3xl glass-panel rounded-3xl border border-slate-700/80 overflow-hidden flex flex-col max-h-[85vh] shadow-2xl">
                 <div class="px-6 py-4 border-b border-slate-800 flex items-center justify-between bg-cyber-900/80">
                     <div class="flex items-center gap-3">
-                        <i data-lucide="link" class="w-5 h-5 text-amber-400"></i>
+                        <div class="w-8 h-8 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center border border-amber-500/40">
+                            <i data-lucide="link" class="w-4 h-4"></i>
+                        </div>
                         <div>
                             <h3 class="text-base font-bold text-white" id="linkComboModalTitle">Link Matching Combo Pair</h3>
                             <p class="text-xs text-slate-400" id="linkComboModalMeta">Select matching Phone or PC counterpart (Unpaired only)</p>
                         </div>
                     </div>
-                    <button onclick="closeLinkComboModal()" class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:text-white">
+                    <button onclick="closeLinkComboModal()" class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:text-white transition-all" aria-label="Close combo modal">
                         <i data-lucide="x" class="w-4 h-4"></i>
                     </button>
                 </div>
 
                 <div class="p-4 bg-cyber-900/40 border-b border-slate-800/80">
                     <input type="text" id="comboSearchInput" placeholder="Filter available unpaired wallpapers by name..." 
-                        class="w-full px-4 py-2 rounded-xl bg-cyber-800 border border-slate-700 text-xs text-white focus:outline-none focus:border-indigo-500"
+                        class="w-full px-4 py-2.5 rounded-xl bg-cyber-800 border border-slate-700 text-xs text-white focus:outline-none focus:border-indigo-500"
                         oninput="renderComboCandidates(this.value)">
                 </div>
 
@@ -279,12 +355,12 @@
             </div>
         </div>
 
-        <!-- Live Device Preview Modal -->
+        <!-- Live Device Preview & Real Filter Studio Modal -->
         <div id="devicePreviewModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 sm:p-6 bg-black/85 backdrop-blur-2xl">
-            <div class="relative w-full max-w-5xl glass-panel rounded-3xl border border-slate-700/80 overflow-hidden flex flex-col max-h-[92vh]">
+            <div class="relative w-full max-w-5xl glass-panel rounded-3xl border border-slate-700/80 overflow-hidden flex flex-col max-h-[92vh] shadow-2xl">
                 <div class="px-6 py-4 border-b border-slate-800 flex items-center justify-between bg-cyber-900/80">
                     <div class="flex items-center gap-3">
-                        <div class="w-8 h-8 rounded-lg bg-indigo-600/20 text-indigo-400 flex items-center justify-center">
+                        <div class="w-8 h-8 rounded-lg bg-indigo-600/20 text-indigo-400 flex items-center justify-center border border-indigo-500/40">
                             <i data-lucide="sliders" class="w-4 h-4"></i>
                         </div>
                         <div>
@@ -302,7 +378,7 @@
                         </button>
                     </div>
 
-                    <button onclick="closeDevicePreview()" class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:text-white transition-all">
+                    <button onclick="closeDevicePreview()" class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:text-white transition-all" aria-label="Close studio modal">
                         <i data-lucide="x" class="w-5 h-5"></i>
                     </button>
                 </div>
@@ -457,14 +533,14 @@
             <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
                 <div class="flex items-center gap-2">
                     <i data-lucide="sparkles" class="w-4 h-4 text-indigo-400"></i>
-                    <span class="font-bold text-slate-200">LuminaWall</span> — High-Resolution Wallpaper Gallery
+                    <span class="font-bold text-slate-200">LuminaWall 2.0</span> — High-Resolution Wallpaper Gallery
                 </div>
                 <p id="footerTotalCount">Wallpapers Collection</p>
             </div>
         </footer>
     </div>
 
-    <!-- Application Script -->
+    <!-- Application Script Logic -->
     <script>
         function safeGetJSON(key, defaultVal) {
             try {
@@ -482,6 +558,7 @@
         let combos = safeGetJSON('lumina_combos', []);
         let selectedBatch = new Set();
         let currentCategory = 'all';
+        let currentGenre = 'all';
         let searchQuery = '';
         let currentLightboxIndex = 0;
         let activePreviewWallpaper = null;
@@ -490,10 +567,15 @@
         document.addEventListener('DOMContentLoaded', () => {
             lucide.createIcons();
             initCyberCanvas();
+            initCursorFollower();
             loadWallpapers();
             startLockClock();
 
             document.addEventListener('keydown', (e) => {
+                if (e.key === '/' && document.activeElement.tagName !== 'INPUT') {
+                    e.preventDefault();
+                    document.getElementById('searchInput').focus();
+                }
                 if (!document.getElementById('lightboxModal').classList.contains('hidden')) {
                     if (e.key === 'ArrowRight') nextLightbox();
                     if (e.key === 'ArrowLeft') prevLightbox();
@@ -539,7 +621,6 @@
             document.getElementById('searchInput').placeholder = "Search wallpapers...";
         }
 
-        // Get set of all wallpaper IDs that are already in a linked combo pair
         function getPairedWallpaperIds() {
             const paired = new Set();
             combos.forEach(c => {
@@ -547,6 +628,20 @@
                 if (c.desktopId) paired.add(c.desktopId);
             });
             return paired;
+        }
+
+        function switchGenre(genre) {
+            currentGenre = genre;
+            document.querySelectorAll('.genre-pill').forEach(btn => {
+                btn.classList.remove('bg-slate-800', 'text-white', 'font-bold', 'border-slate-700');
+                btn.classList.add('text-slate-400', 'font-medium');
+            });
+            const activeBtn = document.getElementById(`genre-${genre}`);
+            if (activeBtn) {
+                activeBtn.classList.add('bg-slate-800', 'text-white', 'font-bold', 'border-slate-700');
+                activeBtn.classList.remove('text-slate-400');
+            }
+            applyFilters();
         }
 
         function applyFilters() {
@@ -559,6 +654,12 @@
                 if (currentCategory === 'phone' && w.category !== 'phone') return false;
                 if (currentCategory === 'desktop' && w.category !== 'desktop') return false;
                 if (currentCategory === 'favorites' && !favorites.has(w.id)) return false;
+
+                if (currentGenre !== 'all') {
+                    if (w.primaryGenre !== currentGenre && !w.genres.includes(currentGenre) && !w.tags.includes(currentGenre)) {
+                        return false;
+                    }
+                }
 
                 if (searchQuery) {
                     const q = searchQuery.toLowerCase();
@@ -584,7 +685,7 @@
 
             if (filteredWallpapers.length === 0) {
                 document.getElementById('emptyStateTitle').innerText = "No Wallpapers Matched";
-                document.getElementById('emptyStateSubtitle').innerText = "Try resetting your search query.";
+                document.getElementById('emptyStateSubtitle').innerText = "Try resetting your search query or genre filter.";
                 emptyState.classList.remove('hidden');
                 emptyState.classList.add('flex');
                 return;
@@ -633,12 +734,11 @@
 
                         <div class="p-3 bg-cyber-800/90 border-t border-slate-700/50 flex items-center justify-between gap-2">
                             <div class="truncate">
-                                <h4 class="text-xs font-bold text-slate-200 truncate">${w.title}</h4>
+                                <h4 class="text-xs font-bold text-slate-200 truncate" title="${w.title}">${w.title}</h4>
                                 <p class="text-[10px] text-slate-400 font-mono">${w.size}</p>
                             </div>
 
                             <div class="flex items-center gap-1">
-                                <!-- Link Combo Button -->
                                 ${!isPaired ? `
                                     <button onclick="openLinkComboModal(${w.id})" class="p-1.5 rounded-lg text-slate-400 hover:text-amber-400 hover:bg-amber-500/10 transition-all" title="Pair as Matching Combo">
                                         <i data-lucide="link" class="w-3.5 h-3.5"></i>
@@ -763,7 +863,6 @@
             }
         }
 
-        // Open Link Combo Modal & Filter out already-paired wallpapers
         function openLinkComboModal(id) {
             activeComboLinkSource = allWallpapers.find(w => w.id === id);
             if (!activeComboLinkSource) return;
@@ -780,7 +879,6 @@
             document.getElementById('linkComboModal').classList.add('hidden');
         }
 
-        // Render Candidates Popup: Exclude ALREADY PAIRED wallpapers!
         function renderComboCandidates(query) {
             if (!activeComboLinkSource) return;
 
@@ -790,10 +888,9 @@
             const pairedSet = getPairedWallpaperIds();
             const targetCategory = activeComboLinkSource.category === 'phone' ? 'desktop' : 'phone';
 
-            // Filter out candidates that are ALREADY in a linked pair!
             const candidates = allWallpapers.filter(w => {
                 if (w.category !== targetCategory) return false;
-                if (pairedSet.has(w.id)) return false; // Rule 2: Exclude already-paired!
+                if (pairedSet.has(w.id)) return false;
                 if (query && !w.title.toLowerCase().includes(query.toLowerCase()) && !w.filename.toLowerCase().includes(query.toLowerCase())) return false;
                 return true;
             });
@@ -928,7 +1025,14 @@
             document.getElementById('searchInput').value = '';
             document.getElementById('mobileSearchInput').value = '';
             document.getElementById('clearSearchBtn').classList.add('hidden');
+            switchGenre('all');
             switchCategory('all');
+        }
+
+        function shuffleGallery() {
+            filteredWallpapers.sort(() => Math.random() - 0.5);
+            renderGallery();
+            showToast('Shuffled Discovery Mode ✨', 'info');
         }
 
         function toggleFavorite(id) {
@@ -1249,6 +1353,29 @@
             grid.className = (grid.classList.contains('masonry-grid')) ? "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5" : "masonry-grid";
         }
 
+        function initCursorFollower() {
+            const dot = document.getElementById('cursorDot');
+            const ring = document.getElementById('cursorRing');
+            if (!dot || !ring) return;
+
+            let mouseX = 0, mouseY = 0;
+            let ringX = 0, ringY = 0;
+
+            window.addEventListener('mousemove', (e) => {
+                mouseX = e.clientX;
+                mouseY = e.clientY;
+                dot.style.transform = `translate(${mouseX}px, ${mouseY}px)`;
+            });
+
+            function render() {
+                ringX += (mouseX - ringX) * 0.15;
+                ringY += (mouseY - ringY) * 0.15;
+                ring.style.transform = `translate(${ringX}px, ${ringY}px)`;
+                requestAnimationFrame(render);
+            }
+            render();
+        }
+
         function initCyberCanvas() {
             const canvas = document.getElementById('cyberCanvas');
             const ctx = canvas.getContext('2d');
@@ -1260,30 +1387,50 @@
             resize();
             window.addEventListener('resize', resize);
 
-            const particles = Array.from({ length: 45 }, () => ({
+            let mouse = { x: canvas.width / 2, y: canvas.height / 2 };
+            window.addEventListener('mousemove', (e) => {
+                mouse.x = e.clientX;
+                mouse.y = e.clientY;
+            });
+
+            const particles = Array.from({ length: 55 }, () => ({
                 x: Math.random() * canvas.width,
                 y: Math.random() * canvas.height,
                 r: Math.random() * 2.5 + 1,
-                dx: (Math.random() - 0.5) * 0.5,
-                dy: (Math.random() - 0.5) * 0.5,
+                dx: (Math.random() - 0.5) * 0.6,
+                dy: (Math.random() - 0.5) * 0.6,
                 alpha: Math.random() * 0.5 + 0.2
             }));
 
             function animate() {
                 ctx.clearRect(0, 0, canvas.width, canvas.height);
                 for (let i = 0; i < particles.length; i++) {
+                    const p1 = particles[i];
                     for (let j = i + 1; j < particles.length; j++) {
-                        const dist = Math.hypot(particles[i].x - particles[j].x, particles[i].y - particles[j].y);
-                        if (dist < 120) {
+                        const p2 = particles[j];
+                        const dist = Math.hypot(p1.x - p2.x, p1.y - p2.y);
+                        if (dist < 130) {
                             ctx.beginPath();
-                            ctx.moveTo(particles[i].x, particles[i].y);
-                            ctx.lineTo(particles[j].x, particles[j].y);
-                            ctx.strokeStyle = `rgba(99, 102, 241, ${0.15 * (1 - dist / 120)})`;
+                            ctx.moveTo(p1.x, p1.y);
+                            ctx.lineTo(p2.x, p2.y);
+                            ctx.strokeStyle = `rgba(99, 102, 241, ${0.18 * (1 - dist / 130)})`;
                             ctx.lineWidth = 0.8;
                             ctx.stroke();
                         }
                     }
+
+                    // Mouse gravity attraction
+                    const mDist = Math.hypot(p1.x - mouse.x, p1.y - mouse.y);
+                    if (mDist < 160) {
+                        ctx.beginPath();
+                        ctx.moveTo(p1.x, p1.y);
+                        ctx.lineTo(mouse.x, mouse.y);
+                        ctx.strokeStyle = `rgba(6, 182, 212, ${0.25 * (1 - mDist / 160)})`;
+                        ctx.lineWidth = 1;
+                        ctx.stroke();
+                    }
                 }
+
                 particles.forEach(p => {
                     p.x += p.dx;
                     p.y += p.dy;

@@ -112,11 +112,25 @@ def determine_genres(filename, category, color_family, sat, val, edge_std):
 
 def generate_natural_title(filename, primary_genre, color_family, index):
     name_stem = os.path.splitext(filename)[0]
+    clean = re.sub(r'^\d+_(img_\d+_\d+_\d+|\d+_\d+)?', '', name_stem, flags=re.IGNORECASE)
     clean = re.sub(r'^\d+_', '', name_stem)
     clean = re.sub(r'img_\d+_\d+_\d+|\d+_\d+_\d+_\d+', '', clean, flags=re.IGNORECASE)
     clean = re.sub(r'[a-f0-9]{8}_[a-f0-9]{4}_[a-f0-9]{4}_[a-f0-9]{4}_[a-f0-9]{12}', '', clean, flags=re.IGNORECASE)
     clean = clean.replace('_', ' ').replace('-', ' ').strip()
 
+    if not clean or len(clean) < 3 or re.match(r'^\d+$', clean):
+        if 'krishna' in filename.lower() or 'radhe' in filename.lower():
+            return "Radhe Krishna Divine Art"
+        elif primary_genre == 'movies_series':
+            return "Movies & Series Wallpaper"
+        elif primary_genre == 'nature_landscape':
+            return "Nature Landscape Art"
+        elif primary_genre == 'dark_amoled':
+            return "Dark AMOLED Wallpaper"
+        elif primary_genre == 'spiritual_divine':
+            return "Spiritual Art"
+        else:
+            return f"{color_family.capitalize()} Visual Artwork"
     lower_f = filename.lower()
     if 'got' in lower_f or 'game_of_thrones' in lower_f:
         return f"Game of Thrones Artwork #{index}"
@@ -132,8 +146,16 @@ def generate_natural_title(filename, primary_genre, color_family, index):
         return f"Dark Knight Batman #{index}"
 
     words = clean.split()
+    words = [w.capitalize() for w in words if not w.isdigit() and len(w) > 1 and w.lower() not in ['img', 'picjumbo', 'com', 'jpeg', 'jpg']]
+    
+    if not words:
+        return f"{color_family.capitalize()} Wallpaper"
     valid_words = [w.capitalize() for w in words if not w.isdigit() and len(w) > 2 and w.lower() not in ['img', 'picjumbo', 'com', 'jpeg', 'jpg', 'png', 'webp', 'px', 'hd', 'wallpaper', 'wallpapers', 'pinterest', 'download']]
 
+    title = " ".join(words)
+    if len(title) > 32:
+        title = title[:30] + '...'
+    return title
     if valid_words and len(" ".join(valid_words)) >= 4:
         title = " ".join(valid_words)
         if len(title) > 36:
