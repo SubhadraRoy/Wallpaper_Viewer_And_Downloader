@@ -535,8 +535,8 @@
             document.getElementById('count-desktop').innerText = desktopCount;
             document.getElementById('count-combos').innerText = combos.length;
             document.getElementById('favoriteBadgeCount').innerText = favorites.size;
-            document.getElementById('footerTotalCount').innerText = `${allWallpapers.length} HD & 4K Wallpapers Collection`;
-            document.getElementById('searchInput').placeholder = `Search ${allWallpapers.length} wallpapers...`;
+            document.getElementById('footerTotalCount').innerText = `${allWallpapers.length} High Resolution Wallpapers Collection`;
+            document.getElementById('searchInput').placeholder = "Search wallpapers...";
         }
 
         // Get set of all wallpaper IDs that are already in a linked combo pair
@@ -699,39 +699,56 @@
 
                 if (!phoneW || !desktopW) return;
 
+                let displayTitle = combo.title;
+                const pClean = phoneW.title.replace(/\s*#\d+$/, '').trim();
+                const dClean = desktopW.title.replace(/\s*#\d+$/, '').trim();
+                if (pClean === dClean || phoneW.title === desktopW.title) {
+                    displayTitle = `${pClean} (Matching Set)`;
+                }
+
                 const card = document.createElement('div');
-                card.className = "glass-card rounded-2xl overflow-hidden p-4 flex flex-col gap-3 border border-amber-500/40 shadow-lg shadow-amber-500/10";
+                card.className = "glass-card rounded-2xl overflow-hidden p-4 flex flex-col gap-3.5 border border-amber-500/40 shadow-xl shadow-amber-500/10";
                 card.innerHTML = `
-                    <div class="flex items-center justify-between border-b border-slate-800 pb-2">
-                        <div class="flex items-center gap-2">
-                            <span class="px-2.5 py-0.5 rounded-md text-[10px] font-extrabold uppercase bg-amber-500/20 text-amber-300 border border-amber-500/40 flex items-center gap-1">
+                    <div class="flex items-center justify-between border-b border-slate-800/80 pb-2.5">
+                        <div class="flex items-center gap-2 truncate">
+                            <span class="px-2.5 py-0.5 rounded-md text-[10px] font-extrabold uppercase bg-amber-500/20 text-amber-300 border border-amber-500/40 flex items-center gap-1 shrink-0">
                                 <i data-lucide="link" class="w-3 h-3"></i> Combo Pair #${idx + 1}
                             </span>
-                            <h4 class="text-xs font-bold text-white truncate">${combo.title}</h4>
+                            <h4 class="text-xs font-bold text-white truncate" title="${displayTitle}">${displayTitle}</h4>
                         </div>
-                        <button onclick="unlinkCombo('${combo.id}')" class="p-1.5 rounded-lg text-slate-400 hover:text-red-400 hover:bg-red-500/10" title="Unlink Combo Pair">
+                        <button onclick="unlinkCombo('${combo.id}')" class="p-1.5 rounded-lg text-slate-400 hover:text-red-400 hover:bg-red-500/10 shrink-0" title="Unlink Combo Pair">
                             <i data-lucide="trash-2" class="w-4 h-4"></i>
                         </button>
                     </div>
 
-                    <div class="grid grid-cols-12 gap-3 bg-cyber-900/80 p-3 rounded-xl border border-slate-800">
-                        <div class="col-span-5 relative aspect-[9/16] bg-black rounded-lg overflow-hidden cursor-pointer group" onclick="openLightbox(${phoneW.id})">
-                            <img src="${phoneW.encodedPath}" alt="Mobile Pair" class="w-full h-full object-cover group-hover:scale-105 transition-all">
-                            <span class="absolute bottom-1.5 left-1.5 px-1.5 py-0.5 rounded text-[9px] font-mono bg-black/80 text-cyan-300 border border-cyan-500/30">📱 Mobile</span>
+                    <div class="grid grid-cols-12 gap-3 bg-cyber-900/90 p-3 rounded-xl border border-slate-800/80 items-center">
+                        <div class="col-span-5 flex flex-col items-center">
+                            <div class="relative w-full aspect-[9/16] bg-black rounded-xl overflow-hidden cursor-pointer group border border-slate-700/60 shadow-md" onclick="openLightbox(${phoneW.id})">
+                                <img src="${phoneW.encodedPath}" alt="Mobile Pair" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                                <span class="absolute top-2 left-2 px-2 py-0.5 rounded text-[9px] font-bold uppercase backdrop-blur-md bg-cyan-950/80 text-cyan-300 border border-cyan-500/40">
+                                    📱 Mobile
+                                </span>
+                            </div>
+                            <span class="text-[10px] text-slate-400 font-mono mt-1.5">${phoneW.width}x${phoneW.height}</span>
                         </div>
 
-                        <div class="col-span-7 relative aspect-video bg-black rounded-lg overflow-hidden cursor-pointer self-center group" onclick="openLightbox(${desktopW.id})">
-                            <img src="${desktopW.encodedPath}" alt="Desktop Pair" class="w-full h-full object-cover group-hover:scale-105 transition-all">
-                            <span class="absolute bottom-1.5 left-1.5 px-1.5 py-0.5 rounded text-[9px] font-mono bg-black/80 text-indigo-300 border border-indigo-500/30">💻 Desktop</span>
+                        <div class="col-span-7 flex flex-col items-center">
+                            <div class="relative w-full aspect-video bg-black rounded-xl overflow-hidden cursor-pointer group border border-slate-700/60 shadow-md" onclick="openLightbox(${desktopW.id})">
+                                <img src="${desktopW.encodedPath}" alt="Desktop Pair" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                                <span class="absolute top-2 left-2 px-2 py-0.5 rounded text-[9px] font-bold uppercase backdrop-blur-md bg-indigo-950/80 text-indigo-300 border border-indigo-500/40">
+                                    💻 Desktop
+                                </span>
+                            </div>
+                            <span class="text-[10px] text-slate-400 font-mono mt-1.5">${desktopW.width}x${desktopW.height}</span>
                         </div>
                     </div>
 
                     <div class="flex items-center justify-between pt-1">
-                        <div class="text-[10px] text-slate-400 font-mono">
-                            ${phoneW.size} + ${desktopW.size}
+                        <div class="text-[10px] text-slate-400 font-mono flex items-center gap-1">
+                            <i data-lucide="hard-drive" class="w-3 h-3 text-slate-500"></i> ${phoneW.size} + ${desktopW.size}
                         </div>
 
-                        <button onclick="downloadComboPair(${phoneW.id}, ${desktopW.id})" class="px-4 py-2 rounded-xl bg-gradient-to-r from-amber-500 to-indigo-600 text-white text-xs font-bold flex items-center gap-1.5 hover:brightness-110 shadow-md">
+                        <button onclick="downloadComboPair(${phoneW.id}, ${desktopW.id})" class="px-4 py-2 rounded-xl bg-gradient-to-r from-amber-500 via-indigo-600 to-cyan-500 text-white text-xs font-bold flex items-center gap-1.5 hover:brightness-110 shadow-lg shadow-indigo-600/20 transition-all">
                             <i data-lucide="download" class="w-3.5 h-3.5"></i> Download Matching Pair
                         </button>
                     </div>
@@ -812,11 +829,18 @@
             const phoneW = w1.category === 'phone' ? w1 : w2;
             const desktopW = w1.category === 'desktop' ? w1 : w2;
 
+            let comboTitle = `${phoneW.title} & ${desktopW.title}`;
+            const pClean = phoneW.title.replace(/\s*#\d+$/, '').trim();
+            const dClean = desktopW.title.replace(/\s*#\d+$/, '').trim();
+            if (pClean === dClean || phoneW.title === desktopW.title) {
+                comboTitle = `${pClean} (Matching Set)`;
+            }
+
             const newCombo = {
                 id: `combo_${Date.now()}`,
                 phoneId: phoneW.id,
                 desktopId: desktopW.id,
-                title: `${phoneW.title} & ${desktopW.title}`
+                title: comboTitle
             };
 
             combos.push(newCombo);

@@ -112,33 +112,61 @@ def determine_genres(filename, category, color_family, sat, val, edge_std):
 
 def generate_natural_title(filename, primary_genre, color_family, index):
     name_stem = os.path.splitext(filename)[0]
-    clean = re.sub(r'^\d+_(img_\d+_\d+_\d+|\d+_\d+)?', '', name_stem, flags=re.IGNORECASE)
+    clean = re.sub(r'^\d+_', '', name_stem)
+    clean = re.sub(r'img_\d+_\d+_\d+|\d+_\d+_\d+_\d+', '', clean, flags=re.IGNORECASE)
+    clean = re.sub(r'[a-f0-9]{8}_[a-f0-9]{4}_[a-f0-9]{4}_[a-f0-9]{4}_[a-f0-9]{12}', '', clean, flags=re.IGNORECASE)
     clean = clean.replace('_', ' ').replace('-', ' ').strip()
 
-    if not clean or len(clean) < 3 or re.match(r'^\d+$', clean):
-        if 'krishna' in filename.lower() or 'radhe' in filename.lower():
-            return "Radhe Krishna Divine Art"
-        elif primary_genre == 'movies_series':
-            return "Movies & Series Wallpaper"
-        elif primary_genre == 'nature_landscape':
-            return "Nature Landscape Art"
-        elif primary_genre == 'dark_amoled':
-            return "Dark AMOLED Wallpaper"
-        elif primary_genre == 'spiritual_divine':
-            return "Spiritual Art"
-        else:
-            return f"{color_family.capitalize()} Visual Artwork"
+    lower_f = filename.lower()
+    if 'got' in lower_f or 'game_of_thrones' in lower_f:
+        return f"Game of Thrones Artwork #{index}"
+    if 'mentalist' in lower_f:
+        return f"The Mentalist Art #{index}"
+    if 'krishna' in lower_f or 'radhe' in lower_f:
+        return f"Radhe Krishna Divine Art #{index}"
+    if 'fuji' in lower_f:
+        return f"Mount Fuji Landscape #{index}"
+    if 'joker' in lower_f:
+        return f"The Joker Cyber Art #{index}"
+    if 'batman' in lower_f:
+        return f"Dark Knight Batman #{index}"
 
     words = clean.split()
-    words = [w.capitalize() for w in words if not w.isdigit() and len(w) > 1 and w.lower() not in ['img', 'picjumbo', 'com', 'jpeg', 'jpg']]
-    
-    if not words:
-        return f"{color_family.capitalize()} Wallpaper"
+    valid_words = [w.capitalize() for w in words if not w.isdigit() and len(w) > 2 and w.lower() not in ['img', 'picjumbo', 'com', 'jpeg', 'jpg', 'png', 'webp', 'px', 'hd', 'wallpaper', 'wallpapers', 'pinterest', 'download']]
 
-    title = " ".join(words)
-    if len(title) > 32:
-        title = title[:30] + '...'
-    return title
+    if valid_words and len(" ".join(valid_words)) >= 4:
+        title = " ".join(valid_words)
+        if len(title) > 36:
+            title = title[:34] + '...'
+        return title
+
+    color_descriptors = {
+        'dark': ['Obsidian', 'Midnight', 'Shadow', 'Eclipse', 'Onyx', 'Dark Cyber'],
+        'cyan': ['Neon Cyan', 'Electric Cyan', 'Aqua Horizon', 'Cyan Cyber', 'Azure Stream'],
+        'blue': ['Deep Cobalt', 'Celestial Blue', 'Oceanic Depth', 'Sapphire', 'Cosmic Blue'],
+        'purple': ['Mystic Violet', 'Cosmic Purple', 'Amethyst Glow', 'Nebula Purple', 'Velvet Dusk'],
+        'pink': ['Vibrant Magenta', 'Neon Pink', 'Cyberpunk Pink', 'Rose Glow', 'Sakura Pulse'],
+        'gold': ['Solar Amber', 'Golden Horizon', 'Autumn Gold', 'Gilded Sun', 'Radiant Dawn'],
+        'green': ['Emerald Nature', 'Verdant Forest', 'Jade Horizon', 'Bio Green', 'Forest mist'],
+        'red': ['Crimson Flare', 'Scarlet Cyber', 'Inferno Red', 'Ruby Ember', 'Magma Glow'],
+        'white': ['Minimalist Ivory', 'Pure Monolith', 'Crystal White', 'Snow Apex', 'Luminous Frost']
+    }
+
+    genre_descriptors = {
+        'movies_series': 'Cinematic Artwork',
+        'spiritual_divine': 'Sacred Devotional',
+        'nature_landscape': 'Nature Horizon',
+        'animated_graphical': 'Abstract Render',
+        'reality_photo': 'Scenic Photograph',
+        'dark_amoled': 'AMOLED Edition',
+        'light_minimal': 'Minimal Aesthetic'
+    }
+
+    colors_list = color_descriptors.get(color_family, ['Chroma', 'Lumina', 'Vivid'])
+    color_prefix = colors_list[(index - 1) % len(colors_list)]
+    genre_suffix = genre_descriptors.get(primary_genre, 'Visual Art')
+
+    return f"{color_prefix} {genre_suffix} #{index}"
 
 def run_sanitization_and_tagging():
     pictures_dir = os.path.join(os.path.dirname(__file__), 'Pictures')
