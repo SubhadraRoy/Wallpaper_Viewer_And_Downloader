@@ -61,15 +61,6 @@
                     fontFamily: {
                         sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
                         mono: ['JetBrains Mono', 'monospace']
-                    },
-                    keyframes: {
-                        marquee: {
-                            '0%': { transform: 'translateX(0%)' },
-                            '100%': { transform: 'translateX(-50%)' }
-                        }
-                    },
-                    animation: {
-                        marquee: 'marquee 35s linear infinite'
                     }
                 }
             }
@@ -236,29 +227,15 @@
     <!-- Main Application Container -->
     <div class="relative z-10 flex flex-col min-h-screen">
 
-        <!-- Announcement Marquee Loop Bar -->
-        <div class="bg-gradient-to-r from-indigo-950 via-cyber-900 to-indigo-950 border-b border-indigo-500/20 py-1.5 px-4 overflow-hidden text-xs text-slate-300">
-            <div class="flex whitespace-nowrap animate-marquee gap-8">
-                <span class="flex items-center gap-2"><i data-lucide="sparkles" class="w-3.5 h-3.5 text-cyan-400"></i> LuminaWall 2.0 Phone & PC Studio</span>
-                <span class="flex items-center gap-2"><i data-lucide="monitor" class="w-3.5 h-3.5 text-indigo-400"></i> 4K Desktop Wallpapers</span>
-                <span class="flex items-center gap-2"><i data-lucide="smartphone" class="w-3.5 h-3.5 text-pink-400"></i> Mobile AMOLED Wallpapers</span>
-                <span class="flex items-center gap-2"><i data-lucide="link" class="w-3.5 h-3.5 text-amber-400"></i> 📱💻 Matching Combo Pair Linker</span>
-                <span class="flex items-center gap-2"><i data-lucide="sliders" class="w-3.5 h-3.5 text-emerald-400"></i> Live Image Filter Studio</span>
-                <span class="flex items-center gap-2" aria-hidden="true"><i data-lucide="sparkles" class="w-3.5 h-3.5 text-cyan-400"></i> LuminaWall 2.0 Phone & PC Studio</span>
-                <span class="flex items-center gap-2" aria-hidden="true"><i data-lucide="monitor" class="w-3.5 h-3.5 text-indigo-400"></i> 4K Desktop Wallpapers</span>
-                <span class="flex items-center gap-2" aria-hidden="true"><i data-lucide="smartphone" class="w-3.5 h-3.5 text-pink-400"></i> Mobile AMOLED Wallpapers</span>
-            </div>
-        </div>
-
-        <!-- Sticky Header Navbar -->
-        <header class="sticky top-0 z-40 w-full glass-panel border-b border-slate-800/80 px-4 lg:px-8 py-3 transition-all">
+        <!-- Header Navbar -->
+        <header class="relative z-40 w-full glass-panel border-b border-slate-800/80 px-4 lg:px-8 py-3 transition-all">
             <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
                 
                 <!-- Brand Logo & Reset -->
                 <div class="flex items-center gap-3 cursor-pointer group" onclick="resetFilters()">
                     <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-600 via-cyan-500 to-pink-500 p-0.5 flex items-center justify-center shadow-lg shadow-indigo-500/30 group-hover:scale-105 transition-transform duration-300">
                         <div class="w-full h-full bg-cyber-950 rounded-[10px] flex items-center justify-center">
-                            <i data-lucide="sparkles" class="w-5 h-5 text-cyan-400 animate-pulse"></i>
+                            <i data-lucide="sparkles" class="w-5 h-5 text-cyan-400"></i>
                         </div>
                     </div>
                     <div>
