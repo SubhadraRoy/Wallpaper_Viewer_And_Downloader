@@ -244,23 +244,6 @@
                     </div>
                 </div>
 
-                <!-- Desktop Search Bar -->
-                <div class="flex-1 max-w-md hidden md:block relative">
-                    <div class="relative flex items-center">
-                        <i data-lucide="search" class="w-4 h-4 absolute left-3.5 text-slate-400 pointer-events-none"></i>
-                        <input type="text" id="searchInput" placeholder="Search wallpapers..." 
-                            class="w-full pl-10 pr-12 py-2.5 rounded-xl bg-cyber-800/80 border border-slate-700/60 text-sm text-slate-200 placeholder-slate-400 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 focus-visible:ring-2 focus-visible:ring-indigo-500 transition-all"
-                            oninput="onSearchChange(this.value)" aria-label="Search wallpapers by title, genre, or tag">
-                        
-                        <div class="absolute right-3 flex items-center gap-1">
-                            <button id="clearSearchBtn" onclick="clearSearch()" class="hidden text-slate-400 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 rounded p-0.5" aria-label="Clear search input">
-                                <i data-lucide="x" class="w-4 h-4"></i>
-                            </button>
-                            <kbd class="hidden sm:inline-block px-1.5 py-0.5 text-[10px] font-mono text-slate-400 bg-slate-800 border border-slate-700 rounded">/</kbd>
-                        </div>
-                    </div>
-                </div>
-
                 <!-- Header Actions Toolbar -->
                 <div class="flex items-center gap-2">
                     <!-- Keyboard Shortcuts Legend Modal Trigger -->
@@ -284,16 +267,6 @@
                     <button onclick="toggleGridStyle()" class="p-2.5 rounded-xl glass-card text-slate-300 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 transition-all" title="Toggle Grid Layout" aria-label="Toggle grid layout view">
                         <i data-lucide="grid" class="w-4.5 h-4.5"></i>
                     </button>
-                </div>
-            </div>
-
-            <!-- Mobile Search Bar -->
-            <div class="mt-3 md:hidden">
-                <div class="relative flex items-center">
-                    <i data-lucide="search" class="w-4 h-4 absolute left-3.5 text-slate-400 pointer-events-none"></i>
-                    <input type="text" id="mobileSearchInput" placeholder="Search wallpapers..." 
-                        class="w-full pl-10 pr-4 py-2 rounded-xl bg-cyber-800/80 border border-slate-700/60 text-sm text-slate-200 placeholder-slate-400 focus:outline-none focus:border-indigo-500"
-                        oninput="onSearchChange(this.value)" aria-label="Mobile search wallpapers">
                 </div>
             </div>
         </header>
@@ -681,7 +654,7 @@
                 }
                 if (e.key === '/' && document.activeElement.tagName !== 'INPUT') {
                     e.preventDefault();
-                    document.getElementById('searchInput').focus();
+                    document.getElementById('searchInput')?.focus();
                 }
                 if (!document.getElementById('lightboxModal').classList.contains('hidden')) {
                     if (e.key === 'ArrowRight') nextLightbox();
@@ -756,7 +729,6 @@
             document.getElementById('count-combos').innerText = combos.length;
             document.getElementById('favoriteBadgeCount').innerText = favorites.size;
             document.getElementById('footerTotalCount').innerText = `${allWallpapers.length} High Resolution Wallpapers Collection`;
-            document.getElementById('searchInput').placeholder = "Search wallpapers...";
         }
 
         function getPairedWallpaperIds() {
@@ -1145,13 +1117,17 @@
         }
 
         function onSearchChange(val) {
-            searchQuery = val;
-            document.getElementById('searchInput').value = val;
-            document.getElementById('mobileSearchInput').value = val;
+            searchQuery = val || '';
+            const sInput = document.getElementById('searchInput');
+            if (sInput) sInput.value = searchQuery;
+            const mInput = document.getElementById('mobileSearchInput');
+            if (mInput) mInput.value = searchQuery;
             
             const clearBtn = document.getElementById('clearSearchBtn');
-            if (val) clearBtn.classList.remove('hidden');
-            else clearBtn.classList.add('hidden');
+            if (clearBtn) {
+                if (searchQuery) clearBtn.classList.remove('hidden');
+                else clearBtn.classList.add('hidden');
+            }
 
             applyFilters();
         }
@@ -1160,9 +1136,12 @@
 
         function resetFilters() {
             searchQuery = '';
-            document.getElementById('searchInput').value = '';
-            document.getElementById('mobileSearchInput').value = '';
-            document.getElementById('clearSearchBtn').classList.add('hidden');
+            const sInput = document.getElementById('searchInput');
+            if (sInput) sInput.value = '';
+            const mInput = document.getElementById('mobileSearchInput');
+            if (mInput) mInput.value = '';
+            const clearBtn = document.getElementById('clearSearchBtn');
+            if (clearBtn) clearBtn.classList.add('hidden');
             switchGenre('all');
             switchCategory('all');
         }
