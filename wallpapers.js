@@ -1,850 +1,1817 @@
 window.WALLPAPERS_DATA = [
   {
     "id": 1,
+    "filename": "#krishna #radheradhe #pink #pinterest.jpeg",
+    "title": "Lord Vishnu and Sheshanaga in Cosmic Slumber",
+    "path": "Pictures/#krishna #radheradhe #pink #pinterest.jpeg",
+    "encodedPath": "Pictures/%23krishna%20%23radheradhe%20%23pink%20%23pinterest.jpeg",
+    "width": 736,
+    "height": 1308,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "spiritual_divine",
+    "genres": [
+      "spiritual_divine"
+    ],
+    "hexColor": "#6f7487",
+    "colorFamily": "blue",
+    "size": "76.6 KB",
+    "sizeBytes": 78476,
+    "tags": [
+      "4kwallpaper",
+      "adisesha",
+      "animated",
+      "bhakti",
+      "blue",
+      "blueaesthetic",
+      "bluewise",
+      "cosmic_divinity",
+      "cosmicart",
+      "cyan",
+      "deep_navy",
+      "desktop",
+      "desktopwallpaper",
+      "devotion",
+      "devotional",
+      "divine_blue",
+      "divineart",
+      "eternal_knowledge",
+      "eternalknowledge",
+      "god",
+      "gold",
+      "goldenaesthetic",
+      "graphical",
+      "hindu_mythology",
+      "hindugod",
+      "krishna",
+      "lordvishnu",
+      "mobile",
+      "mythology",
+      "mythology_&_spiritual",
+      "narayana",
+      "pcwallpaper",
+      "phone",
+      "portrait",
+      "radheradhe",
+      "sanatandharma",
+      "sheshanaga",
+      "spiritual",
+      "spiritual_divine",
+      "themewise",
+      "vishnu"
+    ]
+  },
+  {
+    "id": 2,
     "filename": "100_img_20260727_135637_712.jpg",
-    "title": "Obsidian AMOLED Edition #1",
+    "title": "Chiseled Alpine Peak on Pitch Black",
     "path": "Pictures/100_img_20260727_135637_712.jpg",
     "encodedPath": "Pictures/100_img_20260727_135637_712.jpg",
     "width": 1080,
     "height": 810,
     "aspectRatio": 1.33,
     "category": "desktop",
-    "primaryGenre": "dark_amoled",
+    "primaryGenre": "nature_landscape",
     "genres": [
-      "dark_amoled"
+      "light_minimal",
+      "nature_landscape"
     ],
     "hexColor": "#959fa8",
     "colorFamily": "dark",
     "size": "37.7 KB",
     "sizeBytes": 38613,
     "tags": [
+      "alpinemountain",
+      "amoled",
+      "blackandwhite",
+      "cleanwallpaper",
+      "colourwise",
       "dark",
-      "dark_amoled",
+      "darkaesthetic",
+      "darkmode",
       "desktop",
+      "graphical",
+      "hills",
+      "homescreen",
       "landscape",
-      "monitor"
+      "light_minimal",
+      "lockscreen",
+      "minimalist",
+      "monitor",
+      "monochrome",
+      "mountainpeak",
+      "mountains",
+      "nature",
+      "nature_&_minimalism",
+      "nature_landscape",
+      "oled_minimal",
+      "oledwallpaper",
+      "pc",
+      "phone",
+      "phonewallpaper",
+      "pitch_black",
+      "pure_white",
+      "real",
+      "slate_gray",
+      "solitude",
+      "summit",
+      "themewise"
     ]
   },
   {
-    "id": 2,
+    "id": 3,
     "filename": "101_img_20260728_230500_684.jpg",
-    "title": "Midnight Abstract Render #2",
+    "title": "Minimalist Dark Knight Bat Symbol",
     "path": "Pictures/101_img_20260728_230500_684.jpg",
     "encodedPath": "Pictures/101_img_20260728_230500_684.jpg",
     "width": 1080,
     "height": 1920,
     "aspectRatio": 0.56,
     "category": "phone",
-    "primaryGenre": "animated_graphical",
+    "primaryGenre": "movies_series",
     "genres": [
-      "animated_graphical",
-      "dark_amoled"
+      "movies_series"
     ],
     "hexColor": "#1d2a32",
     "colorFamily": "dark",
     "size": "56.9 KB",
     "sizeBytes": 58288,
     "tags": [
-      "animated_graphical",
+      "amoled",
+      "batman",
+      "batmanlogo",
+      "batsymbol",
+      "blackandwhite",
+      "brucewayne",
+      "colourwise",
       "dark",
-      "dark_amoled",
+      "dark_knight",
+      "darkaesthetic",
+      "dc_comics",
+      "dccomics",
+      "graphical",
+      "lockscreen",
+      "matte_white",
+      "minimalist",
+      "minimalist_logo",
       "mobile",
-      "portrait"
+      "monochrome",
+      "movie_related",
+      "movierelated",
+      "movies_&_comics",
+      "movies_series",
+      "oledwallpaper",
+      "phone",
+      "phonewallpaper",
+      "portrait",
+      "superhero",
+      "thedarkknight",
+      "themewise",
+      "true_black"
     ]
   },
   {
-    "id": 3,
+    "id": 4,
     "filename": "102_img_20260728_230513_679.jpg",
-    "title": "Shadow Abstract Render #3",
+    "title": "Milky Way Over Alpine Summit and Glassy Lake",
     "path": "Pictures/102_img_20260728_230513_679.jpg",
     "encodedPath": "Pictures/102_img_20260728_230513_679.jpg",
     "width": 1080,
     "height": 2337,
     "aspectRatio": 0.46,
     "category": "phone",
-    "primaryGenre": "animated_graphical",
+    "primaryGenre": "nature_landscape",
     "genres": [
-      "animated_graphical",
-      "dark_amoled"
+      "nature_landscape"
     ],
     "hexColor": "#0b1727",
     "colorFamily": "dark",
     "size": "28.7 KB",
     "sizeBytes": 29395,
     "tags": [
-      "animated_graphical",
+      "4kdesktop",
+      "astrophotography",
+      "bluewise",
+      "colourwise",
       "dark",
-      "dark_amoled",
+      "darkaesthetic",
+      "deep_teal",
+      "desktop",
+      "desktopwallpaper",
+      "hills",
+      "lake",
+      "lake_reflection",
+      "lakereflection",
+      "midnight_blue",
+      "milkyway",
       "mobile",
-      "portrait"
+      "mountains",
+      "nature",
+      "nature_&_astrophotography",
+      "nature_landscape",
+      "night_sky",
+      "nightsky",
+      "pcwallpaper",
+      "phone",
+      "pineforest",
+      "portrait",
+      "real",
+      "rivers",
+      "starlight_white",
+      "stars",
+      "themewise",
+      "tranquil",
+      "warm_amber"
     ]
   },
   {
-    "id": 4,
+    "id": 5,
     "filename": "103_img_20260728_230521_491.jpg",
-    "title": "Eclipse AMOLED Edition #4",
+    "title": "Dreamy Pastel Sunset Over Layered Peaks",
     "path": "Pictures/103_img_20260728_230521_491.jpg",
     "encodedPath": "Pictures/103_img_20260728_230521_491.jpg",
     "width": 1080,
     "height": 1928,
     "aspectRatio": 0.56,
     "category": "phone",
-    "primaryGenre": "dark_amoled",
+    "primaryGenre": "nature_landscape",
     "genres": [
-      "dark_amoled"
+      "animated_graphical",
+      "nature_landscape"
     ],
     "hexColor": "#131313",
     "colorFamily": "dark",
     "size": "169.1 KB",
     "sizeBytes": 173162,
     "tags": [
+      "4kwallpaper",
+      "animated",
+      "animated_graphical",
+      "calming",
+      "colourwise",
       "dark",
-      "dark_amoled",
+      "desktop",
+      "desktopwallpaper",
+      "digitalillustration",
+      "flatdesign",
+      "graphical",
+      "hills",
+      "illustration_&_graphic_landscape",
+      "indigo",
       "mobile",
-      "portrait"
+      "mountains",
+      "nature",
+      "nature_landscape",
+      "pastel_purple",
+      "pcwallpaper",
+      "phone",
+      "pinkaesthetic",
+      "portrait",
+      "purpleaesthetic",
+      "rose_pink",
+      "soft_peach",
+      "sunset",
+      "sunsetlandscape",
+      "themewise",
+      "vaporwave",
+      "vaporwave_horizon",
+      "vectorart"
     ]
   },
   {
-    "id": 5,
+    "id": 6,
     "filename": "104_img_20260731_164803_975.jpg",
-    "title": "Azure Stream Scenic Photograph #5",
+    "title": "The Crimson Portal in the Twisted Forest",
     "path": "Pictures/104_img_20260731_164803_975.jpg",
     "encodedPath": "Pictures/104_img_20260731_164803_975.jpg",
     "width": 1080,
     "height": 1919,
     "aspectRatio": 0.56,
     "category": "phone",
-    "primaryGenre": "reality_photo",
+    "primaryGenre": "movies_series",
     "genres": [
-      "reality_photo"
+      "dark_amoled",
+      "movies_series"
     ],
     "hexColor": "#4a6d81",
     "colorFamily": "cyan",
     "size": "73.1 KB",
     "sizeBytes": 74841,
     "tags": [
+      "4kwallpaper",
+      "alone",
+      "animated",
+      "anime",
+      "apocalyptic",
+      "apocalyptic_wasteland",
+      "blackandred",
+      "charcoal_black",
+      "colourwise",
+      "crimson_red",
       "cyan",
+      "dark_amoled",
+      "dark_fantasy",
+      "dark_fantasy_&_anime",
+      "darkaesthetic",
+      "darkfantasy",
+      "desktop",
+      "desktopwallpaper",
+      "eclipse",
+      "epicscenery",
+      "lonewanderer",
       "mobile",
+      "movies_series",
+      "pcwallpaper",
+      "phone",
+      "portal",
       "portrait",
-      "reality_photo"
+      "redaesthetic",
+      "redring",
+      "stormy_gray",
+      "surrealart",
+      "themewise"
     ]
   },
   {
-    "id": 6,
-    "filename": "10557f19_7c83_463d_a1b1_d225f32bd66c.jpeg",
-    "title": "Dark Cyber Abstract Render #6",
-    "path": "Pictures/10557f19_7c83_463d_a1b1_d225f32bd66c.jpeg",
-    "encodedPath": "Pictures/10557f19_7c83_463d_a1b1_d225f32bd66c.jpeg",
+    "id": 7,
+    "filename": "10557f19-7c83-463d-a1b1-d225f32bd66c.jpeg",
+    "title": "Ronin Under Blood-Red Sakura and Full Moon",
+    "path": "Pictures/10557f19-7c83-463d-a1b1-d225f32bd66c.jpeg",
+    "encodedPath": "Pictures/10557f19-7c83-463d-a1b1-d225f32bd66c.jpeg",
     "width": 736,
     "height": 1472,
     "aspectRatio": 0.5,
     "category": "phone",
     "primaryGenre": "animated_graphical",
     "genres": [
-      "animated_graphical",
-      "dark_amoled"
+      "animated_graphical"
     ],
     "hexColor": "#0e0c0f",
     "colorFamily": "dark",
     "size": "57.5 KB",
     "sizeBytes": 58852,
     "tags": [
+      "4kphone",
+      "alone",
+      "animated",
       "animated_graphical",
+      "anime",
+      "blood_red",
+      "charcoal_gray",
+      "cherry_blossom",
+      "cherryblossom",
+      "colourwise",
       "dark",
-      "dark_amoled",
+      "darkaesthetic",
+      "full_moon",
+      "fullmoon",
+      "japanart",
+      "katana",
+      "lockscreen",
+      "magenta",
       "mobile",
-      "portrait"
+      "moonlit_white",
+      "phone",
+      "phonewallpaper",
+      "portrait",
+      "redaesthetic",
+      "redkatana",
+      "ronin",
+      "sakura",
+      "samurai",
+      "samurai_&_japanese_art",
+      "themewise",
+      "warrior"
     ]
   },
   {
-    "id": 7,
+    "id": 8,
+    "filename": "10557f19_7c83_463d_a1b1_d225f32bd66c.jpeg",
+    "title": "Electric Violet Katana Slash Across the Stars",
+    "path": "Pictures/10557f19_7c83_463d_a1b1_d225f32bd66c.jpeg",
+    "encodedPath": "Pictures/10557f19_7c83_463d_a1b1_d225f32bd66c.jpeg",
+    "width": 736,
+    "height": 1472,
+    "aspectRatio": 0.5,
+    "category": "phone",
+    "primaryGenre": "movies_series",
+    "genres": [
+      "movies_series"
+    ],
+    "hexColor": "#0e0c0f",
+    "colorFamily": "dark",
+    "size": "57.5 KB",
+    "sizeBytes": 58852,
+    "tags": [
+      "4kgaming",
+      "acheron",
+      "animated",
+      "anime",
+      "anime_&_gaming",
+      "colourwise",
+      "cosmic",
+      "cosmicart",
+      "dark",
+      "desktop",
+      "desktopwallpaper",
+      "electric_purple",
+      "electroslash",
+      "gamingwallpaper",
+      "genshin_impact",
+      "genshinimpact",
+      "honkaistarrail",
+      "katana",
+      "magenta",
+      "mobile",
+      "movies_series",
+      "neon_violet",
+      "neonpurple",
+      "pcwallpaper",
+      "phone",
+      "portrait",
+      "purpleaesthetic",
+      "raiden_shogun",
+      "raidenshogun",
+      "starlight_white",
+      "sword_slash",
+      "swordslash",
+      "themewise"
+    ]
+  },
+  {
+    "id": 9,
     "filename": "105_img_20260731_164806_933.jpg",
-    "title": "Electric Cyan Scenic Photograph #7",
+    "title": "Inosuke at the Bioluminescent Torii Gate",
     "path": "Pictures/105_img_20260731_164806_933.jpg",
     "encodedPath": "Pictures/105_img_20260731_164806_933.jpg",
     "width": 1080,
     "height": 1919,
     "aspectRatio": 0.56,
     "category": "phone",
-    "primaryGenre": "reality_photo",
+    "primaryGenre": "movies_series",
     "genres": [
-      "reality_photo"
+      "movies_series"
     ],
     "hexColor": "#425d70",
     "colorFamily": "cyan",
     "size": "99.4 KB",
     "sizeBytes": 101747,
     "tags": [
+      "4kanime",
+      "animated",
+      "anime",
+      "anime_&_series_related",
+      "bioluminescent",
+      "blueaesthetic",
+      "bluecherryblossom",
+      "bluewise",
+      "colourwise",
       "cyan",
+      "demon_slayer",
+      "demonslayer",
+      "desktop",
+      "desktopwallpaper",
+      "electric_cyan",
+      "glowing_flora",
+      "inosuke",
+      "inosuke_hashibira",
+      "inosukehashibira",
+      "japanesescenery",
+      "kimetsunoyaiba",
+      "lantern_red",
+      "midnight_blue",
       "mobile",
+      "movies_series",
+      "neon_blue",
+      "pcwallpaper",
+      "phone",
       "portrait",
-      "reality_photo"
+      "series_related",
+      "seriesrelated",
+      "themewise",
+      "torii_gate",
+      "toriigate"
     ]
   },
   {
-    "id": 8,
+    "id": 10,
     "filename": "106_img_20260731_164809_711.jpg",
-    "title": "Aqua Horizon Scenic Photograph #8",
+    "title": "Roronoa Zoro Strolling Through Autumn Foliage",
     "path": "Pictures/106_img_20260731_164809_711.jpg",
     "encodedPath": "Pictures/106_img_20260731_164809_711.jpg",
     "width": 1080,
     "height": 1919,
     "aspectRatio": 0.56,
     "category": "phone",
-    "primaryGenre": "reality_photo",
+    "primaryGenre": "movies_series",
     "genres": [
-      "reality_photo"
+      "movies_series"
     ],
     "hexColor": "#92a9b1",
     "colorFamily": "cyan",
     "size": "79.5 KB",
     "sizeBytes": 81425,
     "tags": [
+      "4kanime",
+      "animated",
+      "anime",
+      "anime_&_series_related",
+      "autumn_nature",
+      "autumnleaves",
+      "colourwise",
       "cyan",
+      "desktop",
+      "desktopwallpaper",
+      "earth_brown",
+      "fallfoliage",
+      "forest_green",
+      "forestpath",
+      "golden_amber",
+      "goldenaesthetic",
       "mobile",
+      "movies_series",
+      "nature",
+      "one_piece",
+      "onepiece",
+      "pcwallpaper",
+      "phone",
       "portrait",
-      "reality_photo"
+      "roronoa_zoro",
+      "roronoazoro",
+      "samurai",
+      "series_related",
+      "seriesrelated",
+      "strawhats",
+      "swordsman",
+      "themewise",
+      "warm_yellow",
+      "zoro"
     ]
   },
   {
-    "id": 9,
+    "id": 11,
     "filename": "107_img_20260731_164812_574.jpg",
-    "title": "Shadow AMOLED Edition #9",
+    "title": "Byakuya Kuchiki - Senbonzakura Kageyoshi Bankai",
     "path": "Pictures/107_img_20260731_164812_574.jpg",
     "encodedPath": "Pictures/107_img_20260731_164812_574.jpg",
     "width": 1080,
     "height": 1919,
     "aspectRatio": 0.56,
     "category": "phone",
-    "primaryGenre": "dark_amoled",
+    "primaryGenre": "movies_series",
     "genres": [
-      "dark_amoled"
+      "movies_series"
     ],
     "hexColor": "#131416",
     "colorFamily": "dark",
     "size": "85.4 KB",
     "sizeBytes": 87469,
     "tags": [
+      "animated",
+      "anime",
+      "anime_&_series_related",
+      "bankai",
+      "bleach",
+      "byakuya",
+      "byakuya_kuchiki",
+      "byakuyakuchiki",
+      "cherryblossom",
+      "colourwise",
       "dark",
-      "dark_amoled",
+      "deep_black",
+      "glowing_violet",
+      "katana",
+      "lockscreen",
       "mobile",
-      "portrait"
+      "movies_series",
+      "petal_pink",
+      "phone",
+      "phonewallpaper",
+      "pinkaesthetic",
+      "portrait",
+      "pure_white",
+      "sakura_blades",
+      "senbonzakura",
+      "series_related",
+      "seriesrelated",
+      "shinigami",
+      "soulreaper",
+      "swords",
+      "themewise"
     ]
   },
   {
-    "id": 10,
+    "id": 12,
     "filename": "108_img_20260731_164819_914.jpg",
-    "title": "Eclipse AMOLED Edition #10",
+    "title": "Interstellar Farmhouse Under Van Gogh Accretion Disk",
     "path": "Pictures/108_img_20260731_164819_914.jpg",
     "encodedPath": "Pictures/108_img_20260731_164819_914.jpg",
     "width": 1080,
     "height": 1920,
     "aspectRatio": 0.56,
     "category": "phone",
-    "primaryGenre": "dark_amoled",
+    "primaryGenre": "movies_series",
     "genres": [
-      "dark_amoled"
+      "movies_series"
     ],
     "hexColor": "#010103",
     "colorFamily": "dark",
     "size": "57.9 KB",
     "sizeBytes": 59241,
     "tags": [
+      "black_hole",
+      "blackhole",
+      "christophernolan",
+      "cobalt_blue",
+      "colorfulart",
+      "colourwise",
+      "cornfield_ochre",
+      "cosmic_art",
       "dark",
-      "dark_amoled",
+      "farmhouse",
+      "fiery_orange",
+      "gargantua",
+      "golden_yellow",
+      "house",
+      "interstellar",
+      "lockscreen",
       "mobile",
-      "portrait"
+      "movie_related",
+      "movie_related_&_fine_art",
+      "movierelated",
+      "movies_series",
+      "oilpainting",
+      "phone",
+      "phonewallpaper",
+      "portrait",
+      "postimpressionism",
+      "scifi",
+      "spaceart",
+      "starrynight",
+      "themewise",
+      "van_gogh",
+      "vangoghstyle"
     ]
   },
   {
-    "id": 11,
+    "id": 13,
     "filename": "109_img_20260805_224758_098.jpg",
-    "title": "Onyx AMOLED Edition #11",
+    "title": "Lost in Thought - Don't Believe Everything You Think",
     "path": "Pictures/109_img_20260805_224758_098.jpg",
     "encodedPath": "Pictures/109_img_20260805_224758_098.jpg",
     "width": 1080,
     "height": 1922,
     "aspectRatio": 0.56,
     "category": "phone",
-    "primaryGenre": "dark_amoled",
+    "primaryGenre": "light_minimal",
     "genres": [
-      "dark_amoled"
+      "light_minimal"
     ],
     "hexColor": "#010b1a",
     "colorFamily": "dark",
     "size": "117.7 KB",
     "sizeBytes": 120548,
     "tags": [
+      "blackandwhite",
+      "charcoal_black",
       "dark",
-      "dark_amoled",
+      "dontbelieveeverythingyouthink",
+      "eternal_knowledge",
+      "eternalknowledge",
+      "graphical",
+      "light_minimal",
+      "lockscreen",
+      "lostinthought",
+      "mentalhealth",
+      "mindfulness",
+      "mindset",
+      "minimalist",
       "mobile",
-      "portrait"
+      "monochrome",
+      "philosophy",
+      "phone",
+      "phonewallpaper",
+      "portrait",
+      "quotes",
+      "quotes_&_philosophy",
+      "stoicism",
+      "textured_off-white",
+      "themewise",
+      "typography",
+      "with_quotes",
+      "withquotes"
     ]
   },
   {
-    "id": 12,
+    "id": 14,
     "filename": "10_img_20260421_220752_996.jpg",
-    "title": "Dark Cyber AMOLED Edition #12",
+    "title": "Solitary Tree Mirrored Beneath Massive Cumulus",
     "path": "Pictures/10_img_20260421_220752_996.jpg",
     "encodedPath": "Pictures/10_img_20260421_220752_996.jpg",
     "width": 720,
     "height": 1279,
     "aspectRatio": 0.56,
     "category": "phone",
-    "primaryGenre": "dark_amoled",
+    "primaryGenre": "nature_landscape",
     "genres": [
-      "dark_amoled"
+      "nature_landscape"
     ],
     "hexColor": "#150917",
     "colorFamily": "dark",
     "size": "180.4 KB",
     "sizeBytes": 184752,
     "tags": [
+      "alone",
+      "amoled",
+      "cloud_white",
+      "clouds",
+      "cumuluscloud",
       "dark",
-      "dark_amoled",
+      "darkmode",
+      "deep_obsidian",
+      "golden_wheat",
+      "lake_reflection",
+      "lakereflection",
+      "lockscreen",
+      "lone_tree",
+      "lonetree",
+      "minimalistnature",
       "mobile",
-      "portrait"
+      "nature",
+      "nature_&_symmetry",
+      "nature_landscape",
+      "oledwallpaper",
+      "phone",
+      "phonewallpaper",
+      "portrait",
+      "real",
+      "reflection",
+      "rivers",
+      "symmetry",
+      "themewise",
+      "tranquil"
     ]
   },
   {
-    "id": 13,
+    "id": 15,
     "filename": "110_img_20260806_175452_267.jpg",
-    "title": "Obsidian AMOLED Edition #13",
+    "title": "Golden Bronze Leaves on Pure AMOLED Black",
     "path": "Pictures/110_img_20260806_175452_267.jpg",
     "encodedPath": "Pictures/110_img_20260806_175452_267.jpg",
     "width": 1080,
     "height": 813,
     "aspectRatio": 1.33,
     "category": "desktop",
-    "primaryGenre": "dark_amoled",
+    "primaryGenre": "nature_landscape",
     "genres": [
-      "dark_amoled"
+      "dark_amoled",
+      "nature_landscape"
     ],
     "hexColor": "#0b0704",
     "colorFamily": "dark",
     "size": "98.0 KB",
     "sizeBytes": 100330,
     "tags": [
+      "amoled",
+      "autumnleaves",
+      "autumnvibes",
+      "botanical",
+      "bronzeaesthetic",
+      "brownwise",
+      "caramel_brown",
+      "cleanwallpaper",
+      "colourwise",
       "dark",
       "dark_amoled",
+      "darkmode",
       "desktop",
       "landscape",
-      "monitor"
+      "leaves",
+      "lockscreen",
+      "minimalist",
+      "minimalist_leaves",
+      "monitor",
+      "nature",
+      "nature_&_amoled",
+      "nature_landscape",
+      "negativespace",
+      "oled_black",
+      "oledwallpaper",
+      "pc",
+      "phone",
+      "phonewallpaper",
+      "pure_black",
+      "trueblack",
+      "warm_bronze"
     ]
   },
   {
-    "id": 14,
+    "id": 16,
     "filename": "111_img_20260806_175454_788.jpg",
-    "title": "Midnight AMOLED Edition #14",
+    "title": "Orbital View of Mediterranean City Lights at Night",
     "path": "Pictures/111_img_20260806_175454_788.jpg",
     "encodedPath": "Pictures/111_img_20260806_175454_788.jpg",
     "width": 1080,
     "height": 2395,
     "aspectRatio": 0.45,
     "category": "phone",
-    "primaryGenre": "dark_amoled",
+    "primaryGenre": "nature_landscape",
     "genres": [
-      "dark_amoled"
+      "nature_landscape"
     ],
     "hexColor": "#2a1710",
     "colorFamily": "dark",
     "size": "284.4 KB",
     "sizeBytes": 291257,
     "tags": [
+      "astronomy",
+      "bluewise",
+      "city_gold",
+      "city_lights",
+      "citylights",
+      "colourwise",
+      "cosmos",
       "dark",
-      "dark_amoled",
+      "darkmode",
+      "deep_ocean_blue",
+      "desert_sand",
+      "earth",
+      "earthfromspace",
+      "lockscreen",
+      "mediterranean",
       "mobile",
-      "portrait"
+      "nature",
+      "nature_landscape",
+      "orbit",
+      "phone",
+      "phonewallpaper",
+      "planetearth",
+      "portrait",
+      "real",
+      "space",
+      "space_&_nature",
+      "space_black",
+      "themewise"
     ]
   },
   {
-    "id": 15,
+    "id": 17,
     "filename": "112_img_20260807_162224_770.jpg",
-    "title": "Radiant Dawn Nature Horizon #15",
+    "title": "Lone Watcher on Asteroid Cliff Over Cosmic Void",
     "path": "Pictures/112_img_20260807_162224_770.jpg",
     "encodedPath": "Pictures/112_img_20260807_162224_770.jpg",
     "width": 1080,
     "height": 2321,
     "aspectRatio": 0.47,
     "category": "phone",
-    "primaryGenre": "nature_landscape",
+    "primaryGenre": "animated_graphical",
     "genres": [
-      "animated_graphical",
-      "dark_amoled",
-      "nature_landscape"
+      "animated_graphical"
     ],
     "hexColor": "#332a20",
     "colorFamily": "gold",
     "size": "119.6 KB",
     "sizeBytes": 122468,
     "tags": [
+      "alone",
       "animated_graphical",
-      "dark_amoled",
+      "astronomy",
+      "bluewise",
+      "cliff",
+      "cliff_edge",
+      "colourwise",
+      "darkaesthetic",
+      "existential",
       "gold",
+      "hills",
+      "lockscreen",
+      "lonewanderer",
       "mobile",
-      "nature_landscape",
-      "portrait"
+      "nebula",
+      "nebula_blue",
+      "outerspace",
+      "phone",
+      "phonewallpaper",
+      "pitch_black",
+      "portrait",
+      "scifi",
+      "solitude",
+      "space",
+      "space_&_solitude",
+      "starlight_white",
+      "stars",
+      "themewise"
     ]
   },
   {
-    "id": 16,
+    "id": 18,
     "filename": "113_img_20260807_162227_535.jpg",
-    "title": "Eclipse AMOLED Edition #16",
+    "title": "Great Pyramid of Giza Beneath the Starry Cosmos",
     "path": "Pictures/113_img_20260807_162227_535.jpg",
     "encodedPath": "Pictures/113_img_20260807_162227_535.jpg",
     "width": 1080,
     "height": 813,
     "aspectRatio": 1.33,
     "category": "desktop",
-    "primaryGenre": "dark_amoled",
+    "primaryGenre": "nature_landscape",
     "genres": [
-      "dark_amoled"
+      "nature_landscape"
     ],
     "hexColor": "#000308",
     "colorFamily": "dark",
     "size": "70.5 KB",
     "sizeBytes": 72209,
     "tags": [
+      "amoled",
+      "ancientwonders",
+      "blackandwhite",
+      "charcoal_black",
       "dark",
-      "dark_amoled",
+      "dark_aesthetic",
+      "darkaesthetic",
       "desktop",
+      "egypt",
+      "giza",
+      "graphite_gray",
+      "historicmonument",
+      "history",
+      "history_&_astrophotography",
       "landscape",
-      "monitor"
+      "lockscreen",
+      "milkyway",
+      "monitor",
+      "monochrome",
+      "nature_landscape",
+      "nightsky",
+      "pc",
+      "phone",
+      "phonewallpaper",
+      "pyramids",
+      "real",
+      "starlight_white",
+      "stars",
+      "themewise"
     ]
   },
   {
-    "id": 17,
+    "id": 19,
     "filename": "114_img_20260808_145830_313.jpg",
-    "title": "Pure Monolith Minimal Aesthetic #17",
+    "title": "Windblown Palm Trees in a Dark Twilight Storm",
     "path": "Pictures/114_img_20260808_145830_313.jpg",
     "encodedPath": "Pictures/114_img_20260808_145830_313.jpg",
     "width": 1080,
     "height": 1924,
     "aspectRatio": 0.56,
     "category": "phone",
-    "primaryGenre": "light_minimal",
+    "primaryGenre": "nature_landscape",
     "genres": [
-      "light_minimal"
+      "nature_landscape"
     ],
     "hexColor": "#f9fbf6",
     "colorFamily": "white",
     "size": "98.4 KB",
     "sizeBytes": 100762,
     "tags": [
-      "light_minimal",
+      "atmospheric",
+      "cleanwallpaper",
+      "coastalroad",
+      "dark_aesthetic",
+      "darkaesthetic",
+      "gloomy",
+      "lockscreen",
       "mobile",
+      "moody",
+      "moodyphotography",
+      "muted_olive",
+      "nature",
+      "nature_&_atmospheric",
+      "nature_landscape",
+      "palm_trees",
+      "palmtrees",
+      "phone",
+      "phonewallpaper",
       "portrait",
+      "rainyvibes",
+      "real",
+      "storm",
+      "stormclouds",
+      "themewise",
+      "thunderstorm_gray",
+      "tropicalstorm",
+      "warm_streetlight_amber",
       "white"
     ]
   },
   {
-    "id": 18,
+    "id": 20,
     "filename": "115_img_20260808_145836_227.jpg",
-    "title": "Crystal White Minimal Aesthetic #18",
+    "title": "Daenerys in Crimson Cloak Staring Down Drogon",
     "path": "Pictures/115_img_20260808_145836_227.jpg",
     "encodedPath": "Pictures/115_img_20260808_145836_227.jpg",
     "width": 1080,
     "height": 1924,
     "aspectRatio": 0.56,
     "category": "phone",
-    "primaryGenre": "light_minimal",
+    "primaryGenre": "movies_series",
     "genres": [
-      "light_minimal"
+      "movies_series"
     ],
     "hexColor": "#dbdad6",
     "colorFamily": "white",
     "size": "128.7 KB",
     "sizeBytes": 131743,
     "tags": [
-      "light_minimal",
+      "colourwise",
+      "crimson_velvet",
+      "daenerys_targaryen",
+      "daenerystargaryen",
+      "dracarys",
+      "dragon",
+      "dragon_charcoal",
+      "dragons",
+      "drogon",
+      "epicfantasy",
+      "game_of_thrones_related",
+      "gameofthrones",
+      "gameofthronesrelated",
+      "got",
+      "houseofthedragon",
+      "lockscreen",
       "mobile",
+      "motherofdragons",
+      "movies_series",
+      "phone",
+      "phonewallpaper",
       "portrait",
-      "white"
+      "redaesthetic",
+      "series_related",
+      "series_related_&_dragon",
+      "seriesrelated",
+      "targaryen",
+      "themewise",
+      "white",
+      "winter",
+      "winter_gray",
+      "winteriscoming"
     ]
   },
   {
-    "id": 19,
+    "id": 21,
     "filename": "116_img_20260809_160627_117.jpg",
-    "title": "Snow Apex Minimal Aesthetic #19",
+    "title": "Jon Snow and the Blue-Eyed Dragon with Red Smoke Plume",
     "path": "Pictures/116_img_20260809_160627_117.jpg",
     "encodedPath": "Pictures/116_img_20260809_160627_117.jpg",
     "width": 736,
     "height": 1308,
     "aspectRatio": 0.56,
     "category": "phone",
-    "primaryGenre": "light_minimal",
+    "primaryGenre": "movies_series",
     "genres": [
-      "light_minimal"
+      "movies_series"
     ],
     "hexColor": "#f8f3ed",
     "colorFamily": "white",
     "size": "17.1 KB",
     "sizeBytes": 17485,
     "tags": [
-      "light_minimal",
+      "colourwise",
+      "crimson_red",
+      "cyan_blue",
+      "dragon",
+      "dragon_slate",
+      "fantasyart",
+      "game_of_thrones_related",
+      "gameofthrones",
+      "gameofthronesrelated",
+      "got",
+      "ice_dragon",
+      "icedragon",
+      "jon_snow",
+      "jonsnow",
+      "kinginthenorth",
+      "lockscreen",
       "mobile",
+      "movies_series",
+      "phone",
+      "phonewallpaper",
+      "popart",
       "portrait",
+      "red_smoke",
+      "redandwhite",
+      "redsmoke",
+      "series_related",
+      "series_related_&_dragon",
+      "seriesrelated",
+      "stark",
+      "stark_white",
+      "targaryen",
+      "themewise",
+      "viserion",
       "white"
     ]
   },
   {
-    "id": 20,
+    "id": 22,
     "filename": "117_img_20260809_160635_573.jpg",
-    "title": "Cosmic Blue Minimal Aesthetic #20",
+    "title": "3D Layered Paper Relief Wolf Head",
     "path": "Pictures/117_img_20260809_160635_573.jpg",
     "encodedPath": "Pictures/117_img_20260809_160635_573.jpg",
     "width": 736,
     "height": 1308,
     "aspectRatio": 0.56,
     "category": "phone",
-    "primaryGenre": "light_minimal",
+    "primaryGenre": "animated_graphical",
     "genres": [
-      "light_minimal"
+      "animated_graphical"
     ],
     "hexColor": "#9cabc1",
     "colorFamily": "blue",
     "size": "19.0 KB",
     "sizeBytes": 19442,
     "tags": [
+      "3dart",
+      "animated_graphical",
       "blue",
-      "light_minimal",
+      "blueandwhite",
+      "bluewise",
+      "cleanwallpaper",
+      "colourwise",
+      "denim_blue",
+      "direwolf",
+      "game_of_thrones_related",
+      "gameofthronesrelated",
+      "graphical",
+      "graphical_&_paper_art",
+      "housestark",
+      "lockscreen",
+      "minimalist",
       "mobile",
-      "portrait"
+      "origami",
+      "paper_white",
+      "paperart",
+      "papercraft",
+      "phone",
+      "phonewallpaper",
+      "portrait",
+      "soft_gray",
+      "themewise",
+      "wolf"
     ]
   },
   {
-    "id": 21,
+    "id": 23,
     "filename": "118_img_20260814_170245_597.jpg",
-    "title": "Shadow AMOLED Edition #21",
+    "title": "Vaporous Smoke Dragon Head on High-Key White",
     "path": "Pictures/118_img_20260814_170245_597.jpg",
     "encodedPath": "Pictures/118_img_20260814_170245_597.jpg",
     "width": 1080,
     "height": 1919,
     "aspectRatio": 0.56,
     "category": "phone",
-    "primaryGenre": "dark_amoled",
+    "primaryGenre": "light_minimal",
     "genres": [
-      "dark_amoled"
+      "light_minimal"
     ],
     "hexColor": "#000000",
     "colorFamily": "dark",
     "size": "193.2 KB",
     "sizeBytes": 197786,
     "tags": [
+      "cleanwallpaper",
       "dark",
-      "dark_amoled",
+      "dragon",
+      "dragon_&_minimalist",
+      "dragons",
+      "fantasycreature",
+      "gameofthronesrelated",
+      "graphical",
+      "high_key",
+      "highkey",
+      "icedragon",
+      "icy_blue",
+      "light_minimal",
+      "lockscreen",
+      "minimalist",
       "mobile",
-      "portrait"
+      "mythology",
+      "phone",
+      "phonewallpaper",
+      "portrait",
+      "pure_white",
+      "smoke_art",
+      "smokearteffect",
+      "smoky_navy",
+      "themewise",
+      "whiteaesthetic",
+      "whitebackground"
     ]
   },
   {
-    "id": 22,
+    "id": 24,
     "filename": "119_img_20260815_130750_303.jpg",
-    "title": "Pure Monolith Minimal Aesthetic #22",
+    "title": "Close-Up Gaze of an Ancient Horned Dragon in Fog",
     "path": "Pictures/119_img_20260815_130750_303.jpg",
     "encodedPath": "Pictures/119_img_20260815_130750_303.jpg",
     "width": 720,
     "height": 1280,
     "aspectRatio": 0.56,
     "category": "phone",
-    "primaryGenre": "light_minimal",
+    "primaryGenre": "movies_series",
     "genres": [
-      "light_minimal"
+      "movies_series"
     ],
     "hexColor": "#fefefe",
     "colorFamily": "white",
     "size": "120.9 KB",
     "sizeBytes": 123815,
     "tags": [
-      "light_minimal",
+      "cinematic",
+      "close-up",
+      "closeupportrait",
+      "dragon",
+      "dragon_&_series_related",
+      "dragonface",
+      "dragons",
+      "fantasybeast",
+      "fog",
+      "game_of_thrones_related",
+      "gameofthronesrelated",
+      "glowing_amber",
+      "house_of_the_dragon",
+      "houseofthedragon",
+      "lockscreen",
+      "mist",
       "mobile",
+      "movies_series",
+      "pale_bone",
+      "phone",
+      "phonewallpaper",
       "portrait",
+      "series_related",
+      "seriesrelated",
+      "smoky_gray",
+      "themewise",
+      "vhagar",
       "white"
     ]
   },
   {
-    "id": 23,
+    "id": 25,
     "filename": "11_img_20260421_232037_486.jpg",
-    "title": "Autumn Gold Nature Horizon #23",
+    "title": "Iron Man on Donut Roof - Until It's Done, Tell None",
     "path": "Pictures/11_img_20260421_232037_486.jpg",
     "encodedPath": "Pictures/11_img_20260421_232037_486.jpg",
     "width": 720,
     "height": 900,
     "aspectRatio": 0.8,
     "category": "phone",
-    "primaryGenre": "nature_landscape",
+    "primaryGenre": "movies_series",
     "genres": [
-      "nature_landscape"
+      "light_minimal",
+      "movies_series"
     ],
     "hexColor": "#e86515",
     "colorFamily": "gold",
     "size": "169.8 KB",
     "sizeBytes": 173892,
     "tags": [
+      "avengers",
+      "bold_black",
+      "colourwise",
       "gold",
+      "hustle",
+      "iron_man",
+      "iron_man_red",
+      "ironman",
+      "light_minimal",
+      "lockscreen",
+      "marvel",
+      "marvel_&_quotes",
+      "mcu",
       "mobile",
-      "nature_landscape",
-      "portrait"
+      "motivation",
+      "movie_related",
+      "movierelated",
+      "movies_series",
+      "phone",
+      "phonewallpaper",
+      "portrait",
+      "quotes",
+      "sigmamindset",
+      "sky_blue",
+      "successquotes",
+      "themewise",
+      "tonystark",
+      "untilitsdonetellnone",
+      "with_quotes",
+      "withquotes"
     ]
   },
   {
-    "id": 24,
+    "id": 26,
     "filename": "120_img_20260816_085048_510.jpg",
-    "title": "Gilded Sun Nature Horizon #24",
+    "title": "Tony Stark Jericho Demo - I Can't Lose, I'm Chosen",
     "path": "Pictures/120_img_20260816_085048_510.jpg",
     "encodedPath": "Pictures/120_img_20260816_085048_510.jpg",
     "width": 1080,
     "height": 1919,
     "aspectRatio": 0.56,
     "category": "phone",
-    "primaryGenre": "nature_landscape",
+    "primaryGenre": "movies_series",
     "genres": [
-      "dark_amoled",
-      "nature_landscape"
+      "light_minimal",
+      "movies_series"
     ],
     "hexColor": "#4f3328",
     "colorFamily": "gold",
     "size": "105.1 KB",
     "sizeBytes": 107668,
     "tags": [
-      "dark_amoled",
+      "avengers",
+      "billionairemindset",
+      "clear_sky_blue",
+      "confidence",
       "gold",
+      "hills",
+      "imchosen",
+      "ironman",
+      "jericho",
+      "light_minimal",
+      "lockscreen",
+      "marvel",
+      "marvel_&_quotes",
+      "mcu",
       "mobile",
-      "nature_landscape",
-      "portrait"
+      "mountains",
+      "movie_related",
+      "movierelated",
+      "movies_series",
+      "phone",
+      "phonewallpaper",
+      "portrait",
+      "quotes",
+      "snowy_peak_white",
+      "suit_navy",
+      "themewise",
+      "tony_stark",
+      "tonystark",
+      "with_quotes",
+      "withquotes"
     ]
   },
   {
-    "id": 25,
+    "id": 27,
     "filename": "121_img_20260817_002357_140.jpg",
-    "title": "Obsidian AMOLED Edition #25",
+    "title": "The Batman Silhouette - If Not Me, Then Who?",
     "path": "Pictures/121_img_20260817_002357_140.jpg",
     "encodedPath": "Pictures/121_img_20260817_002357_140.jpg",
     "width": 1080,
     "height": 2335,
     "aspectRatio": 0.46,
     "category": "phone",
-    "primaryGenre": "dark_amoled",
+    "primaryGenre": "movies_series",
     "genres": [
-      "dark_amoled"
+      "light_minimal",
+      "movies_series"
     ],
     "hexColor": "#2d2614",
     "colorFamily": "dark",
     "size": "318.0 KB",
     "sizeBytes": 325617,
     "tags": [
+      "batman",
+      "blood_red",
+      "colourwise",
       "dark",
-      "dark_amoled",
+      "darkaesthetic",
+      "dc_comics",
+      "dccomics",
+      "ifnotmethenwho",
+      "light_minimal",
+      "lockscreen",
       "mobile",
-      "portrait"
+      "movie_related",
+      "movierelated",
+      "movies_&_quotes",
+      "movies_series",
+      "phone",
+      "phonewallpaper",
+      "portrait",
+      "quotes",
+      "red_aesthetic",
+      "redaesthetic",
+      "redwise",
+      "robertpattinson",
+      "silhouette_black",
+      "superhero",
+      "thebatman",
+      "themewise",
+      "vengeance",
+      "with_quotes",
+      "withquotes"
     ]
   },
   {
-    "id": 26,
+    "id": 28,
     "filename": "122_img_20260819_201408_089.jpg",
-    "title": "Deep Cobalt Scenic Photograph #26",
+    "title": "Makima Chainsaw Man Samsung Galaxy Wallpaper",
     "path": "Pictures/122_img_20260819_201408_089.jpg",
     "encodedPath": "Pictures/122_img_20260819_201408_089.jpg",
     "width": 600,
     "height": 1200,
     "aspectRatio": 0.5,
     "category": "phone",
-    "primaryGenre": "reality_photo",
+    "primaryGenre": "movies_series",
     "genres": [
-      "reality_photo"
+      "movies_series"
     ],
     "hexColor": "#091fa9",
     "colorFamily": "blue",
     "size": "83.7 KB",
     "sizeBytes": 85680,
     "tags": [
+      "amoled",
+      "animated",
+      "anime",
+      "anime_&_samsung_galaxy",
       "blue",
+      "chainsaw_man",
+      "chainsawman",
+      "colourwise",
+      "darkmode",
+      "deep_black",
+      "fiery_orange-red_eyes",
+      "lockscreen",
+      "makima",
+      "manga",
+      "manga_white",
+      "mangaart",
       "mobile",
+      "movies_series",
+      "oledwallpaper",
+      "phone",
+      "phonewallpaper",
       "portrait",
-      "reality_photo"
+      "redeyes",
+      "samsung_galaxy",
+      "samsunggalaxy",
+      "samsungwallpaper",
+      "themewise"
     ]
   },
   {
-    "id": 27,
+    "id": 29,
     "filename": "123_img_20260819_201421_868.jpg",
-    "title": "Shadow AMOLED Edition #27",
+    "title": "ANBU Mask & Sharingan Eye Samsung Galaxy Wallpaper",
     "path": "Pictures/123_img_20260819_201421_868.jpg",
     "encodedPath": "Pictures/123_img_20260819_201421_868.jpg",
     "width": 1080,
     "height": 1928,
     "aspectRatio": 0.56,
     "category": "phone",
-    "primaryGenre": "dark_amoled",
+    "primaryGenre": "movies_series",
     "genres": [
-      "dark_amoled"
+      "movies_series"
     ],
     "hexColor": "#1b212d",
     "colorFamily": "dark",
     "size": "287.7 KB",
     "sizeBytes": 294621,
     "tags": [
+      "amoled",
+      "anbu",
+      "animated",
+      "anime",
+      "anime_&_samsung_galaxy",
+      "colourwise",
       "dark",
-      "dark_amoled",
+      "darkmode",
+      "itachi",
+      "itachi_uchiha",
+      "itachiuchiha",
+      "kakashi",
+      "lockscreen",
       "mobile",
-      "portrait"
+      "movies_series",
+      "naruto",
+      "oledwallpaper",
+      "phone",
+      "phonewallpaper",
+      "porcelain_white",
+      "portrait",
+      "samsung_galaxy",
+      "samsunggalaxy",
+      "samsungwallpaper",
+      "sharingan",
+      "sharingan_red",
+      "themewise",
+      "true_black"
     ]
   },
   {
-    "id": 28,
+    "id": 30,
     "filename": "124_img_20260819_201427_080.jpg",
-    "title": "Eclipse AMOLED Edition #28",
+    "title": "Anime Maid on BMW E30 M3 Samsung Galaxy Wallpaper",
     "path": "Pictures/124_img_20260819_201427_080.jpg",
     "encodedPath": "Pictures/124_img_20260819_201427_080.jpg",
     "width": 1080,
     "height": 1928,
     "aspectRatio": 0.56,
     "category": "phone",
-    "primaryGenre": "dark_amoled",
+    "primaryGenre": "movies_series",
     "genres": [
-      "dark_amoled"
+      "movies_series"
     ],
     "hexColor": "#1d242c",
     "colorFamily": "dark",
     "size": "206.9 KB",
     "sizeBytes": 211864,
     "tags": [
+      "amoled",
+      "animated",
+      "anime",
+      "anime_&_automotive",
+      "anime_maid",
+      "animemaid",
+      "bmw",
+      "bmw_e30",
+      "bmwe30",
+      "carculture",
       "dark",
-      "dark_amoled",
+      "darkmode",
+      "e30m3",
+      "gloss_black",
+      "jdm",
+      "jdm_&_car_culture",
+      "lockscreen",
       "mobile",
-      "portrait"
+      "movies_series",
+      "neon_red_trim",
+      "obsidian_black",
+      "oledwallpaper",
+      "phone",
+      "phonewallpaper",
+      "portrait",
+      "samsung_galaxy",
+      "samsunggalaxy",
+      "samsungwallpaper",
+      "themewise"
     ]
   },
   {
-    "id": 29,
+    "id": 31,
     "filename": "125_img_20260819_201435_898.jpg",
-    "title": "Onyx AMOLED Edition #29",
+    "title": "Classy Black Suit Cufflinks Samsung Galaxy Wallpaper",
     "path": "Pictures/125_img_20260819_201435_898.jpg",
     "encodedPath": "Pictures/125_img_20260819_201435_898.jpg",
     "width": 1080,
     "height": 1928,
     "aspectRatio": 0.56,
     "category": "phone",
-    "primaryGenre": "dark_amoled",
+    "primaryGenre": "light_minimal",
     "genres": [
-      "dark_amoled"
+      "light_minimal"
     ],
     "hexColor": "#0b1b28",
     "colorFamily": "dark",
     "size": "281.2 KB",
     "sizeBytes": 287990,
     "tags": [
+      "amoled",
+      "amoled_minimal",
+      "charcoal_gray",
+      "classy",
+      "cleanwallpaper",
+      "crisp_white",
       "dark",
-      "dark_amoled",
+      "darkmode",
+      "elegance",
+      "gentleman",
+      "light_minimal",
+      "lockscreen",
+      "mensfashion",
+      "menswear",
+      "minimalist",
+      "minimalist_&_lifestyle",
       "mobile",
-      "portrait"
+      "oledwallpaper",
+      "phone",
+      "phonewallpaper",
+      "portrait",
+      "pure_black",
+      "samsung_galaxy",
+      "samsunggalaxy",
+      "samsungwallpaper",
+      "suit",
+      "suitandtie",
+      "tailoredsuit",
+      "themewise"
     ]
   },
   {
-    "id": 30,
+    "id": 32,
     "filename": "126_img_20260819_201439_798.jpg",
-    "title": "Dark Cyber AMOLED Edition #30",
+    "title": "Tanjiro Hinokami Kagura Flame Blade Samsung Galaxy",
     "path": "Pictures/126_img_20260819_201439_798.jpg",
     "encodedPath": "Pictures/126_img_20260819_201439_798.jpg",
     "width": 1080,
     "height": 1928,
     "aspectRatio": 0.56,
     "category": "phone",
-    "primaryGenre": "dark_amoled",
+    "primaryGenre": "movies_series",
     "genres": [
-      "dark_amoled"
+      "movies_series"
     ],
     "hexColor": "#090502",
     "colorFamily": "dark",
     "size": "304.1 KB",
     "sizeBytes": 311367,
     "tags": [
+      "amoled",
+      "animated",
+      "anime",
+      "anime_&_series_related",
+      "crimson_fire",
       "dark",
-      "dark_amoled",
+      "demon_slayer",
+      "demonslayer",
+      "fireblade",
+      "flame_amber",
+      "haori_green",
+      "hinokamikagura",
+      "kimetsunoyaiba",
+      "lockscreen",
       "mobile",
-      "portrait"
+      "movies_series",
+      "phone",
+      "phonewallpaper",
+      "portrait",
+      "pure_black",
+      "samsung_galaxy",
+      "samsunggalaxy",
+      "samsungwallpaper",
+      "series_related",
+      "seriesrelated",
+      "sun_breathing",
+      "sunbreathing",
+      "tanjiro",
+      "tanjirokamado",
+      "themewise"
     ]
   },
   {
-    "id": 31,
+    "id": 33,
     "filename": "127_img_20260821_093959_492.jpg",
-    "title": "Obsidian AMOLED Edition #31",
+    "title": "Cyberpunk Samurai Oni & Skull Collage Samsung Galaxy",
     "path": "Pictures/127_img_20260821_093959_492.jpg",
     "encodedPath": "Pictures/127_img_20260821_093959_492.jpg",
     "width": 636,
     "height": 1249,
     "aspectRatio": 0.51,
     "category": "phone",
-    "primaryGenre": "dark_amoled",
+    "primaryGenre": "animated_graphical",
     "genres": [
-      "dark_amoled"
+      "animated_graphical"
     ],
     "hexColor": "#222732",
     "colorFamily": "dark",
     "size": "134.6 KB",
     "sizeBytes": 137816,
     "tags": [
+      "animated_graphical",
+      "anime",
+      "blood_red",
+      "bone_white",
+      "colourwise",
+      "cyberpunk",
       "dark",
-      "dark_amoled",
+      "darkart",
+      "graphical",
+      "japanese_streetwear",
+      "japanesestreetwear",
+      "lockscreen",
       "mobile",
-      "portrait"
+      "oni_mask",
+      "onimask",
+      "onyx_black",
+      "phone",
+      "phonewallpaper",
+      "portrait",
+      "redaesthetic",
+      "redandblack",
+      "samsung_galaxy",
+      "samsunggalaxy",
+      "samsungwallpaper",
+      "samurai",
+      "samurai_&_cyberpunk",
+      "skull",
+      "themewise"
     ]
   },
   {
-    "id": 32,
+    "id": 34,
     "filename": "128_img_20260821_163329_965.jpg",
-    "title": "Cosmic Purple Minimal Aesthetic #32",
+    "title": "Neon Violet Coiling Eastern Dragon Samsung Galaxy",
     "path": "Pictures/128_img_20260821_163329_965.jpg",
     "encodedPath": "Pictures/128_img_20260821_163329_965.jpg",
     "width": 736,
     "height": 1308,
     "aspectRatio": 0.56,
     "category": "phone",
-    "primaryGenre": "light_minimal",
+    "primaryGenre": "dark_amoled",
     "genres": [
-      "light_minimal"
+      "dark_amoled"
     ],
     "hexColor": "#b49cca",
     "colorFamily": "purple",
     "size": "216.5 KB",
     "sizeBytes": 221692,
     "tags": [
-      "light_minimal",
+      "amoled",
+      "amoled_black",
+      "asian_mythical_beast",
+      "asiandragon",
+      "colourwise",
+      "dark_amoled",
+      "dragon",
+      "dragon_&_amoled",
+      "dragons",
+      "electric_purple",
+      "lockscreen",
       "mobile",
+      "mythicalbeast",
+      "neon_art",
+      "neon_violet",
+      "neondragon",
+      "oledwallpaper",
+      "phone",
+      "phonewallpaper",
       "portrait",
-      "purple"
+      "purple",
+      "purple_aesthetic",
+      "purpleaesthetic",
+      "purpledragon",
+      "purplewise",
+      "samsung_galaxy",
+      "samsunggalaxy",
+      "samsungwallpaper",
+      "themewise"
     ]
   },
   {
-    "id": 33,
+    "id": 35,
     "filename": "129_img_20260821_163333_045.jpg",
-    "title": "Autumn Gold Nature Horizon #33",
+    "title": "Interstellar Rocket Ascent Over the Cooper Homestead",
     "path": "Pictures/129_img_20260821_163333_045.jpg",
     "encodedPath": "Pictures/129_img_20260821_163333_045.jpg",
     "width": 736,
     "height": 1314,
     "aspectRatio": 0.56,
     "category": "phone",
-    "primaryGenre": "nature_landscape",
+    "primaryGenre": "movies_series",
     "genres": [
-      "dark_amoled",
-      "nature_landscape"
+      "movies_series"
     ],
     "hexColor": "#371a10",
     "colorFamily": "gold",
     "size": "142.1 KB",
     "sizeBytes": 145522,
     "tags": [
-      "dark_amoled",
+      "charcoal_slate",
+      "christopher_nolan",
+      "christophernolan",
+      "colourwise",
+      "farmhouse",
       "gold",
+      "golden_amber",
+      "goldenaesthetic",
+      "house",
+      "interstellar",
+      "linocut",
+      "lockscreen",
       "mobile",
-      "nature_landscape",
-      "portrait"
+      "movie_related",
+      "movie_related_&_space",
+      "movierelated",
+      "movies_series",
+      "night_sky_black",
+      "phone",
+      "phonewallpaper",
+      "portrait",
+      "rocket_launch",
+      "rocketlaunch",
+      "scifi",
+      "space",
+      "spaceexploration",
+      "spacetravel",
+      "themewise",
+      "vintageillustration"
     ]
   },
   {
-    "id": 34,
+    "id": 36,
     "filename": "12_img_20260421_232056_042.jpg",
-    "title": "Snow Apex Minimal Aesthetic #34",
+    "title": "Great Wave off Kanagawa - Dark Eternity Edition",
     "path": "Pictures/12_img_20260421_232056_042.jpg",
     "encodedPath": "Pictures/12_img_20260421_232056_042.jpg",
     "width": 720,
@@ -860,191 +1827,398 @@ window.WALLPAPERS_DATA = [
     "size": "179.9 KB",
     "sizeBytes": 184231,
     "tags": [
+      "bluewise",
+      "colourwise",
+      "darkaesthetic",
+      "eternity",
+      "great_wave",
+      "hokusai",
+      "japanese_art",
+      "japanese_art_&_minimalist",
+      "japaneseart",
+      "japanesetypography",
+      "kanagawa",
       "light_minimal",
+      "lockscreen",
+      "minimalist",
       "mobile",
+      "ocean",
+      "ocean_blue",
+      "oceanwaves",
+      "phone",
+      "phonewallpaper",
       "portrait",
+      "rivers",
+      "seafoam_white",
+      "textured_dark_slate",
+      "thegreatwave",
+      "themewise",
+      "ukiyoe",
       "white"
     ]
   },
   {
-    "id": 35,
+    "id": 37,
     "filename": "130_img_20260821_163338_719.jpg",
-    "title": "Onyx AMOLED Edition #35",
+    "title": "Miles Morales Perched Above Glowing Manhattan",
     "path": "Pictures/130_img_20260821_163338_719.jpg",
     "encodedPath": "Pictures/130_img_20260821_163338_719.jpg",
     "width": 768,
     "height": 1376,
     "aspectRatio": 0.56,
     "category": "phone",
-    "primaryGenre": "dark_amoled",
+    "primaryGenre": "movies_series",
     "genres": [
-      "dark_amoled"
+      "movies_series"
     ],
     "hexColor": "#060912",
     "colorFamily": "dark",
     "size": "100.6 KB",
     "sizeBytes": 103037,
     "tags": [
+      "city_lights",
+      "citylights",
+      "colourwise",
+      "comicart",
       "dark",
-      "dark_amoled",
+      "dusky_violet",
+      "glittering_gold",
+      "intothespiderverse",
+      "lockscreen",
+      "marvel",
+      "marvel_&_comics",
+      "miles_morales",
+      "milesmorales",
       "mobile",
-      "portrait"
+      "movies_series",
+      "newyorkcity",
+      "nyc",
+      "phone",
+      "phonewallpaper",
+      "portrait",
+      "shadow_navy",
+      "skyline",
+      "spider-man",
+      "spiderman",
+      "sunset",
+      "sunset_coral",
+      "superhero",
+      "superheroes",
+      "themewise"
     ]
   },
   {
-    "id": 36,
+    "id": 38,
     "filename": "131_img_20260821_163347_076.jpg",
-    "title": "Dark Cyber AMOLED Edition #36",
+    "title": "Spider-Man Standing on High Spire at Sunset",
     "path": "Pictures/131_img_20260821_163347_076.jpg",
     "encodedPath": "Pictures/131_img_20260821_163347_076.jpg",
     "width": 1080,
     "height": 1920,
     "aspectRatio": 0.56,
     "category": "phone",
-    "primaryGenre": "dark_amoled",
+    "primaryGenre": "movies_series",
     "genres": [
-      "dark_amoled"
+      "movies_series"
     ],
     "hexColor": "#02020e",
     "colorFamily": "dark",
     "size": "68.3 KB",
     "sizeBytes": 69958,
     "tags": [
+      "clouds",
+      "colourwise",
+      "comicbookart",
       "dark",
-      "dark_amoled",
+      "fiery_orange",
+      "golden_hour",
+      "golden_peach",
+      "goldenhour",
+      "heroic",
+      "lockscreen",
+      "manhattan",
+      "marvel",
+      "marvel_&_comics",
       "mobile",
-      "portrait"
+      "movies_series",
+      "nyc",
+      "nyc_spire",
+      "peter_parker",
+      "peterparker",
+      "phone",
+      "phonewallpaper",
+      "portrait",
+      "rose_clouds",
+      "skyline",
+      "spider-man",
+      "spiderman",
+      "sunset",
+      "superhero",
+      "themewise",
+      "urban_navy"
     ]
   },
   {
-    "id": 37,
+    "id": 39,
     "filename": "132_img_20260821_163400_327.jpg",
-    "title": "Electric Cyan Scenic Photograph #37",
+    "title": "What's Up Danger - Inverted Manhattan Skyfall",
     "path": "Pictures/132_img_20260821_163400_327.jpg",
     "encodedPath": "Pictures/132_img_20260821_163400_327.jpg",
     "width": 1080,
     "height": 1920,
     "aspectRatio": 0.56,
     "category": "phone",
-    "primaryGenre": "reality_photo",
+    "primaryGenre": "movies_series",
     "genres": [
-      "reality_photo"
+      "movies_series"
     ],
     "hexColor": "#4a5863",
     "colorFamily": "cyan",
     "size": "190.6 KB",
     "sizeBytes": 195168,
     "tags": [
+      "cinematicart",
+      "color_wise",
+      "colourwise",
+      "cotton_candy_pink",
       "cyan",
+      "cyber_violet",
+      "intothespiderverse",
+      "invertedcity",
+      "leap_of_faith",
+      "leapoffaith",
+      "lockscreen",
+      "marvel",
+      "marvel_&_movie_related",
+      "miles_morales",
+      "milesmorales",
       "mobile",
+      "movie_related",
+      "movierelated",
+      "movies_series",
+      "phone",
+      "phonewallpaper",
+      "pinkaesthetic",
       "portrait",
-      "reality_photo"
+      "purplesky",
+      "skyline_amber",
+      "spider-man",
+      "spiderman",
+      "sunset_coral",
+      "superhero",
+      "themewise",
+      "whatsupdanger"
     ]
   },
   {
-    "id": 38,
+    "id": 40,
     "filename": "133_img_20260821_163406_146.jpg",
-    "title": "Midnight AMOLED Edition #38",
+    "title": "Miles Morales Leap of Faith with Jordan 1s",
     "path": "Pictures/133_img_20260821_163406_146.jpg",
     "encodedPath": "Pictures/133_img_20260821_163406_146.jpg",
     "width": 1080,
     "height": 1920,
     "aspectRatio": 0.56,
     "category": "phone",
-    "primaryGenre": "dark_amoled",
+    "primaryGenre": "movies_series",
     "genres": [
-      "dark_amoled"
+      "movies_series"
     ],
     "hexColor": "#030303",
     "colorFamily": "dark",
     "size": "76.8 KB",
     "sizeBytes": 78646,
     "tags": [
+      "actionanime",
+      "airjordan1",
+      "blueaesthetic",
+      "bluewise",
+      "city_navy",
+      "colourwise",
       "dark",
-      "dark_amoled",
+      "electric_cyan",
+      "intothespiderverse",
+      "jacket_green",
+      "leap_of_faith",
+      "leapoffaith",
+      "lockscreen",
+      "marvel",
+      "marvel_&_movie_related",
+      "miles_morales",
+      "milesmorales",
       "mobile",
-      "portrait"
+      "movie_related",
+      "movierelated",
+      "movies_series",
+      "phone",
+      "phonewallpaper",
+      "portrait",
+      "spider-man",
+      "spider_red",
+      "spiderman",
+      "streetwear",
+      "superhero",
+      "themewise"
     ]
   },
   {
-    "id": 39,
+    "id": 41,
     "filename": "134_img_20260821_163503_536.jpg",
-    "title": "Cyan Cyber AMOLED Edition #39",
+    "title": "Spider-Man Swinging Low Across Wet Neon NYC Street",
     "path": "Pictures/134_img_20260821_163503_536.jpg",
     "encodedPath": "Pictures/134_img_20260821_163503_536.jpg",
     "width": 1080,
     "height": 1620,
     "aspectRatio": 0.67,
     "category": "phone",
-    "primaryGenre": "dark_amoled",
+    "primaryGenre": "movies_series",
     "genres": [
-      "dark_amoled"
+      "movies_series"
     ],
     "hexColor": "#1e3c58",
     "colorFamily": "cyan",
     "size": "222.5 KB",
     "sizeBytes": 227814,
     "tags": [
+      "cab_yellow",
+      "citystreet",
+      "colourwise",
       "cyan",
-      "dark_amoled",
+      "cyan_glow",
+      "cyberpunk_nyc",
+      "cyberpunkvibes",
+      "lockscreen",
+      "marvel",
+      "marvel_&_cinematic",
+      "miles_morales",
+      "milesmorales",
       "mobile",
-      "portrait"
+      "movies_series",
+      "neon_red",
+      "neoncity",
+      "nyc",
+      "phone",
+      "phonewallpaper",
+      "portrait",
+      "rainy_night",
+      "rainynight",
+      "reflections",
+      "spider-man",
+      "spiderman",
+      "superhero",
+      "themewise",
+      "urban",
+      "wet_asphalt_black",
+      "yellow_cab",
+      "yellowcab"
     ]
   },
   {
-    "id": 40,
+    "id": 42,
     "filename": "135_img_20260821_163516_151.jpg",
-    "title": "Azure Stream Scenic Photograph #40",
+    "title": "Spider-Man in Bed Watching the City Burn",
     "path": "Pictures/135_img_20260821_163516_151.jpg",
     "encodedPath": "Pictures/135_img_20260821_163516_151.jpg",
     "width": 1080,
     "height": 1927,
     "aspectRatio": 0.56,
     "category": "phone",
-    "primaryGenre": "reality_photo",
+    "primaryGenre": "movies_series",
     "genres": [
-      "reality_photo"
+      "movies_series"
     ],
     "hexColor": "#306ca3",
     "colorFamily": "cyan",
     "size": "207.4 KB",
     "sizeBytes": 212409,
     "tags": [
+      "apocalypse",
+      "burning_city",
+      "burningcity",
+      "colourwise",
+      "comic_art",
+      "comicart",
+      "costume_red_&_blue",
       "cyan",
+      "dramatic",
+      "emotionalart",
+      "explosion_yellow",
+      "fire",
+      "fire_orange",
+      "lockscreen",
+      "marvel",
+      "marvel_&_comics",
       "mobile",
+      "movies_series",
+      "peter_parker",
+      "peterparker",
+      "phone",
+      "phonewallpaper",
       "portrait",
-      "reality_photo"
+      "responsibility",
+      "smoke_gray",
+      "spider-man",
+      "spiderman",
+      "superhero",
+      "themewise",
+      "tragedy"
     ]
   },
   {
-    "id": 41,
+    "id": 43,
     "filename": "136_img_20260822_143210_933.jpg",
-    "title": "Onyx AMOLED Edition #41",
+    "title": "Kendrick Lamar DAMN. - The Last Supper",
     "path": "Pictures/136_img_20260822_143210_933.jpg",
     "encodedPath": "Pictures/136_img_20260822_143210_933.jpg",
     "width": 816,
     "height": 1451,
     "aspectRatio": 0.56,
     "category": "phone",
-    "primaryGenre": "dark_amoled",
+    "primaryGenre": "animated_graphical",
     "genres": [
-      "dark_amoled"
+      "animated_graphical"
     ],
     "hexColor": "#101011",
     "colorFamily": "dark",
     "size": "186.5 KB",
     "sizeBytes": 190946,
     "tags": [
+      "albumart",
+      "animated_graphical",
+      "blackandred",
+      "colourwise",
+      "damn",
+      "damn.",
       "dark",
-      "dark_amoled",
+      "earthy_tones",
+      "fiery_crimson_red",
+      "hiphop",
+      "humble",
+      "kendrick_lamar",
+      "kendricklamar",
+      "lastsupper",
+      "lockscreen",
+      "matte_black",
       "mobile",
-      "portrait"
+      "music_&_pop_culture",
+      "music_related",
+      "musicrelated",
+      "phone",
+      "phonewallpaper",
+      "popculture",
+      "portrait",
+      "rapmusic",
+      "red_aesthetic",
+      "redaesthetic",
+      "redwise",
+      "the_last_supper",
+      "themewise"
     ]
   },
   {
-    "id": 42,
+    "id": 44,
     "filename": "137_img_20260825_205626_354.jpg",
-    "title": "Dark Cyber AMOLED Edition #42",
+    "title": "Traditional Japanese Gold Waves and Crimson Disks",
     "path": "Pictures/137_img_20260825_205626_354.jpg",
     "encodedPath": "Pictures/137_img_20260825_205626_354.jpg",
     "width": 1080,
@@ -1060,141 +2234,287 @@ window.WALLPAPERS_DATA = [
     "size": "497.7 KB",
     "sizeBytes": 509618,
     "tags": [
+      "antique_gold",
+      "blood_moon",
+      "bloodmoon",
+      "colourwise",
+      "crimson_red",
       "dark",
       "dark_amoled",
+      "darkaesthetic",
+      "gold_leaf_texture",
+      "goldenaesthetic",
+      "goldwaves",
+      "japanese_art",
+      "japanese_art_&_dark_aesthetic",
+      "japaneseart",
+      "lockscreen",
       "mobile",
-      "portrait"
+      "ocean_waves",
+      "oceanwaves",
+      "phone",
+      "phonewallpaper",
+      "portrait",
+      "redandblack",
+      "rivers",
+      "textured_black",
+      "themewise",
+      "traditionalart",
+      "ukiyoe",
+      "zenart"
     ]
   },
   {
-    "id": 43,
+    "id": 45,
     "filename": "138_img_20260825_211626_552.jpg",
-    "title": "Obsidian AMOLED Edition #43",
+    "title": "Spider-Man Noir 1930s Detective Close-Up",
     "path": "Pictures/138_img_20260825_211626_552.jpg",
     "encodedPath": "Pictures/138_img_20260825_211626_552.jpg",
     "width": 720,
     "height": 1280,
     "aspectRatio": 0.56,
     "category": "phone",
-    "primaryGenre": "dark_amoled",
+    "primaryGenre": "movies_series",
     "genres": [
-      "dark_amoled"
+      "movies_series"
     ],
     "hexColor": "#191919",
     "colorFamily": "dark",
     "size": "19.0 KB",
     "sizeBytes": 19495,
     "tags": [
+      "1930s",
+      "black_and_white",
+      "blackandwhite",
+      "charcoal_black",
       "dark",
-      "dark_amoled",
+      "darkaesthetic",
+      "deep_shadows",
+      "detective",
+      "fedora",
+      "filmnoir",
+      "highlight_white",
+      "lockscreen",
+      "marvel",
+      "marvel_&_film_noir",
       "mobile",
-      "portrait"
+      "monochrome",
+      "movies_series",
+      "phone",
+      "phonewallpaper",
+      "portrait",
+      "spider-man_noir",
+      "spiderman",
+      "spidermannoir",
+      "superhero",
+      "themewise",
+      "vintagecomics"
     ]
   },
   {
-    "id": 44,
+    "id": 46,
     "filename": "139_img_20260827_075647_982.jpg",
-    "title": "Midnight AMOLED Edition #44",
+    "title": "Spider-Man Noir Beneath the Misty Suspension Bridge",
     "path": "Pictures/139_img_20260827_075647_982.jpg",
     "encodedPath": "Pictures/139_img_20260827_075647_982.jpg",
     "width": 736,
     "height": 1308,
     "aspectRatio": 0.56,
     "category": "phone",
-    "primaryGenre": "dark_amoled",
+    "primaryGenre": "movies_series",
     "genres": [
-      "dark_amoled"
+      "movies_series"
     ],
     "hexColor": "#30090d",
     "colorFamily": "dark",
     "size": "51.7 KB",
     "sizeBytes": 52906,
     "tags": [
+      "1930s",
+      "blackandwhite",
+      "bridge",
+      "cinematic",
       "dark",
-      "dark_amoled",
+      "dark_charcoal",
+      "desktop",
+      "desktopwallpaper",
+      "filmnoir",
+      "grayscale",
+      "lantern_white",
+      "manhattanbridge",
+      "marvel",
+      "marvel_&_film_noir",
       "mobile",
-      "portrait"
+      "monochrome",
+      "movies_series",
+      "pcwallpaper",
+      "phone",
+      "portrait",
+      "spider-man_noir",
+      "spiderman",
+      "spidermannoir",
+      "superhero",
+      "themewise",
+      "vintage_nyc",
+      "vintagecars"
     ]
   },
   {
-    "id": 45,
+    "id": 47,
     "filename": "13_img_20260426_133726_560.jpg",
-    "title": "Shadow AMOLED Edition #45",
+    "title": "Dynamic Sumi-e Black Ink Wash Swirl",
     "path": "Pictures/13_img_20260426_133726_560.jpg",
     "encodedPath": "Pictures/13_img_20260426_133726_560.jpg",
     "width": 720,
     "height": 1281,
     "aspectRatio": 0.56,
     "category": "phone",
-    "primaryGenre": "dark_amoled",
+    "primaryGenre": "animated_graphical",
     "genres": [
-      "dark_amoled"
+      "animated_graphical",
+      "light_minimal"
     ],
     "hexColor": "#000000",
     "colorFamily": "dark",
     "size": "65.0 KB",
     "sizeBytes": 66595,
     "tags": [
+      "abstract",
+      "abstract_&_minimalist",
+      "abstractart",
+      "animated_graphical",
+      "blackandwhite",
+      "chinese_ink_black",
+      "chinesepainting",
+      "cleanwallpaper",
       "dark",
-      "dark_amoled",
+      "fineart",
+      "fluid_dynamics",
+      "fluidart",
+      "graphical",
+      "ink_wash",
+      "inkwash",
+      "light_minimal",
+      "lockscreen",
+      "minimalist",
       "mobile",
-      "portrait"
+      "monochrome",
+      "phone",
+      "phonewallpaper",
+      "portrait",
+      "sumi-e",
+      "sumie",
+      "themewise",
+      "washi_paper_white"
     ]
   },
   {
-    "id": 46,
+    "id": 48,
     "filename": "140_img_20260828_153020_577.jpg",
-    "title": "Minimalist Ivory Minimal Aesthetic #46",
+    "title": "Grim Reaper with Golden Scythe and Eclipse Ray",
     "path": "Pictures/140_img_20260828_153020_577.jpg",
     "encodedPath": "Pictures/140_img_20260828_153020_577.jpg",
     "width": 1080,
     "height": 2339,
     "aspectRatio": 0.46,
     "category": "phone",
-    "primaryGenre": "light_minimal",
+    "primaryGenre": "dark_amoled",
     "genres": [
-      "light_minimal"
+      "dark_amoled"
     ],
     "hexColor": "#fdfdfd",
     "colorFamily": "white",
     "size": "130.5 KB",
     "sizeBytes": 133648,
     "tags": [
-      "light_minimal",
+      "blood_red",
+      "bloodred",
+      "burnished_gold",
+      "colourwise",
+      "dark_amoled",
+      "dark_fantasy",
+      "dark_fantasy_&_occult",
+      "darkart",
+      "darkfantasy",
+      "death",
+      "eclipse",
+      "gothicart",
+      "grim_reaper",
+      "grimreaper",
+      "heavymetal",
+      "lockscreen",
+      "magenta",
       "mobile",
+      "neon_magenta",
+      "neon_pink",
+      "neonpink",
+      "phone",
+      "phonewallpaper",
       "portrait",
+      "red_clouds",
+      "redaesthetic",
+      "redwise",
+      "scythe",
+      "themewise",
+      "void_black",
       "white"
     ]
   },
   {
-    "id": 47,
+    "id": 49,
     "filename": "141_img_20260828_153033_168.jpg",
-    "title": "Onyx AMOLED Edition #47",
+    "title": "3D Topographic Slate Stone River Canyon",
     "path": "Pictures/141_img_20260828_153033_168.jpg",
     "encodedPath": "Pictures/141_img_20260828_153033_168.jpg",
     "width": 1080,
     "height": 1921,
     "aspectRatio": 0.56,
     "category": "phone",
-    "primaryGenre": "dark_amoled",
+    "primaryGenre": "nature_landscape",
     "genres": [
-      "dark_amoled"
+      "animated_graphical",
+      "nature_landscape"
     ],
     "hexColor": "#000000",
     "colorFamily": "dark",
     "size": "149.2 KB",
     "sizeBytes": 152766,
     "tags": [
+      "3d_relief",
+      "3drelief",
+      "animated_graphical",
+      "blueaesthetic",
+      "bluewise",
+      "canyon",
+      "chinese_calligraphy",
+      "chinesecalligraphy",
+      "cleanwallpaper",
       "dark",
-      "dark_amoled",
+      "gold_dust",
+      "graphical",
+      "lockscreen",
+      "minimalist",
       "mobile",
-      "portrait"
+      "nature",
+      "nature_landscape",
+      "phone",
+      "phonewallpaper",
+      "portrait",
+      "rivers",
+      "rocktexture",
+      "slate",
+      "slate_gray",
+      "slate_texture",
+      "steel_blue",
+      "themewise",
+      "topography",
+      "topography_&_nature_art"
     ]
   },
   {
-    "id": 48,
+    "id": 50,
     "filename": "142_img_20260830_080724_512.jpg",
-    "title": "Dark Cyber AMOLED Edition #48",
+    "title": "Midnight AMOLED Edition #50",
     "path": "Pictures/142_img_20260830_080724_512.jpg",
     "encodedPath": "Pictures/142_img_20260830_080724_512.jpg",
     "width": 718,
@@ -1213,13 +2533,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 49,
+    "id": 51,
     "filename": "143_img_20260830_080739_658.jpg",
-    "title": "Gilded Sun Nature Horizon #49",
+    "title": "Solar Amber Nature Horizon #51",
     "path": "Pictures/143_img_20260830_080739_658.jpg",
     "encodedPath": "Pictures/143_img_20260830_080739_658.jpg",
     "width": 1080,
@@ -1240,13 +2561,14 @@ window.WALLPAPERS_DATA = [
       "light_minimal",
       "mobile",
       "nature_landscape",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 50,
+    "id": 52,
     "filename": "144_img_20260830_174132_284.jpg",
-    "title": "Midnight Abstract Render #50",
+    "title": "Eclipse Abstract Render #52",
     "path": "Pictures/144_img_20260830_174132_284.jpg",
     "encodedPath": "Pictures/144_img_20260830_174132_284.jpg",
     "width": 1080,
@@ -1267,13 +2589,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 51,
+    "id": 53,
     "filename": "145_img_20260902_204239_793.jpg",
-    "title": "Shadow AMOLED Edition #51",
+    "title": "Onyx AMOLED Edition #53",
     "path": "Pictures/145_img_20260902_204239_793.jpg",
     "encodedPath": "Pictures/145_img_20260902_204239_793.jpg",
     "width": 1080,
@@ -1294,13 +2617,14 @@ window.WALLPAPERS_DATA = [
       "dark_amoled",
       "light_minimal",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 52,
+    "id": 54,
     "filename": "146_img_20260904_020244_440.jpg",
-    "title": "Eclipse AMOLED Edition #52",
+    "title": "Dark Cyber AMOLED Edition #54",
     "path": "Pictures/146_img_20260904_020244_440.jpg",
     "encodedPath": "Pictures/146_img_20260904_020244_440.jpg",
     "width": 368,
@@ -1319,13 +2643,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 53,
+    "id": 55,
     "filename": "147_img_20260904_134136_730.jpg",
-    "title": "Onyx AMOLED Edition #53",
+    "title": "Obsidian AMOLED Edition #55",
     "path": "Pictures/147_img_20260904_134136_730.jpg",
     "encodedPath": "Pictures/147_img_20260904_134136_730.jpg",
     "width": 1080,
@@ -1344,13 +2669,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 54,
+    "id": 56,
     "filename": "148_img_20260904_134142_883.jpg",
-    "title": "Dark Cyber AMOLED Edition #54",
+    "title": "Midnight AMOLED Edition #56",
     "path": "Pictures/148_img_20260904_134142_883.jpg",
     "encodedPath": "Pictures/148_img_20260904_134142_883.jpg",
     "width": 1080,
@@ -1369,13 +2695,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 55,
+    "id": 57,
     "filename": "149_img_20260904_134158_543.jpg",
-    "title": "Obsidian AMOLED Edition #55",
+    "title": "Shadow AMOLED Edition #57",
     "path": "Pictures/149_img_20260904_134158_543.jpg",
     "encodedPath": "Pictures/149_img_20260904_134158_543.jpg",
     "width": 1080,
@@ -1394,13 +2721,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 56,
+    "id": 58,
     "filename": "14_img_20260426_133922_050.jpg",
-    "title": "Solar Amber Nature Horizon #56",
+    "title": "Autumn Gold Nature Horizon #58",
     "path": "Pictures/14_img_20260426_133922_050.jpg",
     "encodedPath": "Pictures/14_img_20260426_133922_050.jpg",
     "width": 720,
@@ -1421,13 +2749,14 @@ window.WALLPAPERS_DATA = [
       "gold",
       "mobile",
       "nature_landscape",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 57,
+    "id": 59,
     "filename": "150_img_20260904_134227_851.jpg",
-    "title": "Shadow AMOLED Edition #57",
+    "title": "Onyx AMOLED Edition #59",
     "path": "Pictures/150_img_20260904_134227_851.jpg",
     "encodedPath": "Pictures/150_img_20260904_134227_851.jpg",
     "width": 1080,
@@ -1446,13 +2775,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 58,
+    "id": 60,
     "filename": "151_img_20260905_095814_894.jpg",
-    "title": "Eclipse AMOLED Edition #58",
+    "title": "Dark Cyber AMOLED Edition #60",
     "path": "Pictures/151_img_20260905_095814_894.jpg",
     "encodedPath": "Pictures/151_img_20260905_095814_894.jpg",
     "width": 1080,
@@ -1471,13 +2801,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 59,
+    "id": 61,
     "filename": "152_img_20260905_095830_957.jpg",
-    "title": "Onyx AMOLED Edition #59",
+    "title": "Obsidian AMOLED Edition #61",
     "path": "Pictures/152_img_20260905_095830_957.jpg",
     "encodedPath": "Pictures/152_img_20260905_095830_957.jpg",
     "width": 1080,
@@ -1496,13 +2827,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 60,
+    "id": 62,
     "filename": "153_img_20260905_095840_732.jpg",
-    "title": "Dark Cyber Abstract Render #60",
+    "title": "Midnight Abstract Render #62",
     "path": "Pictures/153_img_20260905_095840_732.jpg",
     "encodedPath": "Pictures/153_img_20260905_095840_732.jpg",
     "width": 1080,
@@ -1523,13 +2855,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 61,
+    "id": 63,
     "filename": "154_img_20260905_095848_153.jpg",
-    "title": "Obsidian AMOLED Edition #61",
+    "title": "Shadow AMOLED Edition #63",
     "path": "Pictures/154_img_20260905_095848_153.jpg",
     "encodedPath": "Pictures/154_img_20260905_095848_153.jpg",
     "width": 752,
@@ -1548,13 +2881,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 62,
+    "id": 64,
     "filename": "155_img_20260905_095850_531.jpg",
-    "title": "Midnight Abstract Render #62",
+    "title": "Eclipse Abstract Render #64",
     "path": "Pictures/155_img_20260905_095850_531.jpg",
     "encodedPath": "Pictures/155_img_20260905_095850_531.jpg",
     "width": 1080,
@@ -1575,13 +2909,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 63,
+    "id": 65,
     "filename": "156_img_20260905_160607_024.jpg",
-    "title": "Autumn Gold Nature Horizon #63",
+    "title": "Radiant Dawn Nature Horizon #65",
     "path": "Pictures/156_img_20260905_160607_024.jpg",
     "encodedPath": "Pictures/156_img_20260905_160607_024.jpg",
     "width": 720,
@@ -1600,13 +2935,14 @@ window.WALLPAPERS_DATA = [
       "gold",
       "mobile",
       "nature_landscape",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 64,
+    "id": 66,
     "filename": "157_img_20260906_100721_963.jpg",
-    "title": "Snow Apex Minimal Aesthetic #64",
+    "title": "Minimalist Ivory Minimal Aesthetic #66",
     "path": "Pictures/157_img_20260906_100721_963.jpg",
     "encodedPath": "Pictures/157_img_20260906_100721_963.jpg",
     "width": 736,
@@ -1624,14 +2960,15 @@ window.WALLPAPERS_DATA = [
     "tags": [
       "light_minimal",
       "mobile",
+      "phone",
       "portrait",
       "white"
     ]
   },
   {
-    "id": 65,
+    "id": 67,
     "filename": "158_img_20260906_100731_069.jpg",
-    "title": "Onyx AMOLED Edition #65",
+    "title": "Obsidian AMOLED Edition #67",
     "path": "Pictures/158_img_20260906_100731_069.jpg",
     "encodedPath": "Pictures/158_img_20260906_100731_069.jpg",
     "width": 736,
@@ -1650,38 +2987,40 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 66,
+    "id": 68,
     "filename": "159_img_20260906_132029_538.jpg",
-    "title": "Neon Cyan Scenic Photograph #66",
+    "title": "Aqua Horizon Abstract Render #68",
     "path": "Pictures/159_img_20260906_132029_538.jpg",
     "encodedPath": "Pictures/159_img_20260906_132029_538.jpg",
     "width": 1080,
     "height": 2160,
     "aspectRatio": 0.5,
     "category": "phone",
-    "primaryGenre": "reality_photo",
+    "primaryGenre": "animated_graphical",
     "genres": [
-      "reality_photo"
+      "animated_graphical"
     ],
     "hexColor": "#4d6567",
     "colorFamily": "cyan",
     "size": "175.5 KB",
     "sizeBytes": 179761,
     "tags": [
+      "animated_graphical",
       "cyan",
       "mobile",
-      "portrait",
-      "reality_photo"
+      "phone",
+      "portrait"
     ]
   },
   {
-    "id": 67,
+    "id": 69,
     "filename": "15_img_20260430_213105_081.jpg",
-    "title": "Obsidian AMOLED Edition #67",
+    "title": "Shadow AMOLED Edition #69",
     "path": "Pictures/15_img_20260430_213105_081.jpg",
     "encodedPath": "Pictures/15_img_20260430_213105_081.jpg",
     "width": 720,
@@ -1700,13 +3039,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 68,
+    "id": 70,
     "filename": "160_img_20260906_132037_171.jpg",
-    "title": "Autumn Gold Nature Horizon #68",
+    "title": "Radiant Dawn Nature Horizon #70",
     "path": "Pictures/160_img_20260906_132037_171.jpg",
     "encodedPath": "Pictures/160_img_20260906_132037_171.jpg",
     "width": 1080,
@@ -1725,13 +3065,14 @@ window.WALLPAPERS_DATA = [
       "gold",
       "mobile",
       "nature_landscape",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 69,
+    "id": 71,
     "filename": "161_img_20260906_132039_872.jpg",
-    "title": "Snow Apex Minimal Aesthetic #69",
+    "title": "Minimalist Ivory Minimal Aesthetic #71",
     "path": "Pictures/161_img_20260906_132039_872.jpg",
     "encodedPath": "Pictures/161_img_20260906_132039_872.jpg",
     "width": 1080,
@@ -1749,14 +3090,15 @@ window.WALLPAPERS_DATA = [
     "tags": [
       "light_minimal",
       "mobile",
+      "phone",
       "portrait",
       "white"
     ]
   },
   {
-    "id": 70,
+    "id": 72,
     "filename": "162_img_20260906_132045_353.jpg",
-    "title": "Eclipse AMOLED Edition #70",
+    "title": "Dark Cyber AMOLED Edition #72",
     "path": "Pictures/162_img_20260906_132045_353.jpg",
     "encodedPath": "Pictures/162_img_20260906_132045_353.jpg",
     "width": 1080,
@@ -1775,13 +3117,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 71,
+    "id": 73,
     "filename": "163_img_20260906_132050_389.jpg",
-    "title": "Onyx AMOLED Edition #71",
+    "title": "Obsidian AMOLED Edition #73",
     "path": "Pictures/163_img_20260906_132050_389.jpg",
     "encodedPath": "Pictures/163_img_20260906_132050_389.jpg",
     "width": 1080,
@@ -1800,13 +3143,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 72,
+    "id": 74,
     "filename": "164_img_20260907_184401_176.jpg",
-    "title": "Dark Cyber Abstract Render #72",
+    "title": "Midnight Abstract Render #74",
     "path": "Pictures/164_img_20260907_184401_176.jpg",
     "encodedPath": "Pictures/164_img_20260907_184401_176.jpg",
     "width": 941,
@@ -1827,13 +3171,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 73,
+    "id": 75,
     "filename": "165_img_20260907_184434_402.jpg",
-    "title": "Obsidian AMOLED Edition #73",
+    "title": "Shadow AMOLED Edition #75",
     "path": "Pictures/165_img_20260907_184434_402.jpg",
     "encodedPath": "Pictures/165_img_20260907_184434_402.jpg",
     "width": 736,
@@ -1852,13 +3197,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 74,
+    "id": 76,
     "filename": "166_img_20260908_081958_550.jpg",
-    "title": "Gilded Sun Nature Horizon #74",
+    "title": "Solar Amber Nature Horizon #76",
     "path": "Pictures/166_img_20260908_081958_550.jpg",
     "encodedPath": "Pictures/166_img_20260908_081958_550.jpg",
     "width": 1080,
@@ -1879,13 +3225,14 @@ window.WALLPAPERS_DATA = [
       "gold",
       "mobile",
       "nature_landscape",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 75,
+    "id": 77,
     "filename": "167_img_20260908_160626_448.jpg",
-    "title": "Shadow AMOLED Edition #75",
+    "title": "Onyx AMOLED Edition #77",
     "path": "Pictures/167_img_20260908_160626_448.jpg",
     "encodedPath": "Pictures/167_img_20260908_160626_448.jpg",
     "width": 1080,
@@ -1904,13 +3251,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 76,
+    "id": 78,
     "filename": "168_img_20260908_160631_369.jpg",
-    "title": "Eclipse AMOLED Edition #76",
+    "title": "Dark Cyber AMOLED Edition #78",
     "path": "Pictures/168_img_20260908_160631_369.jpg",
     "encodedPath": "Pictures/168_img_20260908_160631_369.jpg",
     "width": 1080,
@@ -1929,13 +3277,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 77,
+    "id": 79,
     "filename": "169_img_20260908_160641_383.jpg",
-    "title": "Onyx AMOLED Edition #77",
+    "title": "Obsidian AMOLED Edition #79",
     "path": "Pictures/169_img_20260908_160641_383.jpg",
     "encodedPath": "Pictures/169_img_20260908_160641_383.jpg",
     "width": 1080,
@@ -1954,13 +3303,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 78,
+    "id": 80,
     "filename": "16_img_20260430_231112_567.jpg",
-    "title": "Dark Cyber Abstract Render #78",
+    "title": "Midnight Abstract Render #80",
     "path": "Pictures/16_img_20260430_231112_567.jpg",
     "encodedPath": "Pictures/16_img_20260430_231112_567.jpg",
     "width": 720,
@@ -1981,13 +3331,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 79,
+    "id": 81,
     "filename": "170_img_20260908_160649_017.jpg",
-    "title": "Sapphire AMOLED Edition #79",
+    "title": "Deep Cobalt AMOLED Edition #81",
     "path": "Pictures/170_img_20260908_160649_017.jpg",
     "encodedPath": "Pictures/170_img_20260908_160649_017.jpg",
     "width": 752,
@@ -2006,13 +3357,14 @@ window.WALLPAPERS_DATA = [
       "blue",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 80,
+    "id": 82,
     "filename": "171_img_20260908_160652_031.jpg",
-    "title": "Midnight Abstract Render #80",
+    "title": "Eclipse Abstract Render #82",
     "path": "Pictures/171_img_20260908_160652_031.jpg",
     "encodedPath": "Pictures/171_img_20260908_160652_031.jpg",
     "width": 1080,
@@ -2033,13 +3385,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 81,
+    "id": 83,
     "filename": "172_img_20260908_160659_836.jpg",
-    "title": "Shadow AMOLED Edition #81",
+    "title": "Onyx AMOLED Edition #83",
     "path": "Pictures/172_img_20260908_160659_836.jpg",
     "encodedPath": "Pictures/172_img_20260908_160659_836.jpg",
     "width": 1080,
@@ -2058,13 +3411,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 82,
+    "id": 84,
     "filename": "173_img_20260908_160718_666.jpg",
-    "title": "Pure Monolith Minimal Aesthetic #82",
+    "title": "Snow Apex Minimal Aesthetic #84",
     "path": "Pictures/173_img_20260908_160718_666.jpg",
     "encodedPath": "Pictures/173_img_20260908_160718_666.jpg",
     "width": 736,
@@ -2082,14 +3436,15 @@ window.WALLPAPERS_DATA = [
     "tags": [
       "light_minimal",
       "mobile",
+      "phone",
       "portrait",
       "white"
     ]
   },
   {
-    "id": 83,
+    "id": 85,
     "filename": "174_img_20260908_160723_997.jpg",
-    "title": "Onyx AMOLED Edition #83",
+    "title": "Obsidian AMOLED Edition #85",
     "path": "Pictures/174_img_20260908_160723_997.jpg",
     "encodedPath": "Pictures/174_img_20260908_160723_997.jpg",
     "width": 720,
@@ -2108,13 +3463,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 84,
+    "id": 86,
     "filename": "175_img_20260909_134021_010.jpg",
-    "title": "Dark Cyber AMOLED Edition #84",
+    "title": "Midnight AMOLED Edition #86",
     "path": "Pictures/175_img_20260909_134021_010.jpg",
     "encodedPath": "Pictures/175_img_20260909_134021_010.jpg",
     "width": 1080,
@@ -2133,13 +3489,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 85,
+    "id": 87,
     "filename": "176_img_20260909_134028_482.jpg",
-    "title": "Obsidian AMOLED Edition #85",
+    "title": "Shadow AMOLED Edition #87",
     "path": "Pictures/176_img_20260909_134028_482.jpg",
     "encodedPath": "Pictures/176_img_20260909_134028_482.jpg",
     "width": 1080,
@@ -2158,13 +3515,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 86,
+    "id": 88,
     "filename": "177_img_20260910_105403_002.jpg",
-    "title": "Minimalist Ivory Minimal Aesthetic #86",
+    "title": "Crystal White Minimal Aesthetic #88",
     "path": "Pictures/177_img_20260910_105403_002.jpg",
     "encodedPath": "Pictures/177_img_20260910_105403_002.jpg",
     "width": 736,
@@ -2182,14 +3540,15 @@ window.WALLPAPERS_DATA = [
     "tags": [
       "light_minimal",
       "mobile",
+      "phone",
       "portrait",
       "white"
     ]
   },
   {
-    "id": 87,
+    "id": 89,
     "filename": "178_img_20260910_105426_992.jpg",
-    "title": "Shadow AMOLED Edition #87",
+    "title": "Onyx AMOLED Edition #89",
     "path": "Pictures/178_img_20260910_105426_992.jpg",
     "encodedPath": "Pictures/178_img_20260910_105426_992.jpg",
     "width": 1080,
@@ -2208,13 +3567,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 88,
+    "id": 90,
     "filename": "179_img_20260910_105431_690.jpg",
-    "title": "Eclipse AMOLED Edition #88",
+    "title": "Dark Cyber AMOLED Edition #90",
     "path": "Pictures/179_img_20260910_105431_690.jpg",
     "encodedPath": "Pictures/179_img_20260910_105431_690.jpg",
     "width": 1080,
@@ -2233,13 +3593,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 89,
+    "id": 91,
     "filename": "17_img_20260430_231123_428.jpg",
-    "title": "Onyx Abstract Render #89",
+    "title": "Obsidian Abstract Render #91",
     "path": "Pictures/17_img_20260430_231123_428.jpg",
     "encodedPath": "Pictures/17_img_20260430_231123_428.jpg",
     "width": 736,
@@ -2260,13 +3621,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 90,
+    "id": 92,
     "filename": "180_img_20260910_105443_016.jpg",
-    "title": "Dark Cyber AMOLED Edition #90",
+    "title": "Midnight AMOLED Edition #92",
     "path": "Pictures/180_img_20260910_105443_016.jpg",
     "encodedPath": "Pictures/180_img_20260910_105443_016.jpg",
     "width": 1080,
@@ -2285,13 +3647,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 91,
+    "id": 93,
     "filename": "181_img_20260910_220420_228.jpg",
-    "title": "Deep Cobalt AMOLED Edition #91",
+    "title": "Oceanic Depth AMOLED Edition #93",
     "path": "Pictures/181_img_20260910_220420_228.jpg",
     "encodedPath": "Pictures/181_img_20260910_220420_228.jpg",
     "width": 972,
@@ -2310,38 +3673,40 @@ window.WALLPAPERS_DATA = [
       "blue",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 92,
+    "id": 94,
     "filename": "182_img_20260910_220424_500.jpg",
-    "title": "Electric Cyan Scenic Photograph #92",
+    "title": "Cyan Cyber Abstract Render #94",
     "path": "Pictures/182_img_20260910_220424_500.jpg",
     "encodedPath": "Pictures/182_img_20260910_220424_500.jpg",
     "width": 1080,
     "height": 1929,
     "aspectRatio": 0.56,
     "category": "phone",
-    "primaryGenre": "reality_photo",
+    "primaryGenre": "animated_graphical",
     "genres": [
-      "reality_photo"
+      "animated_graphical"
     ],
     "hexColor": "#234b64",
     "colorFamily": "cyan",
     "size": "241.5 KB",
     "sizeBytes": 247331,
     "tags": [
+      "animated_graphical",
       "cyan",
       "mobile",
-      "portrait",
-      "reality_photo"
+      "phone",
+      "portrait"
     ]
   },
   {
-    "id": 93,
+    "id": 95,
     "filename": "183_img_20260910_220427_659.jpg",
-    "title": "Shadow AMOLED Edition #93",
+    "title": "Onyx AMOLED Edition #95",
     "path": "Pictures/183_img_20260910_220427_659.jpg",
     "encodedPath": "Pictures/183_img_20260910_220427_659.jpg",
     "width": 640,
@@ -2360,13 +3725,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 94,
+    "id": 96,
     "filename": "184_img_20260911_175154_826.jpg",
-    "title": "Eclipse AMOLED Edition #94",
+    "title": "Dark Cyber AMOLED Edition #96",
     "path": "Pictures/184_img_20260911_175154_826.jpg",
     "encodedPath": "Pictures/184_img_20260911_175154_826.jpg",
     "width": 1080,
@@ -2385,13 +3751,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 95,
+    "id": 97,
     "filename": "185_img_20260911_175157_227.jpg",
-    "title": "Onyx AMOLED Edition #95",
+    "title": "Obsidian AMOLED Edition #97",
     "path": "Pictures/185_img_20260911_175157_227.jpg",
     "encodedPath": "Pictures/185_img_20260911_175157_227.jpg",
     "width": 1080,
@@ -2411,13 +3778,14 @@ window.WALLPAPERS_DATA = [
       "dark_amoled",
       "desktop",
       "landscape",
-      "monitor"
+      "monitor",
+      "pc"
     ]
   },
   {
-    "id": 96,
+    "id": 98,
     "filename": "186_img_20260911_180949_965.jpg",
-    "title": "Dark Cyber AMOLED Edition #96",
+    "title": "Midnight AMOLED Edition #98",
     "path": "Pictures/186_img_20260911_180949_965.jpg",
     "encodedPath": "Pictures/186_img_20260911_180949_965.jpg",
     "width": 1080,
@@ -2436,13 +3804,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 97,
+    "id": 99,
     "filename": "187_img_20260912_163102_692.jpg",
-    "title": "Obsidian AMOLED Edition #97",
+    "title": "Shadow AMOLED Edition #99",
     "path": "Pictures/187_img_20260912_163102_692.jpg",
     "encodedPath": "Pictures/187_img_20260912_163102_692.jpg",
     "width": 720,
@@ -2461,13 +3830,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 98,
+    "id": 100,
     "filename": "188_img_20260912_163127_765.jpg",
-    "title": "Midnight AMOLED Edition #98",
+    "title": "Eclipse AMOLED Edition #100",
     "path": "Pictures/188_img_20260912_163127_765.jpg",
     "encodedPath": "Pictures/188_img_20260912_163127_765.jpg",
     "width": 1024,
@@ -2486,13 +3856,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 99,
+    "id": 101,
     "filename": "189_img_20260912_163141_833.jpg",
-    "title": "Shadow AMOLED Edition #99",
+    "title": "Onyx AMOLED Edition #101",
     "path": "Pictures/189_img_20260912_163141_833.jpg",
     "encodedPath": "Pictures/189_img_20260912_163141_833.jpg",
     "width": 1080,
@@ -2511,13 +3882,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 100,
+    "id": 102,
     "filename": "18_img_20260503_082126_008.jpg",
-    "title": "Eclipse AMOLED Edition #100",
+    "title": "Dark Cyber AMOLED Edition #102",
     "path": "Pictures/18_img_20260503_082126_008.jpg",
     "encodedPath": "Pictures/18_img_20260503_082126_008.jpg",
     "width": 720,
@@ -2536,13 +3908,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 101,
+    "id": 103,
     "filename": "190_img_20260912_163145_156.jpg",
-    "title": "Onyx AMOLED Edition #101",
+    "title": "Obsidian AMOLED Edition #103",
     "path": "Pictures/190_img_20260912_163145_156.jpg",
     "encodedPath": "Pictures/190_img_20260912_163145_156.jpg",
     "width": 1080,
@@ -2561,13 +3934,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 102,
+    "id": 104,
     "filename": "191_img_20260912_163151_052.jpg",
-    "title": "Dark Cyber AMOLED Edition #102",
+    "title": "Midnight AMOLED Edition #104",
     "path": "Pictures/191_img_20260912_163151_052.jpg",
     "encodedPath": "Pictures/191_img_20260912_163151_052.jpg",
     "width": 1080,
@@ -2586,13 +3960,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 103,
+    "id": 105,
     "filename": "192_img_20260912_163154_117.jpg",
-    "title": "Obsidian AMOLED Edition #103",
+    "title": "Shadow AMOLED Edition #105",
     "path": "Pictures/192_img_20260912_163154_117.jpg",
     "encodedPath": "Pictures/192_img_20260912_163154_117.jpg",
     "width": 1179,
@@ -2612,14 +3987,15 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait",
       "ultra_hd"
     ]
   },
   {
-    "id": 104,
+    "id": 106,
     "filename": "193_img_20260913_213602_707.jpg",
-    "title": "Midnight AMOLED Edition #104",
+    "title": "Eclipse AMOLED Edition #106",
     "path": "Pictures/193_img_20260913_213602_707.jpg",
     "encodedPath": "Pictures/193_img_20260913_213602_707.jpg",
     "width": 554,
@@ -2638,13 +4014,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 105,
+    "id": 107,
     "filename": "194_img_20260914_132536_893.jpg",
-    "title": "Shadow AMOLED Edition #105",
+    "title": "Onyx AMOLED Edition #107",
     "path": "Pictures/194_img_20260914_132536_893.jpg",
     "encodedPath": "Pictures/194_img_20260914_132536_893.jpg",
     "width": 1080,
@@ -2665,38 +4042,40 @@ window.WALLPAPERS_DATA = [
       "dark_amoled",
       "light_minimal",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 106,
+    "id": 108,
     "filename": "195_img_20260914_132555_029.jpg",
-    "title": "Deep Cobalt Scenic Photograph #106",
+    "title": "Oceanic Depth Abstract Render #108",
     "path": "Pictures/195_img_20260914_132555_029.jpg",
     "encodedPath": "Pictures/195_img_20260914_132555_029.jpg",
     "width": 736,
     "height": 1308,
     "aspectRatio": 0.56,
     "category": "phone",
-    "primaryGenre": "reality_photo",
+    "primaryGenre": "animated_graphical",
     "genres": [
-      "reality_photo"
+      "animated_graphical"
     ],
     "hexColor": "#658ab6",
     "colorFamily": "blue",
     "size": "16.4 KB",
     "sizeBytes": 16813,
     "tags": [
+      "animated_graphical",
       "blue",
       "mobile",
-      "portrait",
-      "reality_photo"
+      "phone",
+      "portrait"
     ]
   },
   {
-    "id": 107,
+    "id": 109,
     "filename": "19_img_20260503_082145_134.jpg",
-    "title": "Onyx AMOLED Edition #107",
+    "title": "Obsidian AMOLED Edition #109",
     "path": "Pictures/19_img_20260503_082145_134.jpg",
     "encodedPath": "Pictures/19_img_20260503_082145_134.jpg",
     "width": 720,
@@ -2717,13 +4096,14 @@ window.WALLPAPERS_DATA = [
       "dark_amoled",
       "light_minimal",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 108,
+    "id": 110,
     "filename": "20260719_112026.jpg",
-    "title": "Dark Cyber AMOLED Edition #108",
+    "title": "Midnight AMOLED Edition #110",
     "path": "Pictures/20260719_112026.jpg",
     "encodedPath": "Pictures/20260719_112026.jpg",
     "width": 1200,
@@ -2742,13 +4122,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 109,
+    "id": 111,
     "filename": "20_img_20260503_082152_369.jpg",
-    "title": "Snow Apex Minimal Aesthetic #109",
+    "title": "Minimalist Ivory Minimal Aesthetic #111",
     "path": "Pictures/20_img_20260503_082152_369.jpg",
     "encodedPath": "Pictures/20_img_20260503_082152_369.jpg",
     "width": 720,
@@ -2766,14 +4147,15 @@ window.WALLPAPERS_DATA = [
     "tags": [
       "light_minimal",
       "mobile",
+      "phone",
       "portrait",
       "white"
     ]
   },
   {
-    "id": 110,
+    "id": 112,
     "filename": "21_img_20260503_082200_789.jpg",
-    "title": "Luminous Frost Minimal Aesthetic #110",
+    "title": "Pure Monolith Minimal Aesthetic #112",
     "path": "Pictures/21_img_20260503_082200_789.jpg",
     "encodedPath": "Pictures/21_img_20260503_082200_789.jpg",
     "width": 720,
@@ -2791,14 +4173,15 @@ window.WALLPAPERS_DATA = [
     "tags": [
       "light_minimal",
       "mobile",
+      "phone",
       "portrait",
       "white"
     ]
   },
   {
-    "id": 111,
+    "id": 113,
     "filename": "22_img_20260503_082206_665.jpg",
-    "title": "Minimalist Ivory Minimal Aesthetic #111",
+    "title": "Crystal White Minimal Aesthetic #113",
     "path": "Pictures/22_img_20260503_082206_665.jpg",
     "encodedPath": "Pictures/22_img_20260503_082206_665.jpg",
     "width": 720,
@@ -2816,14 +4199,15 @@ window.WALLPAPERS_DATA = [
     "tags": [
       "light_minimal",
       "mobile",
+      "phone",
       "portrait",
       "white"
     ]
   },
   {
-    "id": 112,
+    "id": 114,
     "filename": "23_img_20260503_082210_507.jpg",
-    "title": "Pure Monolith Minimal Aesthetic #112",
+    "title": "Snow Apex Minimal Aesthetic #114",
     "path": "Pictures/23_img_20260503_082210_507.jpg",
     "encodedPath": "Pictures/23_img_20260503_082210_507.jpg",
     "width": 720,
@@ -2841,64 +4225,67 @@ window.WALLPAPERS_DATA = [
     "tags": [
       "light_minimal",
       "mobile",
+      "phone",
       "portrait",
       "white"
     ]
   },
   {
-    "id": 113,
+    "id": 115,
     "filename": "24_img_20260509_090306_556.jpg",
-    "title": "Aqua Horizon Scenic Photograph #113",
+    "title": "Azure Stream Abstract Render #115",
     "path": "Pictures/24_img_20260509_090306_556.jpg",
     "encodedPath": "Pictures/24_img_20260509_090306_556.jpg",
     "width": 720,
     "height": 900,
     "aspectRatio": 0.8,
     "category": "phone",
-    "primaryGenre": "reality_photo",
+    "primaryGenre": "animated_graphical",
     "genres": [
-      "reality_photo"
+      "animated_graphical"
     ],
     "hexColor": "#8ab9bf",
     "colorFamily": "cyan",
     "size": "36.4 KB",
     "sizeBytes": 37289,
     "tags": [
+      "animated_graphical",
       "cyan",
       "mobile",
-      "portrait",
-      "reality_photo"
+      "phone",
+      "portrait"
     ]
   },
   {
-    "id": 114,
+    "id": 116,
     "filename": "25_img_20260509_090310_474.jpg",
-    "title": "Cyan Cyber Scenic Photograph #114",
+    "title": "Neon Cyan Abstract Render #116",
     "path": "Pictures/25_img_20260509_090310_474.jpg",
     "encodedPath": "Pictures/25_img_20260509_090310_474.jpg",
     "width": 720,
     "height": 900,
     "aspectRatio": 0.8,
     "category": "phone",
-    "primaryGenre": "reality_photo",
+    "primaryGenre": "animated_graphical",
     "genres": [
-      "reality_photo"
+      "animated_graphical"
     ],
     "hexColor": "#63aade",
     "colorFamily": "cyan",
     "size": "44.0 KB",
     "sizeBytes": 45083,
     "tags": [
+      "animated_graphical",
       "cyan",
       "mobile",
-      "portrait",
-      "reality_photo"
+      "phone",
+      "portrait"
     ]
   },
   {
-    "id": 115,
+    "id": 117,
     "filename": "26_img_20260509_090313_360.jpg",
-    "title": "Obsidian AMOLED Edition #115",
+    "title": "Shadow AMOLED Edition #117",
     "path": "Pictures/26_img_20260509_090313_360.jpg",
     "encodedPath": "Pictures/26_img_20260509_090313_360.jpg",
     "width": 720,
@@ -2917,13 +4304,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 116,
+    "id": 118,
     "filename": "27_img_20260510_081831_162.jpg",
-    "title": "Midnight AMOLED Edition #116",
+    "title": "Eclipse AMOLED Edition #118",
     "path": "Pictures/27_img_20260510_081831_162.jpg",
     "encodedPath": "Pictures/27_img_20260510_081831_162.jpg",
     "width": 736,
@@ -2942,13 +4330,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 117,
+    "id": 119,
     "filename": "28_img_20260510_081834_216.jpg",
-    "title": "Shadow AMOLED Edition #117",
+    "title": "Onyx AMOLED Edition #119",
     "path": "Pictures/28_img_20260510_081834_216.jpg",
     "encodedPath": "Pictures/28_img_20260510_081834_216.jpg",
     "width": 736,
@@ -2967,13 +4356,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 118,
+    "id": 120,
     "filename": "29_img_20260510_081836_784.jpg",
-    "title": "Eclipse AMOLED Edition #118",
+    "title": "Dark Cyber AMOLED Edition #120",
     "path": "Pictures/29_img_20260510_081836_784.jpg",
     "encodedPath": "Pictures/29_img_20260510_081836_784.jpg",
     "width": 736,
@@ -2992,13 +4382,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 119,
+    "id": 121,
     "filename": "30_img_20260510_081839_545.jpg",
-    "title": "Onyx AMOLED Edition #119",
+    "title": "Obsidian AMOLED Edition #121",
     "path": "Pictures/30_img_20260510_081839_545.jpg",
     "encodedPath": "Pictures/30_img_20260510_081839_545.jpg",
     "width": 736,
@@ -3017,13 +4408,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 120,
+    "id": 122,
     "filename": "31_img_20260510_081842_114.jpg",
-    "title": "Dark Cyber AMOLED Edition #120",
+    "title": "Midnight AMOLED Edition #122",
     "path": "Pictures/31_img_20260510_081842_114.jpg",
     "encodedPath": "Pictures/31_img_20260510_081842_114.jpg",
     "width": 736,
@@ -3042,13 +4434,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 121,
+    "id": 123,
     "filename": "32_img_20260510_081846_897.jpg",
-    "title": "Obsidian AMOLED Edition #121",
+    "title": "Shadow AMOLED Edition #123",
     "path": "Pictures/32_img_20260510_081846_897.jpg",
     "encodedPath": "Pictures/32_img_20260510_081846_897.jpg",
     "width": 736,
@@ -3067,13 +4460,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 122,
+    "id": 124,
     "filename": "33_img_20260510_081852_170.jpg",
-    "title": "Midnight AMOLED Edition #122",
+    "title": "Eclipse AMOLED Edition #124",
     "path": "Pictures/33_img_20260510_081852_170.jpg",
     "encodedPath": "Pictures/33_img_20260510_081852_170.jpg",
     "width": 736,
@@ -3092,13 +4486,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 123,
+    "id": 125,
     "filename": "34_img_20260510_082000_630.jpg",
-    "title": "Shadow AMOLED Edition #123",
+    "title": "Onyx AMOLED Edition #125",
     "path": "Pictures/34_img_20260510_082000_630.jpg",
     "encodedPath": "Pictures/34_img_20260510_082000_630.jpg",
     "width": 720,
@@ -3117,13 +4512,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 124,
+    "id": 126,
     "filename": "35_img_20260513_020934_696.jpg",
-    "title": "Eclipse AMOLED Edition #124",
+    "title": "Dark Cyber AMOLED Edition #126",
     "path": "Pictures/35_img_20260513_020934_696.jpg",
     "encodedPath": "Pictures/35_img_20260513_020934_696.jpg",
     "width": 720,
@@ -3142,38 +4538,40 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 125,
+    "id": 127,
     "filename": "36_img_20260513_020954_683.jpg",
-    "title": "Cosmic Blue Scenic Photograph #125",
+    "title": "Celestial Blue Abstract Render #127",
     "path": "Pictures/36_img_20260513_020954_683.jpg",
     "encodedPath": "Pictures/36_img_20260513_020954_683.jpg",
     "width": 720,
     "height": 1280,
     "aspectRatio": 0.56,
     "category": "phone",
-    "primaryGenre": "reality_photo",
+    "primaryGenre": "animated_graphical",
     "genres": [
-      "reality_photo"
+      "animated_graphical"
     ],
     "hexColor": "#2b3e5c",
     "colorFamily": "blue",
     "size": "112.7 KB",
     "sizeBytes": 115420,
     "tags": [
+      "animated_graphical",
       "blue",
       "mobile",
-      "portrait",
-      "reality_photo"
+      "phone",
+      "portrait"
     ]
   },
   {
-    "id": 126,
+    "id": 128,
     "filename": "37_img_20260513_020957_287.jpg",
-    "title": "Dark Cyber AMOLED Edition #126",
+    "title": "Midnight AMOLED Edition #128",
     "path": "Pictures/37_img_20260513_020957_287.jpg",
     "encodedPath": "Pictures/37_img_20260513_020957_287.jpg",
     "width": 720,
@@ -3192,63 +4590,66 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 127,
+    "id": 129,
     "filename": "38_img_20260513_020959_771.jpg",
-    "title": "Scarlet Cyber Scenic Photograph #127",
+    "title": "Ruby Ember Abstract Render #129",
     "path": "Pictures/38_img_20260513_020959_771.jpg",
     "encodedPath": "Pictures/38_img_20260513_020959_771.jpg",
     "width": 736,
     "height": 1308,
     "aspectRatio": 0.56,
     "category": "phone",
-    "primaryGenre": "reality_photo",
+    "primaryGenre": "animated_graphical",
     "genres": [
-      "reality_photo"
+      "animated_graphical"
     ],
     "hexColor": "#e96272",
     "colorFamily": "red",
     "size": "146.4 KB",
     "sizeBytes": 149922,
     "tags": [
+      "animated_graphical",
       "mobile",
+      "phone",
       "portrait",
-      "reality_photo",
       "red"
     ]
   },
   {
-    "id": 128,
+    "id": 130,
     "filename": "39_img_20260513_021004_332.jpg",
-    "title": "Aqua Horizon Scenic Photograph #128",
+    "title": "Azure Stream Abstract Render #130",
     "path": "Pictures/39_img_20260513_021004_332.jpg",
     "encodedPath": "Pictures/39_img_20260513_021004_332.jpg",
     "width": 720,
     "height": 1558,
     "aspectRatio": 0.46,
     "category": "phone",
-    "primaryGenre": "reality_photo",
+    "primaryGenre": "animated_graphical",
     "genres": [
-      "reality_photo"
+      "animated_graphical"
     ],
     "hexColor": "#99e0f6",
     "colorFamily": "cyan",
     "size": "67.7 KB",
     "sizeBytes": 69333,
     "tags": [
+      "animated_graphical",
       "cyan",
       "mobile",
-      "portrait",
-      "reality_photo"
+      "phone",
+      "portrait"
     ]
   },
   {
-    "id": 129,
+    "id": 131,
     "filename": "40_img_20260513_021007_139.jpg",
-    "title": "Shadow AMOLED Edition #129",
+    "title": "Onyx AMOLED Edition #131",
     "path": "Pictures/40_img_20260513_021007_139.jpg",
     "encodedPath": "Pictures/40_img_20260513_021007_139.jpg",
     "width": 720,
@@ -3267,38 +4668,40 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 130,
+    "id": 132,
     "filename": "41_img_20260513_021009_883.jpg",
-    "title": "Azure Stream Scenic Photograph #130",
+    "title": "Electric Cyan Abstract Render #132",
     "path": "Pictures/41_img_20260513_021009_883.jpg",
     "encodedPath": "Pictures/41_img_20260513_021009_883.jpg",
     "width": 720,
     "height": 1440,
     "aspectRatio": 0.5,
     "category": "phone",
-    "primaryGenre": "reality_photo",
+    "primaryGenre": "animated_graphical",
     "genres": [
-      "reality_photo"
+      "animated_graphical"
     ],
     "hexColor": "#3a769e",
     "colorFamily": "cyan",
     "size": "170.4 KB",
     "sizeBytes": 174493,
     "tags": [
+      "animated_graphical",
       "cyan",
       "mobile",
-      "portrait",
-      "reality_photo"
+      "phone",
+      "portrait"
     ]
   },
   {
-    "id": 131,
+    "id": 133,
     "filename": "42_img_20260513_021033_819.jpg",
-    "title": "Onyx AMOLED Edition #131",
+    "title": "Obsidian AMOLED Edition #133",
     "path": "Pictures/42_img_20260513_021033_819.jpg",
     "encodedPath": "Pictures/42_img_20260513_021033_819.jpg",
     "width": 720,
@@ -3317,13 +4720,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 132,
+    "id": 134,
     "filename": "43_img_20260527_215735_013.jpg",
-    "title": "Dark Cyber AMOLED Edition #132",
+    "title": "Midnight AMOLED Edition #134",
     "path": "Pictures/43_img_20260527_215735_013.jpg",
     "encodedPath": "Pictures/43_img_20260527_215735_013.jpg",
     "width": 720,
@@ -3342,13 +4746,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 133,
+    "id": 135,
     "filename": "44_img_20260527_215817_484.jpg",
-    "title": "Obsidian AMOLED Edition #133",
+    "title": "Shadow AMOLED Edition #135",
     "path": "Pictures/44_img_20260527_215817_484.jpg",
     "encodedPath": "Pictures/44_img_20260527_215817_484.jpg",
     "width": 720,
@@ -3367,13 +4772,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 134,
+    "id": 136,
     "filename": "45_img_20260527_215822_176.jpg",
-    "title": "Midnight AMOLED Edition #134",
+    "title": "Eclipse AMOLED Edition #136",
     "path": "Pictures/45_img_20260527_215822_176.jpg",
     "encodedPath": "Pictures/45_img_20260527_215822_176.jpg",
     "width": 720,
@@ -3393,13 +4799,14 @@ window.WALLPAPERS_DATA = [
       "dark_amoled",
       "desktop",
       "landscape",
-      "monitor"
+      "monitor",
+      "pc"
     ]
   },
   {
-    "id": 135,
+    "id": 137,
     "filename": "46_img_20260604_113342_167.jpg",
-    "title": "Shadow AMOLED Edition #135",
+    "title": "Onyx AMOLED Edition #137",
     "path": "Pictures/46_img_20260604_113342_167.jpg",
     "encodedPath": "Pictures/46_img_20260604_113342_167.jpg",
     "width": 720,
@@ -3418,13 +4825,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 136,
+    "id": 138,
     "filename": "47_img_20260604_113355_601.jpg",
-    "title": "Eclipse AMOLED Edition #136",
+    "title": "Dark Cyber AMOLED Edition #138",
     "path": "Pictures/47_img_20260604_113355_601.jpg",
     "encodedPath": "Pictures/47_img_20260604_113355_601.jpg",
     "width": 720,
@@ -3443,13 +4851,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 137,
+    "id": 139,
     "filename": "48_img_20260604_113406_763.jpg",
-    "title": "Celestial Blue AMOLED Edition #137",
+    "title": "Sapphire AMOLED Edition #139",
     "path": "Pictures/48_img_20260604_113406_763.jpg",
     "encodedPath": "Pictures/48_img_20260604_113406_763.jpg",
     "width": 720,
@@ -3468,13 +4877,14 @@ window.WALLPAPERS_DATA = [
       "blue",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 138,
+    "id": 140,
     "filename": "49_img_20260604_113419_074.jpg",
-    "title": "Dark Cyber AMOLED Edition #138",
+    "title": "Midnight AMOLED Edition #140",
     "path": "Pictures/49_img_20260604_113419_074.jpg",
     "encodedPath": "Pictures/49_img_20260604_113419_074.jpg",
     "width": 720,
@@ -3493,13 +4903,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 139,
+    "id": 141,
     "filename": "50_img_20260604_123139_766.jpg",
-    "title": "Snow Apex Minimal Aesthetic #139",
+    "title": "Minimalist Ivory Minimal Aesthetic #141",
     "path": "Pictures/50_img_20260604_123139_766.jpg",
     "encodedPath": "Pictures/50_img_20260604_123139_766.jpg",
     "width": 720,
@@ -3517,14 +4928,15 @@ window.WALLPAPERS_DATA = [
     "tags": [
       "light_minimal",
       "mobile",
+      "phone",
       "portrait",
       "white"
     ]
   },
   {
-    "id": 140,
+    "id": 142,
     "filename": "51_img_20260604_123149_081.jpg",
-    "title": "Midnight AMOLED Edition #140",
+    "title": "Eclipse AMOLED Edition #142",
     "path": "Pictures/51_img_20260604_123149_081.jpg",
     "encodedPath": "Pictures/51_img_20260604_123149_081.jpg",
     "width": 736,
@@ -3543,13 +4955,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 141,
+    "id": 143,
     "filename": "52_img_20260606_173223_723.jpg",
-    "title": "Shadow AMOLED Edition #141",
+    "title": "Onyx AMOLED Edition #143",
     "path": "Pictures/52_img_20260606_173223_723.jpg",
     "encodedPath": "Pictures/52_img_20260606_173223_723.jpg",
     "width": 720,
@@ -3568,13 +4981,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 142,
+    "id": 144,
     "filename": "53_img_20260613_110812_793.jpg",
-    "title": "Eclipse AMOLED Edition #142",
+    "title": "Dark Cyber AMOLED Edition #144",
     "path": "Pictures/53_img_20260613_110812_793.jpg",
     "encodedPath": "Pictures/53_img_20260613_110812_793.jpg",
     "width": 720,
@@ -3593,13 +5007,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 143,
+    "id": 145,
     "filename": "54_img_20260613_110842_350.jpg",
-    "title": "Onyx AMOLED Edition #143",
+    "title": "Obsidian AMOLED Edition #145",
     "path": "Pictures/54_img_20260613_110842_350.jpg",
     "encodedPath": "Pictures/54_img_20260613_110842_350.jpg",
     "width": 720,
@@ -3618,13 +5033,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 144,
+    "id": 146,
     "filename": "55_img_20260613_110845_396.jpg",
-    "title": "Snow Apex Minimal Aesthetic #144",
+    "title": "Minimalist Ivory Minimal Aesthetic #146",
     "path": "Pictures/55_img_20260613_110845_396.jpg",
     "encodedPath": "Pictures/55_img_20260613_110845_396.jpg",
     "width": 720,
@@ -3642,14 +5058,15 @@ window.WALLPAPERS_DATA = [
     "tags": [
       "light_minimal",
       "mobile",
+      "phone",
       "portrait",
       "white"
     ]
   },
   {
-    "id": 145,
+    "id": 147,
     "filename": "56_img_20260613_110849_779.jpg",
-    "title": "Radiant Dawn Nature Horizon #145",
+    "title": "Golden Horizon Nature Horizon #147",
     "path": "Pictures/56_img_20260613_110849_779.jpg",
     "encodedPath": "Pictures/56_img_20260613_110849_779.jpg",
     "width": 720,
@@ -3670,13 +5087,14 @@ window.WALLPAPERS_DATA = [
       "light_minimal",
       "mobile",
       "nature_landscape",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 146,
+    "id": 148,
     "filename": "57_img_20260613_110903_421.jpg",
-    "title": "Midnight AMOLED Edition #146",
+    "title": "Eclipse AMOLED Edition #148",
     "path": "Pictures/57_img_20260613_110903_421.jpg",
     "encodedPath": "Pictures/57_img_20260613_110903_421.jpg",
     "width": 736,
@@ -3695,13 +5113,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 147,
+    "id": 149,
     "filename": "58_img_20260626_020718_844.jpg",
-    "title": "Shadow AMOLED Edition #147",
+    "title": "Onyx AMOLED Edition #149",
     "path": "Pictures/58_img_20260626_020718_844.jpg",
     "encodedPath": "Pictures/58_img_20260626_020718_844.jpg",
     "width": 1080,
@@ -3720,13 +5139,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 148,
+    "id": 150,
     "filename": "59_img_20260626_020727_707.jpg",
-    "title": "Eclipse AMOLED Edition #148",
+    "title": "Dark Cyber AMOLED Edition #150",
     "path": "Pictures/59_img_20260626_020727_707.jpg",
     "encodedPath": "Pictures/59_img_20260626_020727_707.jpg",
     "width": 1080,
@@ -3745,13 +5165,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 149,
+    "id": 151,
     "filename": "5_img_20260421_220726_644.jpg",
-    "title": "Onyx AMOLED Edition #149",
+    "title": "Obsidian AMOLED Edition #151",
     "path": "Pictures/5_img_20260421_220726_644.jpg",
     "encodedPath": "Pictures/5_img_20260421_220726_644.jpg",
     "width": 720,
@@ -3770,13 +5191,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 150,
+    "id": 152,
     "filename": "60_img_20260626_020734_117.jpg",
-    "title": "Dark Cyber AMOLED Edition #150",
+    "title": "Midnight AMOLED Edition #152",
     "path": "Pictures/60_img_20260626_020734_117.jpg",
     "encodedPath": "Pictures/60_img_20260626_020734_117.jpg",
     "width": 1080,
@@ -3795,13 +5217,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 151,
+    "id": 153,
     "filename": "61_img_20260626_020741_860.jpg",
-    "title": "Obsidian AMOLED Edition #151",
+    "title": "Shadow AMOLED Edition #153",
     "path": "Pictures/61_img_20260626_020741_860.jpg",
     "encodedPath": "Pictures/61_img_20260626_020741_860.jpg",
     "width": 1080,
@@ -3820,13 +5243,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 152,
+    "id": 154,
     "filename": "62_img_20260626_020759_538.jpg",
-    "title": "Midnight AMOLED Edition #152",
+    "title": "Eclipse AMOLED Edition #154",
     "path": "Pictures/62_img_20260626_020759_538.jpg",
     "encodedPath": "Pictures/62_img_20260626_020759_538.jpg",
     "width": 1080,
@@ -3845,13 +5269,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 153,
+    "id": 155,
     "filename": "63_img_20260626_153155_123.jpg",
-    "title": "Shadow AMOLED Edition #153",
+    "title": "Onyx AMOLED Edition #155",
     "path": "Pictures/63_img_20260626_153155_123.jpg",
     "encodedPath": "Pictures/63_img_20260626_153155_123.jpg",
     "width": 1080,
@@ -3870,13 +5295,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 154,
+    "id": 156,
     "filename": "64_img_20260626_153203_561.jpg",
-    "title": "Snow Apex Minimal Aesthetic #154",
+    "title": "Minimalist Ivory Minimal Aesthetic #156",
     "path": "Pictures/64_img_20260626_153203_561.jpg",
     "encodedPath": "Pictures/64_img_20260626_153203_561.jpg",
     "width": 996,
@@ -3894,14 +5320,15 @@ window.WALLPAPERS_DATA = [
     "tags": [
       "light_minimal",
       "mobile",
+      "phone",
       "portrait",
       "white"
     ]
   },
   {
-    "id": 155,
+    "id": 157,
     "filename": "65_img_20260626_153218_061.jpg",
-    "title": "Onyx AMOLED Edition #155",
+    "title": "Obsidian AMOLED Edition #157",
     "path": "Pictures/65_img_20260626_153218_061.jpg",
     "encodedPath": "Pictures/65_img_20260626_153218_061.jpg",
     "width": 1080,
@@ -3920,13 +5347,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 156,
+    "id": 158,
     "filename": "66_img_20260626_153225_476.jpg",
-    "title": "Dark Cyber AMOLED Edition #156",
+    "title": "Midnight AMOLED Edition #158",
     "path": "Pictures/66_img_20260626_153225_476.jpg",
     "encodedPath": "Pictures/66_img_20260626_153225_476.jpg",
     "width": 736,
@@ -3945,13 +5373,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 157,
+    "id": 159,
     "filename": "67_img_20260701_204236_652.jpg",
-    "title": "Obsidian AMOLED Edition #157",
+    "title": "Shadow AMOLED Edition #159",
     "path": "Pictures/67_img_20260701_204236_652.jpg",
     "encodedPath": "Pictures/67_img_20260701_204236_652.jpg",
     "width": 941,
@@ -3970,13 +5399,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 158,
+    "id": 160,
     "filename": "68_img_20260701_234939_155.jpg",
-    "title": "Midnight AMOLED Edition #158",
+    "title": "Eclipse AMOLED Edition #160",
     "path": "Pictures/68_img_20260701_234939_155.jpg",
     "encodedPath": "Pictures/68_img_20260701_234939_155.jpg",
     "width": 1080,
@@ -3995,13 +5425,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 159,
+    "id": 161,
     "filename": "69_img_20260703_065403_286.jpg",
-    "title": "Snow Apex Minimal Aesthetic #159",
+    "title": "Minimalist Ivory Minimal Aesthetic #161",
     "path": "Pictures/69_img_20260703_065403_286.jpg",
     "encodedPath": "Pictures/69_img_20260703_065403_286.jpg",
     "width": 1080,
@@ -4019,14 +5450,15 @@ window.WALLPAPERS_DATA = [
     "tags": [
       "light_minimal",
       "mobile",
+      "phone",
       "portrait",
       "white"
     ]
   },
   {
-    "id": 160,
+    "id": 162,
     "filename": "6_img_20260421_220730_850.jpg",
-    "title": "Eclipse AMOLED Edition #160",
+    "title": "Dark Cyber AMOLED Edition #162",
     "path": "Pictures/6_img_20260421_220730_850.jpg",
     "encodedPath": "Pictures/6_img_20260421_220730_850.jpg",
     "width": 564,
@@ -4045,13 +5477,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 161,
+    "id": 163,
     "filename": "70_img_20260703_065415_378.jpg",
-    "title": "Solar Amber Nature Horizon #161",
+    "title": "Autumn Gold Nature Horizon #163",
     "path": "Pictures/70_img_20260703_065415_378.jpg",
     "encodedPath": "Pictures/70_img_20260703_065415_378.jpg",
     "width": 512,
@@ -4070,13 +5503,14 @@ window.WALLPAPERS_DATA = [
       "gold",
       "mobile",
       "nature_landscape",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 162,
+    "id": 164,
     "filename": "71_img_20260703_065417_768.jpg",
-    "title": "Dark Cyber AMOLED Edition #162",
+    "title": "Midnight AMOLED Edition #164",
     "path": "Pictures/71_img_20260703_065417_768.jpg",
     "encodedPath": "Pictures/71_img_20260703_065417_768.jpg",
     "width": 1080,
@@ -4096,13 +5530,14 @@ window.WALLPAPERS_DATA = [
       "dark_amoled",
       "desktop",
       "landscape",
-      "monitor"
+      "monitor",
+      "pc"
     ]
   },
   {
-    "id": 163,
+    "id": 165,
     "filename": "72_img_20260703_065423_167.jpg",
-    "title": "Obsidian AMOLED Edition #163",
+    "title": "Shadow AMOLED Edition #165",
     "path": "Pictures/72_img_20260703_065423_167.jpg",
     "encodedPath": "Pictures/72_img_20260703_065423_167.jpg",
     "width": 1080,
@@ -4121,13 +5556,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 164,
+    "id": 166,
     "filename": "73_img_20260703_065456_147.jpg",
-    "title": "Midnight AMOLED Edition #164",
+    "title": "Eclipse AMOLED Edition #166",
     "path": "Pictures/73_img_20260703_065456_147.jpg",
     "encodedPath": "Pictures/73_img_20260703_065456_147.jpg",
     "width": 1080,
@@ -4146,13 +5582,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 165,
+    "id": 167,
     "filename": "74_img_20260703_065500_565.jpg",
-    "title": "Shadow AMOLED Edition #165",
+    "title": "Onyx AMOLED Edition #167",
     "path": "Pictures/74_img_20260703_065500_565.jpg",
     "encodedPath": "Pictures/74_img_20260703_065500_565.jpg",
     "width": 1080,
@@ -4172,13 +5609,14 @@ window.WALLPAPERS_DATA = [
       "dark_amoled",
       "desktop",
       "landscape",
-      "monitor"
+      "monitor",
+      "pc"
     ]
   },
   {
-    "id": 166,
+    "id": 168,
     "filename": "75_img_20260703_065551_865.jpg",
-    "title": "Eclipse AMOLED Edition #166",
+    "title": "Dark Cyber AMOLED Edition #168",
     "path": "Pictures/75_img_20260703_065551_865.jpg",
     "encodedPath": "Pictures/75_img_20260703_065551_865.jpg",
     "width": 736,
@@ -4197,13 +5635,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 167,
+    "id": 169,
     "filename": "76_img_20260703_065554_215.jpg",
-    "title": "Onyx AMOLED Edition #167",
+    "title": "Obsidian AMOLED Edition #169",
     "path": "Pictures/76_img_20260703_065554_215.jpg",
     "encodedPath": "Pictures/76_img_20260703_065554_215.jpg",
     "width": 1079,
@@ -4223,13 +5662,14 @@ window.WALLPAPERS_DATA = [
       "dark_amoled",
       "desktop",
       "landscape",
-      "monitor"
+      "monitor",
+      "pc"
     ]
   },
   {
-    "id": 168,
+    "id": 170,
     "filename": "77_img_20260703_075348_596.jpg",
-    "title": "Autumn Gold Nature Horizon #168",
+    "title": "Radiant Dawn Nature Horizon #170",
     "path": "Pictures/77_img_20260703_075348_596.jpg",
     "encodedPath": "Pictures/77_img_20260703_075348_596.jpg",
     "width": 683,
@@ -4248,13 +5688,14 @@ window.WALLPAPERS_DATA = [
       "gold",
       "mobile",
       "nature_landscape",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 169,
+    "id": 171,
     "filename": "78_img_20260703_075352_476.jpg",
-    "title": "Gilded Sun Nature Horizon #169",
+    "title": "Solar Amber Nature Horizon #171",
     "path": "Pictures/78_img_20260703_075352_476.jpg",
     "encodedPath": "Pictures/78_img_20260703_075352_476.jpg",
     "width": 1080,
@@ -4276,13 +5717,14 @@ window.WALLPAPERS_DATA = [
       "gold",
       "landscape",
       "monitor",
-      "nature_landscape"
+      "nature_landscape",
+      "pc"
     ]
   },
   {
-    "id": 170,
+    "id": 172,
     "filename": "79_img_20260703_075356_671.jpg",
-    "title": "Midnight AMOLED Edition #170",
+    "title": "Eclipse AMOLED Edition #172",
     "path": "Pictures/79_img_20260703_075356_671.jpg",
     "encodedPath": "Pictures/79_img_20260703_075356_671.jpg",
     "width": 1080,
@@ -4302,13 +5744,14 @@ window.WALLPAPERS_DATA = [
       "dark_amoled",
       "desktop",
       "landscape",
-      "monitor"
+      "monitor",
+      "pc"
     ]
   },
   {
-    "id": 171,
+    "id": 173,
     "filename": "7_img_20260421_220738_575.jpg",
-    "title": "Mystic Violet AMOLED Edition #171",
+    "title": "Amethyst Glow AMOLED Edition #173",
     "path": "Pictures/7_img_20260421_220738_575.jpg",
     "encodedPath": "Pictures/7_img_20260421_220738_575.jpg",
     "width": 720,
@@ -4326,14 +5769,15 @@ window.WALLPAPERS_DATA = [
     "tags": [
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait",
       "purple"
     ]
   },
   {
-    "id": 172,
+    "id": 174,
     "filename": "80_img_20260703_075400_396.jpg",
-    "title": "Scarlet Cyber AMOLED Edition #172",
+    "title": "Ruby Ember AMOLED Edition #174",
     "path": "Pictures/80_img_20260703_075400_396.jpg",
     "encodedPath": "Pictures/80_img_20260703_075400_396.jpg",
     "width": 1080,
@@ -4351,14 +5795,15 @@ window.WALLPAPERS_DATA = [
     "tags": [
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait",
       "red"
     ]
   },
   {
-    "id": 173,
+    "id": 175,
     "filename": "81_img_20260703_075403_891.jpg",
-    "title": "Onyx AMOLED Edition #173",
+    "title": "Obsidian AMOLED Edition #175",
     "path": "Pictures/81_img_20260703_075403_891.jpg",
     "encodedPath": "Pictures/81_img_20260703_075403_891.jpg",
     "width": 1080,
@@ -4377,13 +5822,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 174,
+    "id": 176,
     "filename": "82_img_20260703_075407_607.jpg",
-    "title": "Dark Cyber AMOLED Edition #174",
+    "title": "Midnight AMOLED Edition #176",
     "path": "Pictures/82_img_20260703_075407_607.jpg",
     "encodedPath": "Pictures/82_img_20260703_075407_607.jpg",
     "width": 1080,
@@ -4403,13 +5849,14 @@ window.WALLPAPERS_DATA = [
       "dark_amoled",
       "desktop",
       "landscape",
-      "monitor"
+      "monitor",
+      "pc"
     ]
   },
   {
-    "id": 175,
+    "id": 177,
     "filename": "83_img_20260703_075412_684.jpg",
-    "title": "Obsidian AMOLED Edition #175",
+    "title": "Shadow AMOLED Edition #177",
     "path": "Pictures/83_img_20260703_075412_684.jpg",
     "encodedPath": "Pictures/83_img_20260703_075412_684.jpg",
     "width": 736,
@@ -4428,13 +5875,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 176,
+    "id": 178,
     "filename": "84_img_20260703_075415_436.jpg",
-    "title": "Midnight AMOLED Edition #176",
+    "title": "Eclipse AMOLED Edition #178",
     "path": "Pictures/84_img_20260703_075415_436.jpg",
     "encodedPath": "Pictures/84_img_20260703_075415_436.jpg",
     "width": 1080,
@@ -4454,64 +5902,67 @@ window.WALLPAPERS_DATA = [
       "dark_amoled",
       "desktop",
       "landscape",
-      "monitor"
+      "monitor",
+      "pc"
     ]
   },
   {
-    "id": 177,
+    "id": 179,
     "filename": "85_img_20260703_210403_682.jpg",
-    "title": "Scarlet Cyber Scenic Photograph #177",
+    "title": "Ruby Ember Abstract Render #179",
     "path": "Pictures/85_img_20260703_210403_682.jpg",
     "encodedPath": "Pictures/85_img_20260703_210403_682.jpg",
     "width": 736,
     "height": 1631,
     "aspectRatio": 0.45,
     "category": "phone",
-    "primaryGenre": "reality_photo",
+    "primaryGenre": "animated_graphical",
     "genres": [
-      "reality_photo"
+      "animated_graphical"
     ],
     "hexColor": "#8c655d",
     "colorFamily": "red",
     "size": "215.9 KB",
     "sizeBytes": 221115,
     "tags": [
+      "animated_graphical",
       "mobile",
+      "phone",
       "portrait",
-      "reality_photo",
       "red"
     ]
   },
   {
-    "id": 178,
+    "id": 180,
     "filename": "86_img_20260703_210407_861.jpg",
-    "title": "Inferno Red Scenic Photograph #178",
+    "title": "Magma Glow Abstract Render #180",
     "path": "Pictures/86_img_20260703_210407_861.jpg",
     "encodedPath": "Pictures/86_img_20260703_210407_861.jpg",
     "width": 1079,
     "height": 694,
     "aspectRatio": 1.55,
     "category": "desktop",
-    "primaryGenre": "reality_photo",
+    "primaryGenre": "animated_graphical",
     "genres": [
-      "reality_photo"
+      "animated_graphical"
     ],
     "hexColor": "#9a6557",
     "colorFamily": "red",
     "size": "120.7 KB",
     "sizeBytes": 123634,
     "tags": [
+      "animated_graphical",
       "desktop",
       "landscape",
       "monitor",
-      "reality_photo",
+      "pc",
       "red"
     ]
   },
   {
-    "id": 179,
+    "id": 181,
     "filename": "87_img_20260713_082017_985.jpg",
-    "title": "Onyx AMOLED Edition #179",
+    "title": "Obsidian AMOLED Edition #181",
     "path": "Pictures/87_img_20260713_082017_985.jpg",
     "encodedPath": "Pictures/87_img_20260713_082017_985.jpg",
     "width": 1080,
@@ -4530,13 +5981,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 180,
+    "id": 182,
     "filename": "88_img_20260713_082020_442.jpg",
-    "title": "Dark Cyber AMOLED Edition #180",
+    "title": "Midnight AMOLED Edition #182",
     "path": "Pictures/88_img_20260713_082020_442.jpg",
     "encodedPath": "Pictures/88_img_20260713_082020_442.jpg",
     "width": 1080,
@@ -4556,13 +6008,14 @@ window.WALLPAPERS_DATA = [
       "dark_amoled",
       "desktop",
       "landscape",
-      "monitor"
+      "monitor",
+      "pc"
     ]
   },
   {
-    "id": 181,
+    "id": 183,
     "filename": "89_img_20260713_130634_021.jpg",
-    "title": "Obsidian AMOLED Edition #181",
+    "title": "Shadow AMOLED Edition #183",
     "path": "Pictures/89_img_20260713_130634_021.jpg",
     "encodedPath": "Pictures/89_img_20260713_130634_021.jpg",
     "width": 1080,
@@ -4581,38 +6034,40 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 182,
+    "id": 184,
     "filename": "8_img_20260421_220743_740.jpg",
-    "title": "Electric Cyan Scenic Photograph #182",
+    "title": "Cyan Cyber Abstract Render #184",
     "path": "Pictures/8_img_20260421_220743_740.jpg",
     "encodedPath": "Pictures/8_img_20260421_220743_740.jpg",
     "width": 720,
     "height": 1279,
     "aspectRatio": 0.56,
     "category": "phone",
-    "primaryGenre": "reality_photo",
+    "primaryGenre": "animated_graphical",
     "genres": [
-      "reality_photo"
+      "animated_graphical"
     ],
     "hexColor": "#60b3da",
     "colorFamily": "cyan",
     "size": "262.0 KB",
     "sizeBytes": 268296,
     "tags": [
+      "animated_graphical",
       "cyan",
       "mobile",
-      "portrait",
-      "reality_photo"
+      "phone",
+      "portrait"
     ]
   },
   {
-    "id": 183,
+    "id": 185,
     "filename": "90_img_20260713_130636_433.jpg",
-    "title": "Shadow AMOLED Edition #183",
+    "title": "Onyx AMOLED Edition #185",
     "path": "Pictures/90_img_20260713_130636_433.jpg",
     "encodedPath": "Pictures/90_img_20260713_130636_433.jpg",
     "width": 1080,
@@ -4632,13 +6087,14 @@ window.WALLPAPERS_DATA = [
       "dark_amoled",
       "desktop",
       "landscape",
-      "monitor"
+      "monitor",
+      "pc"
     ]
   },
   {
-    "id": 184,
+    "id": 186,
     "filename": "91_img_20260717_212046_075.jpg",
-    "title": "Eclipse Abstract Render #184",
+    "title": "Dark Cyber Abstract Render #186",
     "path": "Pictures/91_img_20260717_212046_075.jpg",
     "encodedPath": "Pictures/91_img_20260717_212046_075.jpg",
     "width": 1080,
@@ -4659,13 +6115,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 185,
+    "id": 187,
     "filename": "92_img_20260723_090028_371.jpg",
-    "title": "Onyx AMOLED Edition #185",
+    "title": "Obsidian AMOLED Edition #187",
     "path": "Pictures/92_img_20260723_090028_371.jpg",
     "encodedPath": "Pictures/92_img_20260723_090028_371.jpg",
     "width": 1080,
@@ -4684,13 +6141,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 186,
+    "id": 188,
     "filename": "93_img_20260723_090030_978.jpg",
-    "title": "Dark Cyber Abstract Render #186",
+    "title": "Midnight Abstract Render #188",
     "path": "Pictures/93_img_20260723_090030_978.jpg",
     "encodedPath": "Pictures/93_img_20260723_090030_978.jpg",
     "width": 1080,
@@ -4712,13 +6170,14 @@ window.WALLPAPERS_DATA = [
       "dark_amoled",
       "desktop",
       "landscape",
-      "monitor"
+      "monitor",
+      "pc"
     ]
   },
   {
-    "id": 187,
+    "id": 189,
     "filename": "94_img_20260723_090046_780.jpg",
-    "title": "Obsidian AMOLED Edition #187",
+    "title": "Shadow AMOLED Edition #189",
     "path": "Pictures/94_img_20260723_090046_780.jpg",
     "encodedPath": "Pictures/94_img_20260723_090046_780.jpg",
     "width": 1080,
@@ -4738,13 +6197,14 @@ window.WALLPAPERS_DATA = [
       "dark_amoled",
       "desktop",
       "landscape",
-      "monitor"
+      "monitor",
+      "pc"
     ]
   },
   {
-    "id": 188,
+    "id": 190,
     "filename": "95_img_20260723_090049_151.jpg",
-    "title": "Midnight AMOLED Edition #188",
+    "title": "Eclipse AMOLED Edition #190",
     "path": "Pictures/95_img_20260723_090049_151.jpg",
     "encodedPath": "Pictures/95_img_20260723_090049_151.jpg",
     "width": 1080,
@@ -4763,13 +6223,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 189,
+    "id": 191,
     "filename": "96_img_20260724_162019_138.jpg",
-    "title": "Shadow AMOLED Edition #189",
+    "title": "Onyx AMOLED Edition #191",
     "path": "Pictures/96_img_20260724_162019_138.jpg",
     "encodedPath": "Pictures/96_img_20260724_162019_138.jpg",
     "width": 1080,
@@ -4789,13 +6250,14 @@ window.WALLPAPERS_DATA = [
       "dark_amoled",
       "desktop",
       "landscape",
-      "monitor"
+      "monitor",
+      "pc"
     ]
   },
   {
-    "id": 190,
+    "id": 192,
     "filename": "97_img_20260724_162036_725.jpg",
-    "title": "Eclipse AMOLED Edition #190",
+    "title": "Dark Cyber AMOLED Edition #192",
     "path": "Pictures/97_img_20260724_162036_725.jpg",
     "encodedPath": "Pictures/97_img_20260724_162036_725.jpg",
     "width": 924,
@@ -4814,13 +6276,14 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 191,
+    "id": 193,
     "filename": "98_img_20260725_234018_453.jpg",
-    "title": "Minimalist Ivory Minimal Aesthetic #191",
+    "title": "Crystal White Minimal Aesthetic #193",
     "path": "Pictures/98_img_20260725_234018_453.jpg",
     "encodedPath": "Pictures/98_img_20260725_234018_453.jpg",
     "width": 1080,
@@ -4838,39 +6301,41 @@ window.WALLPAPERS_DATA = [
     "tags": [
       "light_minimal",
       "mobile",
+      "phone",
       "portrait",
       "white"
     ]
   },
   {
-    "id": 192,
+    "id": 194,
     "filename": "99_img_20260727_135635_219.jpg",
-    "title": "Electric Cyan Scenic Photograph #192",
+    "title": "Cyan Cyber Abstract Render #194",
     "path": "Pictures/99_img_20260727_135635_219.jpg",
     "encodedPath": "Pictures/99_img_20260727_135635_219.jpg",
     "width": 1080,
     "height": 2401,
     "aspectRatio": 0.45,
     "category": "phone",
-    "primaryGenre": "reality_photo",
+    "primaryGenre": "animated_graphical",
     "genres": [
-      "reality_photo"
+      "animated_graphical"
     ],
     "hexColor": "#909da6",
     "colorFamily": "cyan",
     "size": "75.9 KB",
     "sizeBytes": 77728,
     "tags": [
+      "animated_graphical",
       "cyan",
       "mobile",
-      "portrait",
-      "reality_photo"
+      "phone",
+      "portrait"
     ]
   },
   {
-    "id": 193,
+    "id": 195,
     "filename": "9_img_20260421_220746_743.jpg",
-    "title": "Obsidian AMOLED Edition #193",
+    "title": "Shadow AMOLED Edition #195",
     "path": "Pictures/9_img_20260421_220746_743.jpg",
     "encodedPath": "Pictures/9_img_20260421_220746_743.jpg",
     "width": 720,
@@ -4889,11 +6354,5954 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   },
   {
-    "id": 194,
+    "id": 196,
+    "filename": "Enjoy The Breathtaking Beauty Of This Mesmerizing 4k.jpg",
+    "title": "Enjoy The Breathtaking Beauty This...",
+    "path": "Pictures/Enjoy The Breathtaking Beauty Of This Mesmerizing 4k.jpg",
+    "encodedPath": "Pictures/Enjoy%20The%20Breathtaking%20Beauty%20Of%20This%20Mesmerizing%204k.jpg",
+    "width": 1920,
+    "height": 1079,
+    "aspectRatio": 1.78,
+    "category": "desktop",
+    "primaryGenre": "animated_graphical",
+    "genres": [
+      "animated_graphical"
+    ],
+    "hexColor": "#504798",
+    "colorFamily": "blue",
+    "size": "130.1 KB",
+    "sizeBytes": 133242,
+    "tags": [
+      "animated_graphical",
+      "blue",
+      "desktop",
+      "landscape",
+      "monitor",
+      "pc"
+    ]
+  },
+  {
+    "id": 197,
+    "filename": "IMG_20260421_220726_644.jpg",
+    "title": "Onyx AMOLED Edition #197",
+    "path": "Pictures/IMG_20260421_220726_644.jpg",
+    "encodedPath": "Pictures/IMG_20260421_220726_644.jpg",
+    "width": 720,
+    "height": 1280,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#373634",
+    "colorFamily": "dark",
+    "size": "143.5 KB",
+    "sizeBytes": 146907,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 198,
+    "filename": "IMG_20260421_220730_850.jpg",
+    "title": "Dark Cyber AMOLED Edition #198",
+    "path": "Pictures/IMG_20260421_220730_850.jpg",
+    "encodedPath": "Pictures/IMG_20260421_220730_850.jpg",
+    "width": 564,
+    "height": 1007,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#444b43",
+    "colorFamily": "dark",
+    "size": "93.0 KB",
+    "sizeBytes": 95200,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 199,
+    "filename": "IMG_20260421_220738_575.jpg",
+    "title": "Nebula Purple AMOLED Edition #199",
+    "path": "Pictures/IMG_20260421_220738_575.jpg",
+    "encodedPath": "Pictures/IMG_20260421_220738_575.jpg",
+    "width": 720,
+    "height": 1422,
+    "aspectRatio": 0.51,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#270f3d",
+    "colorFamily": "purple",
+    "size": "194.3 KB",
+    "sizeBytes": 198966,
+    "tags": [
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait",
+      "purple"
+    ]
+  },
+  {
+    "id": 200,
+    "filename": "IMG_20260421_220743_740.jpg",
+    "title": "Azure Stream Abstract Render #200",
+    "path": "Pictures/IMG_20260421_220743_740.jpg",
+    "encodedPath": "Pictures/IMG_20260421_220743_740.jpg",
+    "width": 720,
+    "height": 1279,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "animated_graphical",
+    "genres": [
+      "animated_graphical"
+    ],
+    "hexColor": "#60b3da",
+    "colorFamily": "cyan",
+    "size": "262.0 KB",
+    "sizeBytes": 268296,
+    "tags": [
+      "animated_graphical",
+      "cyan",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 201,
+    "filename": "IMG_20260421_220746_743.jpg",
+    "title": "Shadow AMOLED Edition #201",
+    "path": "Pictures/IMG_20260421_220746_743.jpg",
+    "encodedPath": "Pictures/IMG_20260421_220746_743.jpg",
+    "width": 720,
+    "height": 1280,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#212f16",
+    "colorFamily": "dark",
+    "size": "126.3 KB",
+    "sizeBytes": 129350,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 202,
+    "filename": "IMG_20260421_220752_996.jpg",
+    "title": "Eclipse AMOLED Edition #202",
+    "path": "Pictures/IMG_20260421_220752_996.jpg",
+    "encodedPath": "Pictures/IMG_20260421_220752_996.jpg",
+    "width": 720,
+    "height": 1279,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#150917",
+    "colorFamily": "dark",
+    "size": "180.4 KB",
+    "sizeBytes": 184752,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 203,
+    "filename": "IMG_20260421_232037_486.jpg",
+    "title": "Autumn Gold Nature Horizon #203",
+    "path": "Pictures/IMG_20260421_232037_486.jpg",
+    "encodedPath": "Pictures/IMG_20260421_232037_486.jpg",
+    "width": 720,
+    "height": 900,
+    "aspectRatio": 0.8,
+    "category": "phone",
+    "primaryGenre": "nature_landscape",
+    "genres": [
+      "nature_landscape"
+    ],
+    "hexColor": "#e86515",
+    "colorFamily": "gold",
+    "size": "169.8 KB",
+    "sizeBytes": 173892,
+    "tags": [
+      "gold",
+      "mobile",
+      "nature_landscape",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 204,
+    "filename": "IMG_20260421_232056_042.jpg",
+    "title": "Snow Apex Minimal Aesthetic #204",
+    "path": "Pictures/IMG_20260421_232056_042.jpg",
+    "encodedPath": "Pictures/IMG_20260421_232056_042.jpg",
+    "width": 720,
+    "height": 1596,
+    "aspectRatio": 0.45,
+    "category": "phone",
+    "primaryGenre": "light_minimal",
+    "genres": [
+      "light_minimal"
+    ],
+    "hexColor": "#f6f6f6",
+    "colorFamily": "white",
+    "size": "179.9 KB",
+    "sizeBytes": 184231,
+    "tags": [
+      "light_minimal",
+      "mobile",
+      "phone",
+      "portrait",
+      "white"
+    ]
+  },
+  {
+    "id": 205,
+    "filename": "IMG_20260426_133726_560.jpg",
+    "title": "Obsidian AMOLED Edition #205",
+    "path": "Pictures/IMG_20260426_133726_560.jpg",
+    "encodedPath": "Pictures/IMG_20260426_133726_560.jpg",
+    "width": 720,
+    "height": 1281,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#000000",
+    "colorFamily": "dark",
+    "size": "65.0 KB",
+    "sizeBytes": 66595,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 206,
+    "filename": "IMG_20260426_133922_050.jpg",
+    "title": "Solar Amber Nature Horizon #206",
+    "path": "Pictures/IMG_20260426_133922_050.jpg",
+    "encodedPath": "Pictures/IMG_20260426_133922_050.jpg",
+    "width": 720,
+    "height": 1440,
+    "aspectRatio": 0.5,
+    "category": "phone",
+    "primaryGenre": "nature_landscape",
+    "genres": [
+      "dark_amoled",
+      "nature_landscape"
+    ],
+    "hexColor": "#412513",
+    "colorFamily": "gold",
+    "size": "74.3 KB",
+    "sizeBytes": 76058,
+    "tags": [
+      "dark_amoled",
+      "gold",
+      "mobile",
+      "nature_landscape",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 207,
+    "filename": "IMG_20260430_213105_081.jpg",
+    "title": "Shadow AMOLED Edition #207",
+    "path": "Pictures/IMG_20260430_213105_081.jpg",
+    "encodedPath": "Pictures/IMG_20260430_213105_081.jpg",
+    "width": 720,
+    "height": 1561,
+    "aspectRatio": 0.46,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#040404",
+    "colorFamily": "dark",
+    "size": "70.2 KB",
+    "sizeBytes": 71929,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 208,
+    "filename": "IMG_20260430_231112_567.jpg",
+    "title": "Eclipse Abstract Render #208",
+    "path": "Pictures/IMG_20260430_231112_567.jpg",
+    "encodedPath": "Pictures/IMG_20260430_231112_567.jpg",
+    "width": 720,
+    "height": 1290,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "animated_graphical",
+    "genres": [
+      "animated_graphical",
+      "dark_amoled"
+    ],
+    "hexColor": "#04090d",
+    "colorFamily": "dark",
+    "size": "24.9 KB",
+    "sizeBytes": 25461,
+    "tags": [
+      "animated_graphical",
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 209,
+    "filename": "IMG_20260430_231123_428.jpg",
+    "title": "Onyx Abstract Render #209",
+    "path": "Pictures/IMG_20260430_231123_428.jpg",
+    "encodedPath": "Pictures/IMG_20260430_231123_428.jpg",
+    "width": 736,
+    "height": 1716,
+    "aspectRatio": 0.43,
+    "category": "phone",
+    "primaryGenre": "animated_graphical",
+    "genres": [
+      "animated_graphical",
+      "dark_amoled"
+    ],
+    "hexColor": "#000000",
+    "colorFamily": "dark",
+    "size": "88.3 KB",
+    "sizeBytes": 90393,
+    "tags": [
+      "animated_graphical",
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 210,
+    "filename": "IMG_20260503_082126_008.jpg",
+    "title": "Dark Cyber AMOLED Edition #210",
+    "path": "Pictures/IMG_20260503_082126_008.jpg",
+    "encodedPath": "Pictures/IMG_20260503_082126_008.jpg",
+    "width": 720,
+    "height": 1440,
+    "aspectRatio": 0.5,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#0f0f0f",
+    "colorFamily": "dark",
+    "size": "76.7 KB",
+    "sizeBytes": 78569,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 211,
+    "filename": "IMG_20260503_082145_134.jpg",
+    "title": "Obsidian AMOLED Edition #211",
+    "path": "Pictures/IMG_20260503_082145_134.jpg",
+    "encodedPath": "Pictures/IMG_20260503_082145_134.jpg",
+    "width": 720,
+    "height": 1440,
+    "aspectRatio": 0.5,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled",
+      "light_minimal"
+    ],
+    "hexColor": "#b0c2c2",
+    "colorFamily": "dark",
+    "size": "50.5 KB",
+    "sizeBytes": 51749,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "light_minimal",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 212,
+    "filename": "IMG_20260503_082152_369.jpg",
+    "title": "Pure Monolith Minimal Aesthetic #212",
+    "path": "Pictures/IMG_20260503_082152_369.jpg",
+    "encodedPath": "Pictures/IMG_20260503_082152_369.jpg",
+    "width": 720,
+    "height": 1440,
+    "aspectRatio": 0.5,
+    "category": "phone",
+    "primaryGenre": "light_minimal",
+    "genres": [
+      "light_minimal"
+    ],
+    "hexColor": "#e9eeea",
+    "colorFamily": "white",
+    "size": "81.1 KB",
+    "sizeBytes": 83067,
+    "tags": [
+      "light_minimal",
+      "mobile",
+      "phone",
+      "portrait",
+      "white"
+    ]
+  },
+  {
+    "id": 213,
+    "filename": "IMG_20260503_082200_789.jpg",
+    "title": "Crystal White Minimal Aesthetic #213",
+    "path": "Pictures/IMG_20260503_082200_789.jpg",
+    "encodedPath": "Pictures/IMG_20260503_082200_789.jpg",
+    "width": 720,
+    "height": 1440,
+    "aspectRatio": 0.5,
+    "category": "phone",
+    "primaryGenre": "light_minimal",
+    "genres": [
+      "light_minimal"
+    ],
+    "hexColor": "#d8d4d3",
+    "colorFamily": "white",
+    "size": "56.4 KB",
+    "sizeBytes": 57800,
+    "tags": [
+      "light_minimal",
+      "mobile",
+      "phone",
+      "portrait",
+      "white"
+    ]
+  },
+  {
+    "id": 214,
+    "filename": "IMG_20260503_082206_665.jpg",
+    "title": "Snow Apex Minimal Aesthetic #214",
+    "path": "Pictures/IMG_20260503_082206_665.jpg",
+    "encodedPath": "Pictures/IMG_20260503_082206_665.jpg",
+    "width": 720,
+    "height": 1440,
+    "aspectRatio": 0.5,
+    "category": "phone",
+    "primaryGenre": "light_minimal",
+    "genres": [
+      "light_minimal"
+    ],
+    "hexColor": "#f6f6f4",
+    "colorFamily": "white",
+    "size": "55.1 KB",
+    "sizeBytes": 56460,
+    "tags": [
+      "light_minimal",
+      "mobile",
+      "phone",
+      "portrait",
+      "white"
+    ]
+  },
+  {
+    "id": 215,
+    "filename": "IMG_20260503_082210_507.jpg",
+    "title": "Luminous Frost Minimal Aesthetic #215",
+    "path": "Pictures/IMG_20260503_082210_507.jpg",
+    "encodedPath": "Pictures/IMG_20260503_082210_507.jpg",
+    "width": 720,
+    "height": 1440,
+    "aspectRatio": 0.5,
+    "category": "phone",
+    "primaryGenre": "light_minimal",
+    "genres": [
+      "light_minimal"
+    ],
+    "hexColor": "#e8f4f2",
+    "colorFamily": "white",
+    "size": "46.7 KB",
+    "sizeBytes": 47827,
+    "tags": [
+      "light_minimal",
+      "mobile",
+      "phone",
+      "portrait",
+      "white"
+    ]
+  },
+  {
+    "id": 216,
+    "filename": "IMG_20260509_090306_556.jpg",
+    "title": "Neon Cyan Abstract Render #216",
+    "path": "Pictures/IMG_20260509_090306_556.jpg",
+    "encodedPath": "Pictures/IMG_20260509_090306_556.jpg",
+    "width": 720,
+    "height": 900,
+    "aspectRatio": 0.8,
+    "category": "phone",
+    "primaryGenre": "animated_graphical",
+    "genres": [
+      "animated_graphical"
+    ],
+    "hexColor": "#8ab9bf",
+    "colorFamily": "cyan",
+    "size": "36.4 KB",
+    "sizeBytes": 37289,
+    "tags": [
+      "animated_graphical",
+      "cyan",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 217,
+    "filename": "IMG_20260509_090310_474.jpg",
+    "title": "Electric Cyan Abstract Render #217",
+    "path": "Pictures/IMG_20260509_090310_474.jpg",
+    "encodedPath": "Pictures/IMG_20260509_090310_474.jpg",
+    "width": 720,
+    "height": 900,
+    "aspectRatio": 0.8,
+    "category": "phone",
+    "primaryGenre": "animated_graphical",
+    "genres": [
+      "animated_graphical"
+    ],
+    "hexColor": "#63aade",
+    "colorFamily": "cyan",
+    "size": "44.0 KB",
+    "sizeBytes": 45083,
+    "tags": [
+      "animated_graphical",
+      "cyan",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 218,
+    "filename": "IMG_20260509_090313_360.jpg",
+    "title": "Midnight AMOLED Edition #218",
+    "path": "Pictures/IMG_20260509_090313_360.jpg",
+    "encodedPath": "Pictures/IMG_20260509_090313_360.jpg",
+    "width": 720,
+    "height": 900,
+    "aspectRatio": 0.8,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#141517",
+    "colorFamily": "dark",
+    "size": "22.1 KB",
+    "sizeBytes": 22668,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 219,
+    "filename": "IMG_20260510_081831_162.jpg",
+    "title": "Shadow AMOLED Edition #219",
+    "path": "Pictures/IMG_20260510_081831_162.jpg",
+    "encodedPath": "Pictures/IMG_20260510_081831_162.jpg",
+    "width": 736,
+    "height": 1308,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#010101",
+    "colorFamily": "dark",
+    "size": "59.4 KB",
+    "sizeBytes": 60858,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 220,
+    "filename": "IMG_20260510_081834_216.jpg",
+    "title": "Eclipse AMOLED Edition #220",
+    "path": "Pictures/IMG_20260510_081834_216.jpg",
+    "encodedPath": "Pictures/IMG_20260510_081834_216.jpg",
+    "width": 736,
+    "height": 1308,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#010101",
+    "colorFamily": "dark",
+    "size": "22.0 KB",
+    "sizeBytes": 22490,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 221,
+    "filename": "IMG_20260510_081836_784.jpg",
+    "title": "Onyx AMOLED Edition #221",
+    "path": "Pictures/IMG_20260510_081836_784.jpg",
+    "encodedPath": "Pictures/IMG_20260510_081836_784.jpg",
+    "width": 736,
+    "height": 1308,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#010101",
+    "colorFamily": "dark",
+    "size": "28.1 KB",
+    "sizeBytes": 28818,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 222,
+    "filename": "IMG_20260510_081839_545.jpg",
+    "title": "Dark Cyber AMOLED Edition #222",
+    "path": "Pictures/IMG_20260510_081839_545.jpg",
+    "encodedPath": "Pictures/IMG_20260510_081839_545.jpg",
+    "width": 736,
+    "height": 1308,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#000000",
+    "colorFamily": "dark",
+    "size": "15.0 KB",
+    "sizeBytes": 15363,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 223,
+    "filename": "IMG_20260510_081842_114.jpg",
+    "title": "Obsidian AMOLED Edition #223",
+    "path": "Pictures/IMG_20260510_081842_114.jpg",
+    "encodedPath": "Pictures/IMG_20260510_081842_114.jpg",
+    "width": 736,
+    "height": 1308,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#010101",
+    "colorFamily": "dark",
+    "size": "25.2 KB",
+    "sizeBytes": 25837,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 224,
+    "filename": "IMG_20260510_081846_897.jpg",
+    "title": "Midnight AMOLED Edition #224",
+    "path": "Pictures/IMG_20260510_081846_897.jpg",
+    "encodedPath": "Pictures/IMG_20260510_081846_897.jpg",
+    "width": 736,
+    "height": 1308,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#010100",
+    "colorFamily": "dark",
+    "size": "74.7 KB",
+    "sizeBytes": 76510,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 225,
+    "filename": "IMG_20260510_081852_170.jpg",
+    "title": "Shadow AMOLED Edition #225",
+    "path": "Pictures/IMG_20260510_081852_170.jpg",
+    "encodedPath": "Pictures/IMG_20260510_081852_170.jpg",
+    "width": 736,
+    "height": 1308,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#000000",
+    "colorFamily": "dark",
+    "size": "58.8 KB",
+    "sizeBytes": 60175,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 226,
+    "filename": "IMG_20260510_082000_630.jpg",
+    "title": "Eclipse AMOLED Edition #226",
+    "path": "Pictures/IMG_20260510_082000_630.jpg",
+    "encodedPath": "Pictures/IMG_20260510_082000_630.jpg",
+    "width": 720,
+    "height": 1564,
+    "aspectRatio": 0.46,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#090909",
+    "colorFamily": "dark",
+    "size": "160.1 KB",
+    "sizeBytes": 163931,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 227,
+    "filename": "IMG_20260513_020934_696.jpg",
+    "title": "Onyx AMOLED Edition #227",
+    "path": "Pictures/IMG_20260513_020934_696.jpg",
+    "encodedPath": "Pictures/IMG_20260513_020934_696.jpg",
+    "width": 720,
+    "height": 1560,
+    "aspectRatio": 0.46,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#18171d",
+    "colorFamily": "dark",
+    "size": "109.6 KB",
+    "sizeBytes": 112200,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 228,
+    "filename": "IMG_20260513_020954_683.jpg",
+    "title": "Oceanic Depth Abstract Render #228",
+    "path": "Pictures/IMG_20260513_020954_683.jpg",
+    "encodedPath": "Pictures/IMG_20260513_020954_683.jpg",
+    "width": 720,
+    "height": 1280,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "animated_graphical",
+    "genres": [
+      "animated_graphical"
+    ],
+    "hexColor": "#2b3e5c",
+    "colorFamily": "blue",
+    "size": "112.7 KB",
+    "sizeBytes": 115420,
+    "tags": [
+      "animated_graphical",
+      "blue",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 229,
+    "filename": "IMG_20260513_020957_287.jpg",
+    "title": "Obsidian AMOLED Edition #229",
+    "path": "Pictures/IMG_20260513_020957_287.jpg",
+    "encodedPath": "Pictures/IMG_20260513_020957_287.jpg",
+    "width": 720,
+    "height": 1280,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#1a1d2a",
+    "colorFamily": "dark",
+    "size": "129.2 KB",
+    "sizeBytes": 132351,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 230,
+    "filename": "IMG_20260513_020959_771.jpg",
+    "title": "Magma Glow Abstract Render #230",
+    "path": "Pictures/IMG_20260513_020959_771.jpg",
+    "encodedPath": "Pictures/IMG_20260513_020959_771.jpg",
+    "width": 736,
+    "height": 1308,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "animated_graphical",
+    "genres": [
+      "animated_graphical"
+    ],
+    "hexColor": "#e96272",
+    "colorFamily": "red",
+    "size": "146.4 KB",
+    "sizeBytes": 149922,
+    "tags": [
+      "animated_graphical",
+      "mobile",
+      "phone",
+      "portrait",
+      "red"
+    ]
+  },
+  {
+    "id": 231,
+    "filename": "IMG_20260513_021004_332.jpg",
+    "title": "Neon Cyan Abstract Render #231",
+    "path": "Pictures/IMG_20260513_021004_332.jpg",
+    "encodedPath": "Pictures/IMG_20260513_021004_332.jpg",
+    "width": 720,
+    "height": 1558,
+    "aspectRatio": 0.46,
+    "category": "phone",
+    "primaryGenre": "animated_graphical",
+    "genres": [
+      "animated_graphical"
+    ],
+    "hexColor": "#99e0f6",
+    "colorFamily": "cyan",
+    "size": "67.7 KB",
+    "sizeBytes": 69333,
+    "tags": [
+      "animated_graphical",
+      "cyan",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 232,
+    "filename": "IMG_20260513_021007_139.jpg",
+    "title": "Eclipse AMOLED Edition #232",
+    "path": "Pictures/IMG_20260513_021007_139.jpg",
+    "encodedPath": "Pictures/IMG_20260513_021007_139.jpg",
+    "width": 720,
+    "height": 1412,
+    "aspectRatio": 0.51,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#010006",
+    "colorFamily": "dark",
+    "size": "105.6 KB",
+    "sizeBytes": 108135,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 233,
+    "filename": "IMG_20260513_021009_883.jpg",
+    "title": "Aqua Horizon Abstract Render #233",
+    "path": "Pictures/IMG_20260513_021009_883.jpg",
+    "encodedPath": "Pictures/IMG_20260513_021009_883.jpg",
+    "width": 720,
+    "height": 1440,
+    "aspectRatio": 0.5,
+    "category": "phone",
+    "primaryGenre": "animated_graphical",
+    "genres": [
+      "animated_graphical"
+    ],
+    "hexColor": "#3a769e",
+    "colorFamily": "cyan",
+    "size": "170.4 KB",
+    "sizeBytes": 174493,
+    "tags": [
+      "animated_graphical",
+      "cyan",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 234,
+    "filename": "IMG_20260513_021033_819.jpg",
+    "title": "Dark Cyber AMOLED Edition #234",
+    "path": "Pictures/IMG_20260513_021033_819.jpg",
+    "encodedPath": "Pictures/IMG_20260513_021033_819.jpg",
+    "width": 720,
+    "height": 1280,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#000000",
+    "colorFamily": "dark",
+    "size": "29.0 KB",
+    "sizeBytes": 29728,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 235,
+    "filename": "IMG_20260527_215735_013.jpg",
+    "title": "Obsidian AMOLED Edition #235",
+    "path": "Pictures/IMG_20260527_215735_013.jpg",
+    "encodedPath": "Pictures/IMG_20260527_215735_013.jpg",
+    "width": 720,
+    "height": 1600,
+    "aspectRatio": 0.45,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#040402",
+    "colorFamily": "dark",
+    "size": "193.1 KB",
+    "sizeBytes": 197775,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 236,
+    "filename": "IMG_20260527_215817_484.jpg",
+    "title": "Midnight AMOLED Edition #236",
+    "path": "Pictures/IMG_20260527_215817_484.jpg",
+    "encodedPath": "Pictures/IMG_20260527_215817_484.jpg",
+    "width": 720,
+    "height": 1440,
+    "aspectRatio": 0.5,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#181818",
+    "colorFamily": "dark",
+    "size": "66.8 KB",
+    "sizeBytes": 68420,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 237,
+    "filename": "IMG_20260527_215822_176.jpg",
+    "title": "Shadow AMOLED Edition #237",
+    "path": "Pictures/IMG_20260527_215822_176.jpg",
+    "encodedPath": "Pictures/IMG_20260527_215822_176.jpg",
+    "width": 720,
+    "height": 542,
+    "aspectRatio": 1.33,
+    "category": "desktop",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#111111",
+    "colorFamily": "dark",
+    "size": "24.1 KB",
+    "sizeBytes": 24693,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "desktop",
+      "landscape",
+      "monitor",
+      "pc"
+    ]
+  },
+  {
+    "id": 238,
+    "filename": "IMG_20260604_113342_167.jpg",
+    "title": "Eclipse AMOLED Edition #238",
+    "path": "Pictures/IMG_20260604_113342_167.jpg",
+    "encodedPath": "Pictures/IMG_20260604_113342_167.jpg",
+    "width": 720,
+    "height": 1600,
+    "aspectRatio": 0.45,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#000000",
+    "colorFamily": "dark",
+    "size": "190.4 KB",
+    "sizeBytes": 194971,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 239,
+    "filename": "IMG_20260604_113355_601.jpg",
+    "title": "Onyx AMOLED Edition #239",
+    "path": "Pictures/IMG_20260604_113355_601.jpg",
+    "encodedPath": "Pictures/IMG_20260604_113355_601.jpg",
+    "width": 720,
+    "height": 960,
+    "aspectRatio": 0.75,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#0e0e0e",
+    "colorFamily": "dark",
+    "size": "51.4 KB",
+    "sizeBytes": 52610,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 240,
+    "filename": "IMG_20260604_113406_763.jpg",
+    "title": "Cosmic Blue AMOLED Edition #240",
+    "path": "Pictures/IMG_20260604_113406_763.jpg",
+    "encodedPath": "Pictures/IMG_20260604_113406_763.jpg",
+    "width": 720,
+    "height": 900,
+    "aspectRatio": 0.8,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#243547",
+    "colorFamily": "blue",
+    "size": "80.3 KB",
+    "sizeBytes": 82263,
+    "tags": [
+      "blue",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 241,
+    "filename": "IMG_20260604_113419_074.jpg",
+    "title": "Obsidian AMOLED Edition #241",
+    "path": "Pictures/IMG_20260604_113419_074.jpg",
+    "encodedPath": "Pictures/IMG_20260604_113419_074.jpg",
+    "width": 720,
+    "height": 1280,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#020202",
+    "colorFamily": "dark",
+    "size": "108.1 KB",
+    "sizeBytes": 110681,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 242,
+    "filename": "IMG_20260604_123139_766.jpg",
+    "title": "Pure Monolith Minimal Aesthetic #242",
+    "path": "Pictures/IMG_20260604_123139_766.jpg",
+    "encodedPath": "Pictures/IMG_20260604_123139_766.jpg",
+    "width": 720,
+    "height": 1600,
+    "aspectRatio": 0.45,
+    "category": "phone",
+    "primaryGenre": "light_minimal",
+    "genres": [
+      "light_minimal"
+    ],
+    "hexColor": "#f8f8f8",
+    "colorFamily": "white",
+    "size": "174.8 KB",
+    "sizeBytes": 178981,
+    "tags": [
+      "light_minimal",
+      "mobile",
+      "phone",
+      "portrait",
+      "white"
+    ]
+  },
+  {
+    "id": 243,
+    "filename": "IMG_20260604_123149_081.jpg",
+    "title": "Shadow AMOLED Edition #243",
+    "path": "Pictures/IMG_20260604_123149_081.jpg",
+    "encodedPath": "Pictures/IMG_20260604_123149_081.jpg",
+    "width": 736,
+    "height": 1349,
+    "aspectRatio": 0.55,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#3d3d3d",
+    "colorFamily": "dark",
+    "size": "72.7 KB",
+    "sizeBytes": 74464,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 244,
+    "filename": "IMG_20260606_173223_723.jpg",
+    "title": "Eclipse AMOLED Edition #244",
+    "path": "Pictures/IMG_20260606_173223_723.jpg",
+    "encodedPath": "Pictures/IMG_20260606_173223_723.jpg",
+    "width": 720,
+    "height": 1600,
+    "aspectRatio": 0.45,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#000000",
+    "colorFamily": "dark",
+    "size": "87.4 KB",
+    "sizeBytes": 89542,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 245,
+    "filename": "IMG_20260613_110812_793.jpg",
+    "title": "Onyx AMOLED Edition #245",
+    "path": "Pictures/IMG_20260613_110812_793.jpg",
+    "encodedPath": "Pictures/IMG_20260613_110812_793.jpg",
+    "width": 720,
+    "height": 1600,
+    "aspectRatio": 0.45,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#000308",
+    "colorFamily": "dark",
+    "size": "84.1 KB",
+    "sizeBytes": 86147,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 246,
+    "filename": "IMG_20260613_110842_350.jpg",
+    "title": "Dark Cyber AMOLED Edition #246",
+    "path": "Pictures/IMG_20260613_110842_350.jpg",
+    "encodedPath": "Pictures/IMG_20260613_110842_350.jpg",
+    "width": 720,
+    "height": 956,
+    "aspectRatio": 0.75,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#000000",
+    "colorFamily": "dark",
+    "size": "111.6 KB",
+    "sizeBytes": 114327,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 247,
+    "filename": "IMG_20260613_110845_396.jpg",
+    "title": "Pure Monolith Minimal Aesthetic #247",
+    "path": "Pictures/IMG_20260613_110845_396.jpg",
+    "encodedPath": "Pictures/IMG_20260613_110845_396.jpg",
+    "width": 720,
+    "height": 962,
+    "aspectRatio": 0.75,
+    "category": "phone",
+    "primaryGenre": "light_minimal",
+    "genres": [
+      "light_minimal"
+    ],
+    "hexColor": "#efebe0",
+    "colorFamily": "white",
+    "size": "79.9 KB",
+    "sizeBytes": 81863,
+    "tags": [
+      "light_minimal",
+      "mobile",
+      "phone",
+      "portrait",
+      "white"
+    ]
+  },
+  {
+    "id": 248,
+    "filename": "IMG_20260613_110849_779.jpg",
+    "title": "Autumn Gold Nature Horizon #248",
+    "path": "Pictures/IMG_20260613_110849_779.jpg",
+    "encodedPath": "Pictures/IMG_20260613_110849_779.jpg",
+    "width": 720,
+    "height": 962,
+    "aspectRatio": 0.75,
+    "category": "phone",
+    "primaryGenre": "nature_landscape",
+    "genres": [
+      "light_minimal",
+      "nature_landscape"
+    ],
+    "hexColor": "#e0dac4",
+    "colorFamily": "gold",
+    "size": "131.7 KB",
+    "sizeBytes": 134857,
+    "tags": [
+      "gold",
+      "light_minimal",
+      "mobile",
+      "nature_landscape",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 249,
+    "filename": "IMG_20260613_110903_421.jpg",
+    "title": "Shadow AMOLED Edition #249",
+    "path": "Pictures/IMG_20260613_110903_421.jpg",
+    "encodedPath": "Pictures/IMG_20260613_110903_421.jpg",
+    "width": 736,
+    "height": 1271,
+    "aspectRatio": 0.58,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#0d0c11",
+    "colorFamily": "dark",
+    "size": "79.2 KB",
+    "sizeBytes": 81065,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 250,
+    "filename": "IMG_20260626_020718_844.jpg",
+    "title": "Eclipse AMOLED Edition #250",
+    "path": "Pictures/IMG_20260626_020718_844.jpg",
+    "encodedPath": "Pictures/IMG_20260626_020718_844.jpg",
+    "width": 1080,
+    "height": 2400,
+    "aspectRatio": 0.45,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#06070b",
+    "colorFamily": "dark",
+    "size": "249.0 KB",
+    "sizeBytes": 254961,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 251,
+    "filename": "IMG_20260626_020727_707.jpg",
+    "title": "Onyx AMOLED Edition #251",
+    "path": "Pictures/IMG_20260626_020727_707.jpg",
+    "encodedPath": "Pictures/IMG_20260626_020727_707.jpg",
+    "width": 1080,
+    "height": 2347,
+    "aspectRatio": 0.46,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#000000",
+    "colorFamily": "dark",
+    "size": "86.8 KB",
+    "sizeBytes": 88832,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 252,
+    "filename": "IMG_20260626_020734_117.jpg",
+    "title": "Dark Cyber AMOLED Edition #252",
+    "path": "Pictures/IMG_20260626_020734_117.jpg",
+    "encodedPath": "Pictures/IMG_20260626_020734_117.jpg",
+    "width": 1080,
+    "height": 2347,
+    "aspectRatio": 0.46,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#000000",
+    "colorFamily": "dark",
+    "size": "78.2 KB",
+    "sizeBytes": 80087,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 253,
+    "filename": "IMG_20260626_020741_860.jpg",
+    "title": "Obsidian AMOLED Edition #253",
+    "path": "Pictures/IMG_20260626_020741_860.jpg",
+    "encodedPath": "Pictures/IMG_20260626_020741_860.jpg",
+    "width": 1080,
+    "height": 2347,
+    "aspectRatio": 0.46,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#000000",
+    "colorFamily": "dark",
+    "size": "127.8 KB",
+    "sizeBytes": 130819,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 254,
+    "filename": "IMG_20260626_020759_538.jpg",
+    "title": "Midnight AMOLED Edition #254",
+    "path": "Pictures/IMG_20260626_020759_538.jpg",
+    "encodedPath": "Pictures/IMG_20260626_020759_538.jpg",
+    "width": 1080,
+    "height": 2347,
+    "aspectRatio": 0.46,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#000000",
+    "colorFamily": "dark",
+    "size": "171.0 KB",
+    "sizeBytes": 175091,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 255,
+    "filename": "IMG_20260626_153155_123.jpg",
+    "title": "Shadow AMOLED Edition #255",
+    "path": "Pictures/IMG_20260626_153155_123.jpg",
+    "encodedPath": "Pictures/IMG_20260626_153155_123.jpg",
+    "width": 1080,
+    "height": 2400,
+    "aspectRatio": 0.45,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#02232c",
+    "colorFamily": "dark",
+    "size": "235.4 KB",
+    "sizeBytes": 241065,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 256,
+    "filename": "IMG_20260626_153203_561.jpg",
+    "title": "Minimalist Ivory Minimal Aesthetic #256",
+    "path": "Pictures/IMG_20260626_153203_561.jpg",
+    "encodedPath": "Pictures/IMG_20260626_153203_561.jpg",
+    "width": 996,
+    "height": 2160,
+    "aspectRatio": 0.46,
+    "category": "phone",
+    "primaryGenre": "light_minimal",
+    "genres": [
+      "light_minimal"
+    ],
+    "hexColor": "#dedede",
+    "colorFamily": "white",
+    "size": "66.3 KB",
+    "sizeBytes": 67922,
+    "tags": [
+      "light_minimal",
+      "mobile",
+      "phone",
+      "portrait",
+      "white"
+    ]
+  },
+  {
+    "id": 257,
+    "filename": "IMG_20260626_153218_061.jpg",
+    "title": "Onyx AMOLED Edition #257",
+    "path": "Pictures/IMG_20260626_153218_061.jpg",
+    "encodedPath": "Pictures/IMG_20260626_153218_061.jpg",
+    "width": 1080,
+    "height": 1920,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#060608",
+    "colorFamily": "dark",
+    "size": "63.1 KB",
+    "sizeBytes": 64657,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 258,
+    "filename": "IMG_20260626_153225_476.jpg",
+    "title": "Dark Cyber AMOLED Edition #258",
+    "path": "Pictures/IMG_20260626_153225_476.jpg",
+    "encodedPath": "Pictures/IMG_20260626_153225_476.jpg",
+    "width": 736,
+    "height": 1313,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#020307",
+    "colorFamily": "dark",
+    "size": "118.6 KB",
+    "sizeBytes": 121492,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 259,
+    "filename": "IMG_20260701_204236_652.jpg",
+    "title": "Obsidian AMOLED Edition #259",
+    "path": "Pictures/IMG_20260701_204236_652.jpg",
+    "encodedPath": "Pictures/IMG_20260701_204236_652.jpg",
+    "width": 941,
+    "height": 1672,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#000000",
+    "colorFamily": "dark",
+    "size": "177.4 KB",
+    "sizeBytes": 181669,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 260,
+    "filename": "IMG_20260701_234939_155.jpg",
+    "title": "Midnight AMOLED Edition #260",
+    "path": "Pictures/IMG_20260701_234939_155.jpg",
+    "encodedPath": "Pictures/IMG_20260701_234939_155.jpg",
+    "width": 1080,
+    "height": 2400,
+    "aspectRatio": 0.45,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#010101",
+    "colorFamily": "dark",
+    "size": "179.3 KB",
+    "sizeBytes": 183630,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 261,
+    "filename": "IMG_20260703_065403_286.jpg",
+    "title": "Minimalist Ivory Minimal Aesthetic #261",
+    "path": "Pictures/IMG_20260703_065403_286.jpg",
+    "encodedPath": "Pictures/IMG_20260703_065403_286.jpg",
+    "width": 1080,
+    "height": 2343,
+    "aspectRatio": 0.46,
+    "category": "phone",
+    "primaryGenre": "light_minimal",
+    "genres": [
+      "light_minimal"
+    ],
+    "hexColor": "#fbf2e9",
+    "colorFamily": "white",
+    "size": "101.9 KB",
+    "sizeBytes": 104343,
+    "tags": [
+      "light_minimal",
+      "mobile",
+      "phone",
+      "portrait",
+      "white"
+    ]
+  },
+  {
+    "id": 262,
+    "filename": "IMG_20260703_065415_378.jpg",
+    "title": "Golden Horizon Nature Horizon #262",
+    "path": "Pictures/IMG_20260703_065415_378.jpg",
+    "encodedPath": "Pictures/IMG_20260703_065415_378.jpg",
+    "width": 512,
+    "height": 1024,
+    "aspectRatio": 0.5,
+    "category": "phone",
+    "primaryGenre": "nature_landscape",
+    "genres": [
+      "nature_landscape"
+    ],
+    "hexColor": "#9e7a64",
+    "colorFamily": "gold",
+    "size": "116.3 KB",
+    "sizeBytes": 119130,
+    "tags": [
+      "gold",
+      "mobile",
+      "nature_landscape",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 263,
+    "filename": "IMG_20260703_065417_768.jpg",
+    "title": "Onyx AMOLED Edition #263",
+    "path": "Pictures/IMG_20260703_065417_768.jpg",
+    "encodedPath": "Pictures/IMG_20260703_065417_768.jpg",
+    "width": 1080,
+    "height": 731,
+    "aspectRatio": 1.48,
+    "category": "desktop",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#010101",
+    "colorFamily": "dark",
+    "size": "138.5 KB",
+    "sizeBytes": 141858,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "desktop",
+      "landscape",
+      "monitor",
+      "pc"
+    ]
+  },
+  {
+    "id": 264,
+    "filename": "IMG_20260703_065423_167.jpg",
+    "title": "Dark Cyber AMOLED Edition #264",
+    "path": "Pictures/IMG_20260703_065423_167.jpg",
+    "encodedPath": "Pictures/IMG_20260703_065423_167.jpg",
+    "width": 1080,
+    "height": 2347,
+    "aspectRatio": 0.46,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#000000",
+    "colorFamily": "dark",
+    "size": "60.0 KB",
+    "sizeBytes": 61473,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 265,
+    "filename": "IMG_20260703_065456_147.jpg",
+    "title": "Obsidian AMOLED Edition #265",
+    "path": "Pictures/IMG_20260703_065456_147.jpg",
+    "encodedPath": "Pictures/IMG_20260703_065456_147.jpg",
+    "width": 1080,
+    "height": 2348,
+    "aspectRatio": 0.46,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#312a1a",
+    "colorFamily": "dark",
+    "size": "183.6 KB",
+    "sizeBytes": 187963,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 266,
+    "filename": "IMG_20260703_065500_565.jpg",
+    "title": "Midnight AMOLED Edition #266",
+    "path": "Pictures/IMG_20260703_065500_565.jpg",
+    "encodedPath": "Pictures/IMG_20260703_065500_565.jpg",
+    "width": 1080,
+    "height": 814,
+    "aspectRatio": 1.33,
+    "category": "desktop",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#2c281c",
+    "colorFamily": "dark",
+    "size": "94.5 KB",
+    "sizeBytes": 96753,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "desktop",
+      "landscape",
+      "monitor",
+      "pc"
+    ]
+  },
+  {
+    "id": 267,
+    "filename": "IMG_20260703_065551_865.jpg",
+    "title": "Shadow AMOLED Edition #267",
+    "path": "Pictures/IMG_20260703_065551_865.jpg",
+    "encodedPath": "Pictures/IMG_20260703_065551_865.jpg",
+    "width": 736,
+    "height": 1308,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#989898",
+    "colorFamily": "dark",
+    "size": "215.2 KB",
+    "sizeBytes": 220345,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 268,
+    "filename": "IMG_20260703_065554_215.jpg",
+    "title": "Eclipse AMOLED Edition #268",
+    "path": "Pictures/IMG_20260703_065554_215.jpg",
+    "encodedPath": "Pictures/IMG_20260703_065554_215.jpg",
+    "width": 1079,
+    "height": 785,
+    "aspectRatio": 1.37,
+    "category": "desktop",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#050503",
+    "colorFamily": "dark",
+    "size": "170.8 KB",
+    "sizeBytes": 174858,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "desktop",
+      "landscape",
+      "monitor",
+      "pc"
+    ]
+  },
+  {
+    "id": 269,
+    "filename": "IMG_20260703_075348_596.jpg",
+    "title": "Gilded Sun Nature Horizon #269",
+    "path": "Pictures/IMG_20260703_075348_596.jpg",
+    "encodedPath": "Pictures/IMG_20260703_075348_596.jpg",
+    "width": 683,
+    "height": 1024,
+    "aspectRatio": 0.67,
+    "category": "phone",
+    "primaryGenre": "nature_landscape",
+    "genres": [
+      "nature_landscape"
+    ],
+    "hexColor": "#605343",
+    "colorFamily": "gold",
+    "size": "135.5 KB",
+    "sizeBytes": 138763,
+    "tags": [
+      "gold",
+      "mobile",
+      "nature_landscape",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 270,
+    "filename": "IMG_20260703_075352_476.jpg",
+    "title": "Radiant Dawn Nature Horizon #270",
+    "path": "Pictures/IMG_20260703_075352_476.jpg",
+    "encodedPath": "Pictures/IMG_20260703_075352_476.jpg",
+    "width": 1080,
+    "height": 783,
+    "aspectRatio": 1.38,
+    "category": "desktop",
+    "primaryGenre": "nature_landscape",
+    "genres": [
+      "dark_amoled",
+      "nature_landscape"
+    ],
+    "hexColor": "#3d3020",
+    "colorFamily": "gold",
+    "size": "156.8 KB",
+    "sizeBytes": 160541,
+    "tags": [
+      "dark_amoled",
+      "desktop",
+      "gold",
+      "landscape",
+      "monitor",
+      "nature_landscape",
+      "pc"
+    ]
+  },
+  {
+    "id": 271,
+    "filename": "IMG_20260703_075356_671.jpg",
+    "title": "Obsidian AMOLED Edition #271",
+    "path": "Pictures/IMG_20260703_075356_671.jpg",
+    "encodedPath": "Pictures/IMG_20260703_075356_671.jpg",
+    "width": 1080,
+    "height": 768,
+    "aspectRatio": 1.41,
+    "category": "desktop",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#2e1d16",
+    "colorFamily": "dark",
+    "size": "55.0 KB",
+    "sizeBytes": 56313,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "desktop",
+      "landscape",
+      "monitor",
+      "pc"
+    ]
+  },
+  {
+    "id": 272,
+    "filename": "IMG_20260703_075400_396.jpg",
+    "title": "Scarlet Cyber AMOLED Edition #272",
+    "path": "Pictures/IMG_20260703_075400_396.jpg",
+    "encodedPath": "Pictures/IMG_20260703_075400_396.jpg",
+    "width": 1080,
+    "height": 2360,
+    "aspectRatio": 0.46,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#362221",
+    "colorFamily": "red",
+    "size": "156.8 KB",
+    "sizeBytes": 160599,
+    "tags": [
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait",
+      "red"
+    ]
+  },
+  {
+    "id": 273,
+    "filename": "IMG_20260703_075403_891.jpg",
+    "title": "Shadow AMOLED Edition #273",
+    "path": "Pictures/IMG_20260703_075403_891.jpg",
+    "encodedPath": "Pictures/IMG_20260703_075403_891.jpg",
+    "width": 1080,
+    "height": 2275,
+    "aspectRatio": 0.47,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#15191c",
+    "colorFamily": "dark",
+    "size": "227.3 KB",
+    "sizeBytes": 232728,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 274,
+    "filename": "IMG_20260703_075407_607.jpg",
+    "title": "Eclipse AMOLED Edition #274",
+    "path": "Pictures/IMG_20260703_075407_607.jpg",
+    "encodedPath": "Pictures/IMG_20260703_075407_607.jpg",
+    "width": 1080,
+    "height": 681,
+    "aspectRatio": 1.59,
+    "category": "desktop",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#050706",
+    "colorFamily": "dark",
+    "size": "96.3 KB",
+    "sizeBytes": 98588,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "desktop",
+      "landscape",
+      "monitor",
+      "pc"
+    ]
+  },
+  {
+    "id": 275,
+    "filename": "IMG_20260703_075412_684.jpg",
+    "title": "Onyx AMOLED Edition #275",
+    "path": "Pictures/IMG_20260703_075412_684.jpg",
+    "encodedPath": "Pictures/IMG_20260703_075412_684.jpg",
+    "width": 736,
+    "height": 1594,
+    "aspectRatio": 0.46,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#111113",
+    "colorFamily": "dark",
+    "size": "257.0 KB",
+    "sizeBytes": 263177,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 276,
+    "filename": "IMG_20260703_075415_436.jpg",
+    "title": "Dark Cyber AMOLED Edition #276",
+    "path": "Pictures/IMG_20260703_075415_436.jpg",
+    "encodedPath": "Pictures/IMG_20260703_075415_436.jpg",
+    "width": 1080,
+    "height": 709,
+    "aspectRatio": 1.52,
+    "category": "desktop",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#030303",
+    "colorFamily": "dark",
+    "size": "185.4 KB",
+    "sizeBytes": 189867,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "desktop",
+      "landscape",
+      "monitor",
+      "pc"
+    ]
+  },
+  {
+    "id": 277,
+    "filename": "IMG_20260703_210403_682.jpg",
+    "title": "Scarlet Cyber Abstract Render #277",
+    "path": "Pictures/IMG_20260703_210403_682.jpg",
+    "encodedPath": "Pictures/IMG_20260703_210403_682.jpg",
+    "width": 736,
+    "height": 1631,
+    "aspectRatio": 0.45,
+    "category": "phone",
+    "primaryGenre": "animated_graphical",
+    "genres": [
+      "animated_graphical"
+    ],
+    "hexColor": "#8c655d",
+    "colorFamily": "red",
+    "size": "215.9 KB",
+    "sizeBytes": 221115,
+    "tags": [
+      "animated_graphical",
+      "mobile",
+      "phone",
+      "portrait",
+      "red"
+    ]
+  },
+  {
+    "id": 278,
+    "filename": "IMG_20260703_210407_861.jpg",
+    "title": "Inferno Red Abstract Render #278",
+    "path": "Pictures/IMG_20260703_210407_861.jpg",
+    "encodedPath": "Pictures/IMG_20260703_210407_861.jpg",
+    "width": 1079,
+    "height": 694,
+    "aspectRatio": 1.55,
+    "category": "desktop",
+    "primaryGenre": "animated_graphical",
+    "genres": [
+      "animated_graphical"
+    ],
+    "hexColor": "#9a6557",
+    "colorFamily": "red",
+    "size": "120.7 KB",
+    "sizeBytes": 123634,
+    "tags": [
+      "animated_graphical",
+      "desktop",
+      "landscape",
+      "monitor",
+      "pc",
+      "red"
+    ]
+  },
+  {
+    "id": 279,
+    "filename": "IMG_20260713_082017_985.jpg",
+    "title": "Shadow AMOLED Edition #279",
+    "path": "Pictures/IMG_20260713_082017_985.jpg",
+    "encodedPath": "Pictures/IMG_20260713_082017_985.jpg",
+    "width": 1080,
+    "height": 2472,
+    "aspectRatio": 0.44,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#24282b",
+    "colorFamily": "dark",
+    "size": "287.8 KB",
+    "sizeBytes": 294671,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 280,
+    "filename": "IMG_20260713_082020_442.jpg",
+    "title": "Eclipse AMOLED Edition #280",
+    "path": "Pictures/IMG_20260713_082020_442.jpg",
+    "encodedPath": "Pictures/IMG_20260713_082020_442.jpg",
+    "width": 1080,
+    "height": 814,
+    "aspectRatio": 1.33,
+    "category": "desktop",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#1e222b",
+    "colorFamily": "dark",
+    "size": "67.8 KB",
+    "sizeBytes": 69383,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "desktop",
+      "landscape",
+      "monitor",
+      "pc"
+    ]
+  },
+  {
+    "id": 281,
+    "filename": "IMG_20260713_130634_021.jpg",
+    "title": "Onyx AMOLED Edition #281",
+    "path": "Pictures/IMG_20260713_130634_021.jpg",
+    "encodedPath": "Pictures/IMG_20260713_130634_021.jpg",
+    "width": 1080,
+    "height": 2393,
+    "aspectRatio": 0.45,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#030712",
+    "colorFamily": "dark",
+    "size": "202.5 KB",
+    "sizeBytes": 207370,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 282,
+    "filename": "IMG_20260713_130636_433.jpg",
+    "title": "Dark Cyber AMOLED Edition #282",
+    "path": "Pictures/IMG_20260713_130636_433.jpg",
+    "encodedPath": "Pictures/IMG_20260713_130636_433.jpg",
+    "width": 1080,
+    "height": 814,
+    "aspectRatio": 1.33,
+    "category": "desktop",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#030712",
+    "colorFamily": "dark",
+    "size": "83.5 KB",
+    "sizeBytes": 85500,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "desktop",
+      "landscape",
+      "monitor",
+      "pc"
+    ]
+  },
+  {
+    "id": 283,
+    "filename": "IMG_20260717_212046_075.jpg",
+    "title": "Obsidian Abstract Render #283",
+    "path": "Pictures/IMG_20260717_212046_075.jpg",
+    "encodedPath": "Pictures/IMG_20260717_212046_075.jpg",
+    "width": 1080,
+    "height": 2340,
+    "aspectRatio": 0.46,
+    "category": "phone",
+    "primaryGenre": "animated_graphical",
+    "genres": [
+      "animated_graphical",
+      "dark_amoled"
+    ],
+    "hexColor": "#000000",
+    "colorFamily": "dark",
+    "size": "20.3 KB",
+    "sizeBytes": 20779,
+    "tags": [
+      "animated_graphical",
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 284,
+    "filename": "IMG_20260723_090028_371.jpg",
+    "title": "Midnight AMOLED Edition #284",
+    "path": "Pictures/IMG_20260723_090028_371.jpg",
+    "encodedPath": "Pictures/IMG_20260723_090028_371.jpg",
+    "width": 1080,
+    "height": 2411,
+    "aspectRatio": 0.45,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#020202",
+    "colorFamily": "dark",
+    "size": "135.8 KB",
+    "sizeBytes": 139063,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 285,
+    "filename": "IMG_20260723_090030_978.jpg",
+    "title": "Shadow Abstract Render #285",
+    "path": "Pictures/IMG_20260723_090030_978.jpg",
+    "encodedPath": "Pictures/IMG_20260723_090030_978.jpg",
+    "width": 1080,
+    "height": 807,
+    "aspectRatio": 1.34,
+    "category": "desktop",
+    "primaryGenre": "animated_graphical",
+    "genres": [
+      "animated_graphical",
+      "dark_amoled"
+    ],
+    "hexColor": "#030408",
+    "colorFamily": "dark",
+    "size": "33.2 KB",
+    "sizeBytes": 33968,
+    "tags": [
+      "animated_graphical",
+      "dark",
+      "dark_amoled",
+      "desktop",
+      "landscape",
+      "monitor",
+      "pc"
+    ]
+  },
+  {
+    "id": 286,
+    "filename": "IMG_20260723_090046_780.jpg",
+    "title": "Eclipse AMOLED Edition #286",
+    "path": "Pictures/IMG_20260723_090046_780.jpg",
+    "encodedPath": "Pictures/IMG_20260723_090046_780.jpg",
+    "width": 1080,
+    "height": 814,
+    "aspectRatio": 1.33,
+    "category": "desktop",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#11100e",
+    "colorFamily": "dark",
+    "size": "94.3 KB",
+    "sizeBytes": 96551,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "desktop",
+      "landscape",
+      "monitor",
+      "pc"
+    ]
+  },
+  {
+    "id": 287,
+    "filename": "IMG_20260723_090049_151.jpg",
+    "title": "Onyx AMOLED Edition #287",
+    "path": "Pictures/IMG_20260723_090049_151.jpg",
+    "encodedPath": "Pictures/IMG_20260723_090049_151.jpg",
+    "width": 1080,
+    "height": 2395,
+    "aspectRatio": 0.45,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#1f1b1a",
+    "colorFamily": "dark",
+    "size": "242.4 KB",
+    "sizeBytes": 248254,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 288,
+    "filename": "IMG_20260724_162019_138.jpg",
+    "title": "Dark Cyber AMOLED Edition #288",
+    "path": "Pictures/IMG_20260724_162019_138.jpg",
+    "encodedPath": "Pictures/IMG_20260724_162019_138.jpg",
+    "width": 1080,
+    "height": 720,
+    "aspectRatio": 1.5,
+    "category": "desktop",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#060d29",
+    "colorFamily": "dark",
+    "size": "122.0 KB",
+    "sizeBytes": 124892,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "desktop",
+      "landscape",
+      "monitor",
+      "pc"
+    ]
+  },
+  {
+    "id": 289,
+    "filename": "IMG_20260724_162036_725.jpg",
+    "title": "Obsidian AMOLED Edition #289",
+    "path": "Pictures/IMG_20260724_162036_725.jpg",
+    "encodedPath": "Pictures/IMG_20260724_162036_725.jpg",
+    "width": 924,
+    "height": 2047,
+    "aspectRatio": 0.45,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#181411",
+    "colorFamily": "dark",
+    "size": "89.8 KB",
+    "sizeBytes": 91927,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 290,
+    "filename": "IMG_20260725_234018_453.jpg",
+    "title": "Luminous Frost Minimal Aesthetic #290",
+    "path": "Pictures/IMG_20260725_234018_453.jpg",
+    "encodedPath": "Pictures/IMG_20260725_234018_453.jpg",
+    "width": 1080,
+    "height": 2336,
+    "aspectRatio": 0.46,
+    "category": "phone",
+    "primaryGenre": "light_minimal",
+    "genres": [
+      "light_minimal"
+    ],
+    "hexColor": "#fef4e5",
+    "colorFamily": "white",
+    "size": "179.8 KB",
+    "sizeBytes": 184154,
+    "tags": [
+      "light_minimal",
+      "mobile",
+      "phone",
+      "portrait",
+      "white"
+    ]
+  },
+  {
+    "id": 291,
+    "filename": "IMG_20260727_135635_219.jpg",
+    "title": "Neon Cyan Abstract Render #291",
+    "path": "Pictures/IMG_20260727_135635_219.jpg",
+    "encodedPath": "Pictures/IMG_20260727_135635_219.jpg",
+    "width": 1080,
+    "height": 2401,
+    "aspectRatio": 0.45,
+    "category": "phone",
+    "primaryGenre": "animated_graphical",
+    "genres": [
+      "animated_graphical"
+    ],
+    "hexColor": "#909da6",
+    "colorFamily": "cyan",
+    "size": "75.9 KB",
+    "sizeBytes": 77728,
+    "tags": [
+      "animated_graphical",
+      "cyan",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 292,
+    "filename": "IMG_20260727_135637_712.jpg",
+    "title": "Eclipse AMOLED Edition #292",
+    "path": "Pictures/IMG_20260727_135637_712.jpg",
+    "encodedPath": "Pictures/IMG_20260727_135637_712.jpg",
+    "width": 1080,
+    "height": 810,
+    "aspectRatio": 1.33,
+    "category": "desktop",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#959fa8",
+    "colorFamily": "dark",
+    "size": "37.7 KB",
+    "sizeBytes": 38613,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "desktop",
+      "landscape",
+      "monitor",
+      "pc"
+    ]
+  },
+  {
+    "id": 293,
+    "filename": "IMG_20260728_230500_684.jpg",
+    "title": "Onyx Abstract Render #293",
+    "path": "Pictures/IMG_20260728_230500_684.jpg",
+    "encodedPath": "Pictures/IMG_20260728_230500_684.jpg",
+    "width": 1080,
+    "height": 1920,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "animated_graphical",
+    "genres": [
+      "animated_graphical",
+      "dark_amoled"
+    ],
+    "hexColor": "#1d2a32",
+    "colorFamily": "dark",
+    "size": "56.9 KB",
+    "sizeBytes": 58288,
+    "tags": [
+      "animated_graphical",
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 294,
+    "filename": "IMG_20260728_230513_679.jpg",
+    "title": "Dark Cyber Abstract Render #294",
+    "path": "Pictures/IMG_20260728_230513_679.jpg",
+    "encodedPath": "Pictures/IMG_20260728_230513_679.jpg",
+    "width": 1080,
+    "height": 2337,
+    "aspectRatio": 0.46,
+    "category": "phone",
+    "primaryGenre": "animated_graphical",
+    "genres": [
+      "animated_graphical",
+      "dark_amoled"
+    ],
+    "hexColor": "#0b1727",
+    "colorFamily": "dark",
+    "size": "28.7 KB",
+    "sizeBytes": 29395,
+    "tags": [
+      "animated_graphical",
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 295,
+    "filename": "IMG_20260728_230521_491.jpg",
+    "title": "Obsidian AMOLED Edition #295",
+    "path": "Pictures/IMG_20260728_230521_491.jpg",
+    "encodedPath": "Pictures/IMG_20260728_230521_491.jpg",
+    "width": 1080,
+    "height": 1928,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#131313",
+    "colorFamily": "dark",
+    "size": "169.1 KB",
+    "sizeBytes": 173162,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 296,
+    "filename": "IMG_20260731_164803_975.jpg",
+    "title": "Neon Cyan Abstract Render #296",
+    "path": "Pictures/IMG_20260731_164803_975.jpg",
+    "encodedPath": "Pictures/IMG_20260731_164803_975.jpg",
+    "width": 1080,
+    "height": 1919,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "animated_graphical",
+    "genres": [
+      "animated_graphical"
+    ],
+    "hexColor": "#4a6d81",
+    "colorFamily": "cyan",
+    "size": "73.1 KB",
+    "sizeBytes": 74841,
+    "tags": [
+      "animated_graphical",
+      "cyan",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 297,
+    "filename": "IMG_20260731_164806_933.jpg",
+    "title": "Electric Cyan Abstract Render #297",
+    "path": "Pictures/IMG_20260731_164806_933.jpg",
+    "encodedPath": "Pictures/IMG_20260731_164806_933.jpg",
+    "width": 1080,
+    "height": 1919,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "animated_graphical",
+    "genres": [
+      "animated_graphical"
+    ],
+    "hexColor": "#425d70",
+    "colorFamily": "cyan",
+    "size": "99.4 KB",
+    "sizeBytes": 101747,
+    "tags": [
+      "animated_graphical",
+      "cyan",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 298,
+    "filename": "IMG_20260731_164809_711.jpg",
+    "title": "Aqua Horizon Abstract Render #298",
+    "path": "Pictures/IMG_20260731_164809_711.jpg",
+    "encodedPath": "Pictures/IMG_20260731_164809_711.jpg",
+    "width": 1080,
+    "height": 1919,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "animated_graphical",
+    "genres": [
+      "animated_graphical"
+    ],
+    "hexColor": "#92a9b1",
+    "colorFamily": "cyan",
+    "size": "79.5 KB",
+    "sizeBytes": 81425,
+    "tags": [
+      "animated_graphical",
+      "cyan",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 299,
+    "filename": "IMG_20260731_164812_574.jpg",
+    "title": "Onyx AMOLED Edition #299",
+    "path": "Pictures/IMG_20260731_164812_574.jpg",
+    "encodedPath": "Pictures/IMG_20260731_164812_574.jpg",
+    "width": 1080,
+    "height": 1919,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#131416",
+    "colorFamily": "dark",
+    "size": "85.4 KB",
+    "sizeBytes": 87469,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 300,
+    "filename": "IMG_20260731_164819_914.jpg",
+    "title": "Dark Cyber AMOLED Edition #300",
+    "path": "Pictures/IMG_20260731_164819_914.jpg",
+    "encodedPath": "Pictures/IMG_20260731_164819_914.jpg",
+    "width": 1080,
+    "height": 1920,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#010103",
+    "colorFamily": "dark",
+    "size": "57.9 KB",
+    "sizeBytes": 59241,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 301,
+    "filename": "IMG_20260805_224758_098.jpg",
+    "title": "Obsidian AMOLED Edition #301",
+    "path": "Pictures/IMG_20260805_224758_098.jpg",
+    "encodedPath": "Pictures/IMG_20260805_224758_098.jpg",
+    "width": 1080,
+    "height": 1922,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#010b1a",
+    "colorFamily": "dark",
+    "size": "117.7 KB",
+    "sizeBytes": 120548,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 302,
+    "filename": "IMG_20260806_175452_267.jpg",
+    "title": "Midnight AMOLED Edition #302",
+    "path": "Pictures/IMG_20260806_175452_267.jpg",
+    "encodedPath": "Pictures/IMG_20260806_175452_267.jpg",
+    "width": 1080,
+    "height": 813,
+    "aspectRatio": 1.33,
+    "category": "desktop",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#0b0704",
+    "colorFamily": "dark",
+    "size": "98.0 KB",
+    "sizeBytes": 100330,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "desktop",
+      "landscape",
+      "monitor",
+      "pc"
+    ]
+  },
+  {
+    "id": 303,
+    "filename": "IMG_20260806_175454_788.jpg",
+    "title": "Shadow AMOLED Edition #303",
+    "path": "Pictures/IMG_20260806_175454_788.jpg",
+    "encodedPath": "Pictures/IMG_20260806_175454_788.jpg",
+    "width": 1080,
+    "height": 2395,
+    "aspectRatio": 0.45,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#2a1710",
+    "colorFamily": "dark",
+    "size": "284.4 KB",
+    "sizeBytes": 291257,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 304,
+    "filename": "IMG_20260807_162224_770.jpg",
+    "title": "Gilded Sun Nature Horizon #304",
+    "path": "Pictures/IMG_20260807_162224_770.jpg",
+    "encodedPath": "Pictures/IMG_20260807_162224_770.jpg",
+    "width": 1080,
+    "height": 2321,
+    "aspectRatio": 0.47,
+    "category": "phone",
+    "primaryGenre": "nature_landscape",
+    "genres": [
+      "animated_graphical",
+      "dark_amoled",
+      "nature_landscape"
+    ],
+    "hexColor": "#332a20",
+    "colorFamily": "gold",
+    "size": "119.6 KB",
+    "sizeBytes": 122468,
+    "tags": [
+      "animated_graphical",
+      "dark_amoled",
+      "gold",
+      "mobile",
+      "nature_landscape",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 305,
+    "filename": "IMG_20260807_162227_535.jpg",
+    "title": "Onyx AMOLED Edition #305",
+    "path": "Pictures/IMG_20260807_162227_535.jpg",
+    "encodedPath": "Pictures/IMG_20260807_162227_535.jpg",
+    "width": 1080,
+    "height": 813,
+    "aspectRatio": 1.33,
+    "category": "desktop",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#000308",
+    "colorFamily": "dark",
+    "size": "70.5 KB",
+    "sizeBytes": 72209,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "desktop",
+      "landscape",
+      "monitor",
+      "pc"
+    ]
+  },
+  {
+    "id": 306,
+    "filename": "IMG_20260808_145830_313.jpg",
+    "title": "Minimalist Ivory Minimal Aesthetic #306",
+    "path": "Pictures/IMG_20260808_145830_313.jpg",
+    "encodedPath": "Pictures/IMG_20260808_145830_313.jpg",
+    "width": 1080,
+    "height": 1924,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "light_minimal",
+    "genres": [
+      "light_minimal"
+    ],
+    "hexColor": "#f9fbf6",
+    "colorFamily": "white",
+    "size": "98.4 KB",
+    "sizeBytes": 100762,
+    "tags": [
+      "light_minimal",
+      "mobile",
+      "phone",
+      "portrait",
+      "white"
+    ]
+  },
+  {
+    "id": 307,
+    "filename": "IMG_20260808_145836_227.jpg",
+    "title": "Pure Monolith Minimal Aesthetic #307",
+    "path": "Pictures/IMG_20260808_145836_227.jpg",
+    "encodedPath": "Pictures/IMG_20260808_145836_227.jpg",
+    "width": 1080,
+    "height": 1924,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "light_minimal",
+    "genres": [
+      "light_minimal"
+    ],
+    "hexColor": "#dbdad6",
+    "colorFamily": "white",
+    "size": "128.7 KB",
+    "sizeBytes": 131743,
+    "tags": [
+      "light_minimal",
+      "mobile",
+      "phone",
+      "portrait",
+      "white"
+    ]
+  },
+  {
+    "id": 308,
+    "filename": "IMG_20260809_160627_117.jpg",
+    "title": "Crystal White Minimal Aesthetic #308",
+    "path": "Pictures/IMG_20260809_160627_117.jpg",
+    "encodedPath": "Pictures/IMG_20260809_160627_117.jpg",
+    "width": 736,
+    "height": 1308,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "light_minimal",
+    "genres": [
+      "light_minimal"
+    ],
+    "hexColor": "#f8f3ed",
+    "colorFamily": "white",
+    "size": "17.1 KB",
+    "sizeBytes": 17485,
+    "tags": [
+      "light_minimal",
+      "mobile",
+      "phone",
+      "portrait",
+      "white"
+    ]
+  },
+  {
+    "id": 309,
+    "filename": "IMG_20260809_160635_573.jpg",
+    "title": "Sapphire Minimal Aesthetic #309",
+    "path": "Pictures/IMG_20260809_160635_573.jpg",
+    "encodedPath": "Pictures/IMG_20260809_160635_573.jpg",
+    "width": 736,
+    "height": 1308,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "light_minimal",
+    "genres": [
+      "light_minimal"
+    ],
+    "hexColor": "#9cabc1",
+    "colorFamily": "blue",
+    "size": "19.0 KB",
+    "sizeBytes": 19442,
+    "tags": [
+      "blue",
+      "light_minimal",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 310,
+    "filename": "IMG_20260814_170245_597.jpg",
+    "title": "Eclipse AMOLED Edition #310",
+    "path": "Pictures/IMG_20260814_170245_597.jpg",
+    "encodedPath": "Pictures/IMG_20260814_170245_597.jpg",
+    "width": 1080,
+    "height": 1919,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#000000",
+    "colorFamily": "dark",
+    "size": "193.2 KB",
+    "sizeBytes": 197786,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 311,
+    "filename": "IMG_20260815_130750_303.jpg",
+    "title": "Minimalist Ivory Minimal Aesthetic #311",
+    "path": "Pictures/IMG_20260815_130750_303.jpg",
+    "encodedPath": "Pictures/IMG_20260815_130750_303.jpg",
+    "width": 720,
+    "height": 1280,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "light_minimal",
+    "genres": [
+      "light_minimal"
+    ],
+    "hexColor": "#fefefe",
+    "colorFamily": "white",
+    "size": "120.9 KB",
+    "sizeBytes": 123815,
+    "tags": [
+      "light_minimal",
+      "mobile",
+      "phone",
+      "portrait",
+      "white"
+    ]
+  },
+  {
+    "id": 312,
+    "filename": "IMG_20260816_085048_510.jpg",
+    "title": "Golden Horizon Nature Horizon #312",
+    "path": "Pictures/IMG_20260816_085048_510.jpg",
+    "encodedPath": "Pictures/IMG_20260816_085048_510.jpg",
+    "width": 1080,
+    "height": 1919,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "nature_landscape",
+    "genres": [
+      "dark_amoled",
+      "nature_landscape"
+    ],
+    "hexColor": "#4f3328",
+    "colorFamily": "gold",
+    "size": "105.1 KB",
+    "sizeBytes": 107668,
+    "tags": [
+      "dark_amoled",
+      "gold",
+      "mobile",
+      "nature_landscape",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 313,
+    "filename": "IMG_20260817_002357_140.jpg",
+    "title": "Obsidian AMOLED Edition #313",
+    "path": "Pictures/IMG_20260817_002357_140.jpg",
+    "encodedPath": "Pictures/IMG_20260817_002357_140.jpg",
+    "width": 1080,
+    "height": 2335,
+    "aspectRatio": 0.46,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#2d2614",
+    "colorFamily": "dark",
+    "size": "318.0 KB",
+    "sizeBytes": 325617,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 314,
+    "filename": "IMG_20260819_201408_089.jpg",
+    "title": "Sapphire Abstract Render #314",
+    "path": "Pictures/IMG_20260819_201408_089.jpg",
+    "encodedPath": "Pictures/IMG_20260819_201408_089.jpg",
+    "width": 600,
+    "height": 1200,
+    "aspectRatio": 0.5,
+    "category": "phone",
+    "primaryGenre": "animated_graphical",
+    "genres": [
+      "animated_graphical"
+    ],
+    "hexColor": "#091fa9",
+    "colorFamily": "blue",
+    "size": "83.7 KB",
+    "sizeBytes": 85680,
+    "tags": [
+      "animated_graphical",
+      "blue",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 315,
+    "filename": "IMG_20260819_201421_868.jpg",
+    "title": "Shadow AMOLED Edition #315",
+    "path": "Pictures/IMG_20260819_201421_868.jpg",
+    "encodedPath": "Pictures/IMG_20260819_201421_868.jpg",
+    "width": 1080,
+    "height": 1928,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#1b212d",
+    "colorFamily": "dark",
+    "size": "287.7 KB",
+    "sizeBytes": 294621,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 316,
+    "filename": "IMG_20260819_201427_080.jpg",
+    "title": "Eclipse AMOLED Edition #316",
+    "path": "Pictures/IMG_20260819_201427_080.jpg",
+    "encodedPath": "Pictures/IMG_20260819_201427_080.jpg",
+    "width": 1080,
+    "height": 1928,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#1d242c",
+    "colorFamily": "dark",
+    "size": "206.9 KB",
+    "sizeBytes": 211864,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 317,
+    "filename": "IMG_20260819_201435_898.jpg",
+    "title": "Onyx AMOLED Edition #317",
+    "path": "Pictures/IMG_20260819_201435_898.jpg",
+    "encodedPath": "Pictures/IMG_20260819_201435_898.jpg",
+    "width": 1080,
+    "height": 1928,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#0b1b28",
+    "colorFamily": "dark",
+    "size": "281.2 KB",
+    "sizeBytes": 287990,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 318,
+    "filename": "IMG_20260819_201439_798.jpg",
+    "title": "Dark Cyber AMOLED Edition #318",
+    "path": "Pictures/IMG_20260819_201439_798.jpg",
+    "encodedPath": "Pictures/IMG_20260819_201439_798.jpg",
+    "width": 1080,
+    "height": 1928,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#090502",
+    "colorFamily": "dark",
+    "size": "304.1 KB",
+    "sizeBytes": 311367,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 319,
+    "filename": "IMG_20260821_093959_492.jpg",
+    "title": "Obsidian AMOLED Edition #319",
+    "path": "Pictures/IMG_20260821_093959_492.jpg",
+    "encodedPath": "Pictures/IMG_20260821_093959_492.jpg",
+    "width": 636,
+    "height": 1249,
+    "aspectRatio": 0.51,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#222732",
+    "colorFamily": "dark",
+    "size": "134.6 KB",
+    "sizeBytes": 137816,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 320,
+    "filename": "IMG_20260821_163329_965.jpg",
+    "title": "Velvet Dusk Minimal Aesthetic #320",
+    "path": "Pictures/IMG_20260821_163329_965.jpg",
+    "encodedPath": "Pictures/IMG_20260821_163329_965.jpg",
+    "width": 736,
+    "height": 1308,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "light_minimal",
+    "genres": [
+      "light_minimal"
+    ],
+    "hexColor": "#b49cca",
+    "colorFamily": "purple",
+    "size": "216.5 KB",
+    "sizeBytes": 221692,
+    "tags": [
+      "light_minimal",
+      "mobile",
+      "phone",
+      "portrait",
+      "purple"
+    ]
+  },
+  {
+    "id": 321,
+    "filename": "IMG_20260821_163333_045.jpg",
+    "title": "Solar Amber Nature Horizon #321",
+    "path": "Pictures/IMG_20260821_163333_045.jpg",
+    "encodedPath": "Pictures/IMG_20260821_163333_045.jpg",
+    "width": 736,
+    "height": 1314,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "nature_landscape",
+    "genres": [
+      "dark_amoled",
+      "nature_landscape"
+    ],
+    "hexColor": "#371a10",
+    "colorFamily": "gold",
+    "size": "142.1 KB",
+    "sizeBytes": 145522,
+    "tags": [
+      "dark_amoled",
+      "gold",
+      "mobile",
+      "nature_landscape",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 322,
+    "filename": "IMG_20260821_163338_719.jpg",
+    "title": "Eclipse AMOLED Edition #322",
+    "path": "Pictures/IMG_20260821_163338_719.jpg",
+    "encodedPath": "Pictures/IMG_20260821_163338_719.jpg",
+    "width": 768,
+    "height": 1376,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#060912",
+    "colorFamily": "dark",
+    "size": "100.6 KB",
+    "sizeBytes": 103037,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 323,
+    "filename": "IMG_20260821_163347_076.jpg",
+    "title": "Onyx AMOLED Edition #323",
+    "path": "Pictures/IMG_20260821_163347_076.jpg",
+    "encodedPath": "Pictures/IMG_20260821_163347_076.jpg",
+    "width": 1080,
+    "height": 1920,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#02020e",
+    "colorFamily": "dark",
+    "size": "68.3 KB",
+    "sizeBytes": 69958,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 324,
+    "filename": "IMG_20260821_163400_327.jpg",
+    "title": "Cyan Cyber Abstract Render #324",
+    "path": "Pictures/IMG_20260821_163400_327.jpg",
+    "encodedPath": "Pictures/IMG_20260821_163400_327.jpg",
+    "width": 1080,
+    "height": 1920,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "animated_graphical",
+    "genres": [
+      "animated_graphical"
+    ],
+    "hexColor": "#4a5863",
+    "colorFamily": "cyan",
+    "size": "190.6 KB",
+    "sizeBytes": 195168,
+    "tags": [
+      "animated_graphical",
+      "cyan",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 325,
+    "filename": "IMG_20260821_163406_146.jpg",
+    "title": "Obsidian AMOLED Edition #325",
+    "path": "Pictures/IMG_20260821_163406_146.jpg",
+    "encodedPath": "Pictures/IMG_20260821_163406_146.jpg",
+    "width": 1080,
+    "height": 1920,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#030303",
+    "colorFamily": "dark",
+    "size": "76.8 KB",
+    "sizeBytes": 78646,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 326,
+    "filename": "IMG_20260821_163503_536.jpg",
+    "title": "Neon Cyan AMOLED Edition #326",
+    "path": "Pictures/IMG_20260821_163503_536.jpg",
+    "encodedPath": "Pictures/IMG_20260821_163503_536.jpg",
+    "width": 1080,
+    "height": 1620,
+    "aspectRatio": 0.67,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#1e3c58",
+    "colorFamily": "cyan",
+    "size": "222.5 KB",
+    "sizeBytes": 227814,
+    "tags": [
+      "cyan",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 327,
+    "filename": "IMG_20260821_163516_151.jpg",
+    "title": "Electric Cyan Abstract Render #327",
+    "path": "Pictures/IMG_20260821_163516_151.jpg",
+    "encodedPath": "Pictures/IMG_20260821_163516_151.jpg",
+    "width": 1080,
+    "height": 1927,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "animated_graphical",
+    "genres": [
+      "animated_graphical"
+    ],
+    "hexColor": "#306ca3",
+    "colorFamily": "cyan",
+    "size": "207.4 KB",
+    "sizeBytes": 212409,
+    "tags": [
+      "animated_graphical",
+      "cyan",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 328,
+    "filename": "IMG_20260822_143210_933.jpg",
+    "title": "Eclipse AMOLED Edition #328",
+    "path": "Pictures/IMG_20260822_143210_933.jpg",
+    "encodedPath": "Pictures/IMG_20260822_143210_933.jpg",
+    "width": 816,
+    "height": 1451,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#101011",
+    "colorFamily": "dark",
+    "size": "186.5 KB",
+    "sizeBytes": 190946,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 329,
+    "filename": "IMG_20260825_205626_354.jpg",
+    "title": "Onyx AMOLED Edition #329",
+    "path": "Pictures/IMG_20260825_205626_354.jpg",
+    "encodedPath": "Pictures/IMG_20260825_205626_354.jpg",
+    "width": 1080,
+    "height": 2395,
+    "aspectRatio": 0.45,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#07080a",
+    "colorFamily": "dark",
+    "size": "497.7 KB",
+    "sizeBytes": 509618,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 330,
+    "filename": "IMG_20260825_211626_552.jpg",
+    "title": "Dark Cyber AMOLED Edition #330",
+    "path": "Pictures/IMG_20260825_211626_552.jpg",
+    "encodedPath": "Pictures/IMG_20260825_211626_552.jpg",
+    "width": 720,
+    "height": 1280,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#191919",
+    "colorFamily": "dark",
+    "size": "19.0 KB",
+    "sizeBytes": 19495,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 331,
+    "filename": "IMG_20260827_075647_982.jpg",
+    "title": "Obsidian AMOLED Edition #331",
+    "path": "Pictures/IMG_20260827_075647_982.jpg",
+    "encodedPath": "Pictures/IMG_20260827_075647_982.jpg",
+    "width": 736,
+    "height": 1308,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#30090d",
+    "colorFamily": "dark",
+    "size": "51.7 KB",
+    "sizeBytes": 52906,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 332,
+    "filename": "IMG_20260828_153020_577.jpg",
+    "title": "Pure Monolith Minimal Aesthetic #332",
+    "path": "Pictures/IMG_20260828_153020_577.jpg",
+    "encodedPath": "Pictures/IMG_20260828_153020_577.jpg",
+    "width": 1080,
+    "height": 2339,
+    "aspectRatio": 0.46,
+    "category": "phone",
+    "primaryGenre": "light_minimal",
+    "genres": [
+      "light_minimal"
+    ],
+    "hexColor": "#fdfdfd",
+    "colorFamily": "white",
+    "size": "130.5 KB",
+    "sizeBytes": 133648,
+    "tags": [
+      "light_minimal",
+      "mobile",
+      "phone",
+      "portrait",
+      "white"
+    ]
+  },
+  {
+    "id": 333,
+    "filename": "IMG_20260828_153033_168.jpg",
+    "title": "Shadow AMOLED Edition #333",
+    "path": "Pictures/IMG_20260828_153033_168.jpg",
+    "encodedPath": "Pictures/IMG_20260828_153033_168.jpg",
+    "width": 1080,
+    "height": 1921,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#000000",
+    "colorFamily": "dark",
+    "size": "149.2 KB",
+    "sizeBytes": 152766,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 334,
+    "filename": "IMG_20260830_080724_512.jpg",
+    "title": "Eclipse AMOLED Edition #334",
+    "path": "Pictures/IMG_20260830_080724_512.jpg",
+    "encodedPath": "Pictures/IMG_20260830_080724_512.jpg",
+    "width": 718,
+    "height": 1599,
+    "aspectRatio": 0.45,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#030303",
+    "colorFamily": "dark",
+    "size": "71.0 KB",
+    "sizeBytes": 72737,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 335,
+    "filename": "IMG_20260830_080739_658.jpg",
+    "title": "Radiant Dawn Nature Horizon #335",
+    "path": "Pictures/IMG_20260830_080739_658.jpg",
+    "encodedPath": "Pictures/IMG_20260830_080739_658.jpg",
+    "width": 1080,
+    "height": 2338,
+    "aspectRatio": 0.46,
+    "category": "phone",
+    "primaryGenre": "nature_landscape",
+    "genres": [
+      "light_minimal",
+      "nature_landscape"
+    ],
+    "hexColor": "#fff1d4",
+    "colorFamily": "gold",
+    "size": "243.0 KB",
+    "sizeBytes": 248855,
+    "tags": [
+      "gold",
+      "light_minimal",
+      "mobile",
+      "nature_landscape",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 336,
+    "filename": "IMG_20260830_174132_284.jpg",
+    "title": "Dark Cyber Abstract Render #336",
+    "path": "Pictures/IMG_20260830_174132_284.jpg",
+    "encodedPath": "Pictures/IMG_20260830_174132_284.jpg",
+    "width": 1080,
+    "height": 2399,
+    "aspectRatio": 0.45,
+    "category": "phone",
+    "primaryGenre": "animated_graphical",
+    "genres": [
+      "animated_graphical",
+      "dark_amoled"
+    ],
+    "hexColor": "#1a1a1a",
+    "colorFamily": "dark",
+    "size": "73.5 KB",
+    "sizeBytes": 75271,
+    "tags": [
+      "animated_graphical",
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 337,
+    "filename": "IMG_20260902_204239_793.jpg",
+    "title": "Obsidian AMOLED Edition #337",
+    "path": "Pictures/IMG_20260902_204239_793.jpg",
+    "encodedPath": "Pictures/IMG_20260902_204239_793.jpg",
+    "width": 1080,
+    "height": 2339,
+    "aspectRatio": 0.46,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled",
+      "light_minimal"
+    ],
+    "hexColor": "#b7b7b7",
+    "colorFamily": "dark",
+    "size": "102.4 KB",
+    "sizeBytes": 104807,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "light_minimal",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 338,
+    "filename": "IMG_20260904_020244_440.jpg",
+    "title": "Midnight AMOLED Edition #338",
+    "path": "Pictures/IMG_20260904_020244_440.jpg",
+    "encodedPath": "Pictures/IMG_20260904_020244_440.jpg",
+    "width": 368,
+    "height": 653,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#000103",
+    "colorFamily": "dark",
+    "size": "15.6 KB",
+    "sizeBytes": 16020,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 339,
+    "filename": "IMG_20260904_134136_730.jpg",
+    "title": "Shadow AMOLED Edition #339",
+    "path": "Pictures/IMG_20260904_134136_730.jpg",
+    "encodedPath": "Pictures/IMG_20260904_134136_730.jpg",
+    "width": 1080,
+    "height": 1920,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#01090b",
+    "colorFamily": "dark",
+    "size": "250.6 KB",
+    "sizeBytes": 256639,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 340,
+    "filename": "IMG_20260904_134142_883.jpg",
+    "title": "Eclipse AMOLED Edition #340",
+    "path": "Pictures/IMG_20260904_134142_883.jpg",
+    "encodedPath": "Pictures/IMG_20260904_134142_883.jpg",
+    "width": 1080,
+    "height": 1920,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#000000",
+    "colorFamily": "dark",
+    "size": "94.1 KB",
+    "sizeBytes": 96389,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 341,
+    "filename": "IMG_20260904_134158_543.jpg",
+    "title": "Onyx AMOLED Edition #341",
+    "path": "Pictures/IMG_20260904_134158_543.jpg",
+    "encodedPath": "Pictures/IMG_20260904_134158_543.jpg",
+    "width": 1080,
+    "height": 1920,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#000000",
+    "colorFamily": "dark",
+    "size": "118.2 KB",
+    "sizeBytes": 121030,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 342,
+    "filename": "IMG_20260904_134227_851.jpg",
+    "title": "Dark Cyber AMOLED Edition #342",
+    "path": "Pictures/IMG_20260904_134227_851.jpg",
+    "encodedPath": "Pictures/IMG_20260904_134227_851.jpg",
+    "width": 1080,
+    "height": 2340,
+    "aspectRatio": 0.46,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#07080c",
+    "colorFamily": "dark",
+    "size": "117.9 KB",
+    "sizeBytes": 120778,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 343,
+    "filename": "IMG_20260905_095814_894.jpg",
+    "title": "Obsidian AMOLED Edition #343",
+    "path": "Pictures/IMG_20260905_095814_894.jpg",
+    "encodedPath": "Pictures/IMG_20260905_095814_894.jpg",
+    "width": 1080,
+    "height": 2275,
+    "aspectRatio": 0.47,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#020814",
+    "colorFamily": "dark",
+    "size": "157.9 KB",
+    "sizeBytes": 161645,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 344,
+    "filename": "IMG_20260905_095830_957.jpg",
+    "title": "Midnight AMOLED Edition #344",
+    "path": "Pictures/IMG_20260905_095830_957.jpg",
+    "encodedPath": "Pictures/IMG_20260905_095830_957.jpg",
+    "width": 1080,
+    "height": 2275,
+    "aspectRatio": 0.47,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#000000",
+    "colorFamily": "dark",
+    "size": "209.6 KB",
+    "sizeBytes": 214581,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 345,
+    "filename": "IMG_20260905_095840_732.jpg",
+    "title": "Shadow Abstract Render #345",
+    "path": "Pictures/IMG_20260905_095840_732.jpg",
+    "encodedPath": "Pictures/IMG_20260905_095840_732.jpg",
+    "width": 1080,
+    "height": 2275,
+    "aspectRatio": 0.47,
+    "category": "phone",
+    "primaryGenre": "animated_graphical",
+    "genres": [
+      "animated_graphical",
+      "dark_amoled"
+    ],
+    "hexColor": "#010101",
+    "colorFamily": "dark",
+    "size": "40.3 KB",
+    "sizeBytes": 41285,
+    "tags": [
+      "animated_graphical",
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 346,
+    "filename": "IMG_20260905_095848_153.jpg",
+    "title": "Eclipse AMOLED Edition #346",
+    "path": "Pictures/IMG_20260905_095848_153.jpg",
+    "encodedPath": "Pictures/IMG_20260905_095848_153.jpg",
+    "width": 752,
+    "height": 1584,
+    "aspectRatio": 0.47,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#1a1a18",
+    "colorFamily": "dark",
+    "size": "205.6 KB",
+    "sizeBytes": 210552,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 347,
+    "filename": "IMG_20260905_095850_531.jpg",
+    "title": "Onyx Abstract Render #347",
+    "path": "Pictures/IMG_20260905_095850_531.jpg",
+    "encodedPath": "Pictures/IMG_20260905_095850_531.jpg",
+    "width": 1080,
+    "height": 2275,
+    "aspectRatio": 0.47,
+    "category": "phone",
+    "primaryGenre": "animated_graphical",
+    "genres": [
+      "animated_graphical",
+      "dark_amoled"
+    ],
+    "hexColor": "#060d15",
+    "colorFamily": "dark",
+    "size": "139.7 KB",
+    "sizeBytes": 143008,
+    "tags": [
+      "animated_graphical",
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 348,
+    "filename": "IMG_20260905_160607_024.jpg",
+    "title": "Autumn Gold Nature Horizon #348",
+    "path": "Pictures/IMG_20260905_160607_024.jpg",
+    "encodedPath": "Pictures/IMG_20260905_160607_024.jpg",
+    "width": 720,
+    "height": 1364,
+    "aspectRatio": 0.53,
+    "category": "phone",
+    "primaryGenre": "nature_landscape",
+    "genres": [
+      "nature_landscape"
+    ],
+    "hexColor": "#968b7f",
+    "colorFamily": "gold",
+    "size": "59.5 KB",
+    "sizeBytes": 60940,
+    "tags": [
+      "gold",
+      "mobile",
+      "nature_landscape",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 349,
+    "filename": "IMG_20260906_100721_963.jpg",
+    "title": "Snow Apex Minimal Aesthetic #349",
+    "path": "Pictures/IMG_20260906_100721_963.jpg",
+    "encodedPath": "Pictures/IMG_20260906_100721_963.jpg",
+    "width": 736,
+    "height": 1592,
+    "aspectRatio": 0.46,
+    "category": "phone",
+    "primaryGenre": "light_minimal",
+    "genres": [
+      "light_minimal"
+    ],
+    "hexColor": "#f8f1df",
+    "colorFamily": "white",
+    "size": "43.2 KB",
+    "sizeBytes": 44262,
+    "tags": [
+      "light_minimal",
+      "mobile",
+      "phone",
+      "portrait",
+      "white"
+    ]
+  },
+  {
+    "id": 350,
+    "filename": "IMG_20260906_100731_069.jpg",
+    "title": "Midnight AMOLED Edition #350",
+    "path": "Pictures/IMG_20260906_100731_069.jpg",
+    "encodedPath": "Pictures/IMG_20260906_100731_069.jpg",
+    "width": 736,
+    "height": 1308,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#000000",
+    "colorFamily": "dark",
+    "size": "31.2 KB",
+    "sizeBytes": 31999,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 351,
+    "filename": "IMG_20260906_132029_538.jpg",
+    "title": "Neon Cyan Abstract Render #351",
+    "path": "Pictures/IMG_20260906_132029_538.jpg",
+    "encodedPath": "Pictures/IMG_20260906_132029_538.jpg",
+    "width": 1080,
+    "height": 2160,
+    "aspectRatio": 0.5,
+    "category": "phone",
+    "primaryGenre": "animated_graphical",
+    "genres": [
+      "animated_graphical"
+    ],
+    "hexColor": "#4d6567",
+    "colorFamily": "cyan",
+    "size": "175.5 KB",
+    "sizeBytes": 179761,
+    "tags": [
+      "animated_graphical",
+      "cyan",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 352,
+    "filename": "IMG_20260906_132037_171.jpg",
+    "title": "Golden Horizon Nature Horizon #352",
+    "path": "Pictures/IMG_20260906_132037_171.jpg",
+    "encodedPath": "Pictures/IMG_20260906_132037_171.jpg",
+    "width": 1080,
+    "height": 2160,
+    "aspectRatio": 0.5,
+    "category": "phone",
+    "primaryGenre": "nature_landscape",
+    "genres": [
+      "nature_landscape"
+    ],
+    "hexColor": "#634e2a",
+    "colorFamily": "gold",
+    "size": "451.9 KB",
+    "sizeBytes": 462719,
+    "tags": [
+      "gold",
+      "mobile",
+      "nature_landscape",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 353,
+    "filename": "IMG_20260906_132039_872.jpg",
+    "title": "Crystal White Minimal Aesthetic #353",
+    "path": "Pictures/IMG_20260906_132039_872.jpg",
+    "encodedPath": "Pictures/IMG_20260906_132039_872.jpg",
+    "width": 1080,
+    "height": 2275,
+    "aspectRatio": 0.47,
+    "category": "phone",
+    "primaryGenre": "light_minimal",
+    "genres": [
+      "light_minimal"
+    ],
+    "hexColor": "#e2f4f8",
+    "colorFamily": "white",
+    "size": "628.1 KB",
+    "sizeBytes": 643159,
+    "tags": [
+      "light_minimal",
+      "mobile",
+      "phone",
+      "portrait",
+      "white"
+    ]
+  },
+  {
+    "id": 354,
+    "filename": "IMG_20260906_132045_353.jpg",
+    "title": "Dark Cyber AMOLED Edition #354",
+    "path": "Pictures/IMG_20260906_132045_353.jpg",
+    "encodedPath": "Pictures/IMG_20260906_132045_353.jpg",
+    "width": 1080,
+    "height": 2348,
+    "aspectRatio": 0.46,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#060c04",
+    "colorFamily": "dark",
+    "size": "104.4 KB",
+    "sizeBytes": 106921,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 355,
+    "filename": "IMG_20260906_132050_389.jpg",
+    "title": "Obsidian AMOLED Edition #355",
+    "path": "Pictures/IMG_20260906_132050_389.jpg",
+    "encodedPath": "Pictures/IMG_20260906_132050_389.jpg",
+    "width": 1080,
+    "height": 2275,
+    "aspectRatio": 0.47,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#000000",
+    "colorFamily": "dark",
+    "size": "326.3 KB",
+    "sizeBytes": 334158,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 356,
+    "filename": "IMG_20260907_184401_176.jpg",
+    "title": "Midnight Abstract Render #356",
+    "path": "Pictures/IMG_20260907_184401_176.jpg",
+    "encodedPath": "Pictures/IMG_20260907_184401_176.jpg",
+    "width": 941,
+    "height": 1672,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "animated_graphical",
+    "genres": [
+      "animated_graphical",
+      "dark_amoled"
+    ],
+    "hexColor": "#2b0303",
+    "colorFamily": "dark",
+    "size": "21.4 KB",
+    "sizeBytes": 21875,
+    "tags": [
+      "animated_graphical",
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 357,
+    "filename": "IMG_20260907_184434_402.jpg",
+    "title": "Shadow AMOLED Edition #357",
+    "path": "Pictures/IMG_20260907_184434_402.jpg",
+    "encodedPath": "Pictures/IMG_20260907_184434_402.jpg",
+    "width": 736,
+    "height": 1307,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#161616",
+    "colorFamily": "dark",
+    "size": "19.8 KB",
+    "sizeBytes": 20269,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 358,
+    "filename": "IMG_20260908_081958_550.jpg",
+    "title": "Autumn Gold Nature Horizon #358",
+    "path": "Pictures/IMG_20260908_081958_550.jpg",
+    "encodedPath": "Pictures/IMG_20260908_081958_550.jpg",
+    "width": 1080,
+    "height": 2275,
+    "aspectRatio": 0.47,
+    "category": "phone",
+    "primaryGenre": "nature_landscape",
+    "genres": [
+      "dark_amoled",
+      "nature_landscape"
+    ],
+    "hexColor": "#483f37",
+    "colorFamily": "gold",
+    "size": "52.9 KB",
+    "sizeBytes": 54173,
+    "tags": [
+      "dark_amoled",
+      "gold",
+      "mobile",
+      "nature_landscape",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 359,
+    "filename": "IMG_20260908_160626_448.jpg",
+    "title": "Onyx AMOLED Edition #359",
+    "path": "Pictures/IMG_20260908_160626_448.jpg",
+    "encodedPath": "Pictures/IMG_20260908_160626_448.jpg",
+    "width": 1080,
+    "height": 2275,
+    "aspectRatio": 0.47,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#030814",
+    "colorFamily": "dark",
+    "size": "153.6 KB",
+    "sizeBytes": 157336,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 360,
+    "filename": "IMG_20260908_160631_369.jpg",
+    "title": "Dark Cyber AMOLED Edition #360",
+    "path": "Pictures/IMG_20260908_160631_369.jpg",
+    "encodedPath": "Pictures/IMG_20260908_160631_369.jpg",
+    "width": 1080,
+    "height": 2275,
+    "aspectRatio": 0.47,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#040612",
+    "colorFamily": "dark",
+    "size": "180.5 KB",
+    "sizeBytes": 184824,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 361,
+    "filename": "IMG_20260908_160641_383.jpg",
+    "title": "Obsidian AMOLED Edition #361",
+    "path": "Pictures/IMG_20260908_160641_383.jpg",
+    "encodedPath": "Pictures/IMG_20260908_160641_383.jpg",
+    "width": 1080,
+    "height": 2275,
+    "aspectRatio": 0.47,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#000000",
+    "colorFamily": "dark",
+    "size": "184.0 KB",
+    "sizeBytes": 188408,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 362,
+    "filename": "IMG_20260908_160649_017.jpg",
+    "title": "Celestial Blue AMOLED Edition #362",
+    "path": "Pictures/IMG_20260908_160649_017.jpg",
+    "encodedPath": "Pictures/IMG_20260908_160649_017.jpg",
+    "width": 752,
+    "height": 1584,
+    "aspectRatio": 0.47,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#1d213e",
+    "colorFamily": "blue",
+    "size": "139.3 KB",
+    "sizeBytes": 142687,
+    "tags": [
+      "blue",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 363,
+    "filename": "IMG_20260908_160652_031.jpg",
+    "title": "Shadow Abstract Render #363",
+    "path": "Pictures/IMG_20260908_160652_031.jpg",
+    "encodedPath": "Pictures/IMG_20260908_160652_031.jpg",
+    "width": 1080,
+    "height": 2275,
+    "aspectRatio": 0.47,
+    "category": "phone",
+    "primaryGenre": "animated_graphical",
+    "genres": [
+      "animated_graphical",
+      "dark_amoled"
+    ],
+    "hexColor": "#07111a",
+    "colorFamily": "dark",
+    "size": "114.1 KB",
+    "sizeBytes": 116792,
+    "tags": [
+      "animated_graphical",
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 364,
+    "filename": "IMG_20260908_160659_836.jpg",
+    "title": "Eclipse AMOLED Edition #364",
+    "path": "Pictures/IMG_20260908_160659_836.jpg",
+    "encodedPath": "Pictures/IMG_20260908_160659_836.jpg",
+    "width": 1080,
+    "height": 1922,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#030305",
+    "colorFamily": "dark",
+    "size": "290.0 KB",
+    "sizeBytes": 296996,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 365,
+    "filename": "IMG_20260908_160718_666.jpg",
+    "title": "Luminous Frost Minimal Aesthetic #365",
+    "path": "Pictures/IMG_20260908_160718_666.jpg",
+    "encodedPath": "Pictures/IMG_20260908_160718_666.jpg",
+    "width": 736,
+    "height": 1308,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "light_minimal",
+    "genres": [
+      "light_minimal"
+    ],
+    "hexColor": "#f0f0ee",
+    "colorFamily": "white",
+    "size": "102.3 KB",
+    "sizeBytes": 104742,
+    "tags": [
+      "light_minimal",
+      "mobile",
+      "phone",
+      "portrait",
+      "white"
+    ]
+  },
+  {
+    "id": 366,
+    "filename": "IMG_20260908_160723_997.jpg",
+    "title": "Dark Cyber AMOLED Edition #366",
+    "path": "Pictures/IMG_20260908_160723_997.jpg",
+    "encodedPath": "Pictures/IMG_20260908_160723_997.jpg",
+    "width": 720,
+    "height": 1280,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#000000",
+    "colorFamily": "dark",
+    "size": "114.6 KB",
+    "sizeBytes": 117355,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 367,
+    "filename": "IMG_20260909_134021_010.jpg",
+    "title": "Obsidian AMOLED Edition #367",
+    "path": "Pictures/IMG_20260909_134021_010.jpg",
+    "encodedPath": "Pictures/IMG_20260909_134021_010.jpg",
+    "width": 1080,
+    "height": 2275,
+    "aspectRatio": 0.47,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#010101",
+    "colorFamily": "dark",
+    "size": "206.6 KB",
+    "sizeBytes": 211557,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 368,
+    "filename": "IMG_20260909_134028_482.jpg",
+    "title": "Midnight AMOLED Edition #368",
+    "path": "Pictures/IMG_20260909_134028_482.jpg",
+    "encodedPath": "Pictures/IMG_20260909_134028_482.jpg",
+    "width": 1080,
+    "height": 2418,
+    "aspectRatio": 0.45,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#0d0c08",
+    "colorFamily": "dark",
+    "size": "416.3 KB",
+    "sizeBytes": 426267,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 369,
+    "filename": "IMG_20260910_105403_002.jpg",
+    "title": "Snow Apex Minimal Aesthetic #369",
+    "path": "Pictures/IMG_20260910_105403_002.jpg",
+    "encodedPath": "Pictures/IMG_20260910_105403_002.jpg",
+    "width": 736,
+    "height": 1307,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "light_minimal",
+    "genres": [
+      "light_minimal"
+    ],
+    "hexColor": "#f5f3f4",
+    "colorFamily": "white",
+    "size": "52.1 KB",
+    "sizeBytes": 53396,
+    "tags": [
+      "light_minimal",
+      "mobile",
+      "phone",
+      "portrait",
+      "white"
+    ]
+  },
+  {
+    "id": 370,
+    "filename": "IMG_20260910_105426_992.jpg",
+    "title": "Eclipse AMOLED Edition #370",
+    "path": "Pictures/IMG_20260910_105426_992.jpg",
+    "encodedPath": "Pictures/IMG_20260910_105426_992.jpg",
+    "width": 1080,
+    "height": 2348,
+    "aspectRatio": 0.46,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#01090c",
+    "colorFamily": "dark",
+    "size": "170.7 KB",
+    "sizeBytes": 174809,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 371,
+    "filename": "IMG_20260910_105431_690.jpg",
+    "title": "Onyx AMOLED Edition #371",
+    "path": "Pictures/IMG_20260910_105431_690.jpg",
+    "encodedPath": "Pictures/IMG_20260910_105431_690.jpg",
+    "width": 1080,
+    "height": 2395,
+    "aspectRatio": 0.45,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#2f1f0b",
+    "colorFamily": "dark",
+    "size": "321.6 KB",
+    "sizeBytes": 329268,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 372,
+    "filename": "IMG_20260910_105443_016.jpg",
+    "title": "Dark Cyber AMOLED Edition #372",
+    "path": "Pictures/IMG_20260910_105443_016.jpg",
+    "encodedPath": "Pictures/IMG_20260910_105443_016.jpg",
+    "width": 1080,
+    "height": 2348,
+    "aspectRatio": 0.46,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#000000",
+    "colorFamily": "dark",
+    "size": "343.9 KB",
+    "sizeBytes": 352109,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 373,
+    "filename": "IMG_20260910_220420_228.jpg",
+    "title": "Oceanic Depth AMOLED Edition #373",
+    "path": "Pictures/IMG_20260910_220420_228.jpg",
+    "encodedPath": "Pictures/IMG_20260910_220420_228.jpg",
+    "width": 972,
+    "height": 1729,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#474b56",
+    "colorFamily": "blue",
+    "size": "109.7 KB",
+    "sizeBytes": 112337,
+    "tags": [
+      "blue",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 374,
+    "filename": "IMG_20260910_220424_500.jpg",
+    "title": "Cyan Cyber Abstract Render #374",
+    "path": "Pictures/IMG_20260910_220424_500.jpg",
+    "encodedPath": "Pictures/IMG_20260910_220424_500.jpg",
+    "width": 1080,
+    "height": 1929,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "animated_graphical",
+    "genres": [
+      "animated_graphical"
+    ],
+    "hexColor": "#234b64",
+    "colorFamily": "cyan",
+    "size": "241.5 KB",
+    "sizeBytes": 247331,
+    "tags": [
+      "animated_graphical",
+      "cyan",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 375,
+    "filename": "IMG_20260910_220427_659.jpg",
+    "title": "Shadow AMOLED Edition #375",
+    "path": "Pictures/IMG_20260910_220427_659.jpg",
+    "encodedPath": "Pictures/IMG_20260910_220427_659.jpg",
+    "width": 640,
+    "height": 1171,
+    "aspectRatio": 0.55,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#010101",
+    "colorFamily": "dark",
+    "size": "58.5 KB",
+    "sizeBytes": 59948,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 376,
+    "filename": "IMG_20260911_175154_826.jpg",
+    "title": "Eclipse AMOLED Edition #376",
+    "path": "Pictures/IMG_20260911_175154_826.jpg",
+    "encodedPath": "Pictures/IMG_20260911_175154_826.jpg",
+    "width": 1080,
+    "height": 2273,
+    "aspectRatio": 0.48,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#000000",
+    "colorFamily": "dark",
+    "size": "160.9 KB",
+    "sizeBytes": 164754,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 377,
+    "filename": "IMG_20260911_175157_227.jpg",
+    "title": "Onyx AMOLED Edition #377",
+    "path": "Pictures/IMG_20260911_175157_227.jpg",
+    "encodedPath": "Pictures/IMG_20260911_175157_227.jpg",
+    "width": 1080,
+    "height": 813,
+    "aspectRatio": 1.33,
+    "category": "desktop",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#000000",
+    "colorFamily": "dark",
+    "size": "52.3 KB",
+    "sizeBytes": 53509,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "desktop",
+      "landscape",
+      "monitor",
+      "pc"
+    ]
+  },
+  {
+    "id": 378,
+    "filename": "IMG_20260911_180949_965.jpg",
+    "title": "Dark Cyber AMOLED Edition #378",
+    "path": "Pictures/IMG_20260911_180949_965.jpg",
+    "encodedPath": "Pictures/IMG_20260911_180949_965.jpg",
+    "width": 1080,
+    "height": 2342,
+    "aspectRatio": 0.46,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#000000",
+    "colorFamily": "dark",
+    "size": "107.8 KB",
+    "sizeBytes": 110407,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 379,
+    "filename": "IMG_20260912_163102_692.jpg",
+    "title": "Obsidian AMOLED Edition #379",
+    "path": "Pictures/IMG_20260912_163102_692.jpg",
+    "encodedPath": "Pictures/IMG_20260912_163102_692.jpg",
+    "width": 720,
+    "height": 1517,
+    "aspectRatio": 0.47,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#04080b",
+    "colorFamily": "dark",
+    "size": "96.2 KB",
+    "sizeBytes": 98557,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 380,
+    "filename": "IMG_20260912_163127_765.jpg",
+    "title": "Midnight AMOLED Edition #380",
+    "path": "Pictures/IMG_20260912_163127_765.jpg",
+    "encodedPath": "Pictures/IMG_20260912_163127_765.jpg",
+    "width": 1024,
+    "height": 1536,
+    "aspectRatio": 0.67,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#1a1112",
+    "colorFamily": "dark",
+    "size": "389.5 KB",
+    "sizeBytes": 398858,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 381,
+    "filename": "IMG_20260912_163141_833.jpg",
+    "title": "Shadow AMOLED Edition #381",
+    "path": "Pictures/IMG_20260912_163141_833.jpg",
+    "encodedPath": "Pictures/IMG_20260912_163141_833.jpg",
+    "width": 1080,
+    "height": 2336,
+    "aspectRatio": 0.46,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#000000",
+    "colorFamily": "dark",
+    "size": "116.6 KB",
+    "sizeBytes": 119377,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 382,
+    "filename": "IMG_20260912_163145_156.jpg",
+    "title": "Eclipse AMOLED Edition #382",
+    "path": "Pictures/IMG_20260912_163145_156.jpg",
+    "encodedPath": "Pictures/IMG_20260912_163145_156.jpg",
+    "width": 1080,
+    "height": 2348,
+    "aspectRatio": 0.46,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#030504",
+    "colorFamily": "dark",
+    "size": "73.4 KB",
+    "sizeBytes": 75125,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 383,
+    "filename": "IMG_20260912_163151_052.jpg",
+    "title": "Onyx AMOLED Edition #383",
+    "path": "Pictures/IMG_20260912_163151_052.jpg",
+    "encodedPath": "Pictures/IMG_20260912_163151_052.jpg",
+    "width": 1080,
+    "height": 2336,
+    "aspectRatio": 0.46,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#000000",
+    "colorFamily": "dark",
+    "size": "157.1 KB",
+    "sizeBytes": 160904,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 384,
+    "filename": "IMG_20260912_163154_117.jpg",
+    "title": "Dark Cyber AMOLED Edition #384",
+    "path": "Pictures/IMG_20260912_163154_117.jpg",
+    "encodedPath": "Pictures/IMG_20260912_163154_117.jpg",
+    "width": 1179,
+    "height": 2556,
+    "aspectRatio": 0.46,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#000000",
+    "colorFamily": "dark",
+    "size": "37.8 KB",
+    "sizeBytes": 38714,
+    "tags": [
+      "4k",
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait",
+      "ultra_hd"
+    ]
+  },
+  {
+    "id": 385,
+    "filename": "IMG_20260913_213602_707.jpg",
+    "title": "Obsidian AMOLED Edition #385",
+    "path": "Pictures/IMG_20260913_213602_707.jpg",
+    "encodedPath": "Pictures/IMG_20260913_213602_707.jpg",
+    "width": 554,
+    "height": 985,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#9c9e9b",
+    "colorFamily": "dark",
+    "size": "25.6 KB",
+    "sizeBytes": 26221,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 386,
+    "filename": "IMG_20260914_132536_893.jpg",
+    "title": "Midnight AMOLED Edition #386",
+    "path": "Pictures/IMG_20260914_132536_893.jpg",
+    "encodedPath": "Pictures/IMG_20260914_132536_893.jpg",
+    "width": 1080,
+    "height": 2336,
+    "aspectRatio": 0.46,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled",
+      "light_minimal"
+    ],
+    "hexColor": "#c4c4c4",
+    "colorFamily": "dark",
+    "size": "52.8 KB",
+    "sizeBytes": 54043,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "light_minimal",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 387,
+    "filename": "IMG_20260914_132555_029.jpg",
+    "title": "Celestial Blue Abstract Render #387",
+    "path": "Pictures/IMG_20260914_132555_029.jpg",
+    "encodedPath": "Pictures/IMG_20260914_132555_029.jpg",
+    "width": 736,
+    "height": 1308,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "animated_graphical",
+    "genres": [
+      "animated_graphical"
+    ],
+    "hexColor": "#658ab6",
+    "colorFamily": "blue",
+    "size": "16.4 KB",
+    "sizeBytes": 16813,
+    "tags": [
+      "animated_graphical",
+      "blue",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 388,
+    "filename": "IMG_20260915_095827_872.jpg",
+    "title": "Eclipse AMOLED Edition #388",
+    "path": "Pictures/IMG_20260915_095827_872.jpg",
+    "encodedPath": "Pictures/IMG_20260915_095827_872.jpg",
+    "width": 1080,
+    "height": 1919,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#000000",
+    "colorFamily": "dark",
+    "size": "113.5 KB",
+    "sizeBytes": 116186,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 389,
+    "filename": "IMG_20260915_095834_836.jpg",
+    "title": "Onyx AMOLED Edition #389",
+    "path": "Pictures/IMG_20260915_095834_836.jpg",
+    "encodedPath": "Pictures/IMG_20260915_095834_836.jpg",
+    "width": 720,
+    "height": 1284,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#020b06",
+    "colorFamily": "dark",
+    "size": "18.3 KB",
+    "sizeBytes": 18724,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 390,
+    "filename": "IMG_20260916_152742_953.jpg",
+    "title": "Dark Cyber Abstract Render #390",
+    "path": "Pictures/IMG_20260916_152742_953.jpg",
+    "encodedPath": "Pictures/IMG_20260916_152742_953.jpg",
+    "width": 736,
+    "height": 1308,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "animated_graphical",
+    "genres": [
+      "animated_graphical",
+      "dark_amoled"
+    ],
+    "hexColor": "#000000",
+    "colorFamily": "dark",
+    "size": "12.9 KB",
+    "sizeBytes": 13180,
+    "tags": [
+      "animated_graphical",
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 391,
+    "filename": "IMG_20260917_092549_199.jpg",
+    "title": "Crimson Flare AMOLED Edition #391",
+    "path": "Pictures/IMG_20260917_092549_199.jpg",
+    "encodedPath": "Pictures/IMG_20260917_092549_199.jpg",
+    "width": 736,
+    "height": 1183,
+    "aspectRatio": 0.62,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#45060e",
+    "colorFamily": "red",
+    "size": "30.0 KB",
+    "sizeBytes": 30694,
+    "tags": [
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait",
+      "red"
+    ]
+  },
+  {
+    "id": 392,
+    "filename": "IMG_20260917_092600_526.jpg",
+    "title": "Midnight AMOLED Edition #392",
+    "path": "Pictures/IMG_20260917_092600_526.jpg",
+    "encodedPath": "Pictures/IMG_20260917_092600_526.jpg",
+    "width": 736,
+    "height": 1308,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#2e0e15",
+    "colorFamily": "dark",
+    "size": "20.2 KB",
+    "sizeBytes": 20708,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 393,
+    "filename": "IMG_20260917_130219_409.jpg",
+    "title": "Shadow Abstract Render #393",
+    "path": "Pictures/IMG_20260917_130219_409.jpg",
+    "encodedPath": "Pictures/IMG_20260917_130219_409.jpg",
+    "width": 720,
+    "height": 1560,
+    "aspectRatio": 0.46,
+    "category": "phone",
+    "primaryGenre": "animated_graphical",
+    "genres": [
+      "animated_graphical",
+      "dark_amoled"
+    ],
+    "hexColor": "#000000",
+    "colorFamily": "dark",
+    "size": "12.5 KB",
+    "sizeBytes": 12767,
+    "tags": [
+      "animated_graphical",
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 394,
+    "filename": "IMG_20260917_130224_016.jpg",
+    "title": "Eclipse AMOLED Edition #394",
+    "path": "Pictures/IMG_20260917_130224_016.jpg",
+    "encodedPath": "Pictures/IMG_20260917_130224_016.jpg",
+    "width": 720,
+    "height": 1560,
+    "aspectRatio": 0.46,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#000000",
+    "colorFamily": "dark",
+    "size": "45.8 KB",
+    "sizeBytes": 46911,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 395,
+    "filename": "IMG_20260920_124833_540.jpg",
+    "title": "Magma Glow Abstract Render #395",
+    "path": "Pictures/IMG_20260920_124833_540.jpg",
+    "encodedPath": "Pictures/IMG_20260920_124833_540.jpg",
+    "width": 736,
+    "height": 1183,
+    "aspectRatio": 0.62,
+    "category": "phone",
+    "primaryGenre": "animated_graphical",
+    "genres": [
+      "animated_graphical"
+    ],
+    "hexColor": "#740a17",
+    "colorFamily": "red",
+    "size": "28.3 KB",
+    "sizeBytes": 28955,
+    "tags": [
+      "animated_graphical",
+      "mobile",
+      "phone",
+      "portrait",
+      "red"
+    ]
+  },
+  {
+    "id": 396,
+    "filename": "IMG_20260920_124839_352.jpg",
+    "title": "Dark Cyber AMOLED Edition #396",
+    "path": "Pictures/IMG_20260920_124839_352.jpg",
+    "encodedPath": "Pictures/IMG_20260920_124839_352.jpg",
+    "width": 736,
+    "height": 1308,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#040b13",
+    "colorFamily": "dark",
+    "size": "20.0 KB",
+    "sizeBytes": 20507,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 397,
+    "filename": "IMG_20260921_215252_045.jpg",
+    "title": "Obsidian AMOLED Edition #397",
+    "path": "Pictures/IMG_20260921_215252_045.jpg",
+    "encodedPath": "Pictures/IMG_20260921_215252_045.jpg",
+    "width": 1080,
+    "height": 2332,
+    "aspectRatio": 0.46,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#19232d",
+    "colorFamily": "dark",
+    "size": "250.2 KB",
+    "sizeBytes": 256221,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 398,
+    "filename": "IMG_20260921_215255_657.jpg",
+    "title": "Midnight AMOLED Edition #398",
+    "path": "Pictures/IMG_20260921_215255_657.jpg",
+    "encodedPath": "Pictures/IMG_20260921_215255_657.jpg",
+    "width": 1080,
+    "height": 806,
+    "aspectRatio": 1.34,
+    "category": "desktop",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#06090e",
+    "colorFamily": "dark",
+    "size": "114.4 KB",
+    "sizeBytes": 117173,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "desktop",
+      "landscape",
+      "monitor",
+      "pc"
+    ]
+  },
+  {
+    "id": 399,
+    "filename": "IMG_20260921_215302_954.jpg",
+    "title": "Snow Apex Minimal Aesthetic #399",
+    "path": "Pictures/IMG_20260921_215302_954.jpg",
+    "encodedPath": "Pictures/IMG_20260921_215302_954.jpg",
+    "width": 851,
+    "height": 1849,
+    "aspectRatio": 0.46,
+    "category": "phone",
+    "primaryGenre": "light_minimal",
+    "genres": [
+      "light_minimal"
+    ],
+    "hexColor": "#bec8d4",
+    "colorFamily": "white",
+    "size": "81.9 KB",
+    "sizeBytes": 83816,
+    "tags": [
+      "light_minimal",
+      "mobile",
+      "phone",
+      "portrait",
+      "white"
+    ]
+  },
+  {
+    "id": 400,
+    "filename": "IMG_20260921_215317_437.jpg",
+    "title": "Luminous Frost Minimal Aesthetic #400",
+    "path": "Pictures/IMG_20260921_215317_437.jpg",
+    "encodedPath": "Pictures/IMG_20260921_215317_437.jpg",
+    "width": 1080,
+    "height": 1969,
+    "aspectRatio": 0.55,
+    "category": "phone",
+    "primaryGenre": "light_minimal",
+    "genres": [
+      "light_minimal"
+    ],
+    "hexColor": "#ececec",
+    "colorFamily": "white",
+    "size": "233.4 KB",
+    "sizeBytes": 238982,
+    "tags": [
+      "light_minimal",
+      "mobile",
+      "phone",
+      "portrait",
+      "white"
+    ]
+  },
+  {
+    "id": 401,
+    "filename": "IMG_20260921_215549_983.jpg",
+    "title": "Onyx AMOLED Edition #401",
+    "path": "Pictures/IMG_20260921_215549_983.jpg",
+    "encodedPath": "Pictures/IMG_20260921_215549_983.jpg",
+    "width": 1080,
+    "height": 1440,
+    "aspectRatio": 0.75,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#080e0a",
+    "colorFamily": "dark",
+    "size": "300.5 KB",
+    "sizeBytes": 307732,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 402,
+    "filename": "IMG_20260921_215557_259.jpg",
+    "title": "Celestial Blue AMOLED Edition #402",
+    "path": "Pictures/IMG_20260921_215557_259.jpg",
+    "encodedPath": "Pictures/IMG_20260921_215557_259.jpg",
+    "width": 1080,
+    "height": 1881,
+    "aspectRatio": 0.57,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#06194c",
+    "colorFamily": "blue",
+    "size": "155.3 KB",
+    "sizeBytes": 158987,
+    "tags": [
+      "blue",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 403,
+    "filename": "IMG_20260923_000043_199.jpg",
+    "title": "Obsidian Abstract Render #403",
+    "path": "Pictures/IMG_20260923_000043_199.jpg",
+    "encodedPath": "Pictures/IMG_20260923_000043_199.jpg",
+    "width": 1080,
+    "height": 2332,
+    "aspectRatio": 0.46,
+    "category": "phone",
+    "primaryGenre": "animated_graphical",
+    "genres": [
+      "animated_graphical",
+      "dark_amoled"
+    ],
+    "hexColor": "#0e1728",
+    "colorFamily": "dark",
+    "size": "62.2 KB",
+    "sizeBytes": 63714,
+    "tags": [
+      "animated_graphical",
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 404,
+    "filename": "IMG_20260923_000046_926.jpg",
+    "title": "Sapphire AMOLED Edition #404",
+    "path": "Pictures/IMG_20260923_000046_926.jpg",
+    "encodedPath": "Pictures/IMG_20260923_000046_926.jpg",
+    "width": 1080,
+    "height": 806,
+    "aspectRatio": 1.34,
+    "category": "desktop",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#0c1c33",
+    "colorFamily": "blue",
+    "size": "68.1 KB",
+    "sizeBytes": 69728,
+    "tags": [
+      "blue",
+      "dark_amoled",
+      "desktop",
+      "landscape",
+      "monitor",
+      "pc"
+    ]
+  },
+  {
+    "id": 405,
+    "filename": "IMG_20260924_032007_274.jpg",
+    "title": "Shadow AMOLED Edition #405",
+    "path": "Pictures/IMG_20260924_032007_274.jpg",
+    "encodedPath": "Pictures/IMG_20260924_032007_274.jpg",
+    "width": 1148,
+    "height": 2048,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#121011",
+    "colorFamily": "dark",
+    "size": "200.2 KB",
+    "sizeBytes": 205026,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 406,
+    "filename": "IMG_20260924_032012_111.jpg",
+    "title": "Eclipse AMOLED Edition #406",
+    "path": "Pictures/IMG_20260924_032012_111.jpg",
+    "encodedPath": "Pictures/IMG_20260924_032012_111.jpg",
+    "width": 1179,
+    "height": 1830,
+    "aspectRatio": 0.64,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#0a0a0a",
+    "colorFamily": "dark",
+    "size": "184.5 KB",
+    "sizeBytes": 188930,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 407,
+    "filename": "IMG_20260924_205458_599.jpg",
+    "title": "Onyx AMOLED Edition #407",
+    "path": "Pictures/IMG_20260924_205458_599.jpg",
+    "encodedPath": "Pictures/IMG_20260924_205458_599.jpg",
+    "width": 570,
+    "height": 1200,
+    "aspectRatio": 0.47,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#000000",
+    "colorFamily": "dark",
+    "size": "45.2 KB",
+    "sizeBytes": 46328,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 408,
+    "filename": "IMG_20260926_202927_762.jpg",
+    "title": "Dark Cyber AMOLED Edition #408",
+    "path": "Pictures/IMG_20260926_202927_762.jpg",
+    "encodedPath": "Pictures/IMG_20260926_202927_762.jpg",
+    "width": 736,
+    "height": 1634,
+    "aspectRatio": 0.45,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#9ca1a5",
+    "colorFamily": "dark",
+    "size": "132.8 KB",
+    "sizeBytes": 135955,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 409,
+    "filename": "IMG_20260927_143041_016.jpg",
+    "title": "Snow Apex Minimal Aesthetic #409",
+    "path": "Pictures/IMG_20260927_143041_016.jpg",
+    "encodedPath": "Pictures/IMG_20260927_143041_016.jpg",
+    "width": 1080,
+    "height": 2160,
+    "aspectRatio": 0.5,
+    "category": "phone",
+    "primaryGenre": "light_minimal",
+    "genres": [
+      "light_minimal"
+    ],
+    "hexColor": "#b7c0cf",
+    "colorFamily": "white",
+    "size": "130.4 KB",
+    "sizeBytes": 133574,
+    "tags": [
+      "light_minimal",
+      "mobile",
+      "phone",
+      "portrait",
+      "white"
+    ]
+  },
+  {
+    "id": 410,
+    "filename": "IMG_20260927_143046_743.jpg",
+    "title": "Midnight AMOLED Edition #410",
+    "path": "Pictures/IMG_20260927_143046_743.jpg",
+    "encodedPath": "Pictures/IMG_20260927_143046_743.jpg",
+    "width": 1080,
+    "height": 2395,
+    "aspectRatio": 0.45,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled",
+      "light_minimal"
+    ],
+    "hexColor": "#b5b8c1",
+    "colorFamily": "dark",
+    "size": "239.8 KB",
+    "sizeBytes": 245544,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "light_minimal",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 411,
+    "filename": "IMG_20260929_213548_900.jpg",
+    "title": "Shadow AMOLED Edition #411",
+    "path": "Pictures/IMG_20260929_213548_900.jpg",
+    "encodedPath": "Pictures/IMG_20260929_213548_900.jpg",
+    "width": 941,
+    "height": 1672,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#111b27",
+    "colorFamily": "dark",
+    "size": "138.4 KB",
+    "sizeBytes": 141711,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 412,
+    "filename": "IMG_20260929_213553_452.jpg",
+    "title": "Celestial Blue Minimal Aesthetic #412",
+    "path": "Pictures/IMG_20260929_213553_452.jpg",
+    "encodedPath": "Pictures/IMG_20260929_213553_452.jpg",
+    "width": 941,
+    "height": 1672,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "light_minimal",
+    "genres": [
+      "light_minimal"
+    ],
+    "hexColor": "#abbbcb",
+    "colorFamily": "blue",
+    "size": "161.4 KB",
+    "sizeBytes": 165295,
+    "tags": [
+      "blue",
+      "light_minimal",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 413,
+    "filename": "IMG_20260929_213600_354.jpg",
+    "title": "Aqua Horizon AMOLED Edition #413",
+    "path": "Pictures/IMG_20260929_213600_354.jpg",
+    "encodedPath": "Pictures/IMG_20260929_213600_354.jpg",
+    "width": 941,
+    "height": 1672,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#2f4455",
+    "colorFamily": "cyan",
+    "size": "90.7 KB",
+    "sizeBytes": 92892,
+    "tags": [
+      "cyan",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 414,
+    "filename": "IMG_20260929_213603_862.jpg",
+    "title": "Cyan Cyber AMOLED Edition #414",
+    "path": "Pictures/IMG_20260929_213603_862.jpg",
+    "encodedPath": "Pictures/IMG_20260929_213603_862.jpg",
+    "width": 941,
+    "height": 1672,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#323a3c",
+    "colorFamily": "cyan",
+    "size": "162.6 KB",
+    "sizeBytes": 166534,
+    "tags": [
+      "cyan",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 415,
+    "filename": "IMG_20260929_213611_092.jpg",
+    "title": "Cosmic Blue Minimal Aesthetic #415",
+    "path": "Pictures/IMG_20260929_213611_092.jpg",
+    "encodedPath": "Pictures/IMG_20260929_213611_092.jpg",
+    "width": 941,
+    "height": 1672,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "light_minimal",
+    "genres": [
+      "light_minimal"
+    ],
+    "hexColor": "#adbdcd",
+    "colorFamily": "blue",
+    "size": "188.9 KB",
+    "sizeBytes": 193454,
+    "tags": [
+      "blue",
+      "light_minimal",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 416,
+    "filename": "IMG_20260929_213618_683.jpg",
+    "title": "Solar Amber Nature Horizon #416",
+    "path": "Pictures/IMG_20260929_213618_683.jpg",
+    "encodedPath": "Pictures/IMG_20260929_213618_683.jpg",
+    "width": 941,
+    "height": 1672,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "nature_landscape",
+    "genres": [
+      "nature_landscape"
+    ],
+    "hexColor": "#ddb8a5",
+    "colorFamily": "gold",
+    "size": "149.7 KB",
+    "sizeBytes": 153272,
+    "tags": [
+      "gold",
+      "mobile",
+      "nature_landscape",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 417,
+    "filename": "IMG_20260929_213622_322.jpg",
+    "title": "Shadow AMOLED Edition #417",
+    "path": "Pictures/IMG_20260929_213622_322.jpg",
+    "encodedPath": "Pictures/IMG_20260929_213622_322.jpg",
+    "width": 941,
+    "height": 1672,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#0f0f0f",
+    "colorFamily": "dark",
+    "size": "50.3 KB",
+    "sizeBytes": 51558,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 418,
+    "filename": "IMG_20260929_213633_544.jpg",
+    "title": "Oceanic Depth AMOLED Edition #418",
+    "path": "Pictures/IMG_20260929_213633_544.jpg",
+    "encodedPath": "Pictures/IMG_20260929_213633_544.jpg",
+    "width": 941,
+    "height": 1672,
+    "aspectRatio": 0.56,
+    "category": "phone",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#142e49",
+    "colorFamily": "blue",
+    "size": "72.1 KB",
+    "sizeBytes": 73803,
+    "tags": [
+      "blue",
+      "dark_amoled",
+      "mobile",
+      "phone",
+      "portrait"
+    ]
+  },
+  {
+    "id": 419,
+    "filename": "Shree Krishna \ud83e\udd9a.jpeg",
+    "title": "Radhe Krishna Divine Art #419",
+    "path": "Pictures/Shree Krishna \ud83e\udd9a.jpeg",
+    "encodedPath": "Pictures/Shree%20Krishna%20%F0%9F%A6%9A.jpeg",
+    "width": 734,
+    "height": 412,
+    "aspectRatio": 1.78,
+    "category": "desktop",
+    "primaryGenre": "spiritual_divine",
+    "genres": [
+      "spiritual_divine"
+    ],
+    "hexColor": "#747695",
+    "colorFamily": "blue",
+    "size": "40.5 KB",
+    "sizeBytes": 41488,
+    "tags": [
+      "blue",
+      "desktop",
+      "devotional",
+      "krishna",
+      "landscape",
+      "monitor",
+      "pc",
+      "radheradhe",
+      "sheshanaga",
+      "spiritual",
+      "spiritual_divine",
+      "vishnu"
+    ]
+  },
+  {
+    "id": 420,
+    "filename": "abstract-wallpaper-mountains-with-a-neon-glowing-circle-picjumbo-com.jpeg",
+    "title": "Abstract Mountains With Neon Glowi...",
+    "path": "Pictures/abstract-wallpaper-mountains-with-a-neon-glowing-circle-picjumbo-com.jpeg",
+    "encodedPath": "Pictures/abstract-wallpaper-mountains-with-a-neon-glowing-circle-picjumbo-com.jpeg",
+    "width": 5696,
+    "height": 3392,
+    "aspectRatio": 1.68,
+    "category": "desktop",
+    "primaryGenre": "nature_landscape",
+    "genres": [
+      "animated_graphical",
+      "nature_landscape"
+    ],
+    "hexColor": "#1a3668",
+    "colorFamily": "blue",
+    "size": "8.63 MB",
+    "sizeBytes": 9046597,
+    "tags": [
+      "4k",
+      "animated_graphical",
+      "blue",
+      "desktop",
+      "landscape",
+      "monitor",
+      "mountains",
+      "nature",
+      "nature_landscape",
+      "pc",
+      "sunset",
+      "ultra_hd"
+    ]
+  },
+  {
+    "id": 421,
     "filename": "abstract_wallpaper_mountains_with_a_neon_glowing_circle_picjumbo_com.jpeg",
     "title": "Abstract Mountains With Neon Glowi...",
     "path": "Pictures/abstract_wallpaper_mountains_with_a_neon_glowing_circle_picjumbo_com.jpeg",
@@ -4921,12 +12329,47 @@ window.WALLPAPERS_DATA = [
       "mountains",
       "nature",
       "nature_landscape",
+      "pc",
       "sunset",
       "ultra_hd"
     ]
   },
   {
-    "id": 195,
+    "id": 422,
+    "filename": "amazing-nature-mountain-scenery-during-sunset-picjumbo-com.jpg",
+    "title": "Amazing Nature Mountain Scenery Du...",
+    "path": "Pictures/amazing-nature-mountain-scenery-during-sunset-picjumbo-com.jpg",
+    "encodedPath": "Pictures/amazing-nature-mountain-scenery-during-sunset-picjumbo-com.jpg",
+    "width": 5696,
+    "height": 3392,
+    "aspectRatio": 1.68,
+    "category": "desktop",
+    "primaryGenre": "nature_landscape",
+    "genres": [
+      "dark_amoled",
+      "nature_landscape"
+    ],
+    "hexColor": "#091329",
+    "colorFamily": "dark",
+    "size": "4.07 MB",
+    "sizeBytes": 4263793,
+    "tags": [
+      "4k",
+      "dark",
+      "dark_amoled",
+      "desktop",
+      "landscape",
+      "monitor",
+      "mountains",
+      "nature",
+      "nature_landscape",
+      "pc",
+      "sunset",
+      "ultra_hd"
+    ]
+  },
+  {
+    "id": 423,
     "filename": "amazing_nature_mountain_scenery_during_sunset_picjumbo_com.jpg",
     "title": "Amazing Nature Mountain Scenery Du...",
     "path": "Pictures/amazing_nature_mountain_scenery_during_sunset_picjumbo_com.jpg",
@@ -4954,12 +12397,45 @@ window.WALLPAPERS_DATA = [
       "mountains",
       "nature",
       "nature_landscape",
+      "pc",
       "sunset",
       "ultra_hd"
     ]
   },
   {
-    "id": 196,
+    "id": 424,
+    "filename": "beautiful-autumn-nature-with-trees-of-yellow-leaves-picjumbo-com.jpeg",
+    "title": "Beautiful Autumn Nature With Trees...",
+    "path": "Pictures/beautiful-autumn-nature-with-trees-of-yellow-leaves-picjumbo-com.jpeg",
+    "encodedPath": "Pictures/beautiful-autumn-nature-with-trees-of-yellow-leaves-picjumbo-com.jpeg",
+    "width": 5824,
+    "height": 3264,
+    "aspectRatio": 1.78,
+    "category": "desktop",
+    "primaryGenre": "nature_landscape",
+    "genres": [
+      "nature_landscape"
+    ],
+    "hexColor": "#275e6a",
+    "colorFamily": "cyan",
+    "size": "17.42 MB",
+    "sizeBytes": 18261243,
+    "tags": [
+      "4k",
+      "cyan",
+      "desktop",
+      "landscape",
+      "monitor",
+      "mountains",
+      "nature",
+      "nature_landscape",
+      "pc",
+      "sunset",
+      "ultra_hd"
+    ]
+  },
+  {
+    "id": 425,
     "filename": "beautiful_autumn_nature_with_trees_of_yellow_leaves_picjumbo_com.jpeg",
     "title": "Beautiful Autumn Nature With Trees...",
     "path": "Pictures/beautiful_autumn_nature_with_trees_of_yellow_leaves_picjumbo_com.jpeg",
@@ -4985,12 +12461,46 @@ window.WALLPAPERS_DATA = [
       "mountains",
       "nature",
       "nature_landscape",
+      "pc",
       "sunset",
       "ultra_hd"
     ]
   },
   {
-    "id": 197,
+    "id": 426,
+    "filename": "buddha-free-wallpaper-3d-statue-picjumbo-com.jpeg",
+    "title": "Buddha Free Statue",
+    "path": "Pictures/buddha-free-wallpaper-3d-statue-picjumbo-com.jpeg",
+    "encodedPath": "Pictures/buddha-free-wallpaper-3d-statue-picjumbo-com.jpeg",
+    "width": 5696,
+    "height": 3392,
+    "aspectRatio": 1.68,
+    "category": "desktop",
+    "primaryGenre": "spiritual_divine",
+    "genres": [
+      "animated_graphical",
+      "nature_landscape",
+      "spiritual_divine"
+    ],
+    "hexColor": "#8c8376",
+    "colorFamily": "gold",
+    "size": "12.61 MB",
+    "sizeBytes": 13227345,
+    "tags": [
+      "4k",
+      "animated_graphical",
+      "desktop",
+      "gold",
+      "landscape",
+      "monitor",
+      "nature_landscape",
+      "pc",
+      "spiritual_divine",
+      "ultra_hd"
+    ]
+  },
+  {
+    "id": 427,
     "filename": "buddha_free_wallpaper_3d_statue_picjumbo_com.jpeg",
     "title": "Buddha Free Statue",
     "path": "Pictures/buddha_free_wallpaper_3d_statue_picjumbo_com.jpeg",
@@ -5017,12 +12527,13 @@ window.WALLPAPERS_DATA = [
       "landscape",
       "monitor",
       "nature_landscape",
+      "pc",
       "spiritual_divine",
       "ultra_hd"
     ]
   },
   {
-    "id": 198,
+    "id": 428,
     "filename": "eberhardgrossgasteiger.jpg",
     "title": "Eberhardgrossgasteiger",
     "path": "Pictures/eberhardgrossgasteiger.jpg",
@@ -5048,11 +12559,12 @@ window.WALLPAPERS_DATA = [
       "desktop",
       "landscape",
       "monitor",
+      "pc",
       "ultra_hd"
     ]
   },
   {
-    "id": 199,
+    "id": 429,
     "filename": "enjoy_the_breathtaking_beauty_of_this_mesmerizing_4k.jpg",
     "title": "Enjoy The Breathtaking Beauty This...",
     "path": "Pictures/enjoy_the_breathtaking_beauty_of_this_mesmerizing_4k.jpg",
@@ -5061,24 +12573,57 @@ window.WALLPAPERS_DATA = [
     "height": 1079,
     "aspectRatio": 1.78,
     "category": "desktop",
-    "primaryGenre": "reality_photo",
+    "primaryGenre": "animated_graphical",
     "genres": [
-      "reality_photo"
+      "animated_graphical"
     ],
     "hexColor": "#504798",
     "colorFamily": "blue",
     "size": "130.1 KB",
     "sizeBytes": 133242,
     "tags": [
+      "animated_graphical",
       "blue",
       "desktop",
       "landscape",
       "monitor",
-      "reality_photo"
+      "pc"
     ]
   },
   {
-    "id": 200,
+    "id": 430,
+    "filename": "fantasy-magic-landscape.jpg",
+    "title": "Fantasy Magic Landscape",
+    "path": "Pictures/fantasy-magic-landscape.jpg",
+    "encodedPath": "Pictures/fantasy-magic-landscape.jpg",
+    "width": 3080,
+    "height": 2320,
+    "aspectRatio": 1.33,
+    "category": "desktop",
+    "primaryGenre": "nature_landscape",
+    "genres": [
+      "nature_landscape"
+    ],
+    "hexColor": "#232b60",
+    "colorFamily": "blue",
+    "size": "6.51 MB",
+    "sizeBytes": 6827353,
+    "tags": [
+      "4k",
+      "blue",
+      "desktop",
+      "landscape",
+      "monitor",
+      "mountains",
+      "nature",
+      "nature_landscape",
+      "pc",
+      "sunset",
+      "ultra_hd"
+    ]
+  },
+  {
+    "id": 431,
     "filename": "fantasy_magic_landscape.jpg",
     "title": "Fantasy Magic Landscape",
     "path": "Pictures/fantasy_magic_landscape.jpg",
@@ -5104,14 +12649,81 @@ window.WALLPAPERS_DATA = [
       "mountains",
       "nature",
       "nature_landscape",
+      "pc",
       "sunset",
       "ultra_hd"
     ]
   },
   {
-    "id": 201,
+    "id": 432,
+    "filename": "fuji-mountain-kawaguchiko-lake-morning-autumn-seasons-fuji-mountain-yamanachi-japan.jpg",
+    "title": "Mount Fuji Landscape #432",
+    "path": "Pictures/fuji-mountain-kawaguchiko-lake-morning-autumn-seasons-fuji-mountain-yamanachi-japan.jpg",
+    "encodedPath": "Pictures/fuji-mountain-kawaguchiko-lake-morning-autumn-seasons-fuji-mountain-yamanachi-japan.jpg",
+    "width": 4928,
+    "height": 2772,
+    "aspectRatio": 1.78,
+    "category": "desktop",
+    "primaryGenre": "nature_landscape",
+    "genres": [
+      "nature_landscape"
+    ],
+    "hexColor": "#0d429f",
+    "colorFamily": "blue",
+    "size": "7.01 MB",
+    "sizeBytes": 7351334,
+    "tags": [
+      "4k",
+      "blue",
+      "desktop",
+      "landscape",
+      "monitor",
+      "mountains",
+      "nature",
+      "nature_landscape",
+      "pc",
+      "sunset",
+      "ultra_hd"
+    ]
+  },
+  {
+    "id": 433,
+    "filename": "fuji-mountain-with-milky-way-night.jpg",
+    "title": "Mount Fuji Landscape #433",
+    "path": "Pictures/fuji-mountain-with-milky-way-night.jpg",
+    "encodedPath": "Pictures/fuji-mountain-with-milky-way-night.jpg",
+    "width": 4928,
+    "height": 2773,
+    "aspectRatio": 1.78,
+    "category": "desktop",
+    "primaryGenre": "nature_landscape",
+    "genres": [
+      "dark_amoled",
+      "nature_landscape"
+    ],
+    "hexColor": "#000000",
+    "colorFamily": "dark",
+    "size": "8.01 MB",
+    "sizeBytes": 8398208,
+    "tags": [
+      "4k",
+      "dark",
+      "dark_amoled",
+      "desktop",
+      "landscape",
+      "monitor",
+      "mountains",
+      "nature",
+      "nature_landscape",
+      "pc",
+      "sunset",
+      "ultra_hd"
+    ]
+  },
+  {
+    "id": 434,
     "filename": "fuji_mountain_kawaguchiko_lake_morning_autumn_seasons_fuji_mountain_yamanachi_japan.jpg",
-    "title": "Mount Fuji Landscape #201",
+    "title": "Mount Fuji Landscape #434",
     "path": "Pictures/fuji_mountain_kawaguchiko_lake_morning_autumn_seasons_fuji_mountain_yamanachi_japan.jpg",
     "encodedPath": "Pictures/fuji_mountain_kawaguchiko_lake_morning_autumn_seasons_fuji_mountain_yamanachi_japan.jpg",
     "width": 4928,
@@ -5135,14 +12747,15 @@ window.WALLPAPERS_DATA = [
       "mountains",
       "nature",
       "nature_landscape",
+      "pc",
       "sunset",
       "ultra_hd"
     ]
   },
   {
-    "id": 202,
+    "id": 435,
     "filename": "fuji_mountain_with_milky_way_night.jpg",
-    "title": "Mount Fuji Landscape #202",
+    "title": "Mount Fuji Landscape #435",
     "path": "Pictures/fuji_mountain_with_milky_way_night.jpg",
     "encodedPath": "Pictures/fuji_mountain_with_milky_way_night.jpg",
     "width": 4928,
@@ -5168,14 +12781,15 @@ window.WALLPAPERS_DATA = [
       "mountains",
       "nature",
       "nature_landscape",
+      "pc",
       "sunset",
       "ultra_hd"
     ]
   },
   {
-    "id": 203,
+    "id": 436,
     "filename": "krishna_radheradhe_pink_pinterest.jpeg",
-    "title": "Radhe Krishna Divine Art #203",
+    "title": "Radhe Krishna Divine Art #436",
     "path": "Pictures/krishna_radheradhe_pink_pinterest.jpeg",
     "encodedPath": "Pictures/krishna_radheradhe_pink_pinterest.jpeg",
     "width": 736,
@@ -5195,18 +12809,21 @@ window.WALLPAPERS_DATA = [
       "devotional",
       "krishna",
       "mobile",
+      "phone",
       "portrait",
       "radheradhe",
+      "sheshanaga",
       "spiritual",
-      "spiritual_divine"
+      "spiritual_divine",
+      "vishnu"
     ]
   },
   {
-    "id": 204,
-    "filename": "lone_tree.jpg",
+    "id": 437,
+    "filename": "lone-tree.jpg",
     "title": "Lone Tree",
-    "path": "Pictures/lone_tree.jpg",
-    "encodedPath": "Pictures/lone_tree.jpg",
+    "path": "Pictures/lone-tree.jpg",
+    "encodedPath": "Pictures/lone-tree.jpg",
     "width": 6916,
     "height": 4616,
     "aspectRatio": 1.5,
@@ -5228,11 +12845,102 @@ window.WALLPAPERS_DATA = [
       "landscape",
       "monitor",
       "nature_landscape",
+      "pc",
       "ultra_hd"
     ]
   },
   {
-    "id": 205,
+    "id": 438,
+    "filename": "lone_tree.jpg",
+    "title": "Solitary Tree Mirrored Beneath Massive Cumulus",
+    "path": "Pictures/lone_tree.jpg",
+    "encodedPath": "Pictures/lone_tree.jpg",
+    "width": 6916,
+    "height": 4616,
+    "aspectRatio": 1.5,
+    "category": "desktop",
+    "primaryGenre": "nature_landscape",
+    "genres": [
+      "nature_landscape"
+    ],
+    "hexColor": "#292229",
+    "colorFamily": "dark",
+    "size": "17.72 MB",
+    "sizeBytes": 18580609,
+    "tags": [
+      "4k",
+      "alone",
+      "amoled",
+      "cloud_white",
+      "clouds",
+      "cumuluscloud",
+      "dark",
+      "darkmode",
+      "deep_obsidian",
+      "desktop",
+      "golden_wheat",
+      "lake_reflection",
+      "lakereflection",
+      "landscape",
+      "lockscreen",
+      "lone_tree",
+      "lonetree",
+      "minimalistnature",
+      "monitor",
+      "nature",
+      "nature_&_symmetry",
+      "nature_landscape",
+      "oledwallpaper",
+      "pc",
+      "phone",
+      "phonewallpaper",
+      "real",
+      "reflection",
+      "rivers",
+      "symmetry",
+      "themewise",
+      "tranquil",
+      "ultra_hd"
+    ]
+  },
+  {
+    "id": 439,
+    "filename": "mountain-landscape-after-sunset-picjumbo-com.jpeg",
+    "title": "Mountain Landscape After Sunset",
+    "path": "Pictures/mountain-landscape-after-sunset-picjumbo-com.jpeg",
+    "encodedPath": "Pictures/mountain-landscape-after-sunset-picjumbo-com.jpeg",
+    "width": 5696,
+    "height": 3392,
+    "aspectRatio": 1.68,
+    "category": "desktop",
+    "primaryGenre": "nature_landscape",
+    "genres": [
+      "animated_graphical",
+      "dark_amoled",
+      "nature_landscape"
+    ],
+    "hexColor": "#091019",
+    "colorFamily": "dark",
+    "size": "6.30 MB",
+    "sizeBytes": 6604371,
+    "tags": [
+      "4k",
+      "animated_graphical",
+      "dark",
+      "dark_amoled",
+      "desktop",
+      "landscape",
+      "monitor",
+      "mountains",
+      "nature",
+      "nature_landscape",
+      "pc",
+      "sunset",
+      "ultra_hd"
+    ]
+  },
+  {
+    "id": 440,
     "filename": "mountain_landscape_after_sunset_picjumbo_com.jpeg",
     "title": "Mountain Landscape After Sunset",
     "path": "Pictures/mountain_landscape_after_sunset_picjumbo_com.jpeg",
@@ -5262,12 +12970,44 @@ window.WALLPAPERS_DATA = [
       "mountains",
       "nature",
       "nature_landscape",
+      "pc",
       "sunset",
       "ultra_hd"
     ]
   },
   {
-    "id": 206,
+    "id": 441,
+    "filename": "pawel-czerwinski-pC8e7FFONcI-unsplash.jpg",
+    "title": "Pawel Czerwinski Pc8e7ffonci Unspl...",
+    "path": "Pictures/pawel-czerwinski-pC8e7FFONcI-unsplash.jpg",
+    "encodedPath": "Pictures/pawel-czerwinski-pC8e7FFONcI-unsplash.jpg",
+    "width": 9000,
+    "height": 6000,
+    "aspectRatio": 1.5,
+    "category": "desktop",
+    "primaryGenre": "animated_graphical",
+    "genres": [
+      "animated_graphical",
+      "dark_amoled"
+    ],
+    "hexColor": "#202528",
+    "colorFamily": "dark",
+    "size": "6.47 MB",
+    "sizeBytes": 6784422,
+    "tags": [
+      "4k",
+      "animated_graphical",
+      "dark",
+      "dark_amoled",
+      "desktop",
+      "landscape",
+      "monitor",
+      "pc",
+      "ultra_hd"
+    ]
+  },
+  {
+    "id": 442,
     "filename": "pawel_czerwinski_pc8e7ffonci_unsplash.jpg",
     "title": "Pawel Czerwinski Pc8e7ffonci Unspl...",
     "path": "Pictures/pawel_czerwinski_pc8e7ffonci_unsplash.jpg",
@@ -5293,23 +13033,23 @@ window.WALLPAPERS_DATA = [
       "desktop",
       "landscape",
       "monitor",
+      "pc",
       "ultra_hd"
     ]
   },
   {
-    "id": 207,
-    "filename": "pexels_billelmoula_540518.jpg",
+    "id": 443,
+    "filename": "pexels-billelmoula-540518.jpg",
     "title": "Pexels Billelmoula",
-    "path": "Pictures/pexels_billelmoula_540518.jpg",
-    "encodedPath": "Pictures/pexels_billelmoula_540518.jpg",
+    "path": "Pictures/pexels-billelmoula-540518.jpg",
+    "encodedPath": "Pictures/pexels-billelmoula-540518.jpg",
     "width": 6016,
     "height": 3306,
     "aspectRatio": 1.82,
     "category": "desktop",
-    "primaryGenre": "reality_photo",
+    "primaryGenre": "dark_amoled",
     "genres": [
-      "dark_amoled",
-      "reality_photo"
+      "dark_amoled"
     ],
     "hexColor": "#362c2b",
     "colorFamily": "red",
@@ -5321,13 +13061,275 @@ window.WALLPAPERS_DATA = [
       "desktop",
       "landscape",
       "monitor",
-      "reality_photo",
+      "pc",
       "red",
       "ultra_hd"
     ]
   },
   {
-    "id": 208,
+    "id": 444,
+    "filename": "pexels-cmonphotography-1809644.jpg",
+    "title": "Pexels Cmonphotography",
+    "path": "Pictures/pexels-cmonphotography-1809644.jpg",
+    "encodedPath": "Pictures/pexels-cmonphotography-1809644.jpg",
+    "width": 5472,
+    "height": 3648,
+    "aspectRatio": 1.5,
+    "category": "desktop",
+    "primaryGenre": "animated_graphical",
+    "genres": [
+      "animated_graphical",
+      "dark_amoled"
+    ],
+    "hexColor": "#2c303b",
+    "colorFamily": "blue",
+    "size": "763.0 KB",
+    "sizeBytes": 781285,
+    "tags": [
+      "4k",
+      "animated_graphical",
+      "blue",
+      "dark_amoled",
+      "desktop",
+      "landscape",
+      "monitor",
+      "pc",
+      "ultra_hd"
+    ]
+  },
+  {
+    "id": 445,
+    "filename": "pexels-eberhardgross-1421903.jpg",
+    "title": "Pexels Eberhardgross",
+    "path": "Pictures/pexels-eberhardgross-1421903.jpg",
+    "encodedPath": "Pictures/pexels-eberhardgross-1421903.jpg",
+    "width": 3500,
+    "height": 2333,
+    "aspectRatio": 1.5,
+    "category": "desktop",
+    "primaryGenre": "animated_graphical",
+    "genres": [
+      "animated_graphical",
+      "dark_amoled"
+    ],
+    "hexColor": "#000505",
+    "colorFamily": "dark",
+    "size": "573.8 KB",
+    "sizeBytes": 587535,
+    "tags": [
+      "4k",
+      "animated_graphical",
+      "dark",
+      "dark_amoled",
+      "desktop",
+      "landscape",
+      "monitor",
+      "pc",
+      "ultra_hd"
+    ]
+  },
+  {
+    "id": 446,
+    "filename": "pexels-irina-iriser-1379636.jpg",
+    "title": "Pexels Irina Iriser",
+    "path": "Pictures/pexels-irina-iriser-1379636.jpg",
+    "encodedPath": "Pictures/pexels-irina-iriser-1379636.jpg",
+    "width": 6000,
+    "height": 4000,
+    "aspectRatio": 1.5,
+    "category": "desktop",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#060a0b",
+    "colorFamily": "dark",
+    "size": "2.79 MB",
+    "sizeBytes": 2921450,
+    "tags": [
+      "4k",
+      "dark",
+      "dark_amoled",
+      "desktop",
+      "landscape",
+      "monitor",
+      "pc",
+      "ultra_hd"
+    ]
+  },
+  {
+    "id": 447,
+    "filename": "pexels-joaojesusdesign-925743.jpg",
+    "title": "Pexels Joaojesusdesign",
+    "path": "Pictures/pexels-joaojesusdesign-925743.jpg",
+    "encodedPath": "Pictures/pexels-joaojesusdesign-925743.jpg",
+    "width": 3250,
+    "height": 4875,
+    "aspectRatio": 0.67,
+    "category": "phone",
+    "primaryGenre": "light_minimal",
+    "genres": [
+      "light_minimal"
+    ],
+    "hexColor": "#eeeeee",
+    "colorFamily": "white",
+    "size": "163.3 KB",
+    "sizeBytes": 167267,
+    "tags": [
+      "4k",
+      "light_minimal",
+      "mobile",
+      "phone",
+      "portrait",
+      "ultra_hd",
+      "white"
+    ]
+  },
+  {
+    "id": 448,
+    "filename": "pexels-phil-kallahar-983200.jpg",
+    "title": "Pexels Phil Kallahar",
+    "path": "Pictures/pexels-phil-kallahar-983200.jpg",
+    "encodedPath": "Pictures/pexels-phil-kallahar-983200.jpg",
+    "width": 3840,
+    "height": 2160,
+    "aspectRatio": 1.78,
+    "category": "desktop",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#000000",
+    "colorFamily": "dark",
+    "size": "965.2 KB",
+    "sizeBytes": 988330,
+    "tags": [
+      "4k",
+      "dark",
+      "dark_amoled",
+      "desktop",
+      "landscape",
+      "monitor",
+      "pc",
+      "ultra_hd"
+    ]
+  },
+  {
+    "id": 449,
+    "filename": "pexels-pixabay-268533.jpg",
+    "title": "Pexels Pixabay",
+    "path": "Pictures/pexels-pixabay-268533.jpg",
+    "encodedPath": "Pictures/pexels-pixabay-268533.jpg",
+    "width": 1920,
+    "height": 1278,
+    "aspectRatio": 1.5,
+    "category": "desktop",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#161f30",
+    "colorFamily": "dark",
+    "size": "158.9 KB",
+    "sizeBytes": 162741,
+    "tags": [
+      "dark",
+      "dark_amoled",
+      "desktop",
+      "landscape",
+      "monitor",
+      "pc"
+    ]
+  },
+  {
+    "id": 450,
+    "filename": "pexels-simon73-1183099.jpg",
+    "title": "Pexels Simon73",
+    "path": "Pictures/pexels-simon73-1183099.jpg",
+    "encodedPath": "Pictures/pexels-simon73-1183099.jpg",
+    "width": 6885,
+    "height": 4534,
+    "aspectRatio": 1.52,
+    "category": "desktop",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#19242a",
+    "colorFamily": "dark",
+    "size": "3.17 MB",
+    "sizeBytes": 3327173,
+    "tags": [
+      "4k",
+      "dark",
+      "dark_amoled",
+      "desktop",
+      "landscape",
+      "monitor",
+      "pc",
+      "ultra_hd"
+    ]
+  },
+  {
+    "id": 451,
+    "filename": "pexels-slendyalex-3648850.jpg",
+    "title": "Pexels Slendyalex",
+    "path": "Pictures/pexels-slendyalex-3648850.jpg",
+    "encodedPath": "Pictures/pexels-slendyalex-3648850.jpg",
+    "width": 4608,
+    "height": 3456,
+    "aspectRatio": 1.33,
+    "category": "desktop",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#0d0d0c",
+    "colorFamily": "dark",
+    "size": "736.1 KB",
+    "sizeBytes": 753817,
+    "tags": [
+      "4k",
+      "dark",
+      "dark_amoled",
+      "desktop",
+      "landscape",
+      "monitor",
+      "pc",
+      "ultra_hd"
+    ]
+  },
+  {
+    "id": 452,
+    "filename": "pexels_billelmoula_540518.jpg",
+    "title": "Pexels Billelmoula",
+    "path": "Pictures/pexels_billelmoula_540518.jpg",
+    "encodedPath": "Pictures/pexels_billelmoula_540518.jpg",
+    "width": 6016,
+    "height": 3306,
+    "aspectRatio": 1.82,
+    "category": "desktop",
+    "primaryGenre": "dark_amoled",
+    "genres": [
+      "dark_amoled"
+    ],
+    "hexColor": "#362c2b",
+    "colorFamily": "red",
+    "size": "463.5 KB",
+    "sizeBytes": 474671,
+    "tags": [
+      "4k",
+      "dark_amoled",
+      "desktop",
+      "landscape",
+      "monitor",
+      "pc",
+      "red",
+      "ultra_hd"
+    ]
+  },
+  {
+    "id": 453,
     "filename": "pexels_cmonphotography_1809644.jpg",
     "title": "Pexels Cmonphotography",
     "path": "Pictures/pexels_cmonphotography_1809644.jpg",
@@ -5353,11 +13355,12 @@ window.WALLPAPERS_DATA = [
       "desktop",
       "landscape",
       "monitor",
+      "pc",
       "ultra_hd"
     ]
   },
   {
-    "id": 209,
+    "id": 454,
     "filename": "pexels_eberhardgross_1421903.jpg",
     "title": "Pexels Eberhardgross",
     "path": "Pictures/pexels_eberhardgross_1421903.jpg",
@@ -5383,11 +13386,12 @@ window.WALLPAPERS_DATA = [
       "desktop",
       "landscape",
       "monitor",
+      "pc",
       "ultra_hd"
     ]
   },
   {
-    "id": 210,
+    "id": 455,
     "filename": "pexels_irina_iriser_1379636.jpg",
     "title": "Pexels Irina Iriser",
     "path": "Pictures/pexels_irina_iriser_1379636.jpg",
@@ -5396,10 +13400,9 @@ window.WALLPAPERS_DATA = [
     "height": 4000,
     "aspectRatio": 1.5,
     "category": "desktop",
-    "primaryGenre": "reality_photo",
+    "primaryGenre": "dark_amoled",
     "genres": [
-      "dark_amoled",
-      "reality_photo"
+      "dark_amoled"
     ],
     "hexColor": "#060a0b",
     "colorFamily": "dark",
@@ -5412,12 +13415,12 @@ window.WALLPAPERS_DATA = [
       "desktop",
       "landscape",
       "monitor",
-      "reality_photo",
+      "pc",
       "ultra_hd"
     ]
   },
   {
-    "id": 211,
+    "id": 456,
     "filename": "pexels_joaojesusdesign_925743.jpg",
     "title": "Pexels Joaojesusdesign",
     "path": "Pictures/pexels_joaojesusdesign_925743.jpg",
@@ -5426,10 +13429,9 @@ window.WALLPAPERS_DATA = [
     "height": 4875,
     "aspectRatio": 0.67,
     "category": "phone",
-    "primaryGenre": "reality_photo",
+    "primaryGenre": "light_minimal",
     "genres": [
-      "light_minimal",
-      "reality_photo"
+      "light_minimal"
     ],
     "hexColor": "#eeeeee",
     "colorFamily": "white",
@@ -5439,14 +13441,14 @@ window.WALLPAPERS_DATA = [
       "4k",
       "light_minimal",
       "mobile",
+      "phone",
       "portrait",
-      "reality_photo",
       "ultra_hd",
       "white"
     ]
   },
   {
-    "id": 212,
+    "id": 457,
     "filename": "pexels_phil_kallahar_983200.jpg",
     "title": "Pexels Phil Kallahar",
     "path": "Pictures/pexels_phil_kallahar_983200.jpg",
@@ -5455,10 +13457,9 @@ window.WALLPAPERS_DATA = [
     "height": 2160,
     "aspectRatio": 1.78,
     "category": "desktop",
-    "primaryGenre": "reality_photo",
+    "primaryGenre": "dark_amoled",
     "genres": [
-      "dark_amoled",
-      "reality_photo"
+      "dark_amoled"
     ],
     "hexColor": "#000000",
     "colorFamily": "dark",
@@ -5471,12 +13472,12 @@ window.WALLPAPERS_DATA = [
       "desktop",
       "landscape",
       "monitor",
-      "reality_photo",
+      "pc",
       "ultra_hd"
     ]
   },
   {
-    "id": 213,
+    "id": 458,
     "filename": "pexels_pixabay_268533.jpg",
     "title": "Pexels Pixabay",
     "path": "Pictures/pexels_pixabay_268533.jpg",
@@ -5485,10 +13486,9 @@ window.WALLPAPERS_DATA = [
     "height": 1278,
     "aspectRatio": 1.5,
     "category": "desktop",
-    "primaryGenre": "reality_photo",
+    "primaryGenre": "dark_amoled",
     "genres": [
-      "dark_amoled",
-      "reality_photo"
+      "dark_amoled"
     ],
     "hexColor": "#161f30",
     "colorFamily": "dark",
@@ -5500,11 +13500,11 @@ window.WALLPAPERS_DATA = [
       "desktop",
       "landscape",
       "monitor",
-      "reality_photo"
+      "pc"
     ]
   },
   {
-    "id": 214,
+    "id": 459,
     "filename": "pexels_simon73_1183099.jpg",
     "title": "Pexels Simon73",
     "path": "Pictures/pexels_simon73_1183099.jpg",
@@ -5513,10 +13513,9 @@ window.WALLPAPERS_DATA = [
     "height": 4534,
     "aspectRatio": 1.52,
     "category": "desktop",
-    "primaryGenre": "reality_photo",
+    "primaryGenre": "dark_amoled",
     "genres": [
-      "dark_amoled",
-      "reality_photo"
+      "dark_amoled"
     ],
     "hexColor": "#19242a",
     "colorFamily": "dark",
@@ -5529,12 +13528,12 @@ window.WALLPAPERS_DATA = [
       "desktop",
       "landscape",
       "monitor",
-      "reality_photo",
+      "pc",
       "ultra_hd"
     ]
   },
   {
-    "id": 215,
+    "id": 460,
     "filename": "pexels_slendyalex_3648850.jpg",
     "title": "Pexels Slendyalex",
     "path": "Pictures/pexels_slendyalex_3648850.jpg",
@@ -5543,10 +13542,9 @@ window.WALLPAPERS_DATA = [
     "height": 3456,
     "aspectRatio": 1.33,
     "category": "desktop",
-    "primaryGenre": "reality_photo",
+    "primaryGenre": "dark_amoled",
     "genres": [
-      "dark_amoled",
-      "reality_photo"
+      "dark_amoled"
     ],
     "hexColor": "#0d0d0c",
     "colorFamily": "dark",
@@ -5559,12 +13557,46 @@ window.WALLPAPERS_DATA = [
       "desktop",
       "landscape",
       "monitor",
-      "reality_photo",
+      "pc",
       "ultra_hd"
     ]
   },
   {
-    "id": 216,
+    "id": 461,
+    "filename": "scenic-sunrise-high-mountains-alpes-generative-ai.jpg",
+    "title": "Scenic Sunrise High Mountains Alpe...",
+    "path": "Pictures/scenic-sunrise-high-mountains-alpes-generative-ai.jpg",
+    "encodedPath": "Pictures/scenic-sunrise-high-mountains-alpes-generative-ai.jpg",
+    "width": 6000,
+    "height": 4000,
+    "aspectRatio": 1.5,
+    "category": "desktop",
+    "primaryGenre": "nature_landscape",
+    "genres": [
+      "dark_amoled",
+      "nature_landscape"
+    ],
+    "hexColor": "#00020f",
+    "colorFamily": "dark",
+    "size": "13.05 MB",
+    "sizeBytes": 13683754,
+    "tags": [
+      "4k",
+      "dark",
+      "dark_amoled",
+      "desktop",
+      "landscape",
+      "monitor",
+      "mountains",
+      "nature",
+      "nature_landscape",
+      "pc",
+      "sunset",
+      "ultra_hd"
+    ]
+  },
+  {
+    "id": 462,
     "filename": "scenic_sunrise_high_mountains_alpes_generative_ai.jpg",
     "title": "Scenic Sunrise High Mountains Alpe...",
     "path": "Pictures/scenic_sunrise_high_mountains_alpes_generative_ai.jpg",
@@ -5594,14 +13626,15 @@ window.WALLPAPERS_DATA = [
       "mountains",
       "nature",
       "nature_landscape",
+      "pc",
       "sunset",
       "ultra_hd"
     ]
   },
   {
-    "id": 217,
+    "id": 463,
     "filename": "shree_krishna_\ud83e\udd9a.jpeg",
-    "title": "Radhe Krishna Divine Art #217",
+    "title": "Radhe Krishna Divine Art #463",
     "path": "Pictures/shree_krishna_\ud83e\udd9a.jpeg",
     "encodedPath": "Pictures/shree_krishna_%F0%9F%A6%9A.jpeg",
     "width": 734,
@@ -5623,13 +13656,48 @@ window.WALLPAPERS_DATA = [
       "krishna",
       "landscape",
       "monitor",
+      "pc",
       "radheradhe",
+      "sheshanaga",
       "spiritual",
-      "spiritual_divine"
+      "spiritual_divine",
+      "vishnu"
     ]
   },
   {
-    "id": 218,
+    "id": 464,
+    "filename": "small-stream-and-path-in-summer-under-the-mountains-picjumbo-com.jpeg",
+    "title": "Small Stream And Path Summer Under...",
+    "path": "Pictures/small-stream-and-path-in-summer-under-the-mountains-picjumbo-com.jpeg",
+    "encodedPath": "Pictures/small-stream-and-path-in-summer-under-the-mountains-picjumbo-com.jpeg",
+    "width": 5696,
+    "height": 3392,
+    "aspectRatio": 1.68,
+    "category": "desktop",
+    "primaryGenre": "nature_landscape",
+    "genres": [
+      "nature_landscape"
+    ],
+    "hexColor": "#428ed1",
+    "colorFamily": "cyan",
+    "size": "11.14 MB",
+    "sizeBytes": 11676248,
+    "tags": [
+      "4k",
+      "cyan",
+      "desktop",
+      "landscape",
+      "monitor",
+      "mountains",
+      "nature",
+      "nature_landscape",
+      "pc",
+      "sunset",
+      "ultra_hd"
+    ]
+  },
+  {
+    "id": 465,
     "filename": "small_stream_and_path_in_summer_under_the_mountains_picjumbo_com.jpeg",
     "title": "Small Stream And Path Summer Under...",
     "path": "Pictures/small_stream_and_path_in_summer_under_the_mountains_picjumbo_com.jpeg",
@@ -5655,12 +13723,44 @@ window.WALLPAPERS_DATA = [
       "mountains",
       "nature",
       "nature_landscape",
+      "pc",
       "sunset",
       "ultra_hd"
     ]
   },
   {
-    "id": 219,
+    "id": 466,
+    "filename": "space-colors-and-oil-liquid-colorful-abstract-background-picjumbo-com.jpeg",
+    "title": "Space Colors And Oil Liquid Colorf...",
+    "path": "Pictures/space-colors-and-oil-liquid-colorful-abstract-background-picjumbo-com.jpeg",
+    "encodedPath": "Pictures/space-colors-and-oil-liquid-colorful-abstract-background-picjumbo-com.jpeg",
+    "width": 5696,
+    "height": 3392,
+    "aspectRatio": 1.68,
+    "category": "desktop",
+    "primaryGenre": "animated_graphical",
+    "genres": [
+      "animated_graphical",
+      "dark_amoled"
+    ],
+    "hexColor": "#010519",
+    "colorFamily": "dark",
+    "size": "7.58 MB",
+    "sizeBytes": 7951849,
+    "tags": [
+      "4k",
+      "animated_graphical",
+      "dark",
+      "dark_amoled",
+      "desktop",
+      "landscape",
+      "monitor",
+      "pc",
+      "ultra_hd"
+    ]
+  },
+  {
+    "id": 467,
     "filename": "space_colors_and_oil_liquid_colorful_abstract_background_picjumbo_com.jpeg",
     "title": "Space Colors And Oil Liquid Colorf...",
     "path": "Pictures/space_colors_and_oil_liquid_colorful_abstract_background_picjumbo_com.jpeg",
@@ -5686,11 +13786,12 @@ window.WALLPAPERS_DATA = [
       "desktop",
       "landscape",
       "monitor",
+      "pc",
       "ultra_hd"
     ]
   },
   {
-    "id": 220,
+    "id": 468,
     "filename": "undefined.jpeg",
     "title": "Undefined",
     "path": "Pictures/undefined.jpeg",
@@ -5699,23 +13800,24 @@ window.WALLPAPERS_DATA = [
     "height": 1312,
     "aspectRatio": 0.56,
     "category": "phone",
-    "primaryGenre": "reality_photo",
+    "primaryGenre": "animated_graphical",
     "genres": [
-      "reality_photo"
+      "animated_graphical"
     ],
     "hexColor": "#91bbd3",
     "colorFamily": "cyan",
     "size": "99.1 KB",
     "sizeBytes": 101465,
     "tags": [
+      "animated_graphical",
       "cyan",
       "mobile",
-      "portrait",
-      "reality_photo"
+      "phone",
+      "portrait"
     ]
   },
   {
-    "id": 221,
+    "id": 469,
     "filename": "wallpaperflare.com_wallpaper.jpg",
     "title": "Wallpaperflare.com",
     "path": "Pictures/wallpaperflare.com_wallpaper.jpg",
@@ -5736,6 +13838,7 @@ window.WALLPAPERS_DATA = [
       "dark",
       "dark_amoled",
       "mobile",
+      "phone",
       "portrait"
     ]
   }
