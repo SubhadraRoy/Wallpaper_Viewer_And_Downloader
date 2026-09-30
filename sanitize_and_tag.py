@@ -898,12 +898,36 @@ def run_sanitization_and_tagging():
         rel_path = f'Pictures/{f}'
         encoded_path = f'Pictures/{urllib.parse.quote(f)}'
 
+        # Generate low-quality optimized preview thumbnail for ultra-fast page loading
+        thumb_dir = os.path.join(os.path.dirname(__file__), 'Thumbnails')
+        os.makedirs(thumb_dir, exist_ok=True)
+        base_name, _ = os.path.splitext(f)
+        safe_base = re.sub(r'[^a-zA-Z0-9_-]', '_', base_name)
+        thumb_filename = f"thumb_{id_counter}_{safe_base}.jpg"
+        thumb_fp = os.path.join(thumb_dir, thumb_filename)
+
+        if not os.path.exists(thumb_fp) or (os.path.exists(fp) and os.path.getmtime(fp) > os.path.getmtime(thumb_fp)):
+            try:
+                with Image.open(fp) as img_thumb:
+                    img_copy = img_thumb.copy()
+                    if img_copy.mode in ('RGBA', 'LA', 'P'):
+                        img_copy = img_copy.convert('RGB')
+                    img_copy.thumbnail((450, 450), Image.Resampling.LANCZOS)
+                    img_copy.save(thumb_fp, 'JPEG', quality=65, optimize=True)
+            except Exception as thumb_err:
+                print(f"Warning: Failed to thumbnail {f}: {thumb_err}")
+
+        rel_thumb = f'Thumbnails/{thumb_filename}'
+        encoded_thumb = f'Thumbnails/{urllib.parse.quote(thumb_filename)}'
+
         wallpapers.append({
             'id': id_counter,
             'filename': f,
             'title': display_title,
             'path': rel_path,
             'encodedPath': encoded_path,
+            'thumbnail': rel_thumb,
+            'encodedThumbnail': encoded_thumb,
             'width': w,
             'height': h,
             'aspectRatio': ratio,
