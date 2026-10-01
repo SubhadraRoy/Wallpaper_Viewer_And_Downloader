@@ -73,16 +73,16 @@
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
     <!-- Lucide Icons CDN -->
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/lucide@latest" defer></script>
     
     <!-- GSAP for Web Animations -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
     
     <!-- JSZip for Batch Downloader -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js" defer></script>
 
     <!-- Embedded Data for 100% Zero-CORS file:// compatibility -->
-    <script src="wallpapers.js"></script>
+    <script src="wallpapers.js" defer></script>
 
     <style>
         body {
@@ -797,16 +797,28 @@
                 return true;
             });
 
-            filteredWallpapers.sort((a, b) => a.id - b.id);
-            renderGallery();
+            if (currentCategory === 'combos') {
+                renderCombosGrid();
+            } else {
+                filteredWallpapers.sort((a, b) => a.id - b.id);
+                displayLimit = 24;
+                renderGallery(false);
+            }
+            initInfiniteScroll();
         }
 
-        function renderGallery() {
+        let displayLimit = 24;
+        let isInfiniteScrollAttached = false;
+
+        function renderGallery(isAppend = false) {
             const grid = document.getElementById('wallpaperGrid');
             const emptyState = document.getElementById('emptyState');
             const pairedSet = getPairedWallpaperIds();
 
-            grid.innerHTML = '';
+            grid.className = "masonry-grid";
+            if (!isAppend) {
+                grid.innerHTML = '';
+            }
 
             if (filteredWallpapers.length === 0) {
                 document.getElementById('emptyStateTitle').innerText = "No Wallpapers Matched";
@@ -819,13 +831,17 @@
                 emptyState.classList.remove('flex');
             }
 
-            filteredWallpapers.forEach(w => {
+            const currentLength = isAppend ? grid.children.length : 0;
+            const itemsToRender = filteredWallpapers.slice(currentLength, displayLimit);
+            const fragment = document.createDocumentFragment();
+
+            itemsToRender.forEach(w => {
                 const isFav = favorites.has(w.id);
                 const isChecked = selectedBatch.has(w.id);
                 const isPaired = pairedSet.has(w.id);
 
                 const card = document.createElement('div');
-                card.className = 'masonry-item';
+                card.className = 'masonry-item animate-fade-in';
                 card.innerHTML = `
                     <div class="glass-card rounded-2xl overflow-hidden relative group ${isPaired ? 'border-amber-500/40' : ''}">
                         <div class="relative bg-cyber-900 overflow-hidden cursor-pointer" onclick="openLightbox(${w.id})">
@@ -890,14 +906,28 @@
                         </div>
                     </div>
                 `;
-                grid.appendChild(card);
+                fragment.appendChild(card);
             });
 
-            lucide.createIcons();
-            const cards = document.querySelectorAll('#wallpaperGrid > div');
-            if (cards.length > 0) {
-                gsap.from(cards, { opacity: 0, y: 15, stagger: 0.02, duration: 0.3 });
+            grid.appendChild(fragment);
+            if (typeof lucide !== 'undefined' && lucide.createIcons) {
+                lucide.createIcons({ root: grid });
             }
+        }
+
+        function initInfiniteScroll() {
+            if (isInfiniteScrollAttached) return;
+            isInfiniteScrollAttached = true;
+
+            window.addEventListener('scroll', () => {
+                if (currentCategory === 'combos') return;
+                if (displayLimit >= filteredWallpapers.length) return;
+
+                if ((window.innerHeight + window.scrollY) >= (document.body.offsetHeight - 800)) {
+                    displayLimit += 24;
+                    renderGallery(true);
+                }
+            }, { passive: true });
         }
 
         function renderCombosGrid() {
